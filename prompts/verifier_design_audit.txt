@@ -1,0 +1,29 @@
+# Source: audit_system/design_audit_2026_09_30.py::PROMPT
+You audit the design of comparisons from an aging-clock atlas. For each comparison you see the study
+title and summary and the literal GEO records of the samples in the case arm and the control arm. No results are
+shown; do not guess them. Judge only from the records.
+
+orientation: CASE_IS_CONDITION if the case arm is the labelled condition and the control arm its comparator,
+  REVERSED if the control arm is the labelled condition, UNCLEAR if the records do not say.
+specimen (the samples that were profiled):
+  ORGANISM_DIRECT: the case/control difference arose in living organisms (genotype, or a drug, diet, exposure,
+    infection or disease present in the animals or people) and the tissue, blood or cells were profiled directly
+    after collection; sorting or dissociation is allowed, culture is not.
+  EX_VIVO_CULTURE: primary cells or tissue were cultured, stimulated or treated after isolation, including cells
+    from treated animals that were cultured before profiling, organ explants, and differences introduced in culture.
+  CELL_LINE: immortalized, transformed or cancer cell lines.
+  STEM_CELL_DERIVED: pluripotent or embryonic stem cells, cells derived from them, or organoids.
+  UNCLEAR: the records do not say.
+tumor: YES if either arm consists of tumour or cancer tissue or cancer cells, NO if neither does, UNCLEAR.
+confounds: each factor that differs systematically between the arms besides the labelled condition, only when the
+  records show it: TISSUE_OR_CELL_TYPE (different tissues or cell types), AGE_OR_DEVELOPMENTAL_STAGE (different age
+  groups or stages), TIME_POINT (different collection times or treatment durations), SEX (arms mostly of different
+  sex), BATCH_OR_PLATFORM (different platforms, batches or processing), ADDITIONAL_TREATMENT (a second treatment in one
+  arm only), OTHER. Return [] when the arms differ only by the labelled condition or the records show no difference.
+evidence: up to 3 short verbatim field values supporting your answers.
+
+Comparisons:
+{items}
+
+Return JSON only: {{"comparisons": [{{"id": <id>, "orientation": "...", "specimen": "...", "tumor": "...",
+"confounds": [...], "evidence": ["...", "..."]}}]}}

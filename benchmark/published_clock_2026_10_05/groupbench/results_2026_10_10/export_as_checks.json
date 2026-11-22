@@ -1,0 +1,37 @@
+{
+ "reference": "final-2026-10-05",
+ "scored": "final-2026-10-10",
+ "dnam": {
+  "rows": 13022,
+  "OK": 12903,
+  "method Welch t-test (released)": 9449,
+  "call differs": 561,
+  "NOT_RELEASED_DESCRIPTIVE": 88,
+  "NOT_RELEASED_PENDING_INPUT": 31,
+  "method AGE_ADJUSTED": 2330,
+  "method PAIRED": 953,
+  "method UNIT_MEANS": 186,
+  "method AGE_ADJUSTED_UNIT_MEANS": 104
+ },
+ "hs_rna": {
+  "rows": 24379,
+  "OK": 24151,
+  "method Welch t-test (released)": 21143,
+  "call differs": 346,
+  "method AGE_ADJUSTED": 935,
+  "method PAIRED": 1909,
+  "method UNIT_MEANS": 333,
+  "method AGE_ADJUSTED_UNIT_MEANS": 59,
+  "NOT_RELEASED_DESCRIPTIVE": 227,
+  "NOT_RELEASED_DUPLICATE": 1
+ },
+ "mm_rna": {
+  "rows": 27081,
+  "OK": 26999,
+  "method Welch t-test (released)": 26733,
+  "call differs": 42,
+  "method PAIRED": 169,
+  "method UNIT_MEANS": 179,
+  "NOT_RELEASED_DESCRIPTIVE": 82
+ }
+}

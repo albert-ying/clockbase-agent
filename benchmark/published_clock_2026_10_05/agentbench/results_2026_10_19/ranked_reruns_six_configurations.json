@@ -1,0 +1,37 @@
+{
+ "scored": [
+  "/Entropy/kying/clockbase-benchmark-2026-10-05/agentbench/scored-ranked-001",
+  "/Entropy/kying/clockbase-benchmark-2026-10-05/agentbench/scored-ranked-claude-001",
+  "/Entropy/kying/clockbase-benchmark-2026-10-05/agentbench/scored-ranked-biomni-001"
+ ],
+ "models": [
+  "claude-opus-5-5",
+  "gpt-5.5",
+  "gpt-6-astra",
+  "gpt-6-luna",
+  "gpt-6-sol"
+ ],
+ "configurations": [
+  "scored-ranked-001:gpt-5.5",
+  "scored-ranked-001:gpt-6-astra",
+  "scored-ranked-001:gpt-6-luna",
+  "scored-ranked-001:gpt-6-sol",
+  "scored-ranked-biomni-001:gpt-6-astra",
+  "scored-ranked-claude-001:claude-opus-5-5"
+ ],
+ "comparisons": 60,
+ "higher": {
+  "recurs_in_any": 28,
+  "recurs_in_two_or_more": 28,
+  "recurs_in_all": 22,
+  "reversed": 0
+ },
+ "lower": {
+  "recurs_in_any": 29,
+  "recurs_in_two_or_more": 28,
+  "recurs_in_all": 21,
+  "reversed": 1
+ },
+ "recurs_in_two_or_more": 56,
+ "recurs_in_all": 43
+}

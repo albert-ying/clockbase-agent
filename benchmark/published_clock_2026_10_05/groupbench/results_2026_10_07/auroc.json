@@ -1,0 +1,667 @@
+{
+ "published": {
+  "human DNAm": {
+   "S1": {
+    "direction_auroc": 0.952,
+    "detection_auroc": 0.8957671957671958,
+    "same_direction_both_significant": [
+     21,
+     22
+    ],
+    "replicated": [
+     21,
+     35
+    ],
+    "sign_matches_significant": [
+     30,
+     35
+    ],
+    "significant_only_in_clockbase": [
+     4,
+     54
+    ],
+    "reference": {
+     "higher": 25,
+     "lower": 10,
+     "none": 54
+    },
+    "direction_auroc_interval": [
+     0.841656746031746,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8015722901002507,
+     0.9619745299970581
+    ],
+    "clusters": 36
+   },
+   "S2": {
+    "direction_auroc": 0.92,
+    "detection_auroc": 0.742824074074074,
+    "same_direction_both_significant": [
+     19,
+     21
+    ],
+    "replicated": [
+     19,
+     40
+    ],
+    "sign_matches_significant": [
+     35,
+     40
+    ],
+    "significant_only_in_clockbase": [
+     9,
+     54
+    ],
+    "reference": {
+     "higher": 30,
+     "lower": 10,
+     "none": 54
+    },
+    "direction_auroc_interval": [
+     0.7944246031746032,
+     0.9935927672955975
+    ],
+    "detection_auroc_interval": [
+     0.6107055883996535,
+     0.8568538634417808
+    ],
+    "clusters": 37
+   },
+   "S2c": {
+    "direction_auroc": 0.98,
+    "detection_auroc": 0.8849537037037037,
+    "same_direction_both_significant": [
+     25,
+     26
+    ],
+    "replicated": [
+     25,
+     40
+    ],
+    "sign_matches_significant": [
+     37,
+     40
+    ],
+    "significant_only_in_clockbase": [
+     3,
+     54
+    ],
+    "reference": {
+     "higher": 30,
+     "lower": 10,
+     "none": 54
+    },
+    "direction_auroc_interval": [
+     0.9142857142857143,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.7971253113140417,
+     0.9514757468745684
+    ],
+    "clusters": 37
+   },
+   "S3": {
+    "direction_auroc": 0.9654605263157895,
+    "detection_auroc": 0.7802887633396108,
+    "same_direction_both_significant": [
+     33,
+     34
+    ],
+    "replicated": [
+     33,
+     54
+    ],
+    "sign_matches_significant": [
+     52,
+     54
+    ],
+    "significant_only_in_clockbase": [
+     6,
+     59
+    ],
+    "reference": {
+     "higher": 38,
+     "lower": 16,
+     "none": 59
+    },
+    "direction_auroc_interval": [
+     0.9071309523809524,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.6629673917357997,
+     0.865494874309146
+    ],
+    "clusters": 32
+   },
+   "S3g": {
+    "direction_auroc": 0.9635416666666666,
+    "detection_auroc": 0.7923728813559322,
+    "same_direction_both_significant": [
+     33,
+     34
+    ],
+    "replicated": [
+     33,
+     52
+    ],
+    "sign_matches_significant": [
+     50,
+     52
+    ],
+    "significant_only_in_clockbase": [
+     6,
+     59
+    ],
+    "reference": {
+     "higher": 36,
+     "lower": 16,
+     "none": 59
+    },
+    "direction_auroc_interval": [
+     0.9061744033998038,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.6702657714625799,
+     0.8795631641086187
+    ],
+    "clusters": 32
+   },
+   "shared_S1_S2_S2c": {
+    "S1": {
+     "direction_auroc": 0.952,
+     "detection_auroc": 0.8942857142857142,
+     "same_direction_both_significant": [
+      21,
+      22
+     ],
+     "replicated": [
+      21,
+      35
+     ],
+     "sign_matches_significant": [
+      30,
+      35
+     ],
+     "significant_only_in_clockbase": [
+      4,
+      50
+     ],
+     "reference": {
+      "higher": 25,
+      "lower": 10,
+      "none": 50
+     },
+     "direction_auroc_interval": [
+      0.8428571428571429,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.7998036517295856,
+      0.9589114773267797
+     ],
+     "clusters": 35
+    },
+    "S2": {
+     "direction_auroc": 0.948,
+     "detection_auroc": 0.7822857142857143,
+     "same_direction_both_significant": [
+      18,
+      19
+     ],
+     "replicated": [
+      18,
+      35
+     ],
+     "sign_matches_significant": [
+      31,
+      35
+     ],
+     "significant_only_in_clockbase": [
+      8,
+      50
+     ],
+     "reference": {
+      "higher": 25,
+      "lower": 10,
+      "none": 50
+     },
+     "direction_auroc_interval": [
+      0.8366718520439029,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.6092651783276783,
+      0.8937530464091262
+     ],
+     "clusters": 35
+    },
+    "S2c": {
+     "direction_auroc": 0.976,
+     "detection_auroc": 0.8794285714285714,
+     "same_direction_both_significant": [
+      21,
+      22
+     ],
+     "replicated": [
+      21,
+      35
+     ],
+     "sign_matches_significant": [
+      33,
+      35
+     ],
+     "significant_only_in_clockbase": [
+      3,
+      50
+     ],
+     "reference": {
+      "higher": 25,
+      "lower": 10,
+      "none": 50
+     },
+     "direction_auroc_interval": [
+      0.901043956043956,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.7968413775766716,
+      0.9475296138710773
+     ],
+     "clusters": 35
+    }
+   }
+  }
+ },
+ "expert_groups": {
+  "mouse RNA-seq": {
+   "agent": {
+    "direction_auroc": 0.9567901234567902,
+    "detection_auroc": 0.9847670250896058,
+    "same_direction_both_significant": [
+     35,
+     36
+    ],
+    "replicated": [
+     35,
+     36
+    ],
+    "sign_matches_significant": [
+     35,
+     36
+    ],
+    "significant_only_in_clockbase": [
+     4,
+     62
+    ],
+    "reference": {
+     "higher": 18,
+     "lower": 18,
+     "none": 62
+    },
+    "direction_auroc_interval": [
+     0.8125,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.9511882624950806,
+     1.0
+    ],
+    "clusters": 32
+   },
+   "released": {
+    "direction_auroc": 1.0,
+    "detection_auroc": 0.9946524064171123,
+    "same_direction_both_significant": [
+     34,
+     34
+    ],
+    "replicated": [
+     34,
+     34
+    ],
+    "sign_matches_significant": [
+     34,
+     34
+    ],
+    "significant_only_in_clockbase": [
+     1,
+     55
+    ],
+    "reference": {
+     "higher": 17,
+     "lower": 17,
+     "none": 55
+    },
+    "direction_auroc_interval": [
+     1.0,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.9789448380566802,
+     1.0
+    ],
+    "clusters": 29
+   },
+   "candidate": {
+    "direction_auroc": 1.0,
+    "detection_auroc": 0.9946524064171123,
+    "same_direction_both_significant": [
+     34,
+     34
+    ],
+    "replicated": [
+     34,
+     34
+    ],
+    "sign_matches_significant": [
+     34,
+     34
+    ],
+    "significant_only_in_clockbase": [
+     1,
+     55
+    ],
+    "reference": {
+     "higher": 17,
+     "lower": 17,
+     "none": 55
+    },
+    "direction_auroc_interval": [
+     1.0,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.9789448380566802,
+     1.0
+    ],
+    "clusters": 29
+   }
+  },
+  "human DNAm": {
+   "agent": {
+    "direction_auroc": 0.7103174603174603,
+    "detection_auroc": 0.8253472764164196,
+    "same_direction_both_significant": [
+     24,
+     34
+    ],
+    "replicated": [
+     24,
+     43
+    ],
+    "sign_matches_significant": [
+     32,
+     43
+    ],
+    "significant_only_in_clockbase": [
+     26,
+     149
+    ],
+    "reference": {
+     "higher": 36,
+     "lower": 7,
+     "none": 149
+    },
+    "direction_auroc_interval": [
+     0.4257246376811594,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.6597728157837159,
+     0.9488898751508399
+    ],
+    "clusters": 16
+   },
+   "released": {
+    "direction_auroc": 1.0,
+    "detection_auroc": 0.8244188244188244,
+    "same_direction_both_significant": [
+     28,
+     28
+    ],
+    "replicated": [
+     28,
+     37
+    ],
+    "sign_matches_significant": [
+     37,
+     37
+    ],
+    "significant_only_in_clockbase": [
+     27,
+     143
+    ],
+    "reference": {
+     "higher": 31,
+     "lower": 6,
+     "none": 143
+    },
+    "direction_auroc_interval": [
+     1.0,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.6597673745173745,
+     0.9523114003722315
+    ],
+    "clusters": 16
+   },
+   "released, labels confirmed": {
+    "direction_auroc": 1.0,
+    "detection_auroc": 0.9335288367546432,
+    "same_direction_both_significant": [
+     27,
+     27
+    ],
+    "replicated": [
+     27,
+     31
+    ],
+    "sign_matches_significant": [
+     31,
+     31
+    ],
+    "significant_only_in_clockbase": [
+     12,
+     99
+    ],
+    "reference": {
+     "higher": 26,
+     "lower": 5,
+     "none": 99
+    },
+    "direction_auroc_interval": [
+     1.0,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8207382437539091,
+     0.9910107067681647
+    ],
+    "clusters": 14
+   },
+   "candidate": {
+    "direction_auroc": 1.0,
+    "detection_auroc": 0.9321407738673926,
+    "same_direction_both_significant": [
+     35,
+     35
+    ],
+    "replicated": [
+     35,
+     37
+    ],
+    "sign_matches_significant": [
+     36,
+     37
+    ],
+    "significant_only_in_clockbase": [
+     8,
+     139
+    ],
+    "reference": {
+     "higher": 31,
+     "lower": 6,
+     "none": 139
+    },
+    "direction_auroc_interval": [
+     1.0,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8033284990493476,
+     1.0
+    ],
+    "clusters": 16
+   },
+   "candidate, labels confirmed": {
+    "direction_auroc": 1.0,
+    "detection_auroc": 0.9918540241120887,
+    "same_direction_both_significant": [
+     31,
+     31
+    ],
+    "replicated": [
+     31,
+     31
+    ],
+    "sign_matches_significant": [
+     31,
+     31
+    ],
+    "significant_only_in_clockbase": [
+     2,
+     99
+    ],
+    "reference": {
+     "higher": 26,
+     "lower": 5,
+     "none": 99
+    },
+    "direction_auroc_interval": [
+     1.0,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.9731197025705035,
+     1.0
+    ],
+    "clusters": 14
+   }
+  }
+ },
+ "effect_agreement_human_DNAm": {
+  "S3": {
+   "pairs": 30,
+   "papers": 7,
+   "spearman": 0.32735775729039274,
+   "spearman_interval": [
+    -0.40241680537878816,
+    0.912842854758837
+   ],
+   "pearson": -0.3223395636244007,
+   "pearson_interval": [
+    -0.6240988193524625,
+    0.8815739317107455
+   ],
+   "same_sign": [
+    23,
+    30
+   ],
+   "median_absolute_difference_years": 1.8030050650296858,
+   "median_absolute_published_effect_years": 1.92
+  },
+  "S3g": {
+   "pairs": 30,
+   "papers": 7,
+   "spearman": 0.6070593512745649,
+   "spearman_interval": [
+    0.27249045025662194,
+    0.9313239356117008
+   ],
+   "pearson": 0.5284032412802901,
+   "pearson_interval": [
+    0.1838678045772861,
+    0.9141585696182614
+   ],
+   "same_sign": [
+    25,
+    30
+   ],
+   "median_absolute_difference_years": 1.5136745446341133,
+   "median_absolute_published_effect_years": 1.92
+  },
+  "left_out": {
+   "no ClockBase estimate for the published groups": 51,
+   "effect not in years": 59,
+   "sign convention uncertain": 3,
+   "sign contradicts the stated direction": 2
+  }
+ },
+ "overflow_guard": {
+  "threshold_years": 1000.0,
+  "recomputed": [
+   {
+    "id": "MED-32930491-GSE100249-PhenoAge-0",
+    "gse": "GSE100249",
+    "clock": "PhenoAge",
+    "samples_dropped": 2,
+    "before": [
+     2.0194972940453818e+39,
+     0.2849541940004737
+    ],
+    "after": [
+     23.471796961108012,
+     null
+    ]
+   },
+   {
+    "id": "MED-32930491-GSE100249-Horvathv2-3",
+    "gse": "GSE100249",
+    "clock": "Horvathv2",
+    "samples_dropped": 2,
+    "before": [
+     5.610541243286837e+38,
+     0.4918437490077847
+    ],
+    "after": [
+     57.166389224030375,
+     null
+    ]
+   },
+   {
+    "id": "MED-31002714-GSE20242-Horvathv1-2",
+    "gse": "GSE20242",
+    "clock": "Horvathv1",
+    "samples_dropped": 2,
+    "before": [
+     1.0037515326581047e+38,
+     0.4115983970490106
+    ],
+    "after": [
+     -1.2809127452493352,
+     0.4687756477245407
+    ]
+   },
+   {
+    "id": "MED-31002714-GSE20242-Horvathv1-3",
+    "gse": "GSE20242",
+    "clock": "Horvathv1",
+    "samples_dropped": 2,
+    "before": [
+     1.0037515326581047e+38,
+     0.4115983970490106
+    ],
+    "after": [
+     -1.2809127452493352,
+     0.4687756477245407
+    ]
+   }
+  ]
+ }
+}

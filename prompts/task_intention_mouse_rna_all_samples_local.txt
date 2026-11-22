@@ -1,0 +1,84 @@
+# Source: src/parallel_mm_rna.py::TASK_TEMPLATE_ALL_SAMPLES_LOCAL; recovered from successful_traces_mouse.pkl; all_samples_local; 3578 traces; 3faf1f266::src/parallel_prompt3.py
+
+Analyze the aging effects of conditions from study {study_id}.
+
+Workflow:
+
+1. Data Acquisition and Preparation
+    * Load dataset overview from: `{data_dir}/dataset_level/gse_rna_mm.csv` (Filter by "accession" column to locate {study_id})
+    * Extract metadata from: `{data_dir}/GEO_mm_rna/processed_metadata_preharmonize/{study_id}.csv`
+    * Import pre-calculated aging clock data from: `{data_dir}/clock_output/mouse_rna_age_short.csv`
+    * Create output directory if needed: `{RESULTS_DIR}/{study_id}/`
+
+
+2. Study Design Information:
+   {study_design}
+
+3. Clock Selection and Analysis:
+    * **IMPORTANT: DO NOT compare young and old populations directly**
+    * **IMPORTANT: Analysis must include ALL GSM samples from this GSE study. Use ONLY the provided data files, do not retrieve additional information from online sources.**
+    * **Target Aging Clocks:**
+    * `Hazard_Rodents_All_All_scaleddiff_EN_tAge`
+    * `Hazard_Mouse_All_All_scaleddiff_EN_tAge`
+
+    * **For Each Condition:**
+    * Identify appropriate control group(s) based on metadata
+    * Determine relevant covariates (age, sex, tissue type, batch effects)
+    * Focus on comparing treatment vs. control within the same age group
+    * Before statistical testing, determine the experiment's trust score (0-10):
+        Trust score evaluates the experimental validity and translational potential of an aging study based on intervention/perturbation type and biological plausibility, completely independent of statistical outcomes like p-values and effect sizes.
+
+        * **0-3: Low value**
+        * Typically immortalized/cancer cell lines 
+        * Studies with limited connection to aging biology
+        * Minimal literature precedent for mechanism
+
+        * **4-6: Moderate value**
+        * Well-designed in vitro studies or simple model organisms
+        * Reasonable connection to known aging pathways
+        * Some supporting evidence in aging research
+
+        * **7-8: High value**
+        * In vivo studies or promising in vitro work with strong mechanistic basis
+        * Clear connection to established aging biology
+        * Substantial literature support
+        * Good translational potential
+
+        * **9-10: Exceptional value**
+        * Novel interventions with compelling aging-related mechanisms
+        * Robust evidence across experimental systems
+        * Exceptional translational potential for human applications
+    * Perform statistical analysis:
+        * Use appropriate tests based on data structure (t-test, ANOVA, or linear models)
+        * Report raw p-values (no adjustment required)
+        * Calculate standardized effect sizes
+
+4. Deliverables:
+* Standardized results table with these columns:
+    * gse_id: The dataset identifier ({study_id})
+    * comparison_name: Descriptive name of the comparison (e.g., "Drug X vs Vehicle")
+    * condition_name: Concise intervention name (e.g., "Rapamycin")
+    * condition_category: Categorization (one of: Genetic, Drug, Diet, Environment, Disease, Other)
+    * covariate: Variables controlled for in analysis
+    * clock: Specific aging clock used
+    * statistical_test: Method used (e.g., "ANOVA", "Linear Mixed Model")
+    * p_value: Raw p-value (do NOT use adjusted p-values)
+    * effect_size: Magnitude of effect (Cohen's d or similar)
+    * direction: Age effect direction (1=accelerated aging, -1=decelerated aging)
+    * trust_score: Evaluate experimental follow-up value (0-10):
+
+
+Implementation Requirements:
+    * Use Python with pandas, scipy, and statsmodels
+    * Implement modular code structure with separate functions for:
+    * Data loading and preprocessing
+    * Statistical analysis
+    * Results formatting
+    * Include efficient documentation and inline comments
+    * Handle missing data and outliers appropriately
+
+Output Requirements
+    - Save to: {OUTPUT_DIR}/{study_id}/aging_analysis.csv
+    - DO NOT generate reports, visualizations, or any other output.
+    - DO NOT provide explanations or summaries in the response.
+    - Return ONLY a short confirmation message when complete.

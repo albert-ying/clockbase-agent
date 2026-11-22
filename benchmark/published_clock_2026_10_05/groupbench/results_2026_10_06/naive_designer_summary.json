@@ -1,0 +1,24 @@
+{
+ "A1": {
+  "splits": 200,
+  "classes": {
+   "CORRECT": 177,
+   "NOT_ASSESSABLE_UNENCODED": 6,
+   "NOT_ASSESSABLE": 17
+  },
+  "error_types": {}
+ },
+ "A2": {
+  "splits": 241,
+  "classes": {
+   "CORRECT": 126,
+   "ERROR": 91,
+   "NOT_ASSESSABLE_UNENCODED": 8,
+   "NOT_ASSESSABLE": 16
+  },
+  "error_types": {
+   "REPEATED_SUBJECT": 80,
+   "PAIRED_AS_INDEPENDENT": 17
+  }
+ }
+}

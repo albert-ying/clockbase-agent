@@ -1,0 +1,475 @@
+{
+ "T1": {
+  "records": 580,
+  "own_coverage": {
+   "S1": {
+    "records": 580,
+    "covered": 107,
+    "direction_agreement": 0.8571428571428571,
+    "direction_n": 35,
+    "call_agreement": 0.797752808988764,
+    "call_balanced_accuracy": 0.668641975308642,
+    "call_n": 89,
+    "call_classes": {
+     "higher": 25,
+     "lower": 10,
+     "none": 54
+    },
+    "significance_agreement": 0.8089887640449438,
+    "significance_n": 89,
+    "significance_alpha_assumed": 71,
+    "direction_agreement_interval": [
+     0.7036786786786787,
+     0.9787651230705048
+    ],
+    "call_balanced_accuracy_interval": [
+     0.5263721804511279,
+     0.8275354384177913
+    ],
+    "units": 93
+   },
+   "S2": {
+    "records": 580,
+    "covered": 116,
+    "direction_agreement": 0.875,
+    "direction_n": 40,
+    "call_agreement": 0.6808510638297872,
+    "call_balanced_accuracy": 0.5777777777777778,
+    "call_n": 94,
+    "call_classes": {
+     "higher": 30,
+     "lower": 10,
+     "none": 54
+    },
+    "significance_agreement": 0.7021276595744681,
+    "significance_n": 94,
+    "significance_alpha_assumed": 74,
+    "direction_agreement_interval": [
+     0.7435185185185186,
+     0.9649561403508772
+    ],
+    "call_balanced_accuracy_interval": [
+     0.4313497240293967,
+     0.7329118387847527
+    ],
+    "units": 93
+   },
+   "S2c": {
+    "records": 580,
+    "covered": 115,
+    "direction_agreement": 0.9230769230769231,
+    "direction_n": 39,
+    "call_agreement": 0.8172043010752689,
+    "call_balanced_accuracy": 0.6895274584929757,
+    "call_n": 93,
+    "call_classes": {
+     "higher": 29,
+     "lower": 10,
+     "none": 54
+    },
+    "significance_agreement": 0.8279569892473119,
+    "significance_n": 93,
+    "significance_alpha_assumed": 73,
+    "direction_agreement_interval": [
+     0.8076923076923077,
+     1.0
+    ],
+    "call_balanced_accuracy_interval": [
+     0.5421930848912183,
+     0.8475337377077232
+    ],
+    "units": 93
+   }
+  },
+  "shared_S1_S2_S2c": {
+   "records": 104,
+   "metrics": {
+    "S1": {
+     "records": 104,
+     "covered": 104,
+     "direction_agreement": 0.8529411764705882,
+     "direction_n": 34,
+     "call_agreement": 0.8023255813953488,
+     "call_balanced_accuracy": 0.6771367521367523,
+     "call_n": 86,
+     "call_classes": {
+      "higher": 24,
+      "lower": 10,
+      "none": 52
+     },
+     "significance_agreement": 0.813953488372093,
+     "significance_n": 86,
+     "significance_alpha_assumed": 68,
+     "direction_agreement_interval": [
+      0.7037037037037037,
+      0.9736842105263158
+     ],
+     "call_balanced_accuracy_interval": [
+      0.53570068484383,
+      0.8401446324143693
+     ],
+     "units": 40
+    },
+    "S2": {
+     "records": 104,
+     "covered": 104,
+     "direction_agreement": 0.8823529411764706,
+     "direction_n": 34,
+     "call_agreement": 0.7142857142857143,
+     "call_balanced_accuracy": 0.6077777777777778,
+     "call_n": 84,
+     "call_classes": {
+      "higher": 24,
+      "lower": 10,
+      "none": 50
+     },
+     "significance_agreement": 0.7261904761904762,
+     "significance_n": 84,
+     "significance_alpha_assumed": 66,
+     "direction_agreement_interval": [
+      0.7692307692307693,
+      0.9729907539118066
+     ],
+     "call_balanced_accuracy_interval": [
+      0.45813571626705496,
+      0.7645475710729948
+     ],
+     "units": 40
+    },
+    "S2c": {
+     "records": 104,
+     "covered": 104,
+     "direction_agreement": 0.9411764705882353,
+     "direction_n": 34,
+     "call_agreement": 0.8095238095238095,
+     "call_balanced_accuracy": 0.6827777777777778,
+     "call_n": 84,
+     "call_classes": {
+      "higher": 24,
+      "lower": 10,
+      "none": 50
+     },
+     "significance_agreement": 0.8214285714285714,
+     "significance_n": 84,
+     "significance_alpha_assumed": 66,
+     "direction_agreement_interval": [
+      0.8333333333333334,
+      1.0
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5476149140211639,
+      0.840009872709148
+     ],
+     "units": 40
+    }
+   }
+  },
+  "shared_S2_S2c": {
+   "records": 115,
+   "metrics": {
+    "S2": {
+     "records": 115,
+     "covered": 115,
+     "direction_agreement": 0.8717948717948718,
+     "direction_n": 39,
+     "call_agreement": 0.6881720430107527,
+     "call_balanced_accuracy": 0.5835249042145594,
+     "call_n": 93,
+     "call_classes": {
+      "higher": 29,
+      "lower": 10,
+      "none": 54
+     },
+     "significance_agreement": 0.7096774193548387,
+     "significance_n": 93,
+     "significance_alpha_assumed": 73,
+     "direction_agreement_interval": [
+      0.7428571428571429,
+      0.9687736742424242
+     ],
+     "call_balanced_accuracy_interval": [
+      0.43388111633900645,
+      0.7370397006664612
+     ],
+     "units": 43
+    },
+    "S2c": {
+     "records": 115,
+     "covered": 115,
+     "direction_agreement": 0.9230769230769231,
+     "direction_n": 39,
+     "call_agreement": 0.8172043010752689,
+     "call_balanced_accuracy": 0.6895274584929757,
+     "call_n": 93,
+     "call_classes": {
+      "higher": 29,
+      "lower": 10,
+      "none": 54
+     },
+     "significance_agreement": 0.8279569892473119,
+     "significance_n": 93,
+     "significance_alpha_assumed": 73,
+     "direction_agreement_interval": [
+      0.8148148148148148,
+      1.0
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5544969235822895,
+      0.8397234306741349
+     ],
+     "units": 43
+    }
+   }
+  },
+  "candidate_estimand_applied": {
+   "records": 68,
+   "metrics": {
+    "S1": {
+     "records": 68,
+     "covered": 58,
+     "direction_agreement": 0.7894736842105263,
+     "direction_n": 19,
+     "call_agreement": 0.7755102040816326,
+     "call_balanced_accuracy": 0.611965811965812,
+     "call_n": 49,
+     "call_classes": {
+      "higher": 13,
+      "lower": 6,
+      "none": 30
+     },
+     "significance_agreement": 0.7755102040816326,
+     "significance_n": 49,
+     "significance_alpha_assumed": 44,
+     "direction_agreement_interval": [
+      0.5,
+      1.0
+     ],
+     "call_balanced_accuracy_interval": [
+      0.45897817460317464,
+      0.7982894736842105
+     ],
+     "units": 22
+    },
+    "S2": {
+     "records": 68,
+     "covered": 68,
+     "direction_agreement": 0.8333333333333334,
+     "direction_n": 24,
+     "call_agreement": 0.6206896551724138,
+     "call_balanced_accuracy": 0.46840958605664484,
+     "call_n": 58,
+     "call_classes": {
+      "higher": 18,
+      "lower": 6,
+      "none": 34
+     },
+     "significance_agreement": 0.6379310344827587,
+     "significance_n": 58,
+     "significance_alpha_assumed": 51,
+     "direction_agreement_interval": [
+      0.631578947368421,
+      0.9666666666666667
+     ],
+     "call_balanced_accuracy_interval": [
+      0.3237923637923638,
+      0.6357860195360194
+     ],
+     "units": 22
+    },
+    "S2c": {
+     "records": 68,
+     "covered": 68,
+     "direction_agreement": 0.9166666666666666,
+     "direction_n": 24,
+     "call_agreement": 0.8275862068965517,
+     "call_balanced_accuracy": 0.6383442265795206,
+     "call_n": 58,
+     "call_classes": {
+      "higher": 18,
+      "lower": 6,
+      "none": 34
+     },
+     "significance_agreement": 0.8275862068965517,
+     "significance_n": 58,
+     "significance_alpha_assumed": 51,
+     "direction_agreement_interval": [
+      0.75,
+      1.0
+     ],
+     "call_balanced_accuracy_interval": [
+      0.49557460412111576,
+      0.8043925012832875
+     ],
+     "units": 22
+    }
+   }
+  },
+  "S2_to_S2c": {
+   "call changed": 15,
+   "now agrees with the paper": 13,
+   "disagrees before and after": 1,
+   "no longer agrees with the paper": 1
+  },
+  "paired_difference": {
+   "call_agreement_S2c_minus_S2": 0.12903225806451613,
+   "papers": 43,
+   "interval": [
+    0.052617872807017595,
+    0.21569184491978607
+   ],
+   "bootstrap": {
+    "unit": "paper",
+    "replicates": 2000,
+    "seed": 20261009
+   }
+  },
+  "S2c_not_covered": {
+   "NOT_RELEASED_DESCRIPTIVE": 1
+  }
+ },
+ "B": {
+  "transitions_released_to_candidate": {
+   "call changed from released": 5,
+   "now agrees with the paper": 4,
+   "not scored: no call": 9,
+   "not scored: no candidate call": 1,
+   "not scored: row not released": 1,
+   "no longer agrees with the paper": 1
+  },
+  "agent": {
+   "n": 54,
+   "table_published_by_agent": {
+    "higher": {
+     "higher": 17,
+     "lower": 1,
+     "none": 4
+    },
+    "lower": {
+     "higher": 0,
+     "lower": 3,
+     "none": 1
+    },
+    "none": {
+     "higher": 1,
+     "lower": 0,
+     "none": 27
+    }
+   },
+   "kappa": 0.7649253731343284,
+   "call_agreement": 0.8703703703703703,
+   "agreement_significant_either_side": 0.7407407407407407,
+   "n_significant_either_side": 27,
+   "direction_agreement_both_significant": 0.9523809523809523,
+   "n_both_significant": 21,
+   "papers": 26,
+   "call_agreement_interval": [
+    0.8,
+    0.9534883720930233
+   ],
+   "kappa_interval": [
+    0.617883239266277,
+    0.9170151631017615
+   ],
+   "discordant": [
+    "MED-25678027-GSE25395-Horvathv1-0",
+    "MED-25678027-GSE25395-Horvathv1-1",
+    "MED-29974462-GSE75008-Horvathv1-1",
+    "MED-32930491-GSE91069-PhenoAge-9",
+    "MED-31628391-GSE100850-Horvathv1-0",
+    "MED-40589934-GSE176394-DunedinPACE-12",
+    "MED-40589934-GSE176394-DunedinPACE-13"
+   ]
+  },
+  "released": {
+   "n": 54,
+   "table_published_by_agent": {
+    "higher": {
+     "higher": 15,
+     "lower": 1,
+     "none": 6
+    },
+    "lower": {
+     "higher": 0,
+     "lower": 3,
+     "none": 1
+    },
+    "none": {
+     "higher": 1,
+     "lower": 1,
+     "none": 26
+    }
+   },
+   "kappa": 0.6666666666666666,
+   "call_agreement": 0.8148148148148148,
+   "agreement_significant_either_side": 0.6428571428571429,
+   "n_significant_either_side": 28,
+   "direction_agreement_both_significant": 0.9473684210526315,
+   "n_both_significant": 19,
+   "papers": 26,
+   "call_agreement_interval": [
+    0.7166604477611941,
+    0.9024390243902439
+   ],
+   "kappa_interval": [
+    0.4822984919316491,
+    0.8264883361276522
+   ],
+   "discordant": [
+    "MED-25678027-GSE25395-Horvathv1-0",
+    "MED-25678027-GSE25395-Horvathv1-1",
+    "MED-25969563-GSE67751-Horvathv1-7",
+    "MED-29974462-GSE75008-Horvathv1-1",
+    "MED-32930491-GSE91069-PhenoAge-9",
+    "curated-00032",
+    "MED-31628391-GSE100850-Horvathv1-0",
+    "MED-36092807-GSE40360-Horvathv1-2",
+    "MED-40589934-GSE176394-DunedinPACE-12",
+    "MED-40589934-GSE176394-DunedinPACE-13"
+   ]
+  },
+  "candidate": {
+   "n": 54,
+   "table_published_by_agent": {
+    "higher": {
+     "higher": 18,
+     "lower": 1,
+     "none": 3
+    },
+    "lower": {
+     "higher": 0,
+     "lower": 3,
+     "none": 1
+    },
+    "none": {
+     "higher": 2,
+     "lower": 0,
+     "none": 26
+    }
+   },
+   "kappa": 0.7666666666666666,
+   "call_agreement": 0.8703703703703703,
+   "agreement_significant_either_side": 0.75,
+   "n_significant_either_side": 28,
+   "direction_agreement_both_significant": 0.9545454545454546,
+   "n_both_significant": 22,
+   "papers": 26,
+   "call_agreement_interval": [
+    0.8,
+    0.9534883720930233
+   ],
+   "kappa_interval": [
+    0.6288679626317253,
+    0.917221547212134
+   ],
+   "discordant": [
+    "MED-25678027-GSE25395-Horvathv1-0",
+    "MED-25678027-GSE25395-Horvathv1-1",
+    "MED-29974462-GSE75008-Horvathv1-1",
+    "MED-32930491-GSE91069-PhenoAge-9",
+    "MED-31628391-GSE100850-Horvathv1-0",
+    "MED-40589934-GSE176394-Horvathv1-1",
+    "MED-40589934-GSE176394-DunedinPACE-13"
+   ]
+  }
+ }
+}

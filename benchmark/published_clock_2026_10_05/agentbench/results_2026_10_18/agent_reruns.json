@@ -1,0 +1,1282 @@
+{
+ "records": 158,
+ "series": 61,
+ "papers": 47,
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "runs": {
+  "planned": 61,
+  "completed": 61,
+  "with_results": 61,
+  "excluded_by_audit": 0,
+  "with_network_attempt_in_a_command": 0,
+  "input_tokens": 3765751,
+  "cached_input_tokens": 3057900,
+  "output_tokens": 163259,
+  "median_seconds": 32.0
+ },
+ "coverage_status": {
+  "R:claude-opus-5-5:raw": {
+   "REPORTED": 107,
+   "NO_MATCHING_COMPARISON": 48,
+   "NO_REPORTED_DIRECTION": 3
+  },
+  "R:claude-opus-5-5:recomputed": {
+   "TESTED": 103,
+   "NO_MATCHING_COMPARISON": 48,
+   "DESCRIPTIVE": 7
+  }
+ },
+ "own_coverage": {
+  "S0": {
+   "records": 158,
+   "covered": 158,
+   "direction_agreement": 0.803921568627451,
+   "direction_n": 51,
+   "call_agreement": 0.3203125,
+   "call_balanced_accuracy": 0.3333333333333333,
+   "call_n": 128,
+   "call_classes": {
+    "higher": 41,
+    "lower": 10,
+    "none": 77
+   },
+   "significance_agreement": 0.3984375,
+   "significance_n": 128,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.6428113553113554,
+    0.9361702127659575
+   ],
+   "call_agreement_interval": [
+    0.2092970401691332,
+    0.4488229149927687
+   ],
+   "call_balanced_accuracy_interval": [
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "S1": {
+   "records": 158,
+   "covered": 88,
+   "direction_agreement": 0.8666666666666667,
+   "direction_n": 30,
+   "call_agreement": 0.8243243243243243,
+   "call_balanced_accuracy": 0.712121212121212,
+   "call_n": 74,
+   "call_classes": {
+    "higher": 22,
+    "lower": 8,
+    "none": 44
+   },
+   "significance_agreement": 0.8378378378378378,
+   "significance_n": 74,
+   "significance_alpha_assumed": 57,
+   "direction_agreement_interval": [
+    0.6923076923076923,
+    0.9743589743589743
+   ],
+   "call_agreement_interval": [
+    0.746017316017316,
+    0.9027777777777778
+   ],
+   "call_balanced_accuracy_interval": [
+    0.5316203872853489,
+    0.8615785834535833
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9659090909090909,
+    "detection_auroc": 0.9159090909090909,
+    "same_direction_both_significant": [
+     19,
+     20
+    ],
+    "replicated": [
+     19,
+     30
+    ],
+    "sign_matches_significant": [
+     26,
+     30
+    ],
+    "significant_only_in_clockbase": [
+     2,
+     44
+    ],
+    "reference": {
+     "higher": 22,
+     "lower": 8,
+     "none": 44
+    },
+    "direction_auroc_interval": [
+     0.8671614583333334,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8160521739130435,
+     0.9729804096549379
+    ],
+    "clusters": 32
+   }
+  },
+  "S2c": {
+   "records": 158,
+   "covered": 93,
+   "direction_agreement": 0.9393939393939394,
+   "direction_n": 33,
+   "call_agreement": 0.8461538461538461,
+   "call_balanced_accuracy": 0.7444444444444445,
+   "call_n": 78,
+   "call_classes": {
+    "higher": 25,
+    "lower": 8,
+    "none": 45
+   },
+   "significance_agreement": 0.8589743589743589,
+   "significance_n": 78,
+   "significance_alpha_assumed": 59,
+   "direction_agreement_interval": [
+    0.8235294117647058,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.7719172932330827,
+    0.9166666666666666
+   ],
+   "call_balanced_accuracy_interval": [
+    0.5722927807486632,
+    0.8909786485444381
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.98,
+    "detection_auroc": 0.9333333333333333,
+    "same_direction_both_significant": [
+     24,
+     25
+    ],
+    "replicated": [
+     24,
+     33
+    ],
+    "sign_matches_significant": [
+     31,
+     33
+    ],
+    "significant_only_in_clockbase": [
+     3,
+     45
+    ],
+    "reference": {
+     "higher": 25,
+     "lower": 8,
+     "none": 45
+    },
+    "direction_auroc_interval": [
+     0.9,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8575711644306846,
+     0.9795719699673973
+    ],
+    "clusters": 32
+   }
+  },
+  "S3": {
+   "records": 158,
+   "covered": 99,
+   "direction_agreement": 0.9428571428571428,
+   "direction_n": 35,
+   "call_agreement": 0.7397260273972602,
+   "call_balanced_accuracy": 0.6694736842105264,
+   "call_n": 73,
+   "call_classes": {
+    "higher": 25,
+    "lower": 10,
+    "none": 38
+   },
+   "significance_agreement": 0.7534246575342466,
+   "significance_n": 73,
+   "significance_alpha_assumed": 54,
+   "direction_agreement_interval": [
+    0.875,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.6233659782840111,
+    0.8627814088598402
+   ],
+   "call_balanced_accuracy_interval": [
+    0.47467674925267267,
+    0.8464603758169935
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.952,
+    "detection_auroc": 0.7992481203007519,
+    "same_direction_both_significant": [
+     21,
+     22
+    ],
+    "replicated": [
+     21,
+     35
+    ],
+    "sign_matches_significant": [
+     33,
+     35
+    ],
+    "significant_only_in_clockbase": [
+     5,
+     38
+    ],
+    "reference": {
+     "higher": 25,
+     "lower": 10,
+     "none": 38
+    },
+    "direction_auroc_interval": [
+     0.8878457507404877,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.6632542664048932,
+     0.8994287109374999
+    ],
+    "clusters": 28
+   }
+  },
+  "S4:openai:gpt-4.1": {
+   "records": 158,
+   "covered": 143,
+   "direction_agreement": 0.7209302325581395,
+   "direction_n": 43,
+   "call_agreement": 0.6228070175438597,
+   "call_balanced_accuracy": 0.5489970123772941,
+   "call_n": 114,
+   "call_classes": {
+    "higher": 33,
+    "lower": 10,
+    "none": 71
+   },
+   "significance_agreement": 0.6491228070175439,
+   "significance_n": 114,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.5095588235294117,
+    0.8787878787878788
+   ],
+   "call_agreement_interval": [
+    0.5050292844410492,
+    0.7117760617760617
+   ],
+   "call_balanced_accuracy_interval": [
+    0.4287014024787998,
+    0.6624719318621758
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "S4:openai:gpt-5.5": {
+   "records": 158,
+   "covered": 143,
+   "direction_agreement": 0.6976744186046512,
+   "direction_n": 43,
+   "call_agreement": 0.6666666666666666,
+   "call_balanced_accuracy": 0.5454403186797553,
+   "call_n": 114,
+   "call_classes": {
+    "higher": 33,
+    "lower": 10,
+    "none": 71
+   },
+   "significance_agreement": 0.6929824561403509,
+   "significance_n": 114,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.4650737379466818,
+    0.8936170212765957
+   ],
+   "call_agreement_interval": [
+    0.54754243281471,
+    0.7706422018348624
+   ],
+   "call_balanced_accuracy_interval": [
+    0.399170991045991,
+    0.706522178290554
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "S4:openai:gpt-6-astra": {
+   "records": 158,
+   "covered": 143,
+   "direction_agreement": 0.6046511627906976,
+   "direction_n": 43,
+   "call_agreement": 0.7017543859649122,
+   "call_balanced_accuracy": 0.5534073125622422,
+   "call_n": 114,
+   "call_classes": {
+    "higher": 33,
+    "lower": 10,
+    "none": 71
+   },
+   "significance_agreement": 0.7368421052631579,
+   "significance_n": 114,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.3665909090909091,
+    0.7954661410018552
+   ],
+   "call_agreement_interval": [
+    0.5999590163934426,
+    0.7948818897637795
+   ],
+   "call_balanced_accuracy_interval": [
+    0.4084710858027421,
+    0.7202336628364026
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "S4:openai:gpt-6-luna": {
+   "records": 158,
+   "covered": 143,
+   "direction_agreement": 0.5348837209302325,
+   "direction_n": 43,
+   "call_agreement": 0.631578947368421,
+   "call_balanced_accuracy": 0.4888177550149381,
+   "call_n": 114,
+   "call_classes": {
+    "higher": 33,
+    "lower": 10,
+    "none": 71
+   },
+   "significance_agreement": 0.6666666666666666,
+   "significance_n": 114,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.2977784730913642,
+    0.7213342440801457
+   ],
+   "call_agreement_interval": [
+    0.5306078083407276,
+    0.7163246093014498
+   ],
+   "call_balanced_accuracy_interval": [
+    0.352085113960114,
+    0.6501623712221538
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "S4:openai:gpt-6-sol": {
+   "records": 158,
+   "covered": 143,
+   "direction_agreement": 0.6046511627906976,
+   "direction_n": 43,
+   "call_agreement": 0.6842105263157895,
+   "call_balanced_accuracy": 0.5494238156209987,
+   "call_n": 114,
+   "call_classes": {
+    "higher": 33,
+    "lower": 10,
+    "none": 71
+   },
+   "significance_agreement": 0.7192982456140351,
+   "significance_n": 114,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.3703502415458937,
+    0.7895042839657282
+   ],
+   "call_agreement_interval": [
+    0.5759939393939394,
+    0.7830267295597485
+   ],
+   "call_balanced_accuracy_interval": [
+    0.41006662216105155,
+    0.7129393725120469
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "R:claude-opus-5-5:raw": {
+   "records": 158,
+   "covered": 107,
+   "direction_agreement": 0.9459459459459459,
+   "direction_n": 37,
+   "call_agreement": 0.8275862068965517,
+   "call_balanced_accuracy": 0.8190476190476189,
+   "call_n": 87,
+   "call_classes": {
+    "higher": 30,
+    "lower": 7,
+    "none": 50
+   },
+   "significance_agreement": 0.8275862068965517,
+   "significance_n": 87,
+   "significance_alpha_assumed": 67,
+   "direction_agreement_interval": [
+    0.84609375,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.7173619271445358,
+    0.9253869541182974
+   ],
+   "call_balanced_accuracy_interval": [
+    0.6651973445219413,
+    0.9333465608465608
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9952380952380953,
+    "detection_auroc": 0.9221621621621622,
+    "same_direction_both_significant": [
+     27,
+     27
+    ],
+    "replicated": [
+     27,
+     37
+    ],
+    "sign_matches_significant": [
+     35,
+     37
+    ],
+    "significant_only_in_clockbase": [
+     5,
+     50
+    ],
+    "reference": {
+     "higher": 30,
+     "lower": 7,
+     "none": 50
+    },
+    "direction_auroc_interval": [
+     0.9747252747252747,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8455324291948318,
+     0.977781690140845
+    ],
+    "clusters": 32
+   }
+  },
+  "R:claude-opus-5-5:recomputed": {
+   "records": 158,
+   "covered": 110,
+   "direction_agreement": 0.9459459459459459,
+   "direction_n": 37,
+   "call_agreement": 0.8604651162790697,
+   "call_balanced_accuracy": 0.8139573070607553,
+   "call_n": 86,
+   "call_classes": {
+    "higher": 29,
+    "lower": 7,
+    "none": 50
+   },
+   "significance_agreement": 0.8604651162790697,
+   "significance_n": 86,
+   "significance_alpha_assumed": 64,
+   "direction_agreement_interval": [
+    0.84609375,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.7903013582342954,
+    0.9195780399274047
+   ],
+   "call_balanced_accuracy_interval": [
+    0.6490023022672962,
+    0.9250189393939393
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9950738916256158,
+    "detection_auroc": 0.9333333333333333,
+    "same_direction_both_significant": [
+     29,
+     29
+    ],
+    "replicated": [
+     29,
+     36
+    ],
+    "sign_matches_significant": [
+     34,
+     36
+    ],
+    "significant_only_in_clockbase": [
+     5,
+     50
+    ],
+    "reference": {
+     "higher": 29,
+     "lower": 7,
+     "none": 50
+    },
+    "direction_auroc_interval": [
+     0.9736137218045113,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8541659361851333,
+     0.9767474014054041
+    ],
+    "clusters": 32
+   }
+  }
+ },
+ "shared_agent_systems": {
+  "records": 82,
+  "papers": 32,
+  "metrics": {
+   "S0": {
+    "records": 82,
+    "covered": 82,
+    "direction_agreement": 0.7407407407407407,
+    "direction_n": 27,
+    "call_agreement": 0.2898550724637681,
+    "call_balanced_accuracy": 0.3333333333333333,
+    "call_n": 69,
+    "call_classes": {
+     "higher": 20,
+     "lower": 7,
+     "none": 42
+    },
+    "significance_agreement": 0.391304347826087,
+    "significance_n": 69,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.4782608695652174,
+     0.9142857142857143
+    ],
+    "call_agreement_interval": [
+     0.15713585434173669,
+     0.44119357045143637
+    ],
+    "call_balanced_accuracy_interval": [
+     0.3333333333333333,
+     0.3333333333333333
+    ],
+    "units": 32,
+    "findings": null
+   },
+   "S1": {
+    "records": 82,
+    "covered": 82,
+    "direction_agreement": 0.8888888888888888,
+    "direction_n": 27,
+    "call_agreement": 0.8405797101449275,
+    "call_balanced_accuracy": 0.7103174603174603,
+    "call_n": 69,
+    "call_classes": {
+     "higher": 20,
+     "lower": 7,
+     "none": 42
+    },
+    "significance_agreement": 0.8405797101449275,
+    "significance_n": 69,
+    "significance_alpha_assumed": 52,
+    "direction_agreement_interval": [
+     0.7221666666666666,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7656201774691358,
+     0.9166666666666666
+    ],
+    "call_balanced_accuracy_interval": [
+     0.5384424603174603,
+     0.8732054742830603
+    ],
+    "units": 32,
+    "findings": {
+     "direction_auroc": 0.9857142857142858,
+     "detection_auroc": 0.9171075837742504,
+     "same_direction_both_significant": [
+      18,
+      18
+     ],
+     "replicated": [
+      18,
+      27
+     ],
+     "sign_matches_significant": [
+      24,
+      27
+     ],
+     "significant_only_in_clockbase": [
+      2,
+      42
+     ],
+     "reference": {
+      "higher": 20,
+      "lower": 7,
+      "none": 42
+     },
+     "direction_auroc_interval": [
+      0.9142857142857143,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.8164805954279638,
+      0.9737731481481481
+     ],
+     "clusters": 29
+    }
+   },
+   "S2c": {
+    "records": 82,
+    "covered": 82,
+    "direction_agreement": 0.9629629629629629,
+    "direction_n": 27,
+    "call_agreement": 0.8405797101449275,
+    "call_balanced_accuracy": 0.7190476190476192,
+    "call_n": 69,
+    "call_classes": {
+     "higher": 20,
+     "lower": 7,
+     "none": 42
+    },
+    "significance_agreement": 0.8405797101449275,
+    "significance_n": 69,
+    "significance_alpha_assumed": 52,
+    "direction_agreement_interval": [
+     0.8666666666666667,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7543787748058671,
+     0.9166666666666666
+    ],
+    "call_balanced_accuracy_interval": [
+     0.5512236652236653,
+     0.8788545116043149
+    ],
+    "units": 32,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.9162257495590829,
+     "same_direction_both_significant": [
+      19,
+      19
+     ],
+     "replicated": [
+      19,
+      27
+     ],
+     "sign_matches_significant": [
+      26,
+      27
+     ],
+     "significant_only_in_clockbase": [
+      3,
+      42
+     ],
+     "reference": {
+      "higher": 20,
+      "lower": 7,
+      "none": 42
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.8312446120689656,
+      0.9726344351651154
+     ],
+     "clusters": 29
+    }
+   },
+   "S4:openai:gpt-4.1": {
+    "records": 82,
+    "covered": 77,
+    "direction_agreement": 0.72,
+    "direction_n": 25,
+    "call_agreement": 0.609375,
+    "call_balanced_accuracy": 0.561050061050061,
+    "call_n": 64,
+    "call_classes": {
+     "higher": 18,
+     "lower": 7,
+     "none": 39
+    },
+    "significance_agreement": 0.640625,
+    "significance_n": 64,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.4583333333333333,
+     0.9286330049261083
+    ],
+    "call_agreement_interval": [
+     0.4285128805620609,
+     0.7333333333333333
+    ],
+    "call_balanced_accuracy_interval": [
+     0.42452731092436974,
+     0.7079576292882744
+    ],
+    "units": 32,
+    "findings": null
+   },
+   "S4:openai:gpt-5.5": {
+    "records": 82,
+    "covered": 77,
+    "direction_agreement": 0.72,
+    "direction_n": 25,
+    "call_agreement": 0.6875,
+    "call_balanced_accuracy": 0.6129426129426129,
+    "call_n": 64,
+    "call_classes": {
+     "higher": 18,
+     "lower": 7,
+     "none": 39
+    },
+    "significance_agreement": 0.71875,
+    "significance_n": 64,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.5,
+     0.9259259259259259
+    ],
+    "call_agreement_interval": [
+     0.5245523329129886,
+     0.8072609587285312
+    ],
+    "call_balanced_accuracy_interval": [
+     0.44147770219198784,
+     0.8019610407091898
+    ],
+    "units": 32,
+    "findings": null
+   },
+   "S4:openai:gpt-6-astra": {
+    "records": 82,
+    "covered": 77,
+    "direction_agreement": 0.68,
+    "direction_n": 25,
+    "call_agreement": 0.734375,
+    "call_balanced_accuracy": 0.6286121286121286,
+    "call_n": 64,
+    "call_classes": {
+     "higher": 18,
+     "lower": 7,
+     "none": 39
+    },
+    "significance_agreement": 0.765625,
+    "significance_n": 64,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.42857142857142855,
+     0.8947368421052632
+    ],
+    "call_agreement_interval": [
+     0.5918367346938775,
+     0.8333333333333334
+    ],
+    "call_balanced_accuracy_interval": [
+     0.45073214285714286,
+     0.8177371928011314
+    ],
+    "units": 32,
+    "findings": null
+   },
+   "S4:openai:gpt-6-luna": {
+    "records": 82,
+    "covered": 77,
+    "direction_agreement": 0.64,
+    "direction_n": 25,
+    "call_agreement": 0.640625,
+    "call_balanced_accuracy": 0.5573870573870574,
+    "call_n": 64,
+    "call_classes": {
+     "higher": 18,
+     "lower": 7,
+     "none": 39
+    },
+    "significance_agreement": 0.671875,
+    "significance_n": 64,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.3684210526315789,
+     0.8636363636363636
+    ],
+    "call_agreement_interval": [
+     0.509090909090909,
+     0.7407567049808429
+    ],
+    "call_balanced_accuracy_interval": [
+     0.38552483358934975,
+     0.736425616345829
+    ],
+    "units": 32,
+    "findings": null
+   },
+   "S4:openai:gpt-6-sol": {
+    "records": 82,
+    "covered": 77,
+    "direction_agreement": 0.72,
+    "direction_n": 25,
+    "call_agreement": 0.71875,
+    "call_balanced_accuracy": 0.63003663003663,
+    "call_n": 64,
+    "call_classes": {
+     "higher": 18,
+     "lower": 7,
+     "none": 39
+    },
+    "significance_agreement": 0.75,
+    "significance_n": 64,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.4582386363636364,
+     0.9333870967741935
+    ],
+    "call_agreement_interval": [
+     0.5737644648023144,
+     0.8261078595317726
+    ],
+    "call_balanced_accuracy_interval": [
+     0.45553418803418805,
+     0.8190515499306598
+    ],
+    "units": 32,
+    "findings": null
+   },
+   "R:claude-opus-5-5:raw": {
+    "records": 82,
+    "covered": 82,
+    "direction_agreement": 0.9629629629629629,
+    "direction_n": 27,
+    "call_agreement": 0.8840579710144928,
+    "call_balanced_accuracy": 0.8706349206349207,
+    "call_n": 69,
+    "call_classes": {
+     "higher": 20,
+     "lower": 7,
+     "none": 42
+    },
+    "significance_agreement": 0.8840579710144928,
+    "significance_n": 69,
+    "significance_alpha_assumed": 52,
+    "direction_agreement_interval": [
+     0.8666666666666667,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.8,
+     0.9540488182874854
+    ],
+    "call_balanced_accuracy_interval": [
+     0.735679012345679,
+     0.9669542483660131
+    ],
+    "units": 32,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.9338624338624338,
+     "same_direction_both_significant": [
+      23,
+      23
+     ],
+     "replicated": [
+      23,
+      27
+     ],
+     "sign_matches_significant": [
+      26,
+      27
+     ],
+     "significant_only_in_clockbase": [
+      4,
+      42
+     ],
+     "reference": {
+      "higher": 20,
+      "lower": 7,
+      "none": 42
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.8415462662337662,
+      0.9908539415766306
+     ],
+     "clusters": 29
+    }
+   },
+   "R:claude-opus-5-5:recomputed": {
+    "records": 82,
+    "covered": 82,
+    "direction_agreement": 0.9629629629629629,
+    "direction_n": 27,
+    "call_agreement": 0.8695652173913043,
+    "call_balanced_accuracy": 0.8230158730158731,
+    "call_n": 69,
+    "call_classes": {
+     "higher": 20,
+     "lower": 7,
+     "none": 42
+    },
+    "significance_agreement": 0.8695652173913043,
+    "significance_n": 69,
+    "significance_alpha_assumed": 52,
+    "direction_agreement_interval": [
+     0.8666666666666667,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7972972972972973,
+     0.9365079365079365
+    ],
+    "call_balanced_accuracy_interval": [
+     0.6658459595959596,
+     0.9500019379844962
+    ],
+    "units": 32,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.9285714285714286,
+     "same_direction_both_significant": [
+      22,
+      22
+     ],
+     "replicated": [
+      22,
+      27
+     ],
+     "sign_matches_significant": [
+      26,
+      27
+     ],
+     "significant_only_in_clockbase": [
+      4,
+      42
+     ],
+     "reference": {
+      "higher": 20,
+      "lower": 7,
+      "none": 42
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.8400455927051672,
+      0.9840692447445574
+     ],
+     "clusters": 29
+    }
+   }
+  }
+ },
+ "model_with_and_without_data": {
+  "claude-opus-5-5": {
+   "records": 107,
+   "papers": 38,
+   "metrics": {
+    "S0": {
+     "records": 107,
+     "covered": 107,
+     "direction_agreement": 0.8108108108108109,
+     "direction_n": 37,
+     "call_agreement": 0.33707865168539325,
+     "call_balanced_accuracy": 0.3333333333333333,
+     "call_n": 89,
+     "call_classes": {
+      "higher": 30,
+      "lower": 7,
+      "none": 52
+     },
+     "significance_agreement": 0.4157303370786517,
+     "significance_n": 89,
+     "significance_alpha_assumed": 0,
+     "direction_agreement_interval": [
+      0.6153225806451613,
+      0.9355342741935483
+     ],
+     "call_agreement_interval": [
+      0.18866814650388458,
+      0.5
+     ],
+     "call_balanced_accuracy_interval": [
+      0.3333333333333333,
+      0.3333333333333333
+     ],
+     "units": 38,
+     "findings": null
+    },
+    "R:claude-opus-5-5:raw": {
+     "records": 107,
+     "covered": 107,
+     "direction_agreement": 0.9459459459459459,
+     "direction_n": 37,
+     "call_agreement": 0.8275862068965517,
+     "call_balanced_accuracy": 0.8190476190476189,
+     "call_n": 87,
+     "call_classes": {
+      "higher": 30,
+      "lower": 7,
+      "none": 50
+     },
+     "significance_agreement": 0.8275862068965517,
+     "significance_n": 87,
+     "significance_alpha_assumed": 67,
+     "direction_agreement_interval": [
+      0.8399677419354838,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7158685064935065,
+      0.9213538224278476
+     ],
+     "call_balanced_accuracy_interval": [
+      0.6777784497419658,
+      0.9270979375607907
+     ],
+     "units": 38,
+     "findings": {
+      "direction_auroc": 0.9952380952380953,
+      "detection_auroc": 0.9221621621621622,
+      "same_direction_both_significant": [
+       27,
+       27
+      ],
+      "replicated": [
+       27,
+       37
+      ],
+      "sign_matches_significant": [
+       35,
+       37
+      ],
+      "significant_only_in_clockbase": [
+       5,
+       50
+      ],
+      "reference": {
+       "higher": 30,
+       "lower": 7,
+       "none": 50
+      },
+      "direction_auroc_interval": [
+       0.9747252747252747,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8455324291948318,
+       0.977781690140845
+      ],
+      "clusters": 32
+     }
+    },
+    "R:claude-opus-5-5:recomputed": {
+     "records": 107,
+     "covered": 107,
+     "direction_agreement": 0.9459459459459459,
+     "direction_n": 37,
+     "call_agreement": 0.8571428571428571,
+     "call_balanced_accuracy": 0.8125684181718665,
+     "call_n": 84,
+     "call_classes": {
+      "higher": 29,
+      "lower": 7,
+      "none": 48
+     },
+     "significance_agreement": 0.8571428571428571,
+     "significance_n": 84,
+     "significance_alpha_assumed": 64,
+     "direction_agreement_interval": [
+      0.8399677419354838,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7866428571428571,
+      0.9178138333707613
+     ],
+     "call_balanced_accuracy_interval": [
+      0.6507219565877354,
+      0.9222516835016834
+     ],
+     "units": 38,
+     "findings": {
+      "direction_auroc": 0.9950738916256158,
+      "detection_auroc": 0.9317129629629629,
+      "same_direction_both_significant": [
+       29,
+       29
+      ],
+      "replicated": [
+       29,
+       36
+      ],
+      "sign_matches_significant": [
+       34,
+       36
+      ],
+      "significant_only_in_clockbase": [
+       5,
+       48
+      ],
+      "reference": {
+       "higher": 29,
+       "lower": 7,
+       "none": 48
+      },
+      "direction_auroc_interval": [
+       0.9732789115646259,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8549537695590328,
+       0.9767443379261743
+      ],
+      "clusters": 31
+     }
+    },
+    "S1": {
+     "records": 107,
+     "covered": 86,
+     "direction_agreement": 0.8928571428571429,
+     "direction_n": 28,
+     "call_agreement": 0.8333333333333334,
+     "call_balanced_accuracy": 0.6991341991341992,
+     "call_n": 72,
+     "call_classes": {
+      "higher": 21,
+      "lower": 7,
+      "none": 44
+     },
+     "significance_agreement": 0.8333333333333334,
+     "significance_n": 72,
+     "significance_alpha_assumed": 55,
+     "direction_agreement_interval": [
+      0.7271464646464647,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7546952104499275,
+      0.9091314935064935
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5286871373307543,
+      0.8508637758991532
+     ],
+     "units": 38,
+     "findings": {
+      "direction_auroc": 0.9863945578231292,
+      "detection_auroc": 0.9107142857142857,
+      "same_direction_both_significant": [
+       18,
+       18
+      ],
+      "replicated": [
+       18,
+       28
+      ],
+      "sign_matches_significant": [
+       25,
+       28
+      ],
+      "significant_only_in_clockbase": [
+       2,
+       44
+      ],
+      "reference": {
+       "higher": 21,
+       "lower": 7,
+       "none": 44
+      },
+      "direction_auroc_interval": [
+       0.919547193877551,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8024060299795595,
+       0.9716902343880945
+      ],
+      "clusters": 30
+     }
+    },
+    "S2c": {
+     "records": 107,
+     "covered": 88,
+     "direction_agreement": 0.967741935483871,
+     "direction_n": 31,
+     "call_agreement": 0.8513513513513513,
+     "call_balanced_accuracy": 0.7307124400147655,
+     "call_n": 74,
+     "call_classes": {
+      "higher": 24,
+      "lower": 7,
+      "none": 43
+     },
+     "significance_agreement": 0.8513513513513513,
+     "significance_n": 74,
+     "significance_alpha_assumed": 57,
+     "direction_agreement_interval": [
+      0.8636363636363636,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7765838361384566,
+      0.9183732795443759
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5639381313131313,
+      0.8743614718614718
+     ],
+     "units": 38,
+     "findings": {
+      "direction_auroc": 1.0,
+      "detection_auroc": 0.927231807951988,
+      "same_direction_both_significant": [
+       23,
+       23
+      ],
+      "replicated": [
+       23,
+       31
+      ],
+      "sign_matches_significant": [
+       30,
+       31
+      ],
+      "significant_only_in_clockbase": [
+       3,
+       43
+      ],
+      "reference": {
+       "higher": 24,
+       "lower": 7,
+       "none": 43
+      },
+      "direction_auroc_interval": [
+       1.0,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8388232487056329,
+       0.9764774281805745
+      ],
+      "clusters": 29
+     }
+    }
+   }
+  }
+ }
+}

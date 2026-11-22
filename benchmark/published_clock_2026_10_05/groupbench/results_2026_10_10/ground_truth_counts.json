@@ -1,0 +1,11 @@
+{
+ "ground_truth": "ground_truth_t1_v2_final_2026-10-05.jsonl",
+ "results": 580,
+ "papers": 93,
+ "series": 125,
+ "by_modality": {
+  "human DNAm": 515,
+  "human RNA-seq": 64,
+  "mouse RNA-seq": 1
+ }
+}

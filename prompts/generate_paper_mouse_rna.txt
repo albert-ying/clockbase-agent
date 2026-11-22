@@ -1,0 +1,45 @@
+# Source: minipaper_fork/src/nlp_process/prompt_template.py::GENERATE_PAPER_2
+Just to recapitulate, the {condition} ({comparison}) in the {gse_id} dataset is significantly altered the mouse mortality aging clock with effect size of {effect_size} with direction of {effect_direction} effect, and the p-value is {effect_pvalue}.
+
+The original study design is presented in the source literature if available.
+
+Your goal is to generate a short scientific paper to report this finding. Follow the structure below.
+
+**Report Structure:**
+
+**Title**
+* Craft a Declarative, Engaging, and Focused title that precisely communicates the core message about the `Intervention Name` and our core finding:
+
+**Introduction:**
+* Provide a brief background on the `Intervention Name` and its biological relevance.
+* State the report's objective: to synthesize existing scientific evidence regarding the `Intervention Name`'s potential impact on health, longevity, or aging-related processes. Avoid specific findings in this section.
+
+**Results:**
+* Report the overall study design and the key findings and statistical results.
+* **Synthesize ideas and concepts from the source documents.** Do not use direct quotes or lengthy paraphrases.
+* **Citation Style:** For each synthesized finding, append a numerical citation in square brackets `[X]` (e.g., `[1]`, `[2, 3]`). Assign unique, sequential numbers to each distinct `File Name` provided in `Retrieved Documents`, starting from `[1]`.
+* **Image Inclusion:**
+    * **Only include `Image url` links from documents whose `File Name` *exactly matches* the `{title}` provided.** Disregard images from all other retrieved documents.
+    * Integrate relevant images contextually within the text, immediately following the sentence or paragraph describing the illustrated data or concept.
+    * For each included image, render its `Image url` line precisely as found in the `Reference`.
+    * Follow the image URL with a concise figure caption (e.g., "Figure 1: [Brief description of the figure's content or implications, derived from surrounding text or the figure's original caption if available in `Reference`]"). If the original caption is not discernible, provide a generic but informative caption (e.g., "Figure X: Overview of the study workflow").
+    * Ensure figures are numbered sequentially (Figure 1, Figure 2, etc.) throughout the report.
+
+**Discussion:**
+* Interpret the findings presented in the "Results" section.
+* Discuss whether the collective evidence indicates a pro-aging, anti-aging, or neutral/unclear effect of the `Intervention Name`. Evaluate the plausibility and consistency of the intervention's observed effects.
+* Identify any major gaps, limitations, or inconsistencies within the synthesized literature.
+* Conclude with a brief statement on promising avenues for future research or unresolved questions stemming from the current evidence.
+
+**References:**
+* Provide a concise, numbered list of all cited sources. Each number `[X]` should correspond to a unique `File Name` used in the "Results" section.
+* For each reference, list only the `File Name` and the primary `Reference` details (e.g., Title, Authors, Journal, Year, DOI) if available. Keep entries brief, focusing on core identification information.
+* Use self incrementing numbers for the references. Start from 1.
+
+**Strict Constraints & Guidelines:**
+* **Conciseness:** Be extremely concise. Every sentence must add value.
+* **No Direct Quotes:** Rephrase and synthesize all information.
+* **Source Adherence:** Use *only* information from the provided `Retrieved Documents`. Do not introduce external knowledge.
+* **Objective Tone:** Maintain a strictly neutral, objective, and academic tone.
+* **Image Rule:** Strictly adhere to the image inclusion rule (only from `{title}`).
+* **Figure Captions:** Must be concise and informative, avoiding vague language.

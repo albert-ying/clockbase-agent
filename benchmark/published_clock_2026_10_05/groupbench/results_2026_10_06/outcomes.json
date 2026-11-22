@@ -1,0 +1,2441 @@
+{
+ "A1:GSE101657:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE101657:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE101657:2": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPEATED_SUBJECT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "REPEATED_SUBJECT"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE101657:3": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPEATED_SUBJECT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "REPEATED_SUBJECT"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE101657:4": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE101657:5": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE121395:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE121395:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE122080:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPORTED_RESULT_INVERSION": 1,
+   "LABEL_MISMATCH": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE122243:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE122243:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE122243:2": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "study_design_imbalance"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE122367:0": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "correct",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 2
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE122367:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 1
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE124772:0": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPORTED_RESULT_INVERSION": 3,
+   "OTHER": 1
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE124772:1": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPORTED_RESULT_INVERSION": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE127475:0": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 3,
+   "REPORTED_RESULT_INVERSION": 1
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "LABEL_MISMATCH"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE127475:1": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 2,
+   "REPORTED_RESULT_INVERSION": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "LABEL_MISMATCH"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE127758:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE128724:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPORTED_RESULT_INVERSION": 2
+  },
+  "shared_reason": null,
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE128724:1": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "SMALL_ARM_INFERENCE": 3,
+   "REPORTED_RESULT_INVERSION": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION",
+   "SMALL_ARM_INFERENCE"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION",
+   "SMALL_ARM_INFERENCE"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE128724:2": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "SMALL_ARM_INFERENCE": 3,
+   "REPORTED_RESULT_INVERSION": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION",
+   "SMALL_ARM_INFERENCE"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION",
+   "SMALL_ARM_INFERENCE"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE129083:0": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 2,
+   "REPORTED_RESULT_INVERSION": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "LABEL_MISMATCH"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE129083:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:2": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:3": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:4": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:5": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:6": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "coding_artifact"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:7": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:8": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:9": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:10": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:11": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:12": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:13": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:14": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:15": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:16": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:17": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE131754:18": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE134780:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE134780:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE134780:2": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE134780:3": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE134781:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE134781:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE137504:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE140286:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "SMALL_ARM_INFERENCE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "confirmed_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE143304:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE143304:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE143304:2": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE145972:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPORTED_RESULT_INVERSION": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE146796:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE146796:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE146796:2": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE147666:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "SMALL_ARM_INFERENCE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "confirmed_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE147666:1": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "SMALL_ARM_INFERENCE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "confirmed_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE147666:2": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "SMALL_ARM_INFERENCE": 3,
+   "REPEATED_SUBJECT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "confirmed_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE148647:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE148647:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE148647:2": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE148647:3": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE154832:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "SMALL_ARM_INFERENCE": 3,
+   "REPEATED_SUBJECT": 1,
+   "PAIRED_AS_INDEPENDENT": 2
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "confirmed_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE154832:1": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "SMALL_ARM_INFERENCE": 3,
+   "REPEATED_SUBJECT": 1,
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "confirmed_types": [
+   "SMALL_ARM_INFERENCE"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE156762:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE156762:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE156762:2": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE158980:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "OTHER": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE158980:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE165409:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE166615:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE168211:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE168211:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE168211:2": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE168211:3": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE175571:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE175571:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "factor_not_encoded"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE178770:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE178770:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE190939:0": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "correct",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 2,
+   "REPORTED_RESULT_INVERSION": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "LABEL_MISMATCH"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE190939:1": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 2,
+   "REPORTED_RESULT_INVERSION": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "LABEL_MISMATCH"
+  ],
+  "n_reviews": 3
+ },
+ "A1:GSE190939:2": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "coding_artifact"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE190939:3": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "error",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 1,
+   "REPORTED_RESULT_INVERSION": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE190939:4": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE190939:5": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE190939:6": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 1,
+   "REPORTED_RESULT_INVERSION": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE190939:7": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE190939:8": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE190939:9": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "error",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 1,
+   "REPORTED_RESULT_INVERSION": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE69952:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE69952:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE89272:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "coding_artifact"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE89272:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "coding_artifact"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE92486:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A1:GSE92486:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A2:GSE103929:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 2,
+   "REPORTED_RESULT_INVERSION": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE106648:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A2:GSE118468:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 3,
+   "IMPURE_ARM": 3,
+   "REPEATED_SUBJECT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "IMPURE_ARM",
+   "REPEATED_SUBJECT"
+  ],
+  "confirmed_types": [
+   "IMPURE_ARM",
+   "REPEATED_SUBJECT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE118468:1": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 3,
+   "IMPURE_ARM": 3,
+   "WRONG_FACTOR": 3,
+   "REPEATED_SUBJECT": 3,
+   "CONFOUNDED_AGE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "LABEL_MISMATCH",
+   "REPEATED_SUBJECT"
+  ],
+  "confirmed_types": [
+   "LABEL_MISMATCH",
+   "REPEATED_SUBJECT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE130491:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE130491:1": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE130491:2": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE130491:3": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE134429:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPEATED_SUBJECT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPEATED_SUBJECT"
+  ],
+  "confirmed_types": [
+   "REPEATED_SUBJECT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE151355:0": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE151355:1": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE151355:2": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE151355:3": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE156994:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPORTED_RESULT_INVERSION": 6,
+   "LABEL_MISMATCH": 3,
+   "OTHER": 2
+  },
+  "shared_reason": null,
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE185389:0": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3,
+   "REPORTED_RESULT_INVERSION": 1
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE185389:1": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE185389:2": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE185389:3": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE185389:4": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE185389:5": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE185389:6": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "PAIRED_AS_INDEPENDENT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "confirmed_types": [
+   "PAIRED_AS_INDEPENDENT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE185389:7": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE185389:8": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE185389:9": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE32148:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "WRONG_FACTOR": 6,
+   "LABEL_MISMATCH": 6,
+   "IMPURE_ARM": 6,
+   "CONFOUNDED_AGE": 3,
+   "REPORTED_RESULT_INVERSION": 3,
+   "OTHER": 2,
+   "CONFOUNDED": 1
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "LABEL_MISMATCH"
+  ],
+  "confirmed_types": [
+   "LABEL_MISMATCH"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE32148:1": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 3,
+   "IMPURE_ARM": 3,
+   "CONFOUNDED_AGE": 3,
+   "WRONG_FACTOR": 1
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "LABEL_MISMATCH"
+  ],
+  "confirmed_types": [
+   "LABEL_MISMATCH"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE43976:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED": 3,
+   "REPEATED_SUBJECT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPEATED_SUBJECT"
+  ],
+  "confirmed_types": [
+   "REPEATED_SUBJECT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE43976:1": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPEATED_SUBJECT": 3,
+   "CONFOUNDED": 2
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPEATED_SUBJECT"
+  ],
+  "confirmed_types": [
+   "REPEATED_SUBJECT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE43976:2": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPEATED_SUBJECT": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPEATED_SUBJECT"
+  ],
+  "confirmed_types": [
+   "REPEATED_SUBJECT"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE49904:0": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3,
+   "LABEL_MISMATCH": 1,
+   "REPORTED_RESULT_INVERSION": 1,
+   "CONFOUNDED": 1
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE49904:1": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 2,
+   "CONFOUNDED_AGE": 6,
+   "CONFOUNDED": 2,
+   "REPORTED_RESULT_INVERSION": 1
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED",
+   "CONFOUNDED_AGE",
+   "LABEL_MISMATCH"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE49904:2": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3,
+   "CONFOUNDED": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED",
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE49904:3": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE49904:4": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A2:GSE49904:5": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED_AGE": 3,
+   "CONFOUNDED": 3
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED",
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE49909:0": {
+  "outcome": "CONFIRMED_MISSED_BY_RULES",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "CONFOUNDED": 3,
+   "CONFOUNDED_AGE": 2
+  },
+  "shared_reason": [],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [
+   "CONFOUNDED",
+   "CONFOUNDED_AGE"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE53841:0": {
+  "outcome": "AMBIGUOUS_LABEL",
+  "rule_class": "AMBIGUOUS_LABEL"
+ },
+ "A2:GSE53841:1": {
+  "outcome": "AMBIGUOUS_LABEL",
+  "rule_class": "AMBIGUOUS_LABEL"
+ },
+ "A2:GSE53841:2": {
+  "outcome": "AMBIGUOUS_LABEL",
+  "rule_class": "AMBIGUOUS_LABEL"
+ },
+ "A2:GSE62867:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "paired_analysis"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A2:GSE62867:1": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "correct"
+  ],
+  "reviewer_error_types": {},
+  "shared_reason": [
+   "paired_analysis"
+  ],
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ },
+ "A2:GSE67705:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 4,
+   "REPORTED_RESULT_INVERSION": 6,
+   "CONFOUNDED_AGE": 6
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "CONFOUNDED_AGE",
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "confirmed_types": [
+   "CONFOUNDED_AGE",
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE69138:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPORTED_RESULT_INVERSION": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE69138:1": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPORTED_RESULT_INVERSION": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE69138:2": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "LABEL_MISMATCH": 2,
+   "REPORTED_RESULT_INVERSION": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE71841:0": {
+  "outcome": "CONFIRMED",
+  "reviewer_verdicts": [
+   "error",
+   "error",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "REPORTED_RESULT_INVERSION": 3
+  },
+  "shared_reason": [],
+  "rule_class": "ERROR",
+  "rule_error_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "confirmed_types": [
+   "REPORTED_RESULT_INVERSION"
+  ],
+  "n_reviews": 3
+ },
+ "A2:GSE81961:0": {
+  "outcome": "CORRECT",
+  "reviewer_verdicts": [
+   "correct",
+   "correct",
+   "error"
+  ],
+  "reviewer_error_types": {
+   "OTHER": 1
+  },
+  "shared_reason": null,
+  "rule_class": "CORRECT",
+  "rule_error_types": [],
+  "confirmed_types": [],
+  "n_reviews": 3
+ }
+}

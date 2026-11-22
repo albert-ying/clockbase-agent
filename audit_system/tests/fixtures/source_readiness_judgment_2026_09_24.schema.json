@@ -1,0 +1,1041 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:clockbase:rna80-source-readiness-judgment:2026-09-24:v1",
+  "title": "RNA80 source-only completed reference-readiness submission",
+  "description": "A schema only, with no reference labels. One completed submission per allowed study. Held studies have controller administrative records, never fictitious judgments.",
+  "type": "object",
+  "additionalProperties": false,
+  "properties": {
+    "schema": {
+      "const": "clockbase-rna80-source-readiness-judgment-v1"
+    },
+    "completed": {
+      "const": true
+    },
+    "split": {
+      "const": "development_exposed"
+    },
+    "protocol_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "enrollment_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "packet_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "study_id": {
+      "enum": [
+        "GSE127814",
+        "GSE203635",
+        "GSE215322",
+        "GSE227798",
+        "GSE230034",
+        "GSE240194",
+        "GSE241620",
+        "GSE242833",
+        "GSE244055",
+        "GSE248979",
+        "GSE250322",
+        "GSE251776",
+        "GSE252715",
+        "GSE253002",
+        "GSE256448",
+        "GSE261096",
+        "GSE264316",
+        "GSE264364",
+        "GSE265851",
+        "GSE268487",
+        "GSE268701",
+        "GSE269411",
+        "GSE270748",
+        "GSE271364",
+        "GSE271639",
+        "GSE273261",
+        "GSE273966",
+        "GSE275134",
+        "GSE276264",
+        "GSE276715",
+        "GSE277341",
+        "GSE277430",
+        "GSE277693",
+        "GSE278460",
+        "GSE279391",
+        "GSE279821",
+        "GSE280341",
+        "GSE281454",
+        "GSE282172",
+        "GSE282274",
+        "GSE282545",
+        "GSE283853",
+        "GSE284767",
+        "GSE286153",
+        "GSE288661",
+        "GSE289411",
+        "GSE289427",
+        "GSE290151",
+        "GSE290476",
+        "GSE290520",
+        "GSE290668",
+        "GSE291720",
+        "GSE291894",
+        "GSE292171",
+        "GSE292774",
+        "GSE293225",
+        "GSE294106",
+        "GSE294733",
+        "GSE294870",
+        "GSE295355",
+        "GSE296039",
+        "GSE297406",
+        "GSE297557",
+        "GSE297559",
+        "GSE297560",
+        "GSE297984",
+        "GSE298013",
+        "GSE298237",
+        "GSE303830",
+        "GSE305958",
+        "GSE306748",
+        "GSE307003",
+        "GSE307253",
+        "GSE308366",
+        "GSE311520",
+        "GSE312784",
+        "GSE313462",
+        "GSE313986"
+      ]
+    },
+    "sample_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^GSM[0-9]+$"
+      },
+      "minItems": 1
+    },
+    "reviewer": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "const": "independent_source_adjudication"
+        },
+        "independent_from_methods": {
+          "const": true
+        },
+        "runtime_model_as_reported": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "known_prior_exposure": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_narrative_exposure_note": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "name",
+        "role",
+        "independent_from_methods",
+        "runtime_model_as_reported",
+        "known_prior_exposure",
+        "source_narrative_exposure_note"
+      ]
+    },
+    "domains": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "sample_identity": {
+          "$ref": "#/$defs/domain"
+        },
+        "biological_units": {
+          "$ref": "#/$defs/domain"
+        },
+        "comparison_definition": {
+          "$ref": "#/$defs/domain"
+        },
+        "pairing": {
+          "$ref": "#/$defs/domain"
+        },
+        "confounding": {
+          "$ref": "#/$defs/domain"
+        }
+      },
+      "required": [
+        "sample_identity",
+        "biological_units",
+        "comparison_definition",
+        "pairing",
+        "confounding"
+      ]
+    },
+    "readiness_domains": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "assay_context": {
+          "$ref": "#/$defs/domain"
+        },
+        "measurement_prerequisites": {
+          "$ref": "#/$defs/domain"
+        },
+        "test_requirements": {
+          "$ref": "#/$defs/domain"
+        },
+        "family_overlap": {
+          "$ref": "#/$defs/domain"
+        }
+      },
+      "required": [
+        "assay_context",
+        "measurement_prerequisites",
+        "test_requirements",
+        "family_overlap"
+      ]
+    },
+    "facts": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/fact"
+      }
+    },
+    "evidence": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[A-Za-z0-9][A-Za-z0-9_.:-]*$"
+      },
+      "additionalProperties": {
+        "$ref": "#/$defs/witness"
+      }
+    },
+    "unresolved": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/unresolved"
+      }
+    },
+    "comparison_inventory_status": {
+      "enum": [
+        "SOURCE_DEFINED_CONTRASTS_LISTED",
+        "NO_SOURCE_DEFINED_INTERVENTION",
+        "UNRESOLVED"
+      ]
+    },
+    "comparisons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/comparison"
+      }
+    },
+    "unassigned_sample_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^GSM[0-9]+$"
+      }
+    },
+    "unit_map": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/unit"
+      }
+    },
+    "unit_unresolved_sample_ids": {
+      "type": "array",
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^GSM[0-9]+$"
+      }
+    },
+    "pair_map": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/pair"
+      }
+    },
+    "covariates": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/covariate"
+      }
+    },
+    "family_links": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/family"
+      }
+    },
+    "family_closure": {
+      "const": "UNRESOLVED_SOURCE_ONLY"
+    },
+    "additional_sources_needed": {
+      "type": "array",
+      "items": {
+        "type": "string",
+        "minLength": 1
+      },
+      "uniqueItems": true,
+      "minItems": 0
+    }
+  },
+  "required": [
+    "schema",
+    "completed",
+    "split",
+    "protocol_sha256",
+    "enrollment_sha256",
+    "packet_sha256",
+    "study_id",
+    "sample_ids",
+    "reviewer",
+    "domains",
+    "readiness_domains",
+    "facts",
+    "evidence",
+    "unresolved",
+    "comparison_inventory_status",
+    "comparisons",
+    "unassigned_sample_ids",
+    "unit_map",
+    "unit_unresolved_sample_ids",
+    "pair_map",
+    "covariates",
+    "family_links",
+    "family_closure",
+    "additional_sources_needed"
+  ],
+  "$defs": {
+    "witness": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "source_role": {
+          "enum": [
+            "series",
+            "samples"
+          ]
+        },
+        "source_path": {
+          "type": "string",
+          "minLength": 1
+        },
+        "source_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "entity": {
+          "type": "string",
+          "pattern": "^GSE[0-9]+$|^GSM[0-9]+$"
+        },
+        "field": {
+          "type": "string",
+          "pattern": "^!(Series|Sample)_[A-Za-z0-9_]+$"
+        },
+        "line_start": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "line_end": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "quote": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "source_role",
+        "source_path",
+        "source_sha256",
+        "entity",
+        "field",
+        "line_start",
+        "line_end",
+        "quote"
+      ],
+      "description": "The complete literal SOFT field value at this raw-file field/line locator. No whitespace normalization. The adapter verifies field boundaries, entity, exact value, allowed path and hash."
+    },
+    "domain": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "status": {
+          "enum": [
+            "PASS",
+            "FAIL",
+            "CANNOT VERIFY"
+          ]
+        },
+        "material": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "rationale": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "fact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "unresolved_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        }
+      },
+      "required": [
+        "status",
+        "material",
+        "rationale",
+        "evidence_ids",
+        "fact_ids",
+        "unresolved_ids"
+      ],
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "enum": [
+                  "PASS",
+                  "FAIL"
+                ]
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true,
+                "minItems": 1
+              },
+              "fact_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true,
+                "minItems": 1
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "CANNOT VERIFY"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "unresolved_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true,
+                "minItems": 1
+              },
+              "material": {
+                "enum": [
+                  false,
+                  null
+                ]
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "status": {
+                "const": "PASS"
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "material": {
+                "enum": [
+                  false,
+                  null
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "fact": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "fact_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain": {
+          "enum": [
+            "sample_identity",
+            "biological_units",
+            "comparison_definition",
+            "pairing",
+            "confounding",
+            "assay_context",
+            "measurement_prerequisites",
+            "test_requirements",
+            "family_overlap"
+          ]
+        },
+        "statement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "qualification": {
+          "enum": [
+            "LITERAL_SOURCE_DECLARATION",
+            "IDENTITY_OR_MEMBERSHIP_CHECK",
+            "CONDITIONAL_SOURCE_INTERPRETATION"
+          ]
+        },
+        "sample_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^GSM[0-9]+$"
+          }
+        },
+        "comparison_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      },
+      "required": [
+        "fact_id",
+        "domain",
+        "statement",
+        "qualification",
+        "sample_ids",
+        "comparison_ids",
+        "evidence_ids"
+      ]
+    },
+    "unresolved": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "unresolved_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "domain": {
+          "enum": [
+            "sample_identity",
+            "biological_units",
+            "comparison_definition",
+            "pairing",
+            "confounding",
+            "assay_context",
+            "measurement_prerequisites",
+            "test_requirements",
+            "family_overlap"
+          ]
+        },
+        "question": {
+          "type": "string",
+          "minLength": 1
+        },
+        "reason": {
+          "type": "string",
+          "minLength": 1
+        },
+        "searched_source_roles": {
+          "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
+          "items": {
+            "enum": [
+              "series",
+              "samples"
+            ]
+          }
+        },
+        "searched_fields": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "sample_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^GSM[0-9]+$"
+          }
+        },
+        "comparison_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "related_evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "needed_evidence": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "unresolved_id",
+        "domain",
+        "question",
+        "reason",
+        "searched_source_roles",
+        "searched_fields",
+        "sample_ids",
+        "comparison_ids",
+        "related_evidence_ids",
+        "needed_evidence"
+      ]
+    },
+    "requirement": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "requirement": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "unresolved_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        }
+      },
+      "required": [
+        "requirement",
+        "fact_ids",
+        "unresolved_ids"
+      ]
+    },
+    "comparison": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "comparison_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "target": {
+          "type": "string",
+          "minLength": 1
+        },
+        "contrast_type": {
+          "enum": [
+            "INTERVENTIONAL",
+            "OBSERVATIONAL",
+            "DESCRIPTIVE"
+          ]
+        },
+        "case_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^GSM[0-9]+$"
+          },
+          "minItems": 1
+        },
+        "control_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^GSM[0-9]+$"
+          },
+          "minItems": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "domains": {
+          "type": "object",
+          "additionalProperties": false,
+          "properties": {
+            "sample_identity": {
+              "$ref": "#/$defs/domain"
+            },
+            "biological_units": {
+              "$ref": "#/$defs/domain"
+            },
+            "comparison_definition": {
+              "$ref": "#/$defs/domain"
+            },
+            "pairing": {
+              "$ref": "#/$defs/domain"
+            },
+            "confounding": {
+              "$ref": "#/$defs/domain"
+            }
+          },
+          "required": [
+            "sample_identity",
+            "biological_units",
+            "comparison_definition",
+            "pairing",
+            "confounding"
+          ]
+        },
+        "conditional_test_family": {
+          "enum": [
+            "DESCRIPTIVE_ONLY",
+            "INDEPENDENT_GROUPS",
+            "PAIRED",
+            "REPEATED_OR_CLUSTERED",
+            "COVARIATE_ADJUSTED",
+            "CANNOT_SPECIFY"
+          ]
+        },
+        "analysis_requirements": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/requirement"
+          }
+        },
+        "excluded_sample_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^GSM[0-9]+$"
+          }
+        },
+        "exclusion_reason": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "comparison_id",
+        "target",
+        "contrast_type",
+        "case_ids",
+        "control_ids",
+        "evidence_ids",
+        "domains",
+        "conditional_test_family",
+        "analysis_requirements",
+        "excluded_sample_ids",
+        "exclusion_reason"
+      ]
+    },
+    "unit": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "unit_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "unit_type": {
+          "enum": [
+            "PARTICIPANT",
+            "ANIMAL",
+            "CULTURE",
+            "CLONE",
+            "POOL",
+            "TECHNICAL_ASSAY",
+            "DECLARED_REPLICATE"
+          ]
+        },
+        "sample_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^GSM[0-9]+$"
+          },
+          "minItems": 1
+        },
+        "fact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      },
+      "required": [
+        "unit_id",
+        "unit_type",
+        "sample_ids",
+        "fact_ids",
+        "evidence_ids"
+      ]
+    },
+    "pair": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "comparison_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "case_sample_id": {
+          "type": "string",
+          "pattern": "^GSM[0-9]+$"
+        },
+        "control_sample_id": {
+          "type": "string",
+          "pattern": "^GSM[0-9]+$"
+        },
+        "unit_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "fact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        }
+      },
+      "required": [
+        "comparison_id",
+        "case_sample_id",
+        "control_sample_id",
+        "unit_id",
+        "fact_ids",
+        "evidence_ids"
+      ]
+    },
+    "covariate": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "scope": {
+          "enum": [
+            "STUDY",
+            "BIOLOGICAL_UNIT",
+            "ASSAY"
+          ]
+        },
+        "observed_sample_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^GSM[0-9]+$"
+          }
+        },
+        "missing_sample_ids": {
+          "type": "array",
+          "uniqueItems": true,
+          "items": {
+            "type": "string",
+            "pattern": "^GSM[0-9]+$"
+          }
+        },
+        "fact_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        },
+        "unresolved_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 0
+        }
+      },
+      "required": [
+        "name",
+        "scope",
+        "observed_sample_ids",
+        "missing_sample_ids",
+        "fact_ids",
+        "evidence_ids",
+        "unresolved_ids"
+      ]
+    },
+    "family": {
+      "type": "object",
+      "additionalProperties": false,
+      "properties": {
+        "link_type": {
+          "enum": [
+            "SHARED_GSM",
+            "GEO_RELATION",
+            "PUBLICATION",
+            "BIOPROJECT",
+            "ACCESSION_ALIAS"
+          ]
+        },
+        "target_identifier": {
+          "type": "string",
+          "minLength": 1
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 1
+          },
+          "uniqueItems": true,
+          "minItems": 1
+        },
+        "interpretation": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "required": [
+        "link_type",
+        "target_identifier",
+        "evidence_ids",
+        "interpretation"
+      ]
+    }
+  }
+}

@@ -1,0 +1,29 @@
+# Source: minipaper_fork/src/nlp_process/prompt_template.py::HAS_RELEVANCE
+You are an expert biomedical researcher and a highly skilled scientific report writer. Your task is to evaluate the provided retrieved documents in the context of a specific biological experiment and generate a concise, evidence-based report.
+
+**1. Intervention Information:**
+Here are the details of the intervention being investigated:
+- **Paper Title:** {title}
+- **Paper Summary:** {summary}
+- **Study Design:** {study_design}
+- **Intervention/Condition Name:** {condition}
+- **Comparison Description:** {comparison}
+
+**2. Retrieved Documents (Context for Analysis):**
+Below are text snippets and associated metadata retrieved from a biological literature knowledge base. Each snippet includes its `File Name`, `Reference` (which contains citation details and potentially image URLs), and the `Content` (the actual text).
+
+---
+{retrieved_documents}
+---
+
+**3. Instructions for Analysis and Report Generation:**
+Based *solely* on the `Retrieved Documents` provided:
+- Determine if there is **sufficient historical evidence** that directly or indirectly links the `Intervention Name` to **health, longevity, or aging-related processes/outcomes**.
+- Consider if the evidence discusses the intervention's impact (positive, negative, or neutral) in a biological context relevant to the given `Biomarker/Clock` or general health/aging.
+
+**Output Format:**
+```json
+{{
+    "RELEVANCE": "Irrelevant/Relevant"
+}}
+```

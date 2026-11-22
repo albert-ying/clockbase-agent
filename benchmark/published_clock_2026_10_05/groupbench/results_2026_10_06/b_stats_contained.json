@@ -1,0 +1,272 @@
+{
+ "coverage": {
+  "LINKED": 142,
+  "PUBLISHED_GROUPS_UNRESOLVED": 102,
+  "NOT_LINKED": 60,
+  "LINKED_RECONSTRUCTED_ONLY": 24,
+  "SERIES_NOT_IN_ATLAS": 5
+ },
+ "historical": {
+  "n": 56,
+  "table_published_by_agent": {
+   "higher": {
+    "higher": 17,
+    "lower": 1,
+    "none": 5
+   },
+   "lower": {
+    "higher": 0,
+    "lower": 3,
+    "none": 2
+   },
+   "none": {
+    "higher": 1,
+    "lower": 0,
+    "none": 27
+   }
+  },
+  "kappa": 0.7120000000000001,
+  "call_agreement": 0.8392857142857143,
+  "agreement_significant_either_side": 0.6896551724137931,
+  "n_significant_either_side": 29,
+  "direction_agreement_both_significant": 0.9523809523809523,
+  "n_both_significant": 21,
+  "papers": 26,
+  "call_agreement_interval": [
+   0.7536231884057971,
+   0.9318181818181818
+  ],
+  "kappa_interval": [
+   0.5487190593321704,
+   0.8773020604236602
+  ],
+  "discordant": [
+   {
+    "id": "MED-25678027-GSE25395-Horvathv1-0",
+    "gse": "GSE25395",
+    "clock": "Horvathv1",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE25395:d68a9b1a2facbdd9",
+    "final_class": "VERIFIED"
+   },
+   {
+    "id": "MED-25678027-GSE25395-Horvathv1-1",
+    "gse": "GSE25395",
+    "clock": "Horvathv1",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE25395:d68a9b1a2facbdd9",
+    "final_class": "VERIFIED"
+   },
+   {
+    "id": "MED-29974462-GSE75008-Horvathv1-1",
+    "gse": "GSE75008",
+    "clock": "Horvathv1",
+    "published": "lower",
+    "agent": "none",
+    "comparison_id": "GSE75008:0f73d5ac36290062",
+    "final_class": "VERIFIED"
+   },
+   {
+    "id": "MED-32930491-GSE100249-PhenoAge-0",
+    "gse": "GSE100249",
+    "clock": "PhenoAge",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE100249:7f366b1b12c542ea",
+    "final_class": "PROVISIONAL"
+   },
+   {
+    "id": "MED-32930491-GSE91069-PhenoAge-9",
+    "gse": "GSE91069",
+    "clock": "PhenoAge",
+    "published": "none",
+    "agent": "higher",
+    "comparison_id": "GSE91069:37e67d0be2d2d116",
+    "final_class": "PROVISIONAL"
+   },
+   {
+    "id": "MED-31628391-GSE100850-Horvathv1-0",
+    "gse": "GSE100850",
+    "clock": "Horvathv1",
+    "published": "higher",
+    "agent": "lower",
+    "comparison_id": "GSE100850:eaecafb95d060581",
+    "final_class": "VERIFIED"
+   },
+   {
+    "id": "MED-36092807-GSE106648-Horvathv1-0",
+    "gse": "GSE106648",
+    "clock": "Horvathv1",
+    "published": "lower",
+    "agent": "none",
+    "comparison_id": "GSE106648:dd65ca4be05c8dcb",
+    "final_class": "DUPLICATE"
+   },
+   {
+    "id": "MED-40589934-GSE176394-DunedinPACE-12",
+    "gse": "GSE176394",
+    "clock": "DunedinPACE",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE176394:be0136fa49c99e7c",
+    "final_class": "PROVISIONAL"
+   },
+   {
+    "id": "MED-40589934-GSE176394-DunedinPACE-13",
+    "gse": "GSE176394",
+    "clock": "DunedinPACE",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE176394:83abff11286acea7",
+    "final_class": "VERIFIED"
+   }
+  ]
+ },
+ "verified": {
+  "n": 56,
+  "table_published_by_agent": {
+   "higher": {
+    "higher": 15,
+    "lower": 1,
+    "none": 7
+   },
+   "lower": {
+    "higher": 0,
+    "lower": 3,
+    "none": 2
+   },
+   "none": {
+    "higher": 1,
+    "lower": 1,
+    "none": 26
+   }
+  },
+  "kappa": 0.6188315371525808,
+  "call_agreement": 0.7857142857142857,
+  "agreement_significant_either_side": 0.6,
+  "n_significant_either_side": 30,
+  "direction_agreement_both_significant": 0.9473684210526315,
+  "n_both_significant": 19,
+  "papers": 26,
+  "call_agreement_interval": [
+   0.6610169491525424,
+   0.8909090909090909
+  ],
+  "kappa_interval": [
+   0.41256152787862577,
+   0.7998264844643603
+  ],
+  "discordant": [
+   {
+    "id": "MED-25678027-GSE25395-Horvathv1-0",
+    "gse": "GSE25395",
+    "clock": "Horvathv1",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE25395:d68a9b1a2facbdd9",
+    "final_class": "VERIFIED"
+   },
+   {
+    "id": "MED-25678027-GSE25395-Horvathv1-1",
+    "gse": "GSE25395",
+    "clock": "Horvathv1",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE25395:d68a9b1a2facbdd9",
+    "final_class": "VERIFIED"
+   },
+   {
+    "id": "MED-25969563-GSE67751-Horvathv1-7",
+    "gse": "GSE67751",
+    "clock": "Horvathv1",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE67751:a9473a11bacc03a6",
+    "final_class": "PROVISIONAL"
+   },
+   {
+    "id": "MED-29974462-GSE75008-Horvathv1-1",
+    "gse": "GSE75008",
+    "clock": "Horvathv1",
+    "published": "lower",
+    "agent": "none",
+    "comparison_id": "GSE75008:0f73d5ac36290062",
+    "final_class": "VERIFIED"
+   },
+   {
+    "id": "MED-32930491-GSE100249-PhenoAge-0",
+    "gse": "GSE100249",
+    "clock": "PhenoAge",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE100249:7f366b1b12c542ea",
+    "final_class": "PROVISIONAL"
+   },
+   {
+    "id": "MED-32930491-GSE91069-PhenoAge-9",
+    "gse": "GSE91069",
+    "clock": "PhenoAge",
+    "published": "none",
+    "agent": "higher",
+    "comparison_id": "GSE91069:37e67d0be2d2d116",
+    "final_class": "PROVISIONAL"
+   },
+   {
+    "id": "curated-00032",
+    "gse": "GSE67751",
+    "clock": "PhenoAge",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE67751:a9473a11bacc03a6",
+    "final_class": "PROVISIONAL"
+   },
+   {
+    "id": "MED-31628391-GSE100850-Horvathv1-0",
+    "gse": "GSE100850",
+    "clock": "Horvathv1",
+    "published": "higher",
+    "agent": "lower",
+    "comparison_id": "GSE100850:eaecafb95d060581",
+    "final_class": "VERIFIED"
+   },
+   {
+    "id": "MED-36092807-GSE106648-Horvathv1-0",
+    "gse": "GSE106648",
+    "clock": "Horvathv1",
+    "published": "lower",
+    "agent": "none",
+    "comparison_id": "GSE106648:dd65ca4be05c8dcb",
+    "final_class": "DUPLICATE"
+   },
+   {
+    "id": "MED-36092807-GSE40360-Horvathv1-2",
+    "gse": "GSE40360",
+    "clock": "Horvathv1",
+    "published": "none",
+    "agent": "lower",
+    "comparison_id": "GSE40360:4ac7e2ea91fa12b8",
+    "final_class": "VERIFIED"
+   },
+   {
+    "id": "MED-40589934-GSE176394-DunedinPACE-12",
+    "gse": "GSE176394",
+    "clock": "DunedinPACE",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE176394:be0136fa49c99e7c",
+    "final_class": "PROVISIONAL"
+   },
+   {
+    "id": "MED-40589934-GSE176394-DunedinPACE-13",
+    "gse": "GSE176394",
+    "clock": "DunedinPACE",
+    "published": "higher",
+    "agent": "none",
+    "comparison_id": "GSE176394:83abff11286acea7",
+    "final_class": "VERIFIED"
+   }
+  ]
+ }
+}

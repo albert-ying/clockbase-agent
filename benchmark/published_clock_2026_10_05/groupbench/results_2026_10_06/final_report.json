@@ -1,0 +1,1479 @@
+{
+ "kappa": 0.8089043400246719,
+ "sets": {
+  "A1": {
+   "units": 98,
+   "flow": {
+    "CORRECT": 78,
+    "CONFIRMED_MISSED_BY_RULES": 9,
+    "CONFIRMED": 11
+   },
+   "assessable": 98,
+   "E1": {
+    "units": 98,
+    "errors": 20,
+    "series": 32,
+    "rate": 0.20408163265306123,
+    "unadjusted_interval": [
+     0.12934216094386652,
+     0.29743786445018205
+    ],
+    "effective": {
+     "rate": 0.20408163265306123,
+     "interval": [
+      0.06148594703927256,
+      0.4359013470692795
+     ],
+     "icc": 0.650768843955113,
+     "deff": 4.718679108314932,
+     "n_effective": 20.768523934444097,
+     "size_weighted_mean_cluster": 6.714285714285714
+    },
+    "model": {
+     "rate": 0.3270127384421629,
+     "interval": [
+      0.17000432900537288,
+      0.356727403173643
+     ],
+     "b0": -3.7448249257878827,
+     "sigma": 8.74876884353383
+    },
+    "model_valid": true,
+    "primary": {
+     "method": "random-intercept logistic, profile likelihood",
+     "rate": 0.3270127384421629,
+     "interval": [
+      0.17000432900537288,
+      0.356727403173643
+     ],
+     "b0": -3.7448249257878827,
+     "sigma": 8.74876884353383
+    },
+    "series_with_error": {
+     "count": 11,
+     "of": 32,
+     "proportion": 0.34375,
+     "interval": [
+      0.18571909171656614,
+      0.5319310362802687
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.09599361702127661,
+      0.35365853658536583
+     ],
+     "bca": [
+      0.08844466607214468,
+      0.3411764705882353
+     ]
+    },
+    "leave_one_series_out": [
+     0.17894736842105263,
+     0.25316455696202533
+    ]
+   },
+   "E1_upper_with_unresolved": {
+    "units": 98,
+    "errors": 20,
+    "series": 32,
+    "rate": 0.20408163265306123,
+    "unadjusted_interval": [
+     0.12934216094386652,
+     0.29743786445018205
+    ],
+    "effective": {
+     "rate": 0.20408163265306123,
+     "interval": [
+      0.06148594703927256,
+      0.4359013470692795
+     ],
+     "icc": 0.650768843955113,
+     "deff": 4.718679108314932,
+     "n_effective": 20.768523934444097,
+     "size_weighted_mean_cluster": 6.714285714285714
+    },
+    "model": {
+     "rate": 0.3270127384421629,
+     "interval": [
+      0.17000432900537288,
+      0.356727403173643
+     ],
+     "b0": -3.7448249257878827,
+     "sigma": 8.74876884353383
+    },
+    "model_valid": true,
+    "primary": {
+     "method": "random-intercept logistic, profile likelihood",
+     "rate": 0.3270127384421629,
+     "interval": [
+      0.17000432900537288,
+      0.356727403173643
+     ],
+     "b0": -3.7448249257878827,
+     "sigma": 8.74876884353383
+    },
+    "series_with_error": {
+     "count": 11,
+     "of": 32,
+     "proportion": 0.34375,
+     "interval": [
+      0.18571909171656614,
+      0.5319310362802687
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.09599361702127661,
+      0.35365853658536583
+     ],
+     "bca": [
+      0.08844466607214468,
+      0.3411764705882353
+     ]
+    },
+    "leave_one_series_out": [
+     0.17894736842105263,
+     0.25316455696202533
+    ]
+   },
+   "E1_package_artifact_reclassified": {
+    "units": 98,
+    "errors": 14,
+    "series": 32,
+    "rate": 0.14285714285714285,
+    "unadjusted_interval": [
+     0.080359512591802,
+     0.22806049692230798
+    ],
+    "effective": {
+     "rate": 0.14285714285714285,
+     "interval": [
+      0.027219501548279863,
+      0.37771482714794535
+     ],
+     "icc": 0.7264554794520548,
+     "deff": 5.151174168297456,
+     "n_effective": 19.024788678886882,
+     "size_weighted_mean_cluster": 6.714285714285714
+    },
+    "model": null,
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.14285714285714285,
+     "interval": [
+      0.027219501548279863,
+      0.37771482714794535
+     ]
+    },
+    "series_with_error": {
+     "count": 8,
+     "of": 32,
+     "proportion": 0.25,
+     "interval": [
+      0.11461600510258818,
+      0.43404937492224266
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.05,
+      0.28090765449438193
+     ],
+     "bca": [
+      0.05,
+      0.281069216390209
+     ]
+    },
+    "leave_one_series_out": [
+     0.11578947368421053,
+     0.17721518987341772
+    ]
+   },
+   "package_artifact_units": [
+    "A1:GSE124772:0",
+    "A1:GSE127475:0",
+    "A1:GSE127475:1",
+    "A1:GSE129083:0",
+    "A1:GSE190939:0",
+    "A1:GSE190939:1"
+   ],
+   "result_sign_record_errors": {
+    "units": 17,
+    "of": 98,
+    "estimate": {
+     "units": 98,
+     "errors": 17,
+     "series": 32,
+     "rate": 0.17346938775510204,
+     "unadjusted_interval": [
+      0.10442432476174199,
+      0.263149690021351
+     ],
+     "effective": {
+      "rate": 0.17346938775510204,
+      "interval": [
+       0.033992544550412646,
+       0.44124765745999156
+      ],
+      "icc": 0.9009543632780497,
+      "deff": 6.148310647303141,
+      "n_effective": 15.939337750116147,
+      "size_weighted_mean_cluster": 6.714285714285714
+     },
+     "model": null,
+     "model_valid": false,
+     "primary": {
+      "method": "Clopper-Pearson on effective n (DEFF)",
+      "rate": 0.17346938775510204,
+      "interval": [
+       0.033992544550412646,
+       0.44124765745999156
+      ]
+     },
+     "series_with_error": {
+      "count": 6,
+      "of": 32,
+      "proportion": 0.1875,
+      "interval": [
+       0.07207616545849763,
+       0.3643923098640901
+      ]
+     },
+     "bootstrap": {
+      "percentile": [
+       0.031005754015823544,
+       0.38461538461538464
+      ],
+      "bca": [
+       0.047619047619047616,
+       0.46601941747572817
+      ]
+     },
+     "leave_one_series_out": [
+      0.07954545454545454,
+      0.21518987341772153
+     ]
+    }
+   },
+   "E1_any_error_including_result_sign": {
+    "units": 98,
+    "errors": 31,
+    "series": 32,
+    "rate": 0.3163265306122449,
+    "unadjusted_interval": [
+     0.22605903231461663,
+     0.41803984098733327
+    ],
+    "effective": {
+     "rate": 0.3163265306122449,
+     "interval": [
+      0.11645165171808679,
+      0.5832949382590891
+     ],
+     "icc": 0.8462607346449773,
+     "deff": 5.835775626542728,
+     "n_effective": 16.792969139229548,
+     "size_weighted_mean_cluster": 6.714285714285714
+    },
+    "model": {
+     "rate": 0.34778672248374876,
+     "interval": [
+      null,
+      null
+     ],
+     "b0": -13.968541330927494,
+     "sigma": 46.1599404442498
+    },
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.3163265306122449,
+     "interval": [
+      0.11645165171808679,
+      0.5832949382590891
+     ]
+    },
+    "series_with_error": {
+     "count": 13,
+     "of": 32,
+     "proportion": 0.40625,
+     "interval": [
+      0.23698410055174315,
+      0.5935507534235236
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.13761467889908258,
+      0.5416666666666666
+     ],
+     "bca": [
+      0.14090693094159992,
+      0.5490196078431373
+     ]
+    },
+    "leave_one_series_out": [
+     0.23863636363636365,
+     0.3924050632911392
+    ]
+   },
+   "E1_age_confounding_median_gap_over_5y_only": {
+    "units": 98,
+    "errors": 20,
+    "series": 32,
+    "rate": 0.20408163265306123,
+    "unadjusted_interval": [
+     0.12934216094386652,
+     0.29743786445018205
+    ],
+    "effective": {
+     "rate": 0.20408163265306123,
+     "interval": [
+      0.06148594703927256,
+      0.4359013470692795
+     ],
+     "icc": 0.650768843955113,
+     "deff": 4.718679108314932,
+     "n_effective": 20.768523934444097,
+     "size_weighted_mean_cluster": 6.714285714285714
+    },
+    "model": {
+     "rate": 0.3270127384421629,
+     "interval": [
+      0.17000432900537288,
+      0.356727403173643
+     ],
+     "b0": -3.7448249257878827,
+     "sigma": 8.74876884353383
+    },
+    "model_valid": true,
+    "primary": {
+     "method": "random-intercept logistic, profile likelihood",
+     "rate": 0.3270127384421629,
+     "interval": [
+      0.17000432900537288,
+      0.356727403173643
+     ],
+     "b0": -3.7448249257878827,
+     "sigma": 8.74876884353383
+    },
+    "series_with_error": {
+     "count": 11,
+     "of": 32,
+     "proportion": 0.34375,
+     "interval": [
+      0.18571909171656614,
+      0.5319310362802687
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.09599361702127661,
+      0.35365853658536583
+     ],
+     "bca": [
+      0.08844466607214468,
+      0.3411764705882353
+     ]
+    },
+    "leave_one_series_out": [
+     0.17894736842105263,
+     0.25316455696202533
+    ]
+   },
+   "age_only_units_within_5y": [],
+   "E1_design_errors_only": {
+    "units": 98,
+    "errors": 13,
+    "series": 32,
+    "rate": 0.1326530612244898,
+    "unadjusted_interval": [
+     0.07256431247814979,
+     0.2161540028714131
+    ],
+    "effective": {
+     "rate": 0.1326530612244898,
+     "interval": [
+      0.028897171804021845,
+      0.33804548198944046
+     ],
+     "icc": 0.5674446770756073,
+     "deff": 4.242541011860613,
+     "n_effective": 23.099364207918647,
+     "size_weighted_mean_cluster": 6.714285714285714
+    },
+    "model": null,
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.1326530612244898,
+     "interval": [
+      0.028897171804021845,
+      0.33804548198944046
+     ]
+    },
+    "series_with_error": {
+     "count": 7,
+     "of": 32,
+     "proportion": 0.21875,
+     "interval": [
+      0.09277153228471931,
+      0.39972826371210757
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.04716981132075472,
+      0.25
+     ],
+     "bca": [
+      0.04878048780487805,
+      0.25301204819277107
+     ]
+    },
+    "leave_one_series_out": [
+     0.10526315789473684,
+     0.16455696202531644
+    ]
+   },
+   "error_types": {
+    "REPEATED_SUBJECT": 2,
+    "PAIRED_AS_INDEPENDENT": 1,
+    "REPORTED_RESULT_INVERSION": 6,
+    "LABEL_MISMATCH": 5,
+    "SMALL_ARM_INFERENCE": 8
+   },
+   "rule_based": {
+    "units": 98,
+    "errors": 11,
+    "series": 32,
+    "rate": 0.11224489795918367,
+    "unadjusted_interval": [
+     0.057382378355017846,
+     0.1919669990306848
+    ],
+    "effective": {
+     "rate": 0.11224489795918367,
+     "interval": [
+      0.011007848607282546,
+      0.3727152411945273
+     ],
+     "icc": 0.9288667663242263,
+     "deff": 6.307810093281293,
+     "n_effective": 15.53629525156184,
+     "size_weighted_mean_cluster": 6.714285714285714
+    },
+    "model": {
+     "rate": 0.14369113229704916,
+     "interval": [
+      0.11239119595220189,
+      0.11239281902850798
+     ],
+     "b0": -40.82801330265711,
+     "sigma": 45.52427760574974
+    },
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.11224489795918367,
+     "interval": [
+      0.011007848607282546,
+      0.3727152411945273
+     ]
+    },
+    "series_with_error": {
+     "count": 6,
+     "of": 32,
+     "proportion": 0.1875,
+     "interval": [
+      0.07207616545849763,
+      0.3643923098640901
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.028037383177570093,
+      0.24390243902439024
+     ],
+     "bca": [
+      0.03260869565217391,
+      0.25757575757575757
+     ]
+    },
+    "leave_one_series_out": [
+     0.08421052631578947,
+     0.13924050632911392
+    ]
+   },
+   "by_stratum": {
+    "replay": {
+     "units": 18,
+     "errors": 0
+    },
+    "recovery": {
+     "units": 46,
+     "errors": 12
+    },
+    "replay+recovery": {
+     "units": 34,
+     "errors": 8
+    }
+   },
+   "by_contrast_type": {
+    "intervention": {
+     "units": 54,
+     "errors": 9
+    },
+    "genotype": {
+     "units": 27,
+     "errors": 1
+    },
+    "tissue or cell type": {
+     "units": 5,
+     "errors": 3
+    },
+    "age contrast": {
+     "units": 12,
+     "errors": 7
+    }
+   },
+   "excluded_comparisons": 44,
+   "exclusion_bounds": {
+    "all_excluded_errors": 0.4507042253521127,
+    "no_excluded_errors": 0.14084507042253522
+   },
+   "E2_rows": {
+    "units": 89,
+    "errors": 5,
+    "series": 29,
+    "rate": 0.056179775280898875,
+    "unadjusted_interval": [
+     0.018490804666485516,
+     0.1262527960497284
+    ],
+    "effective": {
+     "rate": 0.056179775280898875,
+     "interval": [
+      0.003157353387869755,
+      0.23346565757378862
+     ],
+     "icc": 0.44793962097840456,
+     "deff": 3.737968020362383,
+     "n_effective": 23.80972750841559,
+     "size_weighted_mean_cluster": 7.112359550561798
+    },
+    "model": null,
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.056179775280898875,
+     "interval": [
+      0.003157353387869755,
+      0.23346565757378862
+     ]
+    },
+    "series_with_error": {
+     "count": 3,
+     "of": 29,
+     "proportion": 0.10344827586206896,
+     "interval": [
+      0.021863736829853642,
+      0.2735151978924229
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.0,
+      0.13978494623655913
+     ],
+     "bca": [
+      0.009615384615384616,
+      0.16
+     ]
+    },
+    "leave_one_series_out": [
+     0.034482758620689655,
+     0.07142857142857142
+    ]
+   },
+   "E2_units": {
+    "units": 89,
+    "errors": 5,
+    "series": 29,
+    "rate": 0.056179775280898875,
+    "unadjusted_interval": [
+     0.018490804666485516,
+     0.1262527960497284
+    ],
+    "effective": {
+     "rate": 0.056179775280898875,
+     "interval": [
+      0.003157353387869755,
+      0.23346565757378862
+     ],
+     "icc": 0.44793962097840456,
+     "deff": 3.737968020362383,
+     "n_effective": 23.80972750841559,
+     "size_weighted_mean_cluster": 7.112359550561798
+    },
+    "model": null,
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.056179775280898875,
+     "interval": [
+      0.003157353387869755,
+      0.23346565757378862
+     ]
+    },
+    "series_with_error": {
+     "count": 3,
+     "of": 29,
+     "proportion": 0.10344827586206896,
+     "interval": [
+      0.021863736829853642,
+      0.2735151978924229
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.0,
+      0.13978494623655913
+     ],
+     "bca": [
+      0.009615384615384616,
+      0.16
+     ]
+    },
+    "leave_one_series_out": [
+     0.034482758620689655,
+     0.07142857142857142
+    ]
+   },
+   "E2_error_types": {
+    "REPEATED_SUBJECT": 2,
+    "PAIRED_AS_INDEPENDENT": 1,
+    "REPORTED_RESULT_INVERSION": 2
+   },
+   "verifier_on_confirmed_errors": {
+    "released with the error": 5,
+    "released after repair": 7,
+    "withheld (no released row)": 8
+   },
+   "verifier_on_correct_units": {
+    "released": 77,
+    "withheld": 1
+   }
+  },
+  "A2": {
+   "units": 47,
+   "flow": {
+    "CONFIRMED": 25,
+    "CORRECT": 5,
+    "CONFIRMED_MISSED_BY_RULES": 14,
+    "AMBIGUOUS_LABEL": 3
+   },
+   "assessable": 44,
+   "E1": {
+    "units": 44,
+    "errors": 39,
+    "series": 17,
+    "rate": 0.8863636363636364,
+    "unadjusted_interval": [
+     0.7544232236844686,
+     0.9620562870607252
+    ],
+    "effective": {
+     "rate": 0.8863636363636364,
+     "interval": [
+      0.5784647818562869,
+      0.9931952488875734
+     ],
+     "icc": 0.7189733593242364,
+     "deff": 3.6471291866028706,
+     "n_effective": 12.064283371597245,
+     "size_weighted_mean_cluster": 4.681818181818182
+    },
+    "model": {
+     "rate": 0.7003215394850281,
+     "interval": [
+      0.6919608540702594,
+      0.9400705094312116
+     ],
+     "b0": 16.084736567280732,
+     "sigma": 48.01440613528485
+    },
+    "model_valid": true,
+    "primary": {
+     "method": "random-intercept logistic, profile likelihood",
+     "rate": 0.7003215394850281,
+     "interval": [
+      0.6919608540702594,
+      0.9400705094312116
+     ],
+     "b0": 16.084736567280732,
+     "sigma": 48.01440613528485
+    },
+    "series_with_error": {
+     "count": 14,
+     "of": 17,
+     "proportion": 0.8235294117647058,
+     "interval": [
+      0.5656821271557161,
+      0.962014931929374
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.7333333333333333,
+      0.9787234042553191
+     ],
+     "bca": [
+      0.7054054376421903,
+      0.9722222222222222
+     ]
+    },
+    "leave_one_series_out": [
+     0.8529411764705882,
+     0.9285714285714286
+    ]
+   },
+   "E1_upper_with_unresolved": {
+    "units": 44,
+    "errors": 39,
+    "series": 17,
+    "rate": 0.8863636363636364,
+    "unadjusted_interval": [
+     0.7544232236844686,
+     0.9620562870607252
+    ],
+    "effective": {
+     "rate": 0.8863636363636364,
+     "interval": [
+      0.5784647818562869,
+      0.9931952488875734
+     ],
+     "icc": 0.7189733593242364,
+     "deff": 3.6471291866028706,
+     "n_effective": 12.064283371597245,
+     "size_weighted_mean_cluster": 4.681818181818182
+    },
+    "model": {
+     "rate": 0.7003215394850281,
+     "interval": [
+      0.6919608540702594,
+      0.9400705094312116
+     ],
+     "b0": 16.084736567280732,
+     "sigma": 48.01440613528485
+    },
+    "model_valid": true,
+    "primary": {
+     "method": "random-intercept logistic, profile likelihood",
+     "rate": 0.7003215394850281,
+     "interval": [
+      0.6919608540702594,
+      0.9400705094312116
+     ],
+     "b0": 16.084736567280732,
+     "sigma": 48.01440613528485
+    },
+    "series_with_error": {
+     "count": 14,
+     "of": 17,
+     "proportion": 0.8235294117647058,
+     "interval": [
+      0.5656821271557161,
+      0.962014931929374
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.7333333333333333,
+      0.9787234042553191
+     ],
+     "bca": [
+      0.7054054376421903,
+      0.9722222222222222
+     ]
+    },
+    "leave_one_series_out": [
+     0.8529411764705882,
+     0.9285714285714286
+    ]
+   },
+   "E1_package_artifact_reclassified": {
+    "units": 44,
+    "errors": 39,
+    "series": 17,
+    "rate": 0.8863636363636364,
+    "unadjusted_interval": [
+     0.7544232236844686,
+     0.9620562870607252
+    ],
+    "effective": {
+     "rate": 0.8863636363636364,
+     "interval": [
+      0.5784647818562869,
+      0.9931952488875734
+     ],
+     "icc": 0.7189733593242364,
+     "deff": 3.6471291866028706,
+     "n_effective": 12.064283371597245,
+     "size_weighted_mean_cluster": 4.681818181818182
+    },
+    "model": {
+     "rate": 0.7003215394850281,
+     "interval": [
+      0.6919608540702594,
+      0.9400705094312116
+     ],
+     "b0": 16.084736567280732,
+     "sigma": 48.01440613528485
+    },
+    "model_valid": true,
+    "primary": {
+     "method": "random-intercept logistic, profile likelihood",
+     "rate": 0.7003215394850281,
+     "interval": [
+      0.6919608540702594,
+      0.9400705094312116
+     ],
+     "b0": 16.084736567280732,
+     "sigma": 48.01440613528485
+    },
+    "series_with_error": {
+     "count": 14,
+     "of": 17,
+     "proportion": 0.8235294117647058,
+     "interval": [
+      0.5656821271557161,
+      0.962014931929374
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.7333333333333333,
+      0.9787234042553191
+     ],
+     "bca": [
+      0.7054054376421903,
+      0.9722222222222222
+     ]
+    },
+    "leave_one_series_out": [
+     0.8529411764705882,
+     0.9285714285714286
+    ]
+   },
+   "package_artifact_units": [],
+   "result_sign_record_errors": {
+    "units": 4,
+    "of": 44,
+    "estimate": {
+     "units": 44,
+     "errors": 4,
+     "series": 17,
+     "rate": 0.09090909090909091,
+     "unadjusted_interval": [
+      0.025328421703450756,
+      0.21668658946527453
+     ],
+     "effective": {
+      "rate": 0.09090909090909091,
+      "interval": [
+       0.008575150156408112,
+       0.31426624055283586
+      ],
+      "icc": 0.3635025754231054,
+      "deff": 2.3383503913305246,
+      "n_effective": 18.81668383110195,
+      "size_weighted_mean_cluster": 4.681818181818182
+     },
+     "model": null,
+     "model_valid": false,
+     "primary": {
+      "method": "Clopper-Pearson on effective n (DEFF)",
+      "rate": 0.09090909090909091,
+      "interval": [
+       0.008575150156408112,
+       0.31426624055283586
+      ]
+     },
+     "series_with_error": {
+      "count": 2,
+      "of": 17,
+      "proportion": 0.11764705882352941,
+      "interval": [
+       0.014579316840302493,
+       0.36440916210125024
+      ]
+     },
+     "bootstrap": {
+      "percentile": [
+       0.0,
+       0.23255813953488372
+      ],
+      "bca": [
+       0.0,
+       0.2857142857142857
+      ]
+     },
+     "leave_one_series_out": [
+      0.02631578947368421,
+      0.11764705882352941
+     ]
+    }
+   },
+   "E1_any_error_including_result_sign": {
+    "units": 44,
+    "errors": 40,
+    "series": 17,
+    "rate": 0.9090909090909091,
+    "unadjusted_interval": [
+     0.7833134105347255,
+     0.9746715782965493
+    ],
+    "effective": {
+     "rate": 0.9090909090909091,
+     "interval": [
+      0.5516651276263593,
+      0.9986714950702132
+     ],
+     "icc": 1.0,
+     "deff": 4.681818181818182,
+     "n_effective": 9.398058252427186,
+     "size_weighted_mean_cluster": 4.681818181818182
+    },
+    "model": {
+     "rate": 0.7179999718155773,
+     "interval": [
+      0.876042603879368,
+      0.9609577339170294
+     ],
+     "b0": 82.02853304502102,
+     "sigma": 152.12842408400084
+    },
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.9090909090909091,
+     "interval": [
+      0.5516651276263593,
+      0.9986714950702132
+     ]
+    },
+    "series_with_error": {
+     "count": 14,
+     "of": 17,
+     "proportion": 0.8235294117647058,
+     "interval": [
+      0.5656821271557161,
+      0.962014931929374
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.75,
+      1.0
+     ],
+     "bca": [
+      0.7027027027027027,
+      0.9818181818181818
+     ]
+    },
+    "leave_one_series_out": [
+     0.8823529411764706,
+     0.9523809523809523
+    ]
+   },
+   "E1_age_confounding_median_gap_over_5y_only": {
+    "units": 44,
+    "errors": 31,
+    "series": 17,
+    "rate": 0.7045454545454546,
+    "unadjusted_interval": [
+     0.5479781519159446,
+     0.8323560187713236
+    ],
+    "effective": {
+     "rate": 0.7045454545454546,
+     "interval": [
+      0.4332271487896973,
+      0.8989715046658511
+     ],
+     "icc": 0.4599248188055974,
+     "deff": 2.693359560147881,
+     "n_effective": 16.33647458402626,
+     "size_weighted_mean_cluster": 4.681818181818182
+    },
+    "model": {
+     "rate": 0.6581533919364144,
+     "interval": [
+      0.8262548335547778,
+      0.6581532408887772
+     ],
+     "b0": 12.746692484815025,
+     "sigma": 41.396999983970964
+    },
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.7045454545454546,
+     "interval": [
+      0.4332271487896973,
+      0.8989715046658511
+     ]
+    },
+    "series_with_error": {
+     "count": 13,
+     "of": 17,
+     "proportion": 0.7647058823529411,
+     "interval": [
+      0.5010067267954198,
+      0.9318922595626433
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.5110992907801418,
+      0.9
+     ],
+     "bca": [
+      0.46409967831013904,
+      0.8666666666666667
+     ]
+    },
+    "leave_one_series_out": [
+     0.675,
+     0.775
+    ]
+   },
+   "age_only_units_within_5y": [
+    "A2:GSE151355:0",
+    "A2:GSE151355:1",
+    "A2:GSE151355:2",
+    "A2:GSE151355:3",
+    "A2:GSE185389:0",
+    "A2:GSE185389:7",
+    "A2:GSE185389:8",
+    "A2:GSE185389:9"
+   ],
+   "E1_design_errors_only": {
+    "units": 44,
+    "errors": 29,
+    "series": 17,
+    "rate": 0.6590909090909091,
+    "unadjusted_interval": [
+     0.5008050107057003,
+     0.7950826530305182
+    ],
+    "effective": {
+     "rate": 0.6590909090909091,
+     "interval": [
+      0.38109734644219,
+      0.87426960928588
+     ],
+     "icc": 0.5015090483489587,
+     "deff": 2.8464651325575296,
+     "n_effective": 15.45776882939237,
+     "size_weighted_mean_cluster": 4.681818181818182
+    },
+    "model": {
+     "rate": 0.7514961703755086,
+     "interval": [
+      0.5118153653954588,
+      0.8043700045877961
+     ],
+     "b0": 3.428349074697297,
+     "sigma": 4.705380458274102
+    },
+    "model_valid": true,
+    "primary": {
+     "method": "random-intercept logistic, profile likelihood",
+     "rate": 0.7514961703755086,
+     "interval": [
+      0.5118153653954588,
+      0.8043700045877961
+     ],
+     "b0": 3.428349074697297,
+     "sigma": 4.705380458274102
+    },
+    "series_with_error": {
+     "count": 13,
+     "of": 17,
+     "proportion": 0.7647058823529411,
+     "interval": [
+      0.5010067267954198,
+      0.9318922595626433
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.46153846153846156,
+      0.8918918918918919
+     ],
+     "bca": [
+      0.4192048553486369,
+      0.8571428571428571
+     ]
+    },
+    "leave_one_series_out": [
+     0.625,
+     0.7352941176470589
+    ]
+   },
+   "error_types": {
+    "REPORTED_RESULT_INVERSION": 7,
+    "IMPURE_ARM": 1,
+    "REPEATED_SUBJECT": 6,
+    "LABEL_MISMATCH": 4,
+    "PAIRED_AS_INDEPENDENT": 10,
+    "CONFOUNDED_AGE": 15,
+    "CONFOUNDED": 4
+   },
+   "rule_based": {
+    "units": 44,
+    "errors": 25,
+    "series": 17,
+    "rate": 0.5681818181818182,
+    "unadjusted_interval": [
+     0.41033721610603374,
+     0.7165062719107134
+    ],
+    "effective": {
+     "rate": 0.5681818181818182,
+     "interval": [
+      0.27281005402945,
+      0.8313620499774019
+     ],
+     "icc": 0.6661359579292708,
+     "deff": 3.4525914814668606,
+     "n_effective": 12.744050443322722,
+     "size_weighted_mean_cluster": 4.681818181818182
+    },
+    "model": {
+     "rate": 0.6384653446303117,
+     "interval": [
+      0.8051763016162614,
+      0.8052125817811681
+     ],
+     "b0": 14.191284095075954,
+     "sigma": 47.94303165170486
+    },
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.5681818181818182,
+     "interval": [
+      0.27281005402945,
+      0.8313620499774019
+     ]
+    },
+    "series_with_error": {
+     "count": 11,
+     "of": 17,
+     "proportion": 0.6470588235294118,
+     "interval": [
+      0.3832836634434029,
+      0.857902516889779
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.3333333333333333,
+      0.8181818181818182
+     ],
+     "bca": [
+      0.2905543883178787,
+      0.7837837837837838
+     ]
+    },
+    "leave_one_series_out": [
+     0.525,
+     0.6578947368421053
+    ]
+   },
+   "by_stratum": {
+    "replay": {
+     "units": 14,
+     "errors": 11
+    },
+    "recovery": {
+     "units": 6,
+     "errors": 5
+    },
+    "replay+recovery": {
+     "units": 25,
+     "errors": 24
+    }
+   },
+   "by_contrast_type": {
+    "other (GEO field)": {
+     "units": 20,
+     "errors": 19
+    },
+    "disease condition": {
+     "units": 9,
+     "errors": 7
+    },
+    "intervention": {
+     "units": 10,
+     "errors": 10
+    },
+    "other": {
+     "units": 2,
+     "errors": 2
+    },
+    "tissue or cell type": {
+     "units": 3,
+     "errors": 1
+    }
+   },
+   "excluded_comparisons": 58,
+   "exclusion_bounds": {
+    "all_excluded_errors": 0.9509803921568627,
+    "no_excluded_errors": 0.38235294117647056
+   },
+   "E2_rows": {
+    "units": 184,
+    "errors": 142,
+    "series": 17,
+    "rate": 0.7717391304347826,
+    "unadjusted_interval": [
+     0.704242924862978,
+     0.8302639764875468
+    ],
+    "effective": {
+     "rate": 0.7717391304347826,
+     "interval": [
+      0.3860286191321763,
+      0.9715957769528797
+     ],
+     "icc": 0.9498880524357943,
+     "deff": 21.24707033507166,
+     "n_effective": 8.66001745644334,
+     "size_weighted_mean_cluster": 22.315217391304348
+    },
+    "model": {
+     "rate": 0.6971991646637155,
+     "interval": [
+      null,
+      null
+     ],
+     "b0": 17.131099880895984,
+     "sigma": 52.32014591662654
+    },
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.7717391304347826,
+     "interval": [
+      0.3860286191321763,
+      0.9715957769528797
+     ]
+    },
+    "series_with_error": {
+     "count": 10,
+     "of": 17,
+     "proportion": 0.5882352941176471,
+     "interval": [
+      0.32924715394675735,
+      0.8155630382160532
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.4921811995967742,
+      0.9265798226164079
+     ],
+     "bca": [
+      0.5022442127174378,
+      0.9302851976846165
+     ]
+    },
+    "leave_one_series_out": [
+     0.6865671641791045,
+     0.8402366863905325
+    ]
+   },
+   "E2_units": {
+    "units": 44,
+    "errors": 33,
+    "series": 17,
+    "rate": 0.75,
+    "unadjusted_interval": [
+     0.5966195922641409,
+     0.8680725620663532
+    ],
+    "effective": {
+     "rate": 0.75,
+     "interval": [
+      0.40615599536470764,
+      0.9522932202839675
+     ],
+     "icc": 0.8508517828815779,
+     "deff": 4.132681564245809,
+     "n_effective": 10.646840148698887,
+     "size_weighted_mean_cluster": 4.681818181818182
+    },
+    "model": {
+     "rate": 0.6901953387231612,
+     "interval": [
+      null,
+      null
+     ],
+     "b0": 16.33235963480097,
+     "sigma": 50.659448169992274
+    },
+    "model_valid": false,
+    "primary": {
+     "method": "Clopper-Pearson on effective n (DEFF)",
+     "rate": 0.75,
+     "interval": [
+      0.40615599536470764,
+      0.9522932202839675
+     ]
+    },
+    "series_with_error": {
+     "count": 10,
+     "of": 17,
+     "proportion": 0.5882352941176471,
+     "interval": [
+      0.32924715394675735,
+      0.8155630382160532
+     ]
+    },
+    "bootstrap": {
+     "percentile": [
+      0.48717948717948717,
+      0.9038461538461539
+     ],
+     "bca": [
+      0.5,
+      0.9056603773584906
+     ]
+    },
+    "leave_one_series_out": [
+     0.6764705882352942,
+     0.8048780487804879
+    ]
+   },
+   "E2_error_types": {
+    "IMPURE_ARM": 5,
+    "REPEATED_SUBJECT": 29,
+    "LABEL_MISMATCH": 15,
+    "PAIRED_AS_INDEPENDENT": 46,
+    "CONFOUNDED_AGE": 57,
+    "CONFOUNDED": 8
+   },
+   "verifier_on_confirmed_errors": {
+    "released after repair": 6,
+    "released with the error": 33
+   },
+   "verifier_on_correct_units": {
+    "released": 5
+   }
+  }
+ },
+ "B": {
+  "pairs": 56,
+  "papers": 26,
+  "call_agreement": 0.8392857142857143,
+  "call_agreement_interval": [
+   0.7536231884057971,
+   0.9318181818181818
+  ],
+  "kappa": 0.7120000000000001,
+  "kappa_interval": [
+   0.5487190593321704,
+   0.8773020604236602
+  ],
+  "direction_agreement_both_significant": 0.9523809523809523,
+  "n_both_significant": 21,
+  "discordant": 9,
+  "attributions": {
+   "MED-25678027-GSE25395-Horvathv1-0": {
+    "categories": {
+     "estimand_difference": 3
+    },
+    "majority": "estimand_difference",
+    "agent_error": false
+   },
+   "MED-25678027-GSE25395-Horvathv1-1": {
+    "categories": {
+     "estimand_difference": 3
+    },
+    "majority": "estimand_difference",
+    "agent_error": false
+   },
+   "MED-29974462-GSE75008-Horvathv1-1": {
+    "categories": {
+     "sample_subset_difference": 3
+    },
+    "majority": "sample_subset_difference",
+    "agent_error": false
+   },
+   "MED-32930491-GSE100249-PhenoAge-0": {
+    "categories": {
+     "clock_or_preprocessing_difference": 3
+    },
+    "majority": "clock_or_preprocessing_difference",
+    "agent_error": false
+   },
+   "MED-32930491-GSE91069-PhenoAge-9": {
+    "categories": {
+     "power_or_test_difference": 3
+    },
+    "majority": "power_or_test_difference",
+    "agent_error": false
+   },
+   "MED-31628391-GSE100850-Horvathv1-0": {
+    "categories": {
+     "estimand_difference": 3
+    },
+    "majority": "estimand_difference",
+    "agent_error": true
+   },
+   "MED-36092807-GSE106648-Horvathv1-0": {
+    "categories": {
+     "clock_or_preprocessing_difference": 3
+    },
+    "majority": "clock_or_preprocessing_difference",
+    "agent_error": false
+   },
+   "MED-40589934-GSE176394-DunedinPACE-12": {
+    "categories": {
+     "agent_statistical_error": 3
+    },
+    "majority": "agent_statistical_error",
+    "agent_error": true
+   },
+   "MED-40589934-GSE176394-DunedinPACE-13": {
+    "categories": {
+     "agent_statistical_error": 3
+    },
+    "majority": "agent_statistical_error",
+    "agent_error": true
+   }
+  },
+  "agent_error_rate": 0.05357142857142857,
+  "agent_errors": 3,
+  "verified": {
+   "n": 56,
+   "call_agreement": 0.7857142857142857,
+   "kappa": 0.6188315371525808,
+   "direction_agreement_both_significant": 0.9473684210526315,
+   "n_both_significant": 19
+  },
+  "coverage": {
+   "LINKED": 142,
+   "PUBLISHED_GROUPS_UNRESOLVED": 102,
+   "NOT_LINKED": 60,
+   "LINKED_RECONSTRUCTED_ONLY": 24,
+   "SERIES_NOT_IN_ATLAS": 5
+  }
+ }
+}

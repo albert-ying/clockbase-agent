@@ -1,0 +1,78 @@
+{
+  "copied_at_utc": "2026-09-10T08:47:04.421528+00:00",
+  "geo_producer_commit": "f45445e",
+  "files": {
+    "Gene_list_all_4.6.txt": {
+      "sha256": "ef3f9e30fe4869a40b2c4915b8e1710e94933191b1e553a6deb0c199ca22af9e",
+      "size_bytes": 137936,
+      "source_path": "/Entropy/kying/GEO_data/src_rna/Gene_list_all_4.6.txt",
+      "source_mtime_ns": 1746469660670526808
+    },
+    "Gene_table_mouse.csv": {
+      "sha256": "4b9a38152a64ee9cdcfba69074ca73d1ebc285f04e4d1b4afbe18fe738faf313",
+      "size_bytes": 1261635,
+      "source_path": "/Entropy/kying/GEO_data/src_rna/Gene_table_mouse.csv",
+      "source_mtime_ns": 1746469660757526811
+    },
+    "Gene_table_human.csv": {
+      "sha256": "d42690dc1433580a6c12ed529bc7a59bb685254d037cc1a350a842b74e405cb3",
+      "size_bytes": 1363330,
+      "source_path": "/Entropy/kying/GEO_data/src_rna/Gene_table_human.csv",
+      "source_mtime_ns": 1746469660721526810
+    },
+    "Table_of_orthologs.csv": {
+      "sha256": "260adb0e7e823827c1a951865919e2b5adab127fbd96aa8120e3884bd41e80ef",
+      "size_bytes": 463654,
+      "source_path": "/Entropy/kying/GEO_data/src_rna/Table_of_orthologs.csv",
+      "source_mtime_ns": 1746469660737526810
+    },
+    "FUN.Preprocessing_for_clock_3.0.R": {
+      "sha256": "8ceaebf4d689c3c40177c35e610cef25710af0b710e7b4e35234e15d40c7f47d",
+      "size_bytes": 4225,
+      "source_path": "/Entropy/kying/GEO_data/src_rna/FUN.Preprocessing_for_clock_3.0.R",
+      "source_mtime_ns": 1746469660687526808
+    },
+    "FUN.Map_to_orthologs.R": {
+      "sha256": "dae4d4e482cc0ca10c86f9239ea4496466c550c0762f024df9d21d88e8220d37",
+      "size_bytes": 3266,
+      "source_path": "/Entropy/kying/GEO_data/src_rna/FUN.Map_to_orthologs.R",
+      "source_mtime_ns": 1746469660764526811
+    },
+    "1_preprocess_rna.R": {
+      "sha256": "0ad228a073f694ccc300eb32b9825cc74272350647c58bd3cd39f5245538a2a5",
+      "size_bytes": 5702,
+      "source_path": "/Entropy/kying/GEO_data/src_rna/1_preprocess_rna.R",
+      "source_mtime_ns": 1746469660700526809
+    },
+    "2_run_rna_clock.py": {
+      "sha256": "ec6fb639fa9f5f4b15cc258b2e783b0ae99ae69eace99a739145d96f840f9bc9",
+      "size_bytes": 24170,
+      "source_path": "/Entropy/kying/GEO_data/src_rna/2_run_rna_clock.py",
+      "source_mtime_ns": 1789028383237082713
+    },
+    "EN_Hazard_All_All_All_scaleddiff.pkl": {
+      "sha256": "06e6686fdc320b4f53d31383991cb70d6c2a36608e9061fcb1a0f5eb2bb3fcfa",
+      "size_bytes": 961478,
+      "source_path": "/Lasagna/alex2308/tAge_clocks/EN differential models 4.6/EN_Hazard_All_All_All_scaleddiff.pkl",
+      "source_mtime_ns": 1708628252000000000
+    },
+    "EN_Hazard_Mouse_All_All_scaleddiff.pkl": {
+      "sha256": "c201a0f8a46f4d5ddcb09892ff3193450099a46088ec724c970abf86a50a7551",
+      "size_bytes": 964509,
+      "source_path": "/Lasagna/alex2308/tAge_clocks/EN differential models 4.6/EN_Hazard_Mouse_All_All_scaleddiff.pkl",
+      "source_mtime_ns": 1708578576000000000
+    },
+    "EN_Hazard_Rodents_All_All_scaleddiff.pkl": {
+      "sha256": "60aee54a2cf54acabe416f7bb0dabc10318e73fb51a951505a328bcf2031e2dc",
+      "size_bytes": 934823,
+      "source_path": "/Lasagna/alex2308/tAge_clocks/EN differential models 4.6/EN_Hazard_Rodents_All_All_scaleddiff.pkl",
+      "source_mtime_ns": 1708594863000000000
+    },
+    "EN_Hazard2_All_All_All_scaleddiff.pkl": {
+      "sha256": "703f6a9a573c96ec535f13f76e99c2f3c89e186b94e7b8da0d79ddd08fb4d322",
+      "size_bytes": 956359,
+      "source_path": "/Lasagna/alex2308/tAge_clocks/EN differential models 4.6/EN_Hazard2_All_All_All_scaleddiff.pkl",
+      "source_mtime_ns": 1715649743000000000
+    }
+  }
+}

@@ -1,0 +1,17 @@
+# Source: audit_system/design_reconstruction_2026_09_28.py::PROMPT
+You reconstruct the sample groups of comparisons that an automated agent reported for GEO study
+{gse} ({n} samples). Its sample metadata fields, with each value and its sample count, are:
+
+{fields}
+
+For each comparison below, define the CASE arm (the labelled condition) and the CONTROL arm as selection
+rules over these fields. A rule is an object mapping field names to lists of allowed values, copied
+exactly as shown; a sample belongs to an arm when it matches every field in the rule. Use the most
+specific appropriate control (same tissue, cell type, time point and other conditions as the case where
+the metadata allow). If the comparison cannot be formed from these fields, set "feasible": false.
+
+Comparisons:
+{comparisons}
+
+Return JSON only: {{"comparisons": [{{"id": <id>, "feasible": true|false, "case": {{...}}, "control": {{...}},
+"note": "<one sentence>"}}]}}

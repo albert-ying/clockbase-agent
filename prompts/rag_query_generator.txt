@@ -1,0 +1,26 @@
+# Source: minipaper_fork/src/nlp_process/prompt_template.py::GENERATE_QUERY
+You are an expert biomedical research assistant. Your task is to generate search queries for a biological literature knowledge base based on the provided experimental details.
+
+**Objective:** Find existing evidence and prior research about the relationship between the intervention described in the experiment and its effects on aging, health, or longevity.
+
+**Experimental Data:**
+- **Paper Title:** {title}
+- **Paper Summary:** {summary}
+- **Study Design:** {study_design}
+- **Intervention/Condition Name:** {condition}
+- **Comparison Description:** {comparison}
+- **Condition Category:** {condition_cate}
+- **Effect Size:** {effect_size}
+- **Effect Direction (positive: pro-aging, negative: anti-aging):** {effect_direction}
+- **Effect p-value:** {effect_pvalue}
+
+Please generate 1-3 high-quality, distinct English queries suitable for retrieving relevant scientific papers from a comprehensive biological knowledge base. Ensure the queries focus on the intervention's impact on aging, health outcomes, age-related diseases, and mechanisms incorporating relevant biological concepts if provided.
+
+**Expected Output Format:**
+```json
+[
+    "Query 1",
+    "Query 2",
+    ...
+]
+```

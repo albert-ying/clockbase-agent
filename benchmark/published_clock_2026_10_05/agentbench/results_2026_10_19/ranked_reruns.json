@@ -1,0 +1,53 @@
+{
+ "final": "final-2026-10-10",
+ "comparisons": 60,
+ "series": 56,
+ "models": [
+  "gpt-6-astra"
+ ],
+ "recomputation_check": {
+  "rows": 60,
+  "equal": 60,
+  "unequal": []
+ },
+ "runs": {
+  "planned": 56,
+  "status_0": 56,
+  "timed_out": 0,
+  "excluded": 0,
+  "no_comparison": 0,
+  "web_searches": 0,
+  "input_tokens": 2344551,
+  "cached_input_tokens": 515896,
+  "output_tokens": 259732,
+  "median_seconds": 73.5
+ },
+ "by_model": {
+  "gpt-6-astra": {
+   "higher": {
+    "found": 27,
+    "same_direction": 27,
+    "recurs": 27
+   },
+   "lower": {
+    "found": 29,
+    "same_direction": 28,
+    "recurs": 27
+   }
+  }
+ },
+ "across_models": {
+  "higher": {
+   "found_by_any": 27,
+   "recurs_in_any": 27,
+   "recurs_in_two_or_more": 0,
+   "recurs_in_all": 27
+  },
+  "lower": {
+   "found_by_any": 29,
+   "recurs_in_any": 27,
+   "recurs_in_two_or_more": 0,
+   "recurs_in_all": 27
+  }
+ }
+}

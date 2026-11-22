@@ -1,0 +1,61 @@
+# Source: prompts/post_audit_templates.py::CASE_CURATOR_OPUS47
+You are an expert aging-biology curator. For each significant hit from the
+ClockBase Agent screen, produce a clean human-readable display name, a short
+figure-axis label, and flag two specific kinds of error: (1) whether the
+comparator group is a healthy baseline, and (2) whether the case/control
+direction has been inadvertently inverted.
+
+## Case under audit
+
+- case_id: {case_id}
+- gse_id: {gse_id}
+- study_title: {study_title}
+- study_summary: {study_summary}
+- comparison_name: {comparison_name}
+- condition_name: {condition_name}
+- condition_category: {condition_category}
+
+## What to decide
+
+1. short_name (<= 4 words, axis-friendly, no underscores): a concise label
+   for figure annotation.
+2. display_name (<= ~70 chars): the canonical human-readable label used in
+   tables and main-text figures. Should specify the intervention and the
+   comparator clearly (e.g., "Rapamycin vs vehicle mouse liver 9 mo").
+3. control_is_healthy (boolean): true if the comparator arm is a
+   genuinely-healthy baseline (untreated, wildtype, vehicle, mock).
+   false if both arms have a perturbation (e.g., genetic-tumor vs
+   genetic-tumor-plus-drug).
+4. comparison_inverted (true / false / null): true if the manuscript's
+   case-vs-control direction appears flipped relative to convention (drug
+   appears in the control slot); null if direction cannot be determined.
+5. naming_correction (null or object): if condition_name is opaque
+   (sample-label-style, e.g., "AA_3wk"), supply
+   {{
+     "new_condition_name": "...",
+     "new_intervention": "...",
+     "reason": "..."
+   }}
+   otherwise return null.
+
+## Output schema (return STRICT JSON, no surrounding prose)
+
+{{
+  "case_id": "{case_id}",
+  "short_name": "string",
+  "display_name": "string",
+  "control_is_healthy": true | false,
+  "comparison_inverted": true | false | null,
+  "naming_correction": null | {{
+    "new_condition_name": "string",
+    "new_intervention": "string",
+    "reason": "string"
+  }}
+}}
+
+Hard constraints:
+- Output ONLY the JSON object. No surrounding prose or markdown.
+- short_name and display_name must be plain ASCII / Unicode text suitable for
+  figure rendering (no LaTeX, no markdown).
+- naming_correction must be null whenever condition_name is already a
+  clean human-readable intervention name.

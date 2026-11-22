@@ -1,0 +1,143 @@
+{
+ "hs_rna": {
+  "released": {
+   "rows": 24379,
+   "units": 24372,
+   "series": 8214
+  },
+  "subjects_recorded": {
+   "rows": 2682,
+   "units": 2681,
+   "series": 729
+  },
+  "age_recorded": {
+   "rows": 1610,
+   "units": 1610,
+   "series": 658
+  },
+  "flagged": {
+   "rows": 2705,
+   "units": 2704,
+   "series": 919
+  },
+  "findings": {
+   "REPEATED_SUBJECT": {
+    "rows": 730,
+    "units": 729,
+    "series": 277,
+    "only_this_finding": 342,
+    "change": {
+     "SIGNIFICANCE_LOST": 60,
+     "UNCHANGED": 480,
+     "SIGNIFICANCE_GAINED": 25,
+     "ONE_SUBJECT_ARM": 95,
+     "TOO_FEW_PAIRS": 58,
+     "TOO_FEW_SAMPLES": 9,
+     "AGE_SEPARATES_ARMS": 3
+    },
+    "released_significant": 228,
+    "released_fdr_significant": 129
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "rows": 1912,
+    "units": 1912,
+    "series": 584,
+    "only_this_finding": 1561,
+    "change": {
+     "UNCHANGED": 1590,
+     "SIGNIFICANCE_GAINED": 188,
+     "SIGNIFICANCE_LOST": 54,
+     "TOO_FEW_PAIRS": 80
+    },
+    "released_significant": 376,
+    "released_fdr_significant": 179,
+    "agent_test_was_paired": 199
+   },
+   "AGE_IMBALANCE": {
+    "rows": 453,
+    "units": 453,
+    "series": 259,
+    "only_this_finding": 412,
+    "change": {
+     "UNCHANGED": 357,
+     "AGE_SEPARATES_ARMS": 40,
+     "SIGNIFICANCE_GAINED": 15,
+     "SIGNIFICANCE_LOST": 32,
+     "TOO_FEW_SAMPLES": 9
+    },
+    "released_significant": 113,
+    "released_fdr_significant": 61,
+    "agent_model_had_age": 87,
+    "criterion": {
+     "median_gap": 372,
+     "smd_only": 81
+    }
+   }
+  },
+  "age_exempt": {
+   "age_or_time_declared": {
+    "rows": 67,
+    "units": 67,
+    "series": 33
+   },
+   "declared_by": {
+    "classification+name": 28,
+    "name": 18,
+    "classification": 21
+   },
+   "pace_clock": {
+    "rows": 0,
+    "units": 0,
+    "series": 0
+   }
+  },
+  "agent_design": {
+   "agent_test_paired": {
+    "rows": 405,
+    "units": 405,
+    "series": 245,
+    "flagged_paired": 199,
+    "subjects_recorded": 204
+   },
+   "agent_model_with_age": {
+    "rows": 239,
+    "units": 239,
+    "series": 138,
+    "flagged_age": 87,
+    "age_recorded": 199
+   }
+  },
+  "change_any_finding": {
+   "UNCHANGED": 2150,
+   "SIGNIFICANCE_GAINED": 207,
+   "SIGNIFICANCE_LOST": 124,
+   "ONE_SUBJECT_ARM": 95,
+   "AGE_SEPARATES_ARMS": 40,
+   "TOO_FEW_PAIRS": 80,
+   "TOO_FEW_SAMPLES": 9
+  },
+  "released_significant": {
+   "rows": 6864,
+   "flagged": {
+    "UNCHANGED": 425,
+    "SIGNIFICANCE_LOST": 124,
+    "ONE_SUBJECT_ARM": 44,
+    "TOO_FEW_PAIRS": 11,
+    "TOO_FEW_SAMPLES": 3,
+    "AGE_SEPARATES_ARMS": 8
+   }
+  },
+  "released_fdr_significant": {
+   "rows": 3205,
+   "flagged": {
+    "UNCHANGED": 240,
+    "ONE_SUBJECT_ARM": 25,
+    "SIGNIFICANCE_LOST": 36,
+    "TOO_FEW_SAMPLES": 1,
+    "AGE_SEPARATES_ARMS": 3,
+    "TOO_FEW_PAIRS": 4
+   }
+  },
+  "released_not_reproduced": 0
+ }
+}

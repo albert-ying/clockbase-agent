@@ -1,0 +1,16 @@
+{
+ "agent_model_with_age": {
+  "rows": 603,
+  "released call equals agent call": 435,
+  "design-respecting call equals agent call": 562,
+  "agent not significant, released significant": 104,
+  "agent significant, released not significant": 55
+ },
+ "agent_test_paired": {
+  "rows": 498,
+  "released call equals agent call": 427,
+  "design-respecting call equals agent call": 484,
+  "agent significant, released not significant": 62,
+  "agent not significant, released significant": 2
+ }
+}

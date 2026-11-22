@@ -1,0 +1,1373 @@
+{
+ "Table 1": {
+  "units_read": 30,
+  "both_readers_determined_individuals": 14,
+  "both_readers_recorded_age": 11,
+  "REPEATED_SUBJECT": {
+   "both_readers": 0,
+   "one_reader": 0,
+   "recorded_field_check": 0
+  },
+  "PAIRED_AS_INDEPENDENT": {
+   "both_readers": 0,
+   "one_reader": 0,
+   "recorded_field_check": 0
+  },
+  "AGE_IMBALANCE": {
+   "both_readers": 0,
+   "one_reader": 0,
+   "recorded_field_check": 0
+  },
+  "units_with_a_finding": []
+ },
+ "Table 2": {
+  "units_read": 30,
+  "both_readers_determined_individuals": 19,
+  "both_readers_recorded_age": 15,
+  "REPEATED_SUBJECT": {
+   "both_readers": 2,
+   "one_reader": 1,
+   "recorded_field_check": 0
+  },
+  "PAIRED_AS_INDEPENDENT": {
+   "both_readers": 0,
+   "one_reader": 0,
+   "recorded_field_check": 0
+  },
+  "AGE_IMBALANCE": {
+   "both_readers": 0,
+   "one_reader": 0,
+   "recorded_field_check": 0
+  },
+  "units_with_a_finding": [
+   {
+    "gse": "GSE133505",
+    "comparison_name": "Myf6 knockout vs Wild type (10 months)",
+    "check": [],
+    "arms": [
+     8,
+     8
+    ],
+    "released": {
+     "estimate": -0.348760161326359,
+     "p": 7.455506196522762e-08,
+     "fdr": 6.250853353189874e-06,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.348760161326359,
+      "p": 0.004561567843118702,
+      "n": [
+       2,
+       2
+      ],
+      "call": "lower",
+      "subjects": [
+       2,
+       2
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.348760161326359,
+      "p": 0.004561567843118702,
+      "n": [
+       2,
+       2
+      ],
+      "call": "lower",
+      "subjects": [
+       2,
+       2
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE151160",
+    "comparison_name": "CD36 KO vs wild type",
+    "check": [],
+    "arms": [
+     4,
+     4
+    ],
+    "released": {
+     "estimate": -0.8739290790157372,
+     "p": 0.0012055852824751684,
+     "fdr": 0.012659346659445535,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "ONE_SUBJECT_ARM",
+      "n": [
+       1,
+       1
+      ],
+      "call": null,
+      "subjects": [
+       1,
+       1
+      ]
+     },
+     null
+    ],
+    "both_readers": [],
+    "one_reader": [
+     "REPEATED_SUBJECT"
+    ]
+   },
+   {
+    "gse": "GSE162613",
+    "comparison_name": "miR-155KI vs WT",
+    "check": [],
+    "arms": [
+     6,
+     6
+    ],
+    "released": {
+     "estimate": -2.2651966926564238,
+     "p": 2.694073267669508e-10,
+     "fdr": 3.703461835622231e-08,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -2.2651966926564238,
+      "p": 1.7974829411194613e-05,
+      "n": [
+       3,
+       3
+      ],
+      "call": "lower",
+      "subjects": [
+       3,
+       3
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -2.2651966926564238,
+      "p": 1.7974829411194613e-05,
+      "n": [
+       3,
+       3
+      ],
+      "call": "lower",
+      "subjects": [
+       3,
+       3
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   }
+  ]
+ },
+ "Figure 3": {
+  "units_read": 60,
+  "both_readers_determined_individuals": 33,
+  "both_readers_recorded_age": 23,
+  "REPEATED_SUBJECT": {
+   "both_readers": 1,
+   "one_reader": 0,
+   "recorded_field_check": 0
+  },
+  "PAIRED_AS_INDEPENDENT": {
+   "both_readers": 0,
+   "one_reader": 0,
+   "recorded_field_check": 0
+  },
+  "AGE_IMBALANCE": {
+   "both_readers": 0,
+   "one_reader": 0,
+   "recorded_field_check": 0
+  },
+  "units_with_a_finding": [
+   {
+    "gse": "GSE162613",
+    "comparison_name": "miR-155KI vs WT",
+    "check": [],
+    "arms": [
+     6,
+     6
+    ],
+    "released": {
+     "estimate": -2.2651966926564238,
+     "p": 2.694073267669508e-10,
+     "fdr": 3.703461835622231e-08,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -2.2651966926564238,
+      "p": 1.7974829411194613e-05,
+      "n": [
+       3,
+       3
+      ],
+      "call": "lower",
+      "subjects": [
+       3,
+       3
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -2.2651966926564238,
+      "p": 1.7974829411194613e-05,
+      "n": [
+       3,
+       3
+      ],
+      "call": "lower",
+      "subjects": [
+       3,
+       3
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   }
+  ]
+ },
+ "Table S14": {
+  "units_read": 201,
+  "both_readers_determined_individuals": 124,
+  "both_readers_recorded_age": 75,
+  "REPEATED_SUBJECT": {
+   "both_readers": 16,
+   "one_reader": 4,
+   "recorded_field_check": 2
+  },
+  "PAIRED_AS_INDEPENDENT": {
+   "both_readers": 2,
+   "one_reader": 0,
+   "recorded_field_check": 2
+  },
+  "AGE_IMBALANCE": {
+   "both_readers": 3,
+   "one_reader": 0,
+   "recorded_field_check": 3
+  },
+  "units_with_a_finding": [
+   {
+    "gse": "GSE113018",
+    "comparison_name": "FASD vs control",
+    "check": [
+     "AGE_IMBALANCE"
+    ],
+    "arms": null,
+    "released": null,
+    "reader_recomputation": null,
+    "both_readers": [
+     "AGE_IMBALANCE"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE191200",
+    "comparison_name": "Bipolar vs Control",
+    "check": [
+     "AGE_IMBALANCE",
+     "REPEATED_SUBJECT"
+    ],
+    "arms": [
+     27,
+     20
+    ],
+    "released": {
+     "estimate": -9.67914168275874,
+     "p": 0.006014803747315273,
+     "fdr": 0.03722730404419643,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -7.227208472477756,
+      "p": 0.21971058200328394,
+      "n": [
+       10,
+       8
+      ],
+      "call": "ns",
+      "subjects": [
+       10,
+       8
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -7.227208472477756,
+      "p": 0.21971058200328394,
+      "n": [
+       10,
+       8
+      ],
+      "call": "ns",
+      "subjects": [
+       10,
+       8
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT",
+     "AGE_IMBALANCE"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE50759",
+    "comparison_name": "ASD vs TD",
+    "check": [
+     "AGE_IMBALANCE"
+    ],
+    "arms": null,
+    "released": null,
+    "reader_recomputation": null,
+    "both_readers": [
+     "AGE_IMBALANCE"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE66210",
+    "comparison_name": "trisomy 21 vs normal pregnancy (chorionic villus)",
+    "check": [],
+    "arms": [
+     14,
+     14
+    ],
+    "released": {
+     "estimate": -21.597589544106995,
+     "p": 0.003360958251714876,
+     "fdr": 0.023517677782821666,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     null,
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -22.4653004186209,
+      "p": 0.004293548888661824,
+      "n": [
+       12,
+       12
+      ],
+      "call": "lower",
+      "subjects": [
+       12,
+       12
+      ]
+     }
+    ],
+    "both_readers": [],
+    "one_reader": [
+     "REPEATED_SUBJECT"
+    ]
+   },
+   {
+    "gse": "GSE78773",
+    "comparison_name": "MLID vs none",
+    "check": [],
+    "arms": [
+     22,
+     47
+    ],
+    "released": {
+     "estimate": -0.14909631082319874,
+     "p": 0.00016725146678495202,
+     "fdr": 0.001956827134297974,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.15913402702184876,
+      "p": 0.0007351882242237409,
+      "n": [
+       17,
+       39
+      ],
+      "call": "lower",
+      "subjects": [
+       17,
+       39
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.15913402702184876,
+      "p": 0.0007351882242237409,
+      "n": [
+       17,
+       39
+      ],
+      "call": "lower",
+      "subjects": [
+       17,
+       39
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE102288",
+    "comparison_name": "RTS,S/AS01 012: Day of Challenge vs PreVAC",
+    "check": [
+     "PAIRED_AS_INDEPENDENT"
+    ],
+    "arms": [
+     15,
+     15
+    ],
+    "released": {
+     "estimate": -0.48050016664095874,
+     "p": 0.0003783172451402082,
+     "fdr": 0.0075784684628374165,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "paired t-test on subject means",
+      "status": "OK",
+      "estimate": -0.48050016664095874,
+      "p": 1.5331339834470197e-08,
+      "n": [
+       15
+      ],
+      "call": "lower",
+      "subjects": [
+       15,
+       15
+      ]
+     },
+     {
+      "method": "paired t-test on subject means",
+      "status": "OK",
+      "estimate": -0.48050016664095874,
+      "p": 1.5331339834470197e-08,
+      "n": [
+       15
+      ],
+      "call": "lower",
+      "subjects": [
+       15,
+       15
+      ]
+     }
+    ],
+    "both_readers": [
+     "PAIRED_AS_INDEPENDENT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE148241",
+    "comparison_name": "EOSPE vs Normal Placenta",
+    "check": [],
+    "arms": [
+     9,
+     32
+    ],
+    "released": {
+     "estimate": -0.3710356040036079,
+     "p": 1.2337245413487394e-05,
+     "fdr": 0.000551871020064971,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.3699657913662032,
+      "p": 1.3669236543292158e-05,
+      "n": [
+       9,
+       30
+      ],
+      "call": "lower",
+      "subjects": [
+       9,
+       30
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.3699657913662032,
+      "p": 1.3669236543292158e-05,
+      "n": [
+       9,
+       30
+      ],
+      "call": "lower",
+      "subjects": [
+       9,
+       30
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE157194",
+    "comparison_name": "Lesional vs Non-lesional skin (Baseline)",
+    "check": [
+     "PAIRED_AS_INDEPENDENT"
+    ],
+    "arms": [
+     54,
+     54
+    ],
+    "released": {
+     "estimate": -0.4076765477858661,
+     "p": 3.997623489344502e-06,
+     "fdr": 0.000217055819703184,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "paired t-test on subject means",
+      "status": "OK",
+      "estimate": -0.40767654778586604,
+      "p": 2.7674079431815414e-11,
+      "n": [
+       54
+      ],
+      "call": "lower",
+      "subjects": [
+       54,
+       54
+      ]
+     },
+     {
+      "method": "paired t-test on subject means",
+      "status": "OK",
+      "estimate": -0.40767654778586604,
+      "p": 2.7674079431815414e-11,
+      "n": [
+       54
+      ],
+      "call": "lower",
+      "subjects": [
+       54,
+       54
+      ]
+     }
+    ],
+    "both_readers": [
+     "PAIRED_AS_INDEPENDENT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE159759",
+    "comparison_name": "HIV+ vs HIV- (Diabetic, Peripheral blood monocytes)",
+    "check": [
+     "REPEATED_SUBJECT"
+    ],
+    "arms": [
+     15,
+     10
+    ],
+    "released": {
+     "estimate": -0.0874601268343995,
+     "p": 0.0020219736859255714,
+     "fdr": 0.023551694452546346,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.09011348814945278,
+      "p": 0.008581984615930505,
+      "n": [
+       7,
+       5
+      ],
+      "call": "lower",
+      "subjects": [
+       7,
+       5
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.09011348814945278,
+      "p": 0.008581984615930505,
+      "n": [
+       7,
+       5
+      ],
+      "call": "lower",
+      "subjects": [
+       7,
+       5
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE103718",
+    "comparison_name": "Fmn2 -/- vs Fmn2 +/-",
+    "check": [],
+    "arms": [
+     6,
+     6
+    ],
+    "released": {
+     "estimate": -0.26460599112198013,
+     "p": 0.002419319032396627,
+     "fdr": 0.02025272912405968,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     null,
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.26460599112198013,
+      "p": 0.07998972908839318,
+      "n": [
+       2,
+       2
+      ],
+      "call": "ns",
+      "subjects": [
+       2,
+       2
+      ]
+     }
+    ],
+    "both_readers": [],
+    "one_reader": [
+     "REPEATED_SUBJECT"
+    ]
+   },
+   {
+    "gse": "GSE131735",
+    "comparison_name": "Pbrm1 cKO vs WT",
+    "check": [],
+    "arms": [
+     4,
+     4
+    ],
+    "released": {
+     "estimate": -0.6148040735637604,
+     "p": 0.0014921680731704767,
+     "fdr": 0.014742577011867816,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.6281157295741155,
+      "p": 0.012778827000721062,
+      "n": [
+       3,
+       4
+      ],
+      "call": "lower",
+      "subjects": [
+       3,
+       4
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.6281157295741155,
+      "p": 0.012778827000721062,
+      "n": [
+       3,
+       4
+      ],
+      "call": "lower",
+      "subjects": [
+       3,
+       4
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE133505",
+    "comparison_name": "Myf6 knockout vs Wild type (10 months)",
+    "check": [],
+    "arms": [
+     8,
+     8
+    ],
+    "released": {
+     "estimate": -0.348760161326359,
+     "p": 7.455506196522762e-08,
+     "fdr": 6.250853353189874e-06,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.348760161326359,
+      "p": 0.004561567843118702,
+      "n": [
+       2,
+       2
+      ],
+      "call": "lower",
+      "subjects": [
+       2,
+       2
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.348760161326359,
+      "p": 0.004561567843118702,
+      "n": [
+       2,
+       2
+      ],
+      "call": "lower",
+      "subjects": [
+       2,
+       2
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE144503",
+    "comparison_name": "\u03b2-Catenin Stabilized vs Control",
+    "check": [],
+    "arms": [
+     6,
+     6
+    ],
+    "released": {
+     "estimate": -0.5878232280800062,
+     "p": 0.0006366790712221744,
+     "fdr": 0.008087197902330069,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.5657931398693201,
+      "p": 0.006114016515758754,
+      "n": [
+       5,
+       4
+      ],
+      "call": "lower",
+      "subjects": [
+       5,
+       4
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.5657931398693201,
+      "p": 0.006114016515758754,
+      "n": [
+       5,
+       4
+      ],
+      "call": "lower",
+      "subjects": [
+       5,
+       4
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE147462",
+    "comparison_name": "Fzd1 Ectopic Expression with DOX at P0 for 3 days vs Control at P3",
+    "check": [],
+    "arms": [
+     3,
+     3
+    ],
+    "released": {
+     "estimate": -0.5218384949917905,
+     "p": 0.004471492795976565,
+     "fdr": 0.030856809988048257,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "ONE_SUBJECT_ARM",
+      "n": [
+       1,
+       3
+      ],
+      "call": null,
+      "subjects": [
+       1,
+       3
+      ]
+     },
+     null
+    ],
+    "both_readers": [],
+    "one_reader": [
+     "REPEATED_SUBJECT"
+    ]
+   },
+   {
+    "gse": "GSE151160",
+    "comparison_name": "CD36 KO vs wild type",
+    "check": [],
+    "arms": [
+     4,
+     4
+    ],
+    "released": {
+     "estimate": -0.8739290790157372,
+     "p": 0.0012055852824751684,
+     "fdr": 0.012659346659445535,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "ONE_SUBJECT_ARM",
+      "n": [
+       1,
+       1
+      ],
+      "call": null,
+      "subjects": [
+       1,
+       1
+      ]
+     },
+     null
+    ],
+    "both_readers": [],
+    "one_reader": [
+     "REPEATED_SUBJECT"
+    ]
+   },
+   {
+    "gse": "GSE154816",
+    "comparison_name": "AIBP vs Saline in CIPN (ABC-KO)",
+    "check": [],
+    "arms": [
+     18,
+     18
+    ],
+    "released": {
+     "estimate": -0.28771782258275574,
+     "p": 0.0038577042354821867,
+     "fdr": 0.027762954810645633,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.28771782258275574,
+      "p": 0.11798249227233146,
+      "n": [
+       3,
+       3
+      ],
+      "call": "ns",
+      "subjects": [
+       3,
+       3
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.28771782258275574,
+      "p": 0.11798249227233146,
+      "n": [
+       3,
+       3
+      ],
+      "call": "ns",
+      "subjects": [
+       3,
+       3
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE159014",
+    "comparison_name": "Mrps12ep/ep vs Mrps12+/+ in Heart",
+    "check": [],
+    "arms": [
+     9,
+     9
+    ],
+    "released": {
+     "estimate": -0.2280620171163018,
+     "p": 0.0011235548616098455,
+     "fdr": 0.012022430420671176,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.22806201711630184,
+      "p": 0.07350241462783684,
+      "n": [
+       3,
+       3
+      ],
+      "call": "ns",
+      "subjects": [
+       3,
+       3
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.22806201711630184,
+      "p": 0.07350241462783684,
+      "n": [
+       3,
+       3
+      ],
+      "call": "ns",
+      "subjects": [
+       3,
+       3
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE159014",
+    "comparison_name": "Mrps12ha/ha vs Mrps12+/+ in Liver",
+    "check": [],
+    "arms": [
+     9,
+     9
+    ],
+    "released": {
+     "estimate": -0.30087360071679037,
+     "p": 0.0009534458982169212,
+     "fdr": 0.010754337248800634,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.3008736007167903,
+      "p": 0.07627753050112117,
+      "n": [
+       3,
+       3
+      ],
+      "call": "ns",
+      "subjects": [
+       3,
+       3
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.3008736007167903,
+      "p": 0.07627753050112117,
+      "n": [
+       3,
+       3
+      ],
+      "call": "ns",
+      "subjects": [
+       3,
+       3
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE162613",
+    "comparison_name": "miR-155KI vs WT",
+    "check": [],
+    "arms": [
+     6,
+     6
+    ],
+    "released": {
+     "estimate": -2.2651966926564238,
+     "p": 2.694073267669508e-10,
+     "fdr": 3.703461835622231e-08,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -2.2651966926564238,
+      "p": 1.7974829411194613e-05,
+      "n": [
+       3,
+       3
+      ],
+      "call": "lower",
+      "subjects": [
+       3,
+       3
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -2.2651966926564238,
+      "p": 1.7974829411194613e-05,
+      "n": [
+       3,
+       3
+      ],
+      "call": "lower",
+      "subjects": [
+       3,
+       3
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE178768",
+    "comparison_name": "OT-I.Tgfbr2-/- vs OT-I",
+    "check": [],
+    "arms": [
+     4,
+     4
+    ],
+    "released": {
+     "estimate": -0.9173275058531369,
+     "p": 0.002696764297142929,
+     "fdr": 0.02181986075020247,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.9173275058531369,
+      "p": 0.07397857124225882,
+      "n": [
+       2,
+       2
+      ],
+      "call": "ns",
+      "subjects": [
+       2,
+       2
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.9173275058531369,
+      "p": 0.07397857124225882,
+      "n": [
+       2,
+       2
+      ],
+      "call": "ns",
+      "subjects": [
+       2,
+       2
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE181382",
+    "comparison_name": "ARB vs db/db",
+    "check": [],
+    "arms": [
+     3,
+     4
+    ],
+    "released": {
+     "estimate": -2.5780615150185913,
+     "p": 0.0072422485776073965,
+     "fdr": 0.042891243899013394,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -2.477585682308968,
+      "p": 0.049337809701497114,
+      "n": [
+       3,
+       3
+      ],
+      "call": "lower",
+      "subjects": [
+       3,
+       3
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -2.477585682308968,
+      "p": 0.049337809701497114,
+      "n": [
+       3,
+       3
+      ],
+      "call": "lower",
+      "subjects": [
+       3,
+       3
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE79408",
+    "comparison_name": "alpha-7HMZ vs WT",
+    "check": [],
+    "arms": [
+     6,
+     6
+    ],
+    "released": {
+     "estimate": -0.23770790287563487,
+     "p": 0.0027347080527414793,
+     "fdr": 0.0220215964247077,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.23770790287563487,
+      "p": 0.07172621456901102,
+      "n": [
+       3,
+       3
+      ],
+      "call": "ns",
+      "subjects": [
+       3,
+       3
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.23770790287563487,
+      "p": 0.07172621456901102,
+      "n": [
+       3,
+       3
+      ],
+      "call": "ns",
+      "subjects": [
+       3,
+       3
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE79661",
+    "comparison_name": "miR-137/+ vs wildtype",
+    "check": [],
+    "arms": [
+     4,
+     4
+    ],
+    "released": {
+     "estimate": -0.6691934077437004,
+     "p": 0.0017283263590295098,
+     "fdr": 0.01632856172992674,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.6691934077437005,
+      "p": 0.10231679723709002,
+      "n": [
+       2,
+       2
+      ],
+      "call": "ns",
+      "subjects": [
+       2,
+       2
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.6691934077437005,
+      "p": 0.10231679723709002,
+      "n": [
+       2,
+       2
+      ],
+      "call": "ns",
+      "subjects": [
+       2,
+       2
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   },
+   {
+    "gse": "GSE79661",
+    "comparison_name": "miR-137 KO vs wildtype",
+    "check": [],
+    "arms": [
+     4,
+     4
+    ],
+    "released": {
+     "estimate": -0.4994725513090874,
+     "p": 0.005871918066267106,
+     "fdr": 0.03706760398447986,
+     "call": "lower"
+    },
+    "reader_recomputation": [
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.4994725513090875,
+      "p": 0.15946252877914638,
+      "n": [
+       2,
+       2
+      ],
+      "call": "ns",
+      "subjects": [
+       2,
+       2
+      ]
+     },
+     {
+      "method": "Welch t-test on subject means",
+      "status": "OK",
+      "estimate": -0.4994725513090875,
+      "p": 0.15946252877914638,
+      "n": [
+       2,
+       2
+      ],
+      "call": "ns",
+      "subjects": [
+       2,
+       2
+      ]
+     }
+    ],
+    "both_readers": [
+     "REPEATED_SUBJECT"
+    ],
+    "one_reader": []
+   }
+  ]
+ }
+}

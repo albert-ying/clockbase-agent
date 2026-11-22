@@ -1,0 +1,81 @@
+{
+ "seed": 20261007,
+ "max_samples": 120,
+ "quota": {
+  "SUBJECT": 20,
+  "AGE": 15,
+  "NONE": 60
+ },
+ "frame": {
+  "dnam:SUBJECT": {
+   "units": 270,
+   "units_within_size_limit": 260,
+   "series": 97
+  },
+  "dnam:AGE": {
+   "units": 270,
+   "units_within_size_limit": 251,
+   "series": 124
+  },
+  "dnam:NONE": {
+   "units": 2373,
+   "units_within_size_limit": 2188,
+   "series": 923
+  },
+  "dnam:BENCHMARK": {
+   "units": 77,
+   "units_within_size_limit": 68
+  },
+  "hs_rna:SUBJECT": {
+   "units": 2383,
+   "units_within_size_limit": 2245,
+   "series": 680
+  },
+  "hs_rna:AGE": {
+   "units": 411,
+   "units_within_size_limit": 398,
+   "series": 232
+  },
+  "hs_rna:NONE": {
+   "units": 21578,
+   "units_within_size_limit": 20823,
+   "series": 7299
+  },
+  "hs_rna:BENCHMARK": {
+   "units": 0,
+   "units_within_size_limit": 0
+  },
+  "mm_rna:SUBJECT": {
+   "units": 303,
+   "units_within_size_limit": 271,
+   "series": 96
+  },
+  "mm_rna:AGE": {
+   "units": 103,
+   "units_within_size_limit": 95,
+   "series": 46
+  },
+  "mm_rna:NONE": {
+   "units": 26521,
+   "units_within_size_limit": 25853,
+   "series": 9359
+  },
+  "mm_rna:BENCHMARK": {
+   "units": 111,
+   "units_within_size_limit": 111
+  }
+ },
+ "drawn": {
+  "dnam:SUBJECT": 20,
+  "dnam:AGE": 15,
+  "dnam:NONE": 60,
+  "dnam:BENCHMARK": 68,
+  "hs_rna:SUBJECT": 20,
+  "hs_rna:AGE": 15,
+  "hs_rna:NONE": 60,
+  "mm_rna:SUBJECT": 20,
+  "mm_rna:AGE": 15,
+  "mm_rna:NONE": 60,
+  "mm_rna:BENCHMARK": 111
+ }
+}

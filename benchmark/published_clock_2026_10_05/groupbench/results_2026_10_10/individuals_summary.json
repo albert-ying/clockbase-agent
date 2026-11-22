@@ -1,0 +1,16 @@
+{
+ "comparisons": 70,
+ "status": {
+  "INDEPENDENT": 30,
+  "SHARED_AGREED": 13,
+  "GEO_INDIVIDUAL_FIELD": 11,
+  "UNDETERMINED": 5,
+  "NOT_READ_ARMS_ABOVE_LIMIT": 11
+ },
+ "requests_sent": 96,
+ "models": [
+  "openai:gpt-6-astra",
+  "openai:gpt-6-sol"
+ ],
+ "max_samples": 120
+}

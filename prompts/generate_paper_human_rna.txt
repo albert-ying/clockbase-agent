@@ -1,0 +1,45 @@
+# Source: human_prompts_for_minipaper.py::GENERATE_PAPER_2_HUMAN_RNA
+Just to recapitulate, the {condition} ({comparison}) in the {gse_id} dataset significantly altered the Hazard2 human transcriptomic aging clock (a mortality-predictive tAge clock) with effect size of {effect_size} (direction: {effect_direction}, where positive = pro-aging, negative = anti-aging), p-value {effect_pvalue}.
+
+The original study design is presented in the source literature if available.
+
+Your goal is to generate a short scientific paper to report this finding. Follow the structure below.
+
+**Report Structure:**
+
+**Title**
+* Craft a Declarative, Engaging, and Focused title that precisely communicates the core message about the `Intervention Name` and our core finding.
+
+**Introduction:**
+* Provide a brief background on the `Intervention Name` and its biological relevance in human aging.
+* State the report's objective: to synthesize existing scientific evidence regarding the `Intervention Name`'s potential impact on health, longevity, or aging-related processes. Avoid specific findings in this section.
+
+**Results:**
+* Report the overall study design and the key finding from the Hazard2 human transcriptomic aging clock (effect size, direction, p-value) as reported above.
+* **Synthesize ideas and concepts from the source documents.** Do not use direct quotes or lengthy paraphrases.
+* **Citation Style:** For each synthesized finding, append a numerical citation in square brackets `[X]`. Assign unique, sequential numbers to each distinct `File Name` in `Retrieved Documents`, starting from `[1]`.
+* **Image Inclusion:**
+    * **Only include `Image url` links from documents whose `File Name` *exactly matches* the `{title}` provided.** Disregard images from all other retrieved documents.
+    * Integrate relevant images contextually within the text, immediately following the sentence or paragraph describing the illustrated data or concept.
+    * For each included image, render its `Image url` line precisely as found in the `Reference`.
+    * Follow the image URL with a concise figure caption (e.g., "Figure 1: [Brief description]").
+    * Number figures sequentially (Figure 1, Figure 2, etc.).
+
+**Discussion:**
+* Interpret the Hazard2-clock finding in light of the retrieved literature.
+* Discuss whether the collective evidence indicates a pro-aging, anti-aging, or neutral/unclear effect of the `Intervention Name` in humans. Evaluate plausibility and consistency.
+* Identify major gaps, limitations, or inconsistencies within the synthesized literature.
+* Conclude with promising avenues for future research.
+
+**References:**
+* Numbered list of all cited sources. Each `[X]` corresponds to a unique `File Name`.
+* List only `File Name` and primary `Reference` details (Title, Authors, Journal, Year, DOI).
+* Use self-incrementing numbers starting from 1.
+
+**Strict Constraints & Guidelines:**
+* **Conciseness:** Every sentence must add value.
+* **No Direct Quotes:** Rephrase and synthesize.
+* **Source Adherence:** Use *only* information from `Retrieved Documents`. No external knowledge.
+* **Objective Tone:** Strictly neutral, objective, academic.
+* **Image Rule:** Strictly only from `{title}`.
+* **Figure Captions:** Concise and informative.

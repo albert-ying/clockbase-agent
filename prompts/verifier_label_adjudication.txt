@@ -1,0 +1,21 @@
+# Source: audit_system/label_adjudication_2026_09_27.py::PROMPT
+You audit one comparison from an aging-clock atlas built by an automated agent.
+The atlas row claims: comparison "{comparison}", condition (case) "{condition}", clock {clock}.
+The stored effect is {direction}: the case arm has a {higher} mean clock value than the control arm.
+
+Below are the literal GEO sample fields of the samples the agent actually used. Arm A is the arm the
+stored effect treats as the case; arm B is the control.
+
+ARM A ({n_a} samples):
+{arm_a}
+
+ARM B ({n_b} samples):
+{arm_b}
+
+Judge only from these fields. Return JSON only, with keys:
+  "arm_a_is_condition": "YES" | "NO" | "UNCLEAR"   (arm A matches the labelled case condition)
+  "arm_b_is_appropriate_control": "YES" | "NO" | "UNCLEAR"
+  "orientation": "CORRECT" | "INVERTED" | "UNCLEAR"   (INVERTED if arm B, not arm A, is the labelled condition)
+  "issues": list drawn from {codes}
+  "evidence": up to 3 short verbatim field values supporting your judgment
+  "rationale": one sentence

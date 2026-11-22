@@ -1,0 +1,412 @@
+{
+ "rows": 1000,
+ "subjects_recorded": 39,
+ "age_recorded": 389,
+ "flagged": 30,
+ "findings": {
+  "AGE_IMBALANCE": 9,
+  "REPEATED_SUBJECT": 20,
+  "PAIRED_AS_INDEPENDENT": 5
+ },
+ "outcome": {
+  "SIGNIFICANCE_LOST": 9,
+  "ONE_SUBJECT_ARM": 1,
+  "UNCHANGED": 20
+ },
+ "flagged_rows": [
+  {
+   "modality": "mm_rna",
+   "gse": "GSE158152",
+   "comparison_name": "Hom vs WT",
+   "rank_within_direction": 37,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 1.5002988528600201e-12,
+   "recomputed_p": 1.4976070361656044e-06
+  },
+  {
+   "modality": "mm_rna",
+   "gse": "GSE122405",
+   "comparison_name": "Dnmt3a KO vs Control in AgRP neurons",
+   "rank_within_direction": 114,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 7.740295772093522e-05,
+   "recomputed_p": 7.740295772093522e-05
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE188429",
+   "comparison_name": "Convalescent COVID vs Unexposed",
+   "rank_within_direction": 164,
+   "direction": "age-lowering",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 1.384696070844517e-06,
+   "recomputed_p": 0.0018976547870529553
+  },
+  {
+   "modality": "dnam",
+   "gse": "GSE113018",
+   "comparison_name": "FASD vs control",
+   "rank_within_direction": 165,
+   "direction": "age-lowering",
+   "findings": [
+    "AGE_IMBALANCE"
+   ],
+   "outcome": "SIGNIFICANCE_LOST",
+   "released_p": 1.2018938402845044e-07,
+   "recomputed_p": 0.11370859557225298
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE157194",
+   "comparison_name": "Lesional vs Non-lesional skin (Baseline)",
+   "rank_within_direction": 169,
+   "direction": "age-lowering",
+   "findings": [
+    "PAIRED_AS_INDEPENDENT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 3.997623489344502e-06,
+   "recomputed_p": 2.7674079431815414e-11
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE102288",
+   "comparison_name": "RTS,S/AS01 012: Day of Challenge vs PreVAC",
+   "rank_within_direction": 178,
+   "direction": "age-lowering",
+   "findings": [
+    "PAIRED_AS_INDEPENDENT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.0003783172451402082,
+   "recomputed_p": 1.5331339834470197e-08
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE159759",
+   "comparison_name": "HIV+ vs HIV- (Diabetic, Peripheral blood monocytes)",
+   "rank_within_direction": 186,
+   "direction": "age-lowering",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.0020219736859255714,
+   "recomputed_p": 0.008581984615930505
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE198449",
+   "comparison_name": "COVID positive vs negative",
+   "rank_within_direction": 189,
+   "direction": "age-lowering",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 4.4464104924434554e-07,
+   "recomputed_p": 0.00955939015975525
+  },
+  {
+   "modality": "dnam",
+   "gse": "GSE50759",
+   "comparison_name": "ASD vs TD",
+   "rank_within_direction": 191,
+   "direction": "age-lowering",
+   "findings": [
+    "AGE_IMBALANCE"
+   ],
+   "outcome": "SIGNIFICANCE_LOST",
+   "released_p": 0.00011979891714368422,
+   "recomputed_p": 0.14940097184920964
+  },
+  {
+   "modality": "dnam",
+   "gse": "GSE48988",
+   "comparison_name": "HRT before 50 vs No HRT",
+   "rank_within_direction": 196,
+   "direction": "age-lowering",
+   "findings": [
+    "AGE_IMBALANCE"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.0009391643353990803,
+   "recomputed_p": 0.03870693327217549
+  },
+  {
+   "modality": "dnam",
+   "gse": "GSE191200",
+   "comparison_name": "Bipolar vs Control",
+   "rank_within_direction": 214,
+   "direction": "age-lowering",
+   "findings": [
+    "REPEATED_SUBJECT",
+    "AGE_IMBALANCE"
+   ],
+   "outcome": "SIGNIFICANCE_LOST",
+   "released_p": 0.006014803747315273,
+   "recomputed_p": 0.1231641666816583
+  },
+  {
+   "modality": "mm_rna",
+   "gse": "GSE161105",
+   "comparison_name": "NRF2 overexpression vs Control in RPE cells",
+   "rank_within_direction": 215,
+   "direction": "age-raising",
+   "findings": [
+    "PAIRED_AS_INDEPENDENT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.00018783777611543998,
+   "recomputed_p": 0.004923257838103499
+  },
+  {
+   "modality": "mm_rna",
+   "gse": "GSE172261",
+   "comparison_name": "DSS vs Water (all tissues)",
+   "rank_within_direction": 540,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT",
+    "PAIRED_AS_INDEPENDENT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.002134813566155614,
+   "recomputed_p": 0.04821147882471719
+  },
+  {
+   "modality": "dnam",
+   "gse": "GSE134429",
+   "comparison_name": "RA vs HD",
+   "rank_within_direction": 594,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "ONE_SUBJECT_ARM",
+   "released_p": 2.193717963091632e-06,
+   "recomputed_p": null
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE118761",
+   "comparison_name": "Atopic_asthmatic_vs_Non-atopic_non-asthmatic",
+   "rank_within_direction": 605,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT",
+    "AGE_IMBALANCE"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 7.367213412882237e-05,
+   "recomputed_p": 0.0013076069744024706
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE138614",
+   "comparison_name": "MS Active (AL) vs Control",
+   "rank_within_direction": 617,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.00038418545489389604,
+   "recomputed_p": 0.024745368081409983
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE123972",
+   "comparison_name": "HCC vs Normal (plasma)",
+   "rank_within_direction": 618,
+   "direction": "age-raising",
+   "findings": [
+    "AGE_IMBALANCE"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.004521294723269197,
+   "recomputed_p": 0.0001321135045636817
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE134900",
+   "comparison_name": "Celiac Disease vs Healthy Control",
+   "rank_within_direction": 641,
+   "direction": "age-raising",
+   "findings": [
+    "AGE_IMBALANCE"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 5.647654466916582e-06,
+   "recomputed_p": 8.245706619147569e-07
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE138614",
+   "comparison_name": "MS Remyelinating (RL) vs Control",
+   "rank_within_direction": 663,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.002194552274263061,
+   "recomputed_p": 0.024607956294014566
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE127136",
+   "comparison_name": "IgAN vs Normal (Monocytes)",
+   "rank_within_direction": 666,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "SIGNIFICANCE_LOST",
+   "released_p": 2.388606476301461e-13,
+   "recomputed_p": 0.16707652167208295
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE181143",
+   "comparison_name": "Diabetes vs non Diabetes",
+   "rank_within_direction": 693,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 6.355114309015556e-11,
+   "recomputed_p": 3.7916379512191094e-08
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE138614",
+   "comparison_name": "MS Chronic active (CA) vs Control",
+   "rank_within_direction": 698,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "SIGNIFICANCE_LOST",
+   "released_p": 0.003406659579255022,
+   "recomputed_p": 0.144904004653726
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE118761",
+   "comparison_name": "Asthmatic_vs_Non-asthmatic",
+   "rank_within_direction": 709,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.00036660304571653013,
+   "recomputed_p": 0.0007099199251406277
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE196728",
+   "comparison_name": "PU vs SL",
+   "rank_within_direction": 714,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT",
+    "PAIRED_AS_INDEPENDENT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.0003305377767852209,
+   "recomputed_p": 0.006891689238240147
+  },
+  {
+   "modality": "dnam",
+   "gse": "GSE189426",
+   "comparison_name": "UA vs HD",
+   "rank_within_direction": 721,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 3.045320961603207e-05,
+   "recomputed_p": 0.00048803097595783904
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE138614",
+   "comparison_name": "Multiple sclerosis vs Control",
+   "rank_within_direction": 726,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "SIGNIFICANCE_LOST",
+   "released_p": 0.0008817683083784807,
+   "recomputed_p": 0.09930871152047221
+  },
+  {
+   "modality": "mm_rna",
+   "gse": "GSE180579",
+   "comparison_name": "Drp1_KO vs Drp1_WT",
+   "rank_within_direction": 737,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "SIGNIFICANCE_LOST",
+   "released_p": 0.00843839722388652,
+   "recomputed_p": 0.0702057253079
+  },
+  {
+   "modality": "dnam",
+   "gse": "GSE80970",
+   "comparison_name": "Alzheimer's vs Control (prefrontal cortex)",
+   "rank_within_direction": 751,
+   "direction": "age-raising",
+   "findings": [
+    "AGE_IMBALANCE"
+   ],
+   "outcome": "SIGNIFICANCE_LOST",
+   "released_p": 0.0002769602002100858,
+   "recomputed_p": 0.24215678905608587
+  },
+  {
+   "modality": "dnam",
+   "gse": "GSE88890",
+   "comparison_name": "MDD Suicide vs Control",
+   "rank_within_direction": 776,
+   "direction": "age-raising",
+   "findings": [
+    "AGE_IMBALANCE"
+   ],
+   "outcome": "UNCHANGED",
+   "released_p": 0.006051140865667683,
+   "recomputed_p": 0.04203190558451586
+  },
+  {
+   "modality": "hs_rna",
+   "gse": "GSE152197",
+   "comparison_name": "MS.PrevTrt vs HC",
+   "rank_within_direction": 782,
+   "direction": "age-raising",
+   "findings": [
+    "REPEATED_SUBJECT"
+   ],
+   "outcome": "SIGNIFICANCE_LOST",
+   "released_p": 0.004046602905526979,
+   "recomputed_p": 1.0
+  }
+ ]
+}

@@ -1,0 +1,420 @@
+{
+ "reader_agreement": {
+  "REPEATED_SUBJECT": {
+   "count": 461,
+   "of": 464,
+   "rate": 0.9935344827586207,
+   "interval": [
+    0.9812221243403927,
+    0.998664665067574
+   ]
+  },
+  "PAIRED_AS_INDEPENDENT": {
+   "count": 459,
+   "of": 464,
+   "rate": 0.9892241379310345,
+   "interval": [
+    0.9750330073739228,
+    0.9964921063614989
+   ]
+  },
+  "AGE_IMBALANCE": {
+   "count": 462,
+   "of": 464,
+   "rate": 0.9956896551724138,
+   "interval": [
+    0.9845169687703654,
+    0.9994775703200788
+   ]
+  }
+ },
+ "outside": {
+  "dnam": {
+   "REPEATED_SUBJECT": {
+    "units_resolved": 82,
+    "units_unresolved": 13,
+    "flagged_confirmed": {
+     "count": 3,
+     "of": 4,
+     "rate": 0.75,
+     "interval": [
+      0.19412044968324338,
+      0.9936905367902902
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 3,
+     "of": 50,
+     "rate": 0.06,
+     "interval": [
+      0.01254858783533406,
+      0.16548194660377288
+     ]
+    }
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "units_resolved": 82,
+    "units_unresolved": 13,
+    "flagged_confirmed": {
+     "count": 13,
+     "of": 14,
+     "rate": 0.9285714285714286,
+     "interval": [
+      0.6613155100681788,
+      0.9981932193408746
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 9,
+     "of": 50,
+     "rate": 0.18,
+     "interval": [
+      0.08576207810966364,
+      0.31436941128565027
+     ]
+    }
+   },
+   "AGE_IMBALANCE": {
+    "units_resolved": 94,
+    "units_unresolved": 1,
+    "flagged_confirmed": {
+     "count": 17,
+     "of": 17,
+     "rate": 1.0,
+     "interval": [
+      0.8049356770309067,
+      1.0
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 0,
+     "of": 60,
+     "rate": 0.0,
+     "interval": [
+      0.0,
+      0.059629492286166916
+     ]
+    }
+   },
+   "unflagged_any_missed": {
+    "count": 12,
+    "of": 50,
+    "rate": 0.24,
+    "interval": [
+     0.13060991619745735,
+     0.3816907481040382
+    ]
+   }
+  },
+  "hs_rna": {
+   "REPEATED_SUBJECT": {
+    "units_resolved": 85,
+    "units_unresolved": 10,
+    "flagged_confirmed": {
+     "count": 6,
+     "of": 6,
+     "rate": 1.0,
+     "interval": [
+      0.5407418735600995,
+      1.0
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 3,
+     "of": 51,
+     "rate": 0.058823529411764705,
+     "interval": [
+      0.012299088255240053,
+      0.16242221807205048
+     ]
+    }
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "units_resolved": 84,
+    "units_unresolved": 11,
+    "flagged_confirmed": {
+     "count": 14,
+     "of": 15,
+     "rate": 0.9333333333333333,
+     "interval": [
+      0.6805154334216966,
+      0.9983135697586473
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 7,
+     "of": 51,
+     "rate": 0.13725490196078433,
+     "interval": [
+      0.05701181346336881,
+      0.262551543304546
+     ]
+    }
+   },
+   "AGE_IMBALANCE": {
+    "units_resolved": 95,
+    "units_unresolved": 0,
+    "flagged_confirmed": {
+     "count": 15,
+     "of": 16,
+     "rate": 0.9375,
+     "interval": [
+      0.697679261565468,
+      0.9984188882772341
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 0,
+     "of": 60,
+     "rate": 0.0,
+     "interval": [
+      0.0,
+      0.059629492286166916
+     ]
+    }
+   },
+   "unflagged_any_missed": {
+    "count": 8,
+    "of": 51,
+    "rate": 0.1568627450980392,
+    "interval": [
+     0.07024083345730879,
+     0.2858762867315592
+    ]
+   }
+  },
+  "mm_rna": {
+   "REPEATED_SUBJECT": {
+    "units_resolved": 57,
+    "units_unresolved": 38,
+    "flagged_confirmed": {
+     "count": 10,
+     "of": 10,
+     "rate": 1.0,
+     "interval": [
+      0.6915028921812392,
+      1.0
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 4,
+     "of": 32,
+     "rate": 0.125,
+     "interval": [
+      0.03513065310331141,
+      0.2899484201907557
+     ]
+    }
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "units_resolved": 55,
+    "units_unresolved": 40,
+    "flagged_confirmed": {
+     "count": 11,
+     "of": 12,
+     "rate": 0.9166666666666666,
+     "interval": [
+      0.6152038348490559,
+      0.9978924067681397
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 1,
+     "of": 32,
+     "rate": 0.03125,
+     "interval": [
+      0.0007908685979525573,
+      0.16217099418151154
+     ]
+    }
+   },
+   "AGE_IMBALANCE": {
+    "units_resolved": 95,
+    "units_unresolved": 0,
+    "flagged_confirmed": {
+     "count": 0,
+     "of": 0,
+     "rate": null,
+     "interval": [
+      null,
+      null
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 0,
+     "of": 60,
+     "rate": 0.0,
+     "interval": [
+      0.0,
+      0.059629492286166916
+     ]
+    }
+   },
+   "unflagged_any_missed": {
+    "count": 5,
+    "of": 32,
+    "rate": 0.15625,
+    "interval": [
+     0.05275056440213409,
+     0.3278787656820417
+    ]
+   }
+  }
+ },
+ "benchmark": {
+  "dnam": {
+   "REPEATED_SUBJECT": {
+    "units_resolved": 67,
+    "units_unresolved": 1,
+    "flagged_confirmed": {
+     "count": 2,
+     "of": 2,
+     "rate": 1.0,
+     "interval": [
+      0.15811388300841897,
+      1.0
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 7,
+     "of": 65,
+     "rate": 0.1076923076923077,
+     "interval": [
+      0.04440865692084708,
+      0.20938159925790423
+     ]
+    }
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "units_resolved": 67,
+    "units_unresolved": 1,
+    "flagged_confirmed": {
+     "count": 11,
+     "of": 11,
+     "rate": 1.0,
+     "interval": [
+      0.7150858470818455,
+      1.0
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 2,
+     "of": 56,
+     "rate": 0.03571428571428571,
+     "interval": [
+      0.004354812741052646,
+      0.12313180745799579
+     ]
+    }
+   },
+   "AGE_IMBALANCE": {
+    "units_resolved": 67,
+    "units_unresolved": 1,
+    "flagged_confirmed": {
+     "count": 25,
+     "of": 26,
+     "rate": 0.9615384615384616,
+     "interval": [
+      0.803630353237461,
+      0.9990267121066649
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 0,
+     "of": 41,
+     "rate": 0.0,
+     "interval": [
+      0.0,
+      0.08604383629402841
+     ]
+    }
+   },
+   "unflagged_any_missed": {
+    "count": 9,
+    "of": 66,
+    "rate": 0.13636363636363635,
+    "interval": [
+     0.06429818464325533,
+     0.24314133151383902
+    ]
+   }
+  },
+  "mm_rna": {
+   "REPEATED_SUBJECT": {
+    "units_resolved": 68,
+    "units_unresolved": 43,
+    "flagged_confirmed": {
+     "count": 0,
+     "of": 0,
+     "rate": null,
+     "interval": [
+      null,
+      null
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 2,
+     "of": 68,
+     "rate": 0.029411764705882353,
+     "interval": [
+      0.003581961420271391,
+      0.10224101192811894
+     ]
+    }
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "units_resolved": 68,
+    "units_unresolved": 43,
+    "flagged_confirmed": {
+     "count": 0,
+     "of": 0,
+     "rate": null,
+     "interval": [
+      null,
+      null
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 1,
+     "of": 68,
+     "rate": 0.014705882352941176,
+     "interval": [
+      0.00037225140289861013,
+      0.07923398991278802
+     ]
+    }
+   },
+   "AGE_IMBALANCE": {
+    "units_resolved": 111,
+    "units_unresolved": 0,
+    "flagged_confirmed": {
+     "count": 0,
+     "of": 0,
+     "rate": null,
+     "interval": [
+      null,
+      null
+     ]
+    },
+    "unflagged_with_finding": {
+     "count": 0,
+     "of": 111,
+     "rate": 0.0,
+     "interval": [
+      0.0,
+      0.032686994023947695
+     ]
+    }
+   },
+   "unflagged_any_missed": {
+    "count": 3,
+    "of": 68,
+    "rate": 0.04411764705882353,
+    "interval": [
+     0.009192195202787379,
+     0.12356262433177878
+    ]
+   }
+  }
+ }
+}

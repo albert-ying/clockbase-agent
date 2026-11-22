@@ -1,0 +1,976 @@
+{
+ "A1": {
+  "set": "A1",
+  "released_rows": 89,
+  "released_units": 89,
+  "rows_by_type": {
+   "REPEATED_SUBJECT": {
+    "no census, no check": 87,
+    "census, no check": 2
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "no census, no check": 88,
+    "census, no check": 1
+   },
+   "AGE_IMBALANCE": {
+    "no census, no check": 89
+   }
+  },
+  "error_units": 5,
+  "error_units_flagged": 0,
+  "error_units_fully_addressed": 0,
+  "correct_units": 84,
+  "correct_units_flagged": 0,
+  "as_released": {
+   "units": 89,
+   "errors": 5,
+   "series": 29,
+   "rate": 0.056179775280898875,
+   "unadjusted_interval": [
+    0.018490804666485516,
+    0.1262527960497284
+   ],
+   "effective": {
+    "rate": 0.056179775280898875,
+    "interval": [
+     0.003157353387869755,
+     0.23346565757378862
+    ],
+    "icc": 0.44793962097840456,
+    "deff": 3.737968020362383,
+    "n_effective": 23.80972750841559,
+    "size_weighted_mean_cluster": 7.112359550561798
+   },
+   "model": null,
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.056179775280898875,
+    "interval": [
+     0.003157353387869755,
+     0.23346565757378862
+    ]
+   },
+   "series_with_error": {
+    "count": 3,
+    "of": 29,
+    "proportion": 0.10344827586206896,
+    "interval": [
+     0.021863736829853642,
+     0.2735151978924229
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.0,
+     0.13978494623655913
+    ],
+    "bca": [
+     0.009615384615384616,
+     0.16
+    ]
+   },
+   "leave_one_series_out": [
+    0.034482758620689655,
+    0.07142857142857142
+   ]
+  },
+  "if_flagged_withheld": {
+   "units": 89,
+   "errors": 5,
+   "series": 29,
+   "rate": 0.056179775280898875,
+   "unadjusted_interval": [
+    0.018490804666485516,
+    0.1262527960497284
+   ],
+   "effective": {
+    "rate": 0.056179775280898875,
+    "interval": [
+     0.003157353387869755,
+     0.23346565757378862
+    ],
+    "icc": 0.44793962097840456,
+    "deff": 3.737968020362383,
+    "n_effective": 23.80972750841559,
+    "size_weighted_mean_cluster": 7.112359550561798
+   },
+   "model": null,
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.056179775280898875,
+    "interval": [
+     0.003157353387869755,
+     0.23346565757378862
+    ]
+   },
+   "series_with_error": {
+    "count": 3,
+    "of": 29,
+    "proportion": 0.10344827586206896,
+    "interval": [
+     0.021863736829853642,
+     0.2735151978924229
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.0,
+     0.13978494623655913
+    ],
+    "bca": [
+     0.009615384615384616,
+     0.16
+    ]
+   },
+   "leave_one_series_out": [
+    0.034482758620689655,
+    0.07142857142857142
+   ]
+  },
+  "if_flagged_recomputed": {
+   "units": 89,
+   "errors": 5,
+   "series": 29,
+   "rate": 0.056179775280898875,
+   "unadjusted_interval": [
+    0.018490804666485516,
+    0.1262527960497284
+   ],
+   "effective": {
+    "rate": 0.056179775280898875,
+    "interval": [
+     0.003157353387869755,
+     0.23346565757378862
+    ],
+    "icc": 0.44793962097840456,
+    "deff": 3.737968020362383,
+    "n_effective": 23.80972750841559,
+    "size_weighted_mean_cluster": 7.112359550561798
+   },
+   "model": null,
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.056179775280898875,
+    "interval": [
+     0.003157353387869755,
+     0.23346565757378862
+    ]
+   },
+   "series_with_error": {
+    "count": 3,
+    "of": 29,
+    "proportion": 0.10344827586206896,
+    "interval": [
+     0.021863736829853642,
+     0.2735151978924229
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.0,
+     0.13978494623655913
+    ],
+    "bca": [
+     0.009615384615384616,
+     0.16
+    ]
+   },
+   "leave_one_series_out": [
+    0.034482758620689655,
+    0.07142857142857142
+   ]
+  },
+  "missed": [
+   [
+    "A1:GSE101657:2",
+    [
+     "REPEATED_SUBJECT"
+    ],
+    []
+   ],
+   [
+    "A1:GSE101657:3",
+    [
+     "REPEATED_SUBJECT"
+    ],
+    []
+   ],
+   [
+    "A1:GSE122367:0",
+    [
+     "PAIRED_AS_INDEPENDENT"
+    ],
+    []
+   ],
+   [
+    "A1:GSE124772:0",
+    [],
+    [
+     "REPORTED_RESULT_INVERSION"
+    ]
+   ],
+   [
+    "A1:GSE124772:1",
+    [],
+    [
+     "REPORTED_RESULT_INVERSION"
+    ]
+   ]
+  ]
+ },
+ "A1_with_readers": {
+  "set": "A1 with readers",
+  "released_rows": 89,
+  "released_units": 89,
+  "rows_by_type": {
+   "REPEATED_SUBJECT": {
+    "no census, no check": 87,
+    "census, check": 2
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "no census, no check": 88,
+    "census, no check": 1
+   },
+   "AGE_IMBALANCE": {
+    "no census, no check": 89
+   }
+  },
+  "error_units": 5,
+  "error_units_flagged": 2,
+  "error_units_fully_addressed": 2,
+  "correct_units": 84,
+  "correct_units_flagged": 0,
+  "as_released": {
+   "units": 89,
+   "errors": 5,
+   "series": 29,
+   "rate": 0.056179775280898875,
+   "unadjusted_interval": [
+    0.018490804666485516,
+    0.1262527960497284
+   ],
+   "effective": {
+    "rate": 0.056179775280898875,
+    "interval": [
+     0.003157353387869755,
+     0.23346565757378862
+    ],
+    "icc": 0.44793962097840456,
+    "deff": 3.737968020362383,
+    "n_effective": 23.80972750841559,
+    "size_weighted_mean_cluster": 7.112359550561798
+   },
+   "model": null,
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.056179775280898875,
+    "interval": [
+     0.003157353387869755,
+     0.23346565757378862
+    ]
+   },
+   "series_with_error": {
+    "count": 3,
+    "of": 29,
+    "proportion": 0.10344827586206896,
+    "interval": [
+     0.021863736829853642,
+     0.2735151978924229
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.0,
+     0.13978494623655913
+    ],
+    "bca": [
+     0.009615384615384616,
+     0.16
+    ]
+   },
+   "leave_one_series_out": [
+    0.034482758620689655,
+    0.07142857142857142
+   ]
+  },
+  "if_flagged_withheld": {
+   "units": 87,
+   "errors": 3,
+   "series": 29,
+   "rate": 0.034482758620689655,
+   "unadjusted_interval": [
+    0.00716841972994136,
+    0.0974808342242623
+   ],
+   "effective": {
+    "rate": 0.034482758620689655,
+    "interval": [
+     5.3050847927628e-05,
+     0.26646215232398945
+    ],
+    "icc": 0.7576813209781929,
+    "deff": 5.580923848672753,
+    "n_effective": 15.588816898243508,
+    "size_weighted_mean_cluster": 7.045977011494253
+   },
+   "model": null,
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.034482758620689655,
+    "interval": [
+     5.3050847927628e-05,
+     0.26646215232398945
+    ]
+   },
+   "series_with_error": {
+    "count": 2,
+    "of": 29,
+    "proportion": 0.06896551724137931,
+    "interval": [
+     0.008463962253001825,
+     0.22766188994448616
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.0,
+     0.10526315789473684
+    ],
+    "bca": [
+     0.0,
+     0.14084507042253522
+    ]
+   },
+   "leave_one_series_out": [
+    0.011764705882352941,
+    0.04411764705882353
+   ]
+  },
+  "if_flagged_recomputed": {
+   "units": 89,
+   "errors": 3,
+   "series": 29,
+   "rate": 0.033707865168539325,
+   "unadjusted_interval": [
+    0.007006056833671057,
+    0.09536156560631963
+   ],
+   "effective": {
+    "rate": 0.033707865168539325,
+    "interval": [
+     4.8167648238456946e-05,
+     0.26335581920952017
+    ],
+    "icc": 0.7603892688058916,
+    "deff": 5.647772609330394,
+    "n_effective": 15.758424808563944,
+    "size_weighted_mean_cluster": 7.112359550561798
+   },
+   "model": null,
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.033707865168539325,
+    "interval": [
+     4.8167648238456946e-05,
+     0.26335581920952017
+    ]
+   },
+   "series_with_error": {
+    "count": 2,
+    "of": 29,
+    "proportion": 0.06896551724137931,
+    "interval": [
+     0.008463962253001825,
+     0.22766188994448616
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.0,
+     0.10294117647058823
+    ],
+    "bca": [
+     0.0,
+     0.140625
+    ]
+   },
+   "leave_one_series_out": [
+    0.011494252873563218,
+    0.04285714285714286
+   ]
+  },
+  "missed": [
+   [
+    "A1:GSE122367:0",
+    [
+     "PAIRED_AS_INDEPENDENT"
+    ],
+    []
+   ],
+   [
+    "A1:GSE124772:0",
+    [],
+    [
+     "REPORTED_RESULT_INVERSION"
+    ]
+   ],
+   [
+    "A1:GSE124772:1",
+    [],
+    [
+     "REPORTED_RESULT_INVERSION"
+    ]
+   ]
+  ],
+  "released_unit_keys": 89,
+  "released_unit_keys_read": 89
+ },
+ "A2": {
+  "set": "A2",
+  "released_rows": 184,
+  "released_units": 44,
+  "rows_by_type": {
+   "REPEATED_SUBJECT": {
+    "no census, no check": 155,
+    "census, no check": 25,
+    "census, check": 4
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "no census, no check": 138,
+    "census, check": 46
+   },
+   "AGE_IMBALANCE": {
+    "no census, no check": 115,
+    "no census, check": 12,
+    "census, check": 48,
+    "census, no check": 9
+   }
+  },
+  "error_units": 33,
+  "error_units_flagged": 29,
+  "error_units_fully_addressed": 22,
+  "correct_units": 11,
+  "correct_units_flagged": 0,
+  "as_released": {
+   "units": 44,
+   "errors": 33,
+   "series": 17,
+   "rate": 0.75,
+   "unadjusted_interval": [
+    0.5966195922641409,
+    0.8680725620663532
+   ],
+   "effective": {
+    "rate": 0.75,
+    "interval": [
+     0.40615599536470764,
+     0.9522932202839675
+    ],
+    "icc": 0.8508517828815779,
+    "deff": 4.132681564245809,
+    "n_effective": 10.646840148698887,
+    "size_weighted_mean_cluster": 4.681818181818182
+   },
+   "model": {
+    "rate": 0.6901953387231612,
+    "interval": [
+     null,
+     null
+    ],
+    "b0": 16.33235963480097,
+    "sigma": 50.659448169992274
+   },
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.75,
+    "interval": [
+     0.40615599536470764,
+     0.9522932202839675
+    ]
+   },
+   "series_with_error": {
+    "count": 10,
+    "of": 17,
+    "proportion": 0.5882352941176471,
+    "interval": [
+     0.32924715394675735,
+     0.8155630382160532
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.48717948717948717,
+     0.9038461538461539
+    ],
+    "bca": [
+     0.5,
+     0.9056603773584906
+    ]
+   },
+   "leave_one_series_out": [
+    0.6764705882352942,
+    0.8048780487804879
+   ]
+  },
+  "if_flagged_withheld": {
+   "units": 15,
+   "errors": 4,
+   "series": 10,
+   "rate": 0.26666666666666666,
+   "unadjusted_interval": [
+    0.07787154629104358,
+    0.5510032410369705
+   ],
+   "effective": {
+    "rate": 0.26666666666666666,
+    "interval": [
+     0.035992098594994845,
+     0.6721031024614774
+    ],
+    "icc": 1.0,
+    "deff": 1.9333333333333333,
+    "n_effective": 7.758620689655173,
+    "size_weighted_mean_cluster": 1.9333333333333333
+   },
+   "model": null,
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.26666666666666666,
+    "interval": [
+     0.035992098594994845,
+     0.6721031024614774
+    ]
+   },
+   "series_with_error": {
+    "count": 2,
+    "of": 10,
+    "proportion": 0.2,
+    "interval": [
+     0.02521072632683336,
+     0.5560954623076415
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.0,
+     0.6
+    ],
+    "bca": [
+     0.0,
+     0.7058823529411765
+    ]
+   },
+   "leave_one_series_out": [
+    0.08333333333333333,
+    0.3333333333333333
+   ]
+  },
+  "if_flagged_recomputed": {
+   "units": 44,
+   "errors": 11,
+   "series": 17,
+   "rate": 0.25,
+   "unadjusted_interval": [
+    0.13192743793364678,
+    0.403380407735859
+   ],
+   "effective": {
+    "rate": 0.25,
+    "interval": [
+     0.05460424466450812,
+     0.5726156860395152
+    ],
+    "icc": 0.7284996861268047,
+    "deff": 3.682203389830508,
+    "n_effective": 11.949367088607596,
+    "size_weighted_mean_cluster": 4.681818181818182
+   },
+   "model": {
+    "rate": 0.375034324882278,
+    "interval": [
+     0.09677396069738979,
+     0.09759922739075683
+    ],
+    "b0": -14.059832011560358,
+    "sigma": 48.392705277813036
+   },
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.25,
+    "interval": [
+     0.05460424466450812,
+     0.5726156860395152
+    ]
+   },
+   "series_with_error": {
+    "count": 5,
+    "of": 17,
+    "proportion": 0.29411764705882354,
+    "interval": [
+     0.10313551437032002,
+     0.5595827187543372
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.06521739130434782,
+     0.5
+    ],
+    "bca": [
+     0.06121005451199922,
+     0.4883720930232558
+    ]
+   },
+   "leave_one_series_out": [
+    0.1951219512195122,
+    0.3235294117647059
+   ]
+  },
+  "missed": [
+   [
+    "A2:GSE118468:0",
+    [
+     "REPEATED_SUBJECT"
+    ],
+    [
+     "IMPURE_ARM"
+    ]
+   ],
+   [
+    "A2:GSE118468:1",
+    [
+     "REPEATED_SUBJECT"
+    ],
+    [
+     "LABEL_MISMATCH"
+    ]
+   ],
+   [
+    "A2:GSE32148:0",
+    [],
+    [
+     "LABEL_MISMATCH"
+    ]
+   ],
+   [
+    "A2:GSE32148:1",
+    [],
+    [
+     "LABEL_MISMATCH"
+    ]
+   ],
+   [
+    "A2:GSE43976:0",
+    [
+     "REPEATED_SUBJECT"
+    ],
+    []
+   ],
+   [
+    "A2:GSE43976:1",
+    [
+     "REPEATED_SUBJECT"
+    ],
+    []
+   ],
+   [
+    "A2:GSE43976:2",
+    [
+     "REPEATED_SUBJECT"
+    ],
+    []
+   ],
+   [
+    "A2:GSE49904:1",
+    [],
+    [
+     "CONFOUNDED"
+    ]
+   ],
+   [
+    "A2:GSE49904:2",
+    [],
+    [
+     "CONFOUNDED"
+    ]
+   ],
+   [
+    "A2:GSE49904:5",
+    [],
+    [
+     "CONFOUNDED"
+    ]
+   ],
+   [
+    "A2:GSE49909:0",
+    [],
+    [
+     "CONFOUNDED"
+    ]
+   ]
+  ]
+ },
+ "A2_with_readers": {
+  "set": "A2 with readers",
+  "released_rows": 184,
+  "released_units": 44,
+  "rows_by_type": {
+   "REPEATED_SUBJECT": {
+    "no census, no check": 155,
+    "census, check": 29
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "no census, no check": 134,
+    "census, check": 46,
+    "no census, check": 4
+   },
+   "AGE_IMBALANCE": {
+    "no census, no check": 115,
+    "no census, check": 12,
+    "census, check": 48,
+    "census, no check": 9
+   }
+  },
+  "error_units": 33,
+  "error_units_flagged": 33,
+  "error_units_fully_addressed": 25,
+  "correct_units": 11,
+  "correct_units_flagged": 2,
+  "as_released": {
+   "units": 44,
+   "errors": 33,
+   "series": 17,
+   "rate": 0.75,
+   "unadjusted_interval": [
+    0.5966195922641409,
+    0.8680725620663532
+   ],
+   "effective": {
+    "rate": 0.75,
+    "interval": [
+     0.40615599536470764,
+     0.9522932202839675
+    ],
+    "icc": 0.8508517828815779,
+    "deff": 4.132681564245809,
+    "n_effective": 10.646840148698887,
+    "size_weighted_mean_cluster": 4.681818181818182
+   },
+   "model": {
+    "rate": 0.6901953387231612,
+    "interval": [
+     null,
+     null
+    ],
+    "b0": 16.33235963480097,
+    "sigma": 50.659448169992274
+   },
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.75,
+    "interval": [
+     0.40615599536470764,
+     0.9522932202839675
+    ]
+   },
+   "series_with_error": {
+    "count": 10,
+    "of": 17,
+    "proportion": 0.5882352941176471,
+    "interval": [
+     0.32924715394675735,
+     0.8155630382160532
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.48717948717948717,
+     0.9038461538461539
+    ],
+    "bca": [
+     0.5,
+     0.9056603773584906
+    ]
+   },
+   "leave_one_series_out": [
+    0.6764705882352942,
+    0.8048780487804879
+   ]
+  },
+  "if_flagged_withheld": {
+   "units": 9,
+   "errors": 0,
+   "series": 7,
+   "rate": 0.0,
+   "unadjusted_interval": [
+    0.0,
+    0.3362671168799428
+   ],
+   "effective": {
+    "rate": 0.0,
+    "interval": [
+     0.0,
+     0.3362671168799428
+    ],
+    "icc": 0.0,
+    "deff": 1.0,
+    "n_effective": 9.0,
+    "size_weighted_mean_cluster": 1.6666666666666667
+   },
+   "model": null,
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.0,
+    "interval": [
+     0.0,
+     0.3362671168799428
+    ]
+   },
+   "series_with_error": {
+    "count": 0,
+    "of": 7,
+    "proportion": 0.0,
+    "interval": [
+     0.0,
+     0.4096163972250034
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.0,
+     0.0
+    ],
+    "bca": null
+   },
+   "leave_one_series_out": [
+    0.0,
+    0.0
+   ]
+  },
+  "if_flagged_recomputed": {
+   "units": 44,
+   "errors": 8,
+   "series": 17,
+   "rate": 0.18181818181818182,
+   "unadjusted_interval": [
+    0.08191884088070353,
+    0.3271368502462458
+   ],
+   "effective": {
+    "rate": 0.18181818181818182,
+    "interval": [
+     0.02890065480632282,
+     0.4874527520546922
+    ],
+    "icc": 0.655515730784548,
+    "deff": 3.413489736070381,
+    "n_effective": 12.89003436426117,
+    "size_weighted_mean_cluster": 4.681818181818182
+   },
+   "model": null,
+   "model_valid": false,
+   "primary": {
+    "method": "Clopper-Pearson on effective n (DEFF)",
+    "rate": 0.18181818181818182,
+    "interval": [
+     0.02890065480632282,
+     0.4874527520546922
+    ]
+   },
+   "series_with_error": {
+    "count": 4,
+    "of": 17,
+    "proportion": 0.23529411764705882,
+    "interval": [
+     0.06810774043735666,
+     0.4989932732045801
+    ]
+   },
+   "bootstrap": {
+    "percentile": [
+     0.03125,
+     0.38636363636363635
+    ],
+    "bca": [
+     0.038461538461538464,
+     0.4
+    ]
+   },
+   "leave_one_series_out": [
+    0.13157894736842105,
+    0.23529411764705882
+   ]
+  },
+  "missed": [
+   [
+    "A2:GSE118468:0",
+    [],
+    [
+     "IMPURE_ARM"
+    ]
+   ],
+   [
+    "A2:GSE118468:1",
+    [],
+    [
+     "LABEL_MISMATCH"
+    ]
+   ],
+   [
+    "A2:GSE32148:0",
+    [],
+    [
+     "LABEL_MISMATCH"
+    ]
+   ],
+   [
+    "A2:GSE32148:1",
+    [],
+    [
+     "LABEL_MISMATCH"
+    ]
+   ],
+   [
+    "A2:GSE49904:1",
+    [],
+    [
+     "CONFOUNDED"
+    ]
+   ],
+   [
+    "A2:GSE49904:2",
+    [],
+    [
+     "CONFOUNDED"
+    ]
+   ],
+   [
+    "A2:GSE49904:5",
+    [],
+    [
+     "CONFOUNDED"
+    ]
+   ],
+   [
+    "A2:GSE49909:0",
+    [],
+    [
+     "CONFOUNDED"
+    ]
+   ]
+  ],
+  "released_unit_keys": 44,
+  "released_unit_keys_read": 31
+ }
+}

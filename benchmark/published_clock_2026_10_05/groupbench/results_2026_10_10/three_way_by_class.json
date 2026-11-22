@@ -1,0 +1,204 @@
+{
+ "records": 110,
+ "published": {
+  "higher": 36,
+  "none": 58,
+  "lower": 16
+ },
+ "systems": {
+  "S0": {
+   "recall": {
+    "lower": [
+     0,
+     16
+    ],
+    "higher": [
+     36,
+     36
+    ],
+    "none": [
+     0,
+     58
+    ]
+   },
+   "balanced_accuracy": 0.3333333333333333,
+   "balanced_accuracy_interval": [
+    0.3333333333333333,
+    0.3333333333333333
+   ]
+  },
+  "S3": {
+   "recall": {
+    "lower": [
+     7,
+     16
+    ],
+    "higher": [
+     26,
+     36
+    ],
+    "none": [
+     52,
+     58
+    ]
+   },
+   "balanced_accuracy": 0.6854246487867178,
+   "balanced_accuracy_interval": [
+    0.548561507936508,
+    0.8173287566543477
+   ]
+  },
+  "S3c": {
+   "recall": {
+    "lower": [
+     10,
+     16
+    ],
+    "higher": [
+     30,
+     36
+    ],
+    "none": [
+     51,
+     58
+    ]
+   },
+   "balanced_accuracy": 0.7792145593869731,
+   "balanced_accuracy_interval": [
+    0.6788392857142856,
+    0.8641439638056179
+   ]
+  },
+  "S3r": {
+   "recall": {
+    "lower": [
+     10,
+     16
+    ],
+    "higher": [
+     30,
+     36
+    ],
+    "none": [
+     51,
+     58
+    ]
+   },
+   "balanced_accuracy": 0.7792145593869731,
+   "balanced_accuracy_interval": [
+    0.6788392857142856,
+    0.8641439638056179
+   ]
+  },
+  "S4:openai:gpt-4.1": {
+   "recall": {
+    "lower": [
+     6,
+     16
+    ],
+    "higher": [
+     28,
+     36
+    ],
+    "none": [
+     23,
+     58
+    ]
+   },
+   "balanced_accuracy": 0.5164431673052362,
+   "balanced_accuracy_interval": [
+    0.4156860594360594,
+    0.6202094040154864
+   ]
+  },
+  "S4:openai:gpt-5.5": {
+   "recall": {
+    "lower": [
+     6,
+     16
+    ],
+    "higher": [
+     17,
+     36
+    ],
+    "none": [
+     38,
+     58
+    ]
+   },
+   "balanced_accuracy": 0.5007982120051085,
+   "balanced_accuracy_interval": [
+    0.3520227497388878,
+    0.6359796626984126
+   ]
+  },
+  "S4:openai:gpt-6-astra": {
+   "recall": {
+    "lower": [
+     5,
+     16
+    ],
+    "higher": [
+     16,
+     36
+    ],
+    "none": [
+     47,
+     58
+    ]
+   },
+   "balanced_accuracy": 0.5224297573435505,
+   "balanced_accuracy_interval": [
+    0.38621148160544444,
+    0.6531028155011432
+   ]
+  },
+  "S4:openai:gpt-6-luna": {
+   "recall": {
+    "lower": [
+     5,
+     16
+    ],
+    "higher": [
+     12,
+     36
+    ],
+    "none": [
+     42,
+     58
+    ]
+   },
+   "balanced_accuracy": 0.45665708812260536,
+   "balanced_accuracy_interval": [
+    0.3123848137983028,
+    0.5872033131590441
+   ]
+  },
+  "S4:openai:gpt-6-sol": {
+   "recall": {
+    "lower": [
+     5,
+     16
+    ],
+    "higher": [
+     15,
+     36
+    ],
+    "none": [
+     43,
+     58
+    ]
+   },
+   "balanced_accuracy": 0.4901819923371648,
+   "balanced_accuracy_interval": [
+    0.3536003454398263,
+    0.6231062535370685
+   ]
+  }
+ },
+ "inputs": {
+  "/Users/A.Y/Desktop/Projects/Manuscripts/2022_clock_base/clockbase_revision_local_2026-11-03/data/clockbase-benchmark-2026-10-05/summaries/final-2026-10-05/summary.json": "b04f0d4e148b5f075effe0e62dd354d8b3f0b91392a12e2d6a8be717ff5a31e3",
+  "/Users/A.Y/Desktop/Projects/Manuscripts/2022_clock_base/clockbase_revision_local_2026-11-03/clockbase-agent/benchmark/published_clock_2026_10_05/groupbench/results_2026_10_10/published_released_test.csv": "ef179031cceb92821bff9efafa09c2e9306e7c270e23ce103bb0908afa51fefe",
+  "/Users/A.Y/Desktop/Projects/Manuscripts/2022_clock_base/clockbase_revision_local_2026-11-03/clockbase-agent/benchmark/published_clock_2026_10_05/groupbench/results_2026_10_10/published_released_test.json": "aa7e84c6bb8c77043f2dc80c9fd0912ca49e567aacaaafe4a7dc61e285f4261e"
+ }
+}

@@ -1,0 +1,12 @@
+{
+  "nature_figure_utils.py": {
+    "source": "figure_style/nature_figure_utils.py",
+    "sha256": "605d8efaaefe1ec76f991708d7ccb657250e50e318b21c633b9ed5a100cdb21c",
+    "source_mtime_ns": 1788368759109209995
+  },
+  "references/published_corpus_metrics.json": {
+    "source": "figure_style/references/published_corpus_metrics.json",
+    "sha256": "5d03c6d8493504153350bad04152315aaa5fe0a4a970007583a8e7e76453c081",
+    "source_mtime_ns": 1788368643671317514
+  }
+}

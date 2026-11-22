@@ -1,0 +1,160 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://clockbase.org/schemas/audit-record-v1.schema.json",
+  "title": "ClockBase audit record version 1",
+  "oneOf": [
+    {"$ref": "#/$defs/artifact"},
+    {"$ref": "#/$defs/actor"},
+    {"$ref": "#/$defs/check"},
+    {"$ref": "#/$defs/finding"},
+    {"$ref": "#/$defs/dependency"},
+    {"$ref": "#/$defs/claim"},
+    {"$ref": "#/$defs/decision"}
+  ],
+  "$defs": {
+    "envelope": {
+      "type": "object",
+      "required": ["record_id", "release_id", "created_at", "record_type"],
+      "properties": {
+        "record_id": {"type": "string", "minLength": 1},
+        "release_id": {"type": "string", "minLength": 1},
+        "created_at": {"type": "string", "minLength": 1},
+        "record_type": {"type": "string", "minLength": 1}
+      }
+    },
+    "artifact": {
+      "allOf": [
+        {"$ref": "#/$defs/envelope"},
+        {
+          "type": "object",
+          "required": ["uri", "sha256", "byte_count", "classification", "created_by_actor_id", "parent_artifact_ids", "quarantined"],
+          "properties": {
+            "record_type": {"const": "artifact"},
+            "uri": {"type": "string", "minLength": 1},
+            "sha256": {"type": "string", "minLength": 1},
+            "byte_count": {"type": "integer", "minimum": 0},
+            "classification": {"enum": ["EMPIRICAL", "DERIVED", "SIMULATION", "DOCUMENT", "SOFTWARE_FIXTURE"]},
+            "created_by_actor_id": {"type": "string", "minLength": 1},
+            "parent_artifact_ids": {"type": "array", "items": {"type": "string"}},
+            "quarantined": {"type": "boolean"}
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "actor": {
+      "allOf": [
+        {"$ref": "#/$defs/envelope"},
+        {
+          "type": "object",
+          "required": ["actor_type", "role", "organization", "model_family", "authority_scope", "identity_assurance"],
+          "properties": {
+            "record_type": {"const": "actor"},
+            "actor_type": {"enum": ["HUMAN", "PROGRAM", "MODEL"]},
+            "role": {"type": "string", "minLength": 1},
+            "organization": {"type": "string", "minLength": 1},
+            "model_family": {"type": ["string", "null"]},
+            "authority_scope": {"type": "array", "items": {"type": "string"}},
+            "identity_assurance": {"enum": ["UNVERIFIED", "VERIFIED"]}
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "check": {
+      "allOf": [
+        {"$ref": "#/$defs/envelope"},
+        {
+          "type": "object",
+          "required": ["subject_id", "predicate", "status", "checker_actor_id", "evidence_artifact_ids", "expected", "observed"],
+          "properties": {
+            "record_type": {"const": "check"},
+            "subject_id": {"type": "string"},
+            "predicate": {"type": "string"},
+            "status": {"enum": ["PASS", "FAIL", "BLOCKED", "NEEDS_REVIEW", "NOT_APPLICABLE"]},
+            "checker_actor_id": {"type": "string"},
+            "evidence_artifact_ids": {"type": "array", "items": {"type": "string"}},
+            "expected": {"type": "object"},
+            "observed": {"type": "object"}
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "finding": {
+      "allOf": [
+        {"$ref": "#/$defs/envelope"},
+        {
+          "type": "object",
+          "required": ["subject_id", "severity", "status", "author_actor_id", "evidence_artifact_ids", "affected_subject_ids", "allegation", "requested_test"],
+          "properties": {
+            "record_type": {"const": "finding"},
+            "subject_id": {"type": "string"},
+            "severity": {"enum": ["S0", "S1", "S2", "S3"]},
+            "status": {"enum": ["PROPOSED", "CONFIRMED", "REJECTED", "RESOLVED"]},
+            "author_actor_id": {"type": "string"},
+            "evidence_artifact_ids": {"type": "array", "items": {"type": "string"}},
+            "affected_subject_ids": {"type": "array", "items": {"type": "string"}},
+            "allegation": {"type": "string"},
+            "requested_test": {"type": "string"}
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "dependency": {
+      "allOf": [
+        {"$ref": "#/$defs/envelope"},
+        {
+          "type": "object",
+          "required": ["parent_id", "child_id", "requirement"],
+          "properties": {
+            "record_type": {"const": "dependency"},
+            "parent_id": {"type": "string"},
+            "child_id": {"type": "string"},
+            "requirement": {"enum": ["REQUIRED_EMPIRICAL", "REQUIRED_DERIVED", "REQUIRED_CHECK", "SUPPORTING", "CONTRADICTING"]}
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "claim": {
+      "allOf": [
+        {"$ref": "#/$defs/envelope"},
+        {
+          "type": "object",
+          "required": ["exact_text", "claim_type", "scope", "required_dependency_ids", "falsifier", "disposition"],
+          "properties": {
+            "record_type": {"const": "claim"},
+            "exact_text": {"type": "string"},
+            "claim_type": {"type": "string"},
+            "scope": {"type": "string"},
+            "required_dependency_ids": {"type": "array", "items": {"type": "string"}},
+            "falsifier": {"type": "string"},
+            "disposition": {"enum": ["PROPOSED", "WITHDRAWN"]}
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    },
+    "decision": {
+      "allOf": [
+        {"$ref": "#/$defs/envelope"},
+        {
+          "type": "object",
+          "required": ["claim_id", "status", "reason_codes", "evaluated_record_ids", "gate_version", "ledger_sha256"],
+          "properties": {
+            "record_type": {"const": "decision"},
+            "claim_id": {"type": "string"},
+            "status": {"enum": ["APPROVED", "REJECTED", "BLOCKED", "WITHDRAWN"]},
+            "reason_codes": {"type": "array", "items": {"type": "string"}},
+            "evaluated_record_ids": {"type": "array", "items": {"type": "string"}},
+            "gate_version": {"type": "string"},
+            "ledger_sha256": {"type": "string"}
+          }
+        }
+      ],
+      "unevaluatedProperties": false
+    }
+  }
+}

@@ -1,0 +1,22 @@
+{
+ "created": "2026-10-06T02:20:36-0400",
+ "sha256": {
+  "declared": "b7dc9a1d3f2a3f81c1f4d89f5c70fed2a8c61504e7b309298335837a55d5e1c6",
+  "coding": "e12cd4946e1fbb524ba5cb1e602dfe2edecf9daf914d9e0a55be7d004ec701be",
+  "refined": "1eb4d991377f319e4882fbc562b934374b8ddeae4b094861aef78e1dc8418218",
+  "samples": "185cad43ea38e02f63ef8921ebdd265cd78fb32a684a565e79a72b33208a02a5"
+ },
+ "log": {
+  "unmapped_conflict_fields": [],
+  "declared_from_third_read": 23,
+  "ambiguous": 3,
+  "declared_missing": []
+ },
+ "counts": {
+  "declared": 151,
+  "interventions": 24,
+  "refined": 260,
+  "series": 50,
+  "conflicts": 125
+ }
+}

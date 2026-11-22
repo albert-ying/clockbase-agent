@@ -1,0 +1,112 @@
+{
+ "max_samples": 120,
+ "units": 271,
+ "packages": 257,
+ "not_matched": [],
+ "above_size_limit": [
+  {
+   "unit": "GSE131013:12007e95aed0",
+   "gse": "GSE131013",
+   "comparison_name": "Mucosa vs Normal",
+   "n": 144,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE48988:e35196e59436",
+   "gse": "GSE48988",
+   "comparison_name": "HRT before 50 vs No HRT",
+   "n": 142,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE70977:dd8d274f69a8",
+   "gse": "GSE70977",
+   "comparison_name": "OPSCC Case vs Control",
+   "n": 214,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE73894:92256046a2c8",
+   "gse": "GSE73894",
+   "comparison_name": "Psoriatic skin vs Normal skin",
+   "n": 176,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE75704:2dc715d1ed7c",
+   "gse": "GSE75704",
+   "comparison_name": "PSP vs Control",
+   "n": 166,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE122340:75d4d73d522d",
+   "gse": "GSE122340",
+   "comparison_name": "Biliary Atresia vs Normal",
+   "n": 178,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE124395:39eec7d8dbfe",
+   "gse": "GSE124395",
+   "comparison_name": "Humanized_Mouse_Liver vs Normal Liver",
+   "n": 282,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE188429:97633b498cef",
+   "gse": "GSE188429",
+   "comparison_name": "Convalescent COVID vs Unexposed",
+   "n": 125,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE198449:d236c80c8858",
+   "gse": "GSE198449",
+   "comparison_name": "COVID positive vs negative",
+   "n": 537,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE120909:b662dd265771",
+   "gse": "GSE120909",
+   "comparison_name": "aPD1 vs Isotype (spleen, 11day)",
+   "n": 219,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE120909:bb485da94b26",
+   "gse": "GSE120909",
+   "comparison_name": "aGITR vs Isotype (spleen, 11day)",
+   "n": 237,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE133454:40cbd32f35e2",
+   "gse": "GSE133454",
+   "comparison_name": "Tcf7fl/flVav-cre vs wild type (DN1)",
+   "n": 192,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE133454:458e973d1ba4",
+   "gse": "GSE133454",
+   "comparison_name": "Tcf7fl/flVav-cre vs wild type (DN2&DN3)",
+   "n": 192,
+   "tables": "Table S14"
+  },
+  {
+   "unit": "GSE162934:2d7899bd58b2",
+   "gse": "GSE162934",
+   "comparison_name": "Ehmt1 heterozygous KO (Ehmt1\u2206/+) vs Wild type (Ehmt1+/+)",
+   "n": 1471,
+   "tables": "Table S14"
+  }
+ ],
+ "by_table": {
+  "Table S14": 201,
+  "Figure 3": 60,
+  "Table 1": 30,
+  "Table 2": 30
+ }
+}

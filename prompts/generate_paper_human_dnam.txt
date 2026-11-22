@@ -1,0 +1,56 @@
+# Source: human_prompts_for_minipaper.py::GENERATE_PAPER_2_HUMAN_DNAM
+Just to recapitulate, the {condition} ({comparison}) in the {gse_id} dataset was evaluated against five human DNA methylation aging clocks. The full per-clock effect panel is:
+
+| Clock           | Role       | Effect size                 | p-value             |
+|-----------------|------------|-----------------------------|---------------------|
+| GrimAgeV2       | primary    | {effect_size}               | {effect_pvalue}     |
+| PhenoAge        | supporting | {phenoage_effect_size}      | {phenoage_pvalue}   |
+| Horvath v1      | supporting | {horvathv1_effect_size}     | {horvathv1_pvalue}  |
+| YingDamAge      | supporting | {yingdamage_effect_size}    | {yingdamage_pvalue} |
+| DunedinPACE     | supporting | {dunedinpace_effect_size}   | {dunedinpace_pvalue}|
+
+Effect direction for the primary clock (GrimAgeV2): {effect_direction} (positive = pro-aging, negative = anti-aging).
+Cross-clock support: {n_support} of the 4 supporting clocks independently reach p < 0.05 AND move in the same direction as GrimAgeV2.
+
+The original study design is presented in the source literature if available.
+
+Your goal is to generate a short scientific paper to report this finding *as a multi-clock comparison*. Follow the structure below.
+
+**Report Structure:**
+
+**Title**
+* Craft a Declarative, Engaging, and Focused title that precisely communicates the core message about the `Intervention Name`, our core finding, and the multi-clock nature of the evidence.
+
+**Introduction:**
+* Provide a brief background on the `Intervention Name` and its biological relevance in human aging.
+* Briefly note that this study evaluates the intervention against a panel of DNA methylation aging clocks, each capturing a distinct aspect of biological aging (mortality risk, phenotypic age, chronological age proxy, damage accumulation, pace of aging). Avoid specific findings in this section.
+
+**Results:**
+* **Multi-clock comparison is the centerpiece of this section.** Report the effect of the intervention on GrimAgeV2 first, then summarize how the four supporting clocks concurred or diverged. Reproduce (or paraphrase) the per-clock effect/p-value panel above so the reader sees all five at once.
+* State explicitly how many of the four supporting clocks agree in direction at p < 0.05 ({n_support}/4), and flag any clocks that disagree in direction or fail to reach significance.
+* Synthesize supporting evidence from the retrieved documents for the core biological interpretation. Do not use direct quotes or lengthy paraphrases.
+* **Citation Style:** numerical citations in square brackets `[X]`, assigned sequentially to each unique `File Name` in `Retrieved Documents`.
+* **Image Inclusion:**
+    * **Only include `Image url` links from documents whose `File Name` *exactly matches* the `{title}` provided.** Disregard images from all other retrieved documents.
+    * Integrate images contextually. Render the `Image url` line precisely as found in the `Reference`.
+    * Add a concise figure caption, e.g., "Figure 1: [Brief description]". Number figures sequentially.
+
+**Discussion:**
+* **Lead with cross-clock consistency.** Does the effect replicate across the full panel, only across mortality-predictive clocks (GrimAgeV2 + PhenoAge), only across first-generation CpG-based clocks (Horvath v1), only on pace-of-aging (DunedinPACE), or only on damage accumulation (YingDamAge)? Different patterns of agreement imply different biological interpretations.
+* Evaluate whether the evidence indicates a pro-aging, anti-aging, or clock-specific effect. A pan-clock convergent effect is stronger evidence than a single-clock signal; clock-specific effects may reveal which aspect of aging (mortality risk vs. epigenetic drift vs. damage accrual) the intervention engages.
+* Identify gaps, limitations, and inconsistencies — including tissue-composition effects, cohort size, confounder adjustment, and the independent-vs-correlated nature of the clocks themselves.
+* Conclude with promising avenues for future research and what additional clocks or validation cohorts would sharpen the interpretation.
+
+**References:**
+* Numbered list of all cited sources. Each `[X]` corresponds to a unique `File Name`.
+* List only `File Name` and primary `Reference` details (Title, Authors, Journal, Year, DOI).
+* Use self-incrementing numbers starting from 1.
+
+**Strict Constraints & Guidelines:**
+* **Conciseness:** Every sentence must add value.
+* **No Direct Quotes:** Rephrase and synthesize.
+* **Source Adherence:** Use *only* information from `Retrieved Documents`. No external knowledge.
+* **Objective Tone:** Strictly neutral, objective, academic.
+* **Image Rule:** Strictly only from `{title}`.
+* **Figure Captions:** Concise and informative.
+* **Multi-clock framing:** The report must present findings as a comparison across the five-clock panel, not as a single-clock result.

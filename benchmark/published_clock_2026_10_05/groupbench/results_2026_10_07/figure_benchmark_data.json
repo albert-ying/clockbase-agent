@@ -1,0 +1,460 @@
+{
+ "sources": {
+  "published": "/Entropy/kying/clockbase-benchmark-2026-10-05/groupbench/b-v2/b_stats_contained.json",
+  "systems": "/Entropy/kying/clockbase-benchmark-2026-10-05/summaries/final-2026-10-05/summary.json",
+  "stages": [
+   "/Entropy/kying/clockbase-benchmark-2026-10-05/groupbench/final-v2/final_report.json",
+   "/Entropy/kying/clockbase-benchmark-2026-10-05/groupbench/design-checks/v3/in_sample_corrected.json",
+   "/Entropy/kying/clockbase-benchmark-2026-10-05/groupbench/design-checks/v3/in_sample_with_readers_corrected.json"
+  ],
+  "series": [
+   "/Entropy/kying/clockbase-benchmark-2026-10-05/groupbench/rules-v2/e2_rules.jsonl",
+   "/Entropy/kying/clockbase-benchmark-2026-10-05/groupbench/final-v2/outcomes.json"
+  ],
+  "atlas": [
+   "benchmark/published_clock_2026_10_05/groupbench/results_2026_10_07/atlas_summary_dnam.json",
+   "benchmark/published_clock_2026_10_05/groupbench/results_2026_10_07/atlas_summary_hs_rna.json",
+   "benchmark/published_clock_2026_10_05/groupbench/results_2026_10_07/atlas_summary_mm_rna.json"
+  ],
+  "validation": "benchmark/published_clock_2026_10_05/groupbench/results_2026_10_07/validation.json"
+ },
+ "published": {
+  "matrix": [
+   [
+    17,
+    5,
+    1
+   ],
+   [
+    1,
+    27,
+    0
+   ],
+   [
+    0,
+    2,
+    3
+   ]
+  ],
+  "n": 56,
+  "papers": 26,
+  "agreement": 0.8392857142857143,
+  "kappa": 0.7120000000000001
+ },
+ "systems": {
+  "records": 154,
+  "papers": 41,
+  "constant_rule": 0.3333333333333333,
+  "rows": [
+   {
+    "label": "ClockBase",
+    "value": 0.6733385370205175,
+    "low": 0.5266997494923592,
+    "high": 0.804565496133416
+   },
+   {
+    "label": "GPT-6 Astra",
+    "value": 0.5177415875754962,
+    "low": 0.3837057686322392,
+    "high": 0.6513289394546912
+   },
+   {
+    "label": "GPT-4.1",
+    "value": 0.5159979867702041,
+    "low": 0.41624259561759563,
+    "high": 0.6164319699442788
+   },
+   {
+    "label": "GPT-5.5",
+    "value": 0.5069384526890998,
+    "low": 0.3664025657625733,
+    "high": 0.6453706562245674
+   },
+   {
+    "label": "GPT-6 Sol",
+    "value": 0.4958836640782283,
+    "low": 0.35551212977683566,
+    "high": 0.6222653824312839
+   },
+   {
+    "label": "GPT-6 Luna",
+    "value": 0.4553314639056658,
+    "low": 0.3265368623340322,
+    "high": 0.5737854789241886
+   },
+   {
+    "label": "Constant rule",
+    "value": 0.3333333333333333,
+    "low": 0.3333333333333333,
+    "high": 0.3333333333333333,
+    "open": true
+   }
+  ]
+ },
+ "stages": [
+  {
+   "header": "Mouse RNA-seq"
+  },
+  {
+   "label": "Raw agent",
+   "k": 20,
+   "n": 98,
+   "low": 0.06148594703927256,
+   "high": 0.4359013470692795,
+   "open": false
+  },
+  {
+   "label": "Released",
+   "k": 5,
+   "n": 89,
+   "low": 0.003157353387869755,
+   "high": 0.23346565757378862,
+   "open": false
+  },
+  {
+   "label": "+ checks, readers",
+   "k": 3,
+   "n": 89,
+   "low": 4.8167648238456946e-05,
+   "high": 0.26335581920952017,
+   "open": true
+  },
+  {
+   "header": "Human DNAm"
+  },
+  {
+   "label": "Raw agent",
+   "k": 39,
+   "n": 44,
+   "low": 0.5784647818562869,
+   "high": 0.9931952488875734,
+   "open": false
+  },
+  {
+   "label": "Released",
+   "k": 35,
+   "n": 44,
+   "low": 0.45590107227338356,
+   "high": 0.9696594655576382,
+   "open": false
+  },
+  {
+   "label": "+ field checks",
+   "k": 13,
+   "n": 44,
+   "low": 0.07563479095904037,
+   "high": 0.6214298126472877,
+   "open": true
+  },
+  {
+   "label": "+ checks, readers",
+   "k": 8,
+   "n": 44,
+   "low": 0.02890065480632282,
+   "high": 0.4874527520546922,
+   "open": true
+  }
+ ],
+ "in_sample": {
+  "A1": {
+   "agent": {
+    "label": "Raw agent",
+    "k": 20,
+    "n": 98,
+    "low": 0.06148594703927256,
+    "high": 0.4359013470692795,
+    "open": false
+   },
+   "released": {
+    "label": "Released",
+    "k": 5,
+    "n": 89,
+    "low": 0.003157353387869755,
+    "high": 0.23346565757378862,
+    "open": false
+   },
+   "candidate": {
+    "label": "Candidate",
+    "k": 5,
+    "n": 89,
+    "low": 0.003157353387869755,
+    "high": 0.23346565757378862,
+    "open": true
+   },
+   "readers": {
+    "label": "Candidate + two readers",
+    "k": 3,
+    "n": 89,
+    "low": 4.8167648238456946e-05,
+    "high": 0.26335581920952017,
+    "open": true
+   }
+  },
+  "A2": {
+   "agent": {
+    "label": "Raw agent",
+    "k": 39,
+    "n": 44,
+    "low": 0.5784647818562869,
+    "high": 0.9931952488875734,
+    "open": false
+   },
+   "released": {
+    "label": "Released",
+    "k": 35,
+    "n": 44,
+    "low": 0.45590107227338356,
+    "high": 0.9696594655576382,
+    "open": false
+   },
+   "candidate": {
+    "label": "Candidate",
+    "k": 13,
+    "n": 44,
+    "low": 0.07563479095904037,
+    "high": 0.6214298126472877,
+    "open": true
+   },
+   "readers": {
+    "label": "Candidate + two readers",
+    "k": 8,
+    "n": 44,
+    "low": 0.02890065480632282,
+    "high": 0.4874527520546922,
+    "open": true
+   }
+  }
+ },
+ "not_released_in_scored_run": {
+  "A1": {},
+  "A2": {}
+ },
+ "series": {
+  "rows": [
+   {
+    "gse": "GSE185389",
+    "design_only": 10,
+    "other": 0,
+    "correct": 0
+   },
+   {
+    "gse": "GSE49904",
+    "design_only": 2,
+    "other": 3,
+    "correct": 1
+   },
+   {
+    "gse": "GSE130491",
+    "design_only": 4,
+    "other": 0,
+    "correct": 0
+   },
+   {
+    "gse": "GSE151355",
+    "design_only": 4,
+    "other": 0,
+    "correct": 0
+   },
+   {
+    "gse": "GSE43976",
+    "design_only": 3,
+    "other": 0,
+    "correct": 0
+   },
+   {
+    "gse": "GSE69138",
+    "design_only": 0,
+    "other": 0,
+    "correct": 3
+   },
+   {
+    "gse": "GSE118468",
+    "design_only": 0,
+    "other": 2,
+    "correct": 0
+   },
+   {
+    "gse": "GSE32148",
+    "design_only": 0,
+    "other": 2,
+    "correct": 0
+   },
+   {
+    "gse": "GSE62867",
+    "design_only": 2,
+    "other": 0,
+    "correct": 0
+   },
+   {
+    "gse": "GSE134429",
+    "design_only": 1,
+    "other": 0,
+    "correct": 0
+   },
+   {
+    "gse": "GSE49909",
+    "design_only": 0,
+    "other": 1,
+    "correct": 0
+   },
+   {
+    "gse": "GSE67705",
+    "design_only": 1,
+    "other": 0,
+    "correct": 0
+   },
+   {
+    "gse": "GSE103929",
+    "design_only": 0,
+    "other": 0,
+    "correct": 1
+   },
+   {
+    "gse": "GSE106648",
+    "design_only": 0,
+    "other": 0,
+    "correct": 1
+   },
+   {
+    "gse": "GSE156994",
+    "design_only": 0,
+    "other": 0,
+    "correct": 1
+   },
+   {
+    "gse": "GSE71841",
+    "design_only": 0,
+    "other": 0,
+    "correct": 1
+   },
+   {
+    "gse": "GSE81961",
+    "design_only": 0,
+    "other": 0,
+    "correct": 1
+   }
+  ],
+  "units": 44,
+  "errors": 35,
+  "top4_errors": 23,
+  "top4_units": 24,
+  "estimate": 0.7954545454545454
+ },
+ "kinds": [
+  {
+   "label": "Age imbalance",
+   "units": 15,
+   "design": true
+  },
+  {
+   "label": "Paired, tested unpaired",
+   "units": 12,
+   "design": true
+  },
+  {
+   "label": "Repeated individual",
+   "units": 6,
+   "design": true
+  },
+  {
+   "label": "Another factor differs",
+   "units": 4,
+   "design": false
+  },
+  {
+   "label": "Wrong groups",
+   "units": 3,
+   "design": false
+  },
+  {
+   "label": "Mixed arm",
+   "units": 1,
+   "design": false
+  }
+ ],
+ "atlas": [
+  {
+   "label": "Human DNAm",
+   "released": 13022,
+   "flagged": 2337,
+   "unchanged": 1740,
+   "changed": 463,
+   "not_testable": 134
+  },
+  {
+   "label": "Human RNA-seq",
+   "released": 24379,
+   "flagged": 2705,
+   "unchanged": 2150,
+   "changed": 331,
+   "not_testable": 224
+  },
+  {
+   "label": "Mouse RNA-seq",
+   "released": 27081,
+   "flagged": 301,
+   "unchanged": 233,
+   "changed": 36,
+   "not_testable": 32
+  }
+ ],
+ "validation": [
+  {
+   "header": "Flagged: confirmed"
+  },
+  {
+   "label": "Repeated individual",
+   "k": 19,
+   "n": 20,
+   "low": 0.7512672372279722,
+   "high": 0.9987349105020502,
+   "open": false
+  },
+  {
+   "label": "Paired arms",
+   "k": 38,
+   "n": 41,
+   "low": 0.8007540216233371,
+   "high": 0.9846485284665834,
+   "open": false
+  },
+  {
+   "label": "Age imbalance",
+   "k": 32,
+   "n": 33,
+   "low": 0.8424060277275032,
+   "high": 0.9992330879249519,
+   "open": false
+  },
+  {
+   "header": "Unflagged: missed"
+  },
+  {
+   "label": "Human DNAm",
+   "k": 12,
+   "n": 50,
+   "low": 0.13060991619745735,
+   "high": 0.3816907481040382,
+   "open": false,
+   "missed": true
+  },
+  {
+   "label": "Human RNA-seq",
+   "k": 8,
+   "n": 51,
+   "low": 0.07024083345730879,
+   "high": 0.2858762867315592,
+   "open": false,
+   "missed": true
+  },
+  {
+   "label": "Mouse RNA-seq",
+   "k": 5,
+   "n": 32,
+   "low": 0.05275056440213409,
+   "high": 0.3278787656820417,
+   "open": false,
+   "missed": true
+  }
+ ]
+}

@@ -1,0 +1,241 @@
+model,table,rank,gse,comparison,found,same_direction,recurs,jaccard_min,swapped,run_comparison,method,mean_diff,p,n_case,n_control,reported_p,reported_same_direction
+gpt-6-astra,higher,19,GSE78996,pEAE vs Wild Type,True,True,True,1.0,False,Adult pEAE vs healthy wild-type control (spinal cord),WELCH,3.1331595625094035,6.882924502023622e-05,3.0,3.0,6.882924502023622e-05,True
+gpt-6-astra,lower,28,GSE79663,TCF4 knockout vs wildtype,True,True,True,1.0,False,TCF4 knockout vs wildtype at P0,WELCH,-0.881154628729812,0.0026165970719426307,3.0,3.0,0.0026165970719426307,True
+gpt-6-astra,lower,9,GSE81424,Nkx3.1 knockout vs wildtype,True,True,True,1.0,False,Nkx3.1 -/- vs Nkx3.1 +/+ at 4 months (prostate),WELCH,-1.321184005720236,2.56351222747016e-06,6.0,6.0,2.56351222747016e-06,True
+gpt-6-astra,lower,7,GSE89272,Prop1 Hom vs Prop1 Het at 22 months,True,True,True,1.0,False,Ames dwarf (Prop1 Hom) vs WT (Prop1 Het) at 22 months,WELCH,-0.8139393472986606,7.057604467567684e-05,4.0,4.0,7.057604467567684e-05,True
+gpt-6-astra,higher,16,GSE100212,4weeks_bleomycin vs saline,True,True,True,1.0,False,"Bleomycin, 4 weeks vs saline",WELCH,1.6865980009160948,3.641344684406546e-12,10.0,10.0,3.641344684406532e-12,True
+gpt-6-astra,higher,28,GSE100212,2weeks bleomycin vs saline,True,True,True,1.0,False,"Bleomycin, 2 weeks vs saline",WELCH,1.0864232419881292,9.060172695515003e-12,10.0,10.0,9.06017269551497e-12,True
+gpt-6-astra,lower,24,GSE100888,Atg7 cKO vs Atg7 cWT (SOD1G93A background),True,True,True,1.0,False,Atg7 cKO; SOD1G93A vs Atg7 cWT; SOD1G93A,WELCH,-1.490322598380842,0.0013887613559721817,4.0,4.0,0.0013887613559721804,True
+gpt-6-astra,higher,14,GSE100918,PMA/ethanol vs Control,True,True,True,1.0,False,PMA + ethanol vs control,WELCH,1.2629963883838884,1.1729390569343695e-06,4.0,5.0,1.1729390569343695e-06,True
+gpt-6-astra,higher,10,GSE101822,CD95 antibody vs Saline,True,True,True,1.0,False,CD95 activating antibody vs saline,WELCH,1.3735385139176004,6.725096339657427e-08,5.0,5.0,6.725096339657427e-08,True
+gpt-6-astra,higher,30,GSE104443,FOXC1 Transgenic vs Wildtype,True,True,True,1.0,False,"MMTV-FOXC1 transgenic vs wildtype at 11 weeks, lactation day 2",WELCH,0.7563576151806393,0.0006090361939044299,3.0,3.0,0.0006090361939044299,True
+gpt-6-astra,lower,23,GSE110593,STAT1 deficient vs STAT1 competent (both challenged),True,True,True,1.0,False,STAT1-deficient vs STAT1-competent LCMVwt-challenged carriers,WELCH,-1.63703915162055,0.0008198640341349604,4.0,5.0,0.0008198640341349604,True
+gpt-6-astra,higher,13,GSE117868,AD model with PU.1 KO vs Control (4.5 months),False,False,False,,,,,,,,,,
+gpt-6-astra,lower,16,GSE122080,Ouabain vs Saline in old mice,True,True,True,1.0,False,Ouabain vs saline vehicle (24-month-old female liver),WELCH,-0.9704425404411579,8.592665783541378e-06,6.0,6.0,8.592665783541378e-06,True
+gpt-6-astra,higher,2,GSE123002,SRSF3 KO vs Control,True,True,True,1.0,False,SRSF3 knockout vs Cre control (adult hearts),WELCH,1.5546004344921989,2.1580363808577252e-06,3.0,3.0,2.1580363808577252e-06,True
+gpt-6-astra,higher,7,GSE123509,Tpp1-/- vs WT in cerebellum,True,True,True,1.0,False,Tpp1-/- vs WT in cerebellum (4-month-old males),WELCH,1.3100852770180733,0.0007222015290972831,3.0,3.0,0.0007222015290972831,True
+gpt-6-astra,higher,11,GSE123779,"ShhCre_Pparg_KO vs WT (homeostasis, whole urothelium)",True,True,True,1.0,False,"ShhCre Pparg ablation vs WT - whole urothelium, homeostasis",WELCH,1.6834134190730783,4.256227910222077e-05,4.0,4.0,4.256227910222101e-05,True
+gpt-6-astra,higher,27,GSE125567,GFAP-IL6 vs WT,True,True,True,1.0,False,"Homozygous GFAP-IL6 vs WT (3 months, frontal cortex)",WELCH,0.8908049296883046,0.000177718809044814,3.0,3.0,0.000177718809044814,True
+gpt-6-astra,lower,26,GSE128770,Young SD vs SS at ZT9,True,True,True,1.0,False,Young: sleep deprivation vs spontaneous sleep at ZT9,WELCH,-0.2985823077702889,2.6141842793225965e-05,6.0,6.0,2.614184279322606e-05,True
+gpt-6-astra,lower,30,GSE134151,5xFAD Hippocampus PLX5622 vs Vehicle,True,True,True,1.0,False,PLX5622 vs Vehicle in 5xFAD; Hippocampus; 7 months,WELCH,-0.6543618890483839,0.0001647230479749211,4.0,4.0,0.00016472304797492094,True
+gpt-6-astra,higher,8,GSE134704,Gaa-/- vs Wild Type,True,True,True,1.0,False,"Gaa knockout vs wild type (12 months, cortex)",WELCH,0.566039070862997,1.5351479902304437e-07,5.0,5.0,1.5351479902304437e-07,True
+gpt-6-astra,higher,24,GSE134780,HH vs WT (gastrocnemius muscle),True,True,True,1.0,False,BubR1H/H vs WT in gastrocnemius muscle (8-10 months),WELCH,1.223251641308117,6.563512776686782e-05,3.0,4.0,6.563512776686782e-05,True
+gpt-6-astra,lower,18,GSE136158,PLX3397 vs Vehicle in Wild-type,True,True,True,1.0,False,PLX3397 vs Vehicle in Wild-type mice,WELCH,-0.4516526718690654,0.00021897391725170443,3.0,3.0,0.00021897391725170443,True
+gpt-6-astra,higher,20,GSE137914,Tet2/Tet3-deficient_CD93-CD23-CD21 Io vs control_CD93-CD23-CD21 Io,True,True,True,1.0,False,Tet2/Tet3-deficient vs control in CD93-CD23-CD21 Io B cells,WELCH,1.1304437876068745,0.0001796161034745137,3.0,3.0,0.0001796161034745137,True
+gpt-6-astra,higher,18,GSE140974,LPS vs PBS in Input fraction,True,True,True,1.0,False,LPS vs PBS in brain Input fraction (sex-adjusted),WELCH,1.308983228663547,2.4089365499797047e-05,5.0,4.0,1.7920015051374323e-05,True
+gpt-6-astra,higher,29,GSE141729,IWC 7d + infection 24 hpi vs Control,True,True,True,1.0,False,IWC 7d plus infection 24 hpi vs untreated control,WELCH,1.3615069721171935,0.0016192568901752017,3.0,3.0,0.0016192568901752017,True
+gpt-6-astra,lower,22,GSE141985,calcitriol vs vehicle,True,True,True,1.0,False,Calcitriol vs Vehicle,WELCH,-0.4038827328219119,0.0006945755833573433,3.0,3.0,0.0006945755833573433,True
+gpt-6-astra,higher,9,GSE145712,Hnrnpu knockout vs WT,True,True,True,1.0,False,Hnrnpu muscle-specific knockout vs WT at 3 months,WELCH,0.6966162701796982,0.00023185928547289294,3.0,3.0,0.00023185928547289294,True
+gpt-6-astra,higher,17,GSE146141,TBK1 mut SOD_es vs TBK1 WT,False,False,False,,,,,,,,,,
+gpt-6-astra,higher,21,GSE146141,TBK1 WT SOD_es vs TBK1 WT,True,True,True,1.0,False,TBK1 WT SOD_es vs TBK1 WT,WELCH,2.181899661870245,7.752792417009712e-05,4.0,4.0,7.752792417009712e-05,True
+gpt-6-astra,higher,3,GSE146176,exposed to high-intensity light (LD) vs exposed to normal light (NL),True,True,True,1.0,False,High-intensity light vs normal light (2-month-old retina),WELCH,1.851692255668426,1.9988455603104608e-09,5.0,5.0,1.9988455603104608e-09,True
+gpt-6-astra,lower,29,GSE147330,anti-IFNAR1 vs isotype control antibody,True,True,True,1.0,False,Anti-IFNAR1 vs isotype control antibody in LCMV Clone 13-infected mice,WELCH,-0.5641165933571641,0.00045977918628493697,4.0,4.0,0.00045977918628493697,True
+gpt-6-astra,higher,5,GSE149802,Heat shock vs Control (WT),True,True,True,1.0,False,Heat shock (72h) vs no heat shock in wild type,WELCH,1.274639823005943,5.480477238684763e-08,4.0,5.0,5.480477238684763e-08,True
+gpt-6-astra,lower,13,GSE149866,Bbs2-/- with GCSi treatment vs Bbs2-/- (no treatment),True,True,True,1.0,False,Genz-667161-treated Bbs2-/- vs untreated Bbs2-/-,WELCH,-0.8410172530446561,3.04409087489618e-05,4.0,4.0,3.04409087489618e-05,True
+gpt-6-astra,higher,12,GSE150656,AA_3wk vs DMSO (Klf6fl/fl),True,True,True,1.0,False,AAI 3 weeks vs DMSO within Klf6fl/fl,WELCH,2.234455428299171,1.672056969853563e-05,3.0,3.0,1.672056969853566e-05,True
+gpt-6-astra,lower,21,GSE151160,CD36 KO vs wild type,True,True,True,1.0,False,CD36 KO vs wild type B16 tumor-infiltrating CD8 T cells,WELCH,-0.8739290790157372,0.0012055852824751684,4.0,4.0,,True
+gpt-6-astra,higher,1,GSE155516,LPS 4 hours vs Control,True,True,True,1.0,False,"LPS 10 mg/kg, 4 h vs PBS",WELCH,1.841738582818132,8.948017172717199e-06,3.0,3.0,8.948017172717199e-06,True
+gpt-6-astra,lower,14,GSE155711,ITE_MOG_L vs Vehicle in Astrocytes,True,True,True,1.0,False,NLP(ITE+MOG) vs Vehicle in Astrocytes (20 weeks),WELCH,-2.7528542289529483,8.408381622427476e-05,4.0,4.0,8.408381622427491e-05,True
+gpt-6-astra,higher,25,GSE157987,Conduritol B-epoxide vs Vehicle,True,True,True,1.0,False,CBE-induced acute Gaucher vs PBS (P21),WELCH,1.630894902884736,0.00020063944995760743,3.0,3.0,0.00020063944995760743,True
+gpt-6-astra,higher,23,GSE159135,"Lung: Alb-Cre, Bmal fl/fl (BLKO) vs Alb-Cre (AL feeding)",True,True,True,1.0,False,Liver Bmal1 knockout vs Alb-Cre control | AL | Lung,WELCH,1.3082695911287823,1.6088048558587686e-23,24.0,24.0,3.766482654455497e-21,True
+gpt-6-astra,lower,15,GSE161982,CMFG+DSS vs DSS,True,True,True,0.8,False,CMFG + DSS vs DSS + PBS vehicle,WELCH,-0.43434595919529384,0.00019614022098980944,4.0,5.0,0.00019614022098980944,True
+gpt-6-astra,lower,1,GSE162613,miR-155KI vs WT,True,True,True,0.5,False,miR-155KI vs WT in NK1.1- iNKT cells (7 weeks),WELCH,-2.129244775611246,0.003346429837389264,3.0,3.0,0.003346429837389264,True
+gpt-6-astra,lower,6,GSE162613,miR-155KI vs WT (NK1.1+ iNKT cells),True,True,True,1.0,False,miR-155KI vs WT in NK1.1+ iNKT cells (7 weeks),WELCH,-2.4011486097016013,0.000738678922175167,3.0,3.0,0.000738678922175167,True
+gpt-6-astra,lower,2,GSE165606,Intestinal Epithelial RIPK3 Knockout vs Wild Type,True,True,True,1.0,False,Intestinal epithelial RIPK3 deletion vs wild type in acute GVHD,WELCH,-1.1254481637603,0.0014064886209070304,3.0,3.0,0.0014064886209070304,True
+gpt-6-astra,lower,4,GSE166092,Microglial Elimination vs Control (SVZ),True,True,True,1.0,False,SVZ: PLX3397 elimination 14d vs vehicle,WELCH,-0.668041636080068,5.767290383983259e-07,5.0,5.0,5.767290383983259e-07,True
+gpt-6-astra,lower,27,GSE167360,RUXO vs untreated,True,True,True,1.0,False,Ruxolitinib (JAK1/2i) vs Control (post-treatment),WELCH,-0.5716326572726698,0.0005653082932388535,3.0,3.0,0.0005653082932388535,True
+gpt-6-astra,lower,25,GSE173510,shBrd4 vs shCD19,True,True,False,0.5,False,shBrd4.1 vs shCD19,WELCH,-0.2998234715514663,,2.0,4.0,0.09233688501681585,True
+gpt-6-astra,lower,19,GSE179416,PiZ (Z) vs PiZ x LIRKO (Z),True,True,True,1.0,False,PiZ x LIRKO (Z) vs PiZ (Z) [IRZZ],WELCH,-0.6120748394048103,4.506010966957961e-05,4.0,5.0,4.506010966957961e-05,True
+gpt-6-astra,lower,3,GSE180384,"YF vs 3M-052 (Day D1, DCs)",False,False,False,,,,,,,,,,
+gpt-6-astra,higher,6,GSE185761,monocytes 28 days vs control,True,True,True,1.0,False,"PEG hydrogel implant, day 28 vs untreated control (monocytes)",WELCH,1.2946138332033286,0.0005724590620188051,3.0,3.0,0.0005724590620188051,True
+gpt-6-astra,higher,22,GSE186414,TauP301S Positive vs Negative in C1q WT,True,True,True,1.0,False,TauP301S positive vs negative within C1q WT,WELCH,2.4165747805492477,0.0001295949193290176,4.0,5.0,0.0001295949193290176,True
+gpt-6-astra,lower,17,GSE189001,FSTL3 vs Veh,True,True,True,1.0,False,FSTL3 vs Vehicle (batch 2),WELCH,-0.6187325089189327,4.143539940802522e-05,4.0,4.0,4.143539940802522e-05,True
+gpt-6-astra,lower,20,GSE189066,NASH vs Normal,True,True,True,1.0,False,Diet-induced NASH vs Normal,WELCH,-0.6102847752451052,0.0008795177521290639,3.0,3.0,0.0008795177521290639,True
+gpt-6-astra,lower,11,GSE189688,ST2-KO with Tumor vs Control,True,True,True,1.0,False,ST2-KO Treg vs WT Treg within AML,WELCH,-0.8795656776399395,0.0003902300240925382,3.0,3.0,0.0003902300240925382,True
+gpt-6-astra,higher,15,GSE191316,RKIP vs non-transgenic,True,True,True,1.0,False,Tg-RKIP vs non-transgenic FVB/N (8 months),WELCH,1.3856784096609298,0.0006500361302375642,3.0,3.0,0.0006500361302375642,True
+gpt-6-astra,lower,5,GSE195707,Overload vs Sham (Vehicle),True,True,True,1.0,False,Mechanical overload vs Sham within Vehicle (2 years),WELCH,-0.8248598796212784,7.665779134459441e-06,5.0,5.0,7.665779134459428e-06,True
+gpt-6-astra,lower,8,GSE196908,Lanifibranor 8w vs DIO-NASH Vehicle 8w,True,True,True,1.0,False,Experiment 1: Lanifibranor vs DIO-NASH vehicle (8 weeks),WELCH,-1.0246496581542488,3.7526392383281974e-10,10.0,10.0,3.7526392383281974e-10,True
+gpt-6-astra,lower,10,GSE196908,Lanifibranor 12w vs DIO-NASH Vehicle 12w,True,True,True,1.0,False,Experiment 1: Lanifibranor vs DIO-NASH vehicle (12 weeks),WELCH,-0.9727362447325979,1.6428800072256475e-10,13.0,10.0,1.6428800072256475e-10,True
+gpt-6-astra,higher,4,GSE198631,Bleomycin vs Saline (all),True,True,True,0.5,False,"Bleomycin vs Saline (male, 8-10 weeks)",WELCH,1.1266721045877275,3.0964483561561346e-06,4.0,4.0,3.0964483561561346e-06,True
+gpt-6-astra,lower,12,GSE201135,4°C vs 30°C - BATKO,True,True,True,1.0,False,Cold 4°C vs 30°C in BATKO,WELCH,-0.6871056694842604,0.00015877560796154056,4.0,5.0,0.0001587756079615407,True
+gpt-6-astra,higher,26,GSE208395,IL10 blocking antibody vs untreated (Balb/C),True,True,True,1.0,False,IL10 blocking antibody (Balb/C) vs untreated Balb/C,WELCH,1.2576520994043212,7.138640705765424e-05,4.0,3.0,7.138640705765424e-05,True
+gpt-6-sol,higher,19,GSE78996,pEAE vs Wild Type,True,True,True,1.0,False,pEAE vs wild-type control,WELCH,3.1331595625094035,6.882924502023622e-05,3.0,3.0,2.736517368312491e-05,True
+gpt-6-sol,lower,28,GSE79663,TCF4 knockout vs wildtype,True,True,True,1.0,False,TCF4 knockout vs wildtype (P0),WELCH,-0.881154628729812,0.0026165970719426307,3.0,3.0,0.002616597071942625,True
+gpt-6-sol,lower,9,GSE81424,Nkx3.1 knockout vs wildtype,True,True,True,1.0,False,Nkx3.1 -/- vs Nkx3.1 +/+,WELCH,-1.321184005720236,2.56351222747016e-06,6.0,6.0,2.5635122274701652e-06,True
+gpt-6-sol,lower,7,GSE89272,Prop1 Hom vs Prop1 Het at 22 months,True,True,True,1.0,False,"Ames dwarf (Prop1 Hom) vs Prop1 Het, 22 months",WELCH,-0.8139393472986606,7.057604467567684e-05,4.0,4.0,7.057604467567684e-05,True
+gpt-6-sol,higher,16,GSE100212,4weeks_bleomycin vs saline,True,True,True,1.0,False,Bleomycin 4 weeks vs saline,WELCH,1.6865980009160948,3.641344684406546e-12,10.0,10.0,3.641344684406546e-12,True
+gpt-6-sol,higher,28,GSE100212,2weeks bleomycin vs saline,True,True,True,1.0,False,Bleomycin 2 weeks vs saline,WELCH,1.0864232419881292,9.060172695515003e-12,10.0,10.0,9.060172695515003e-12,True
+gpt-6-sol,lower,24,GSE100888,Atg7 cKO vs Atg7 cWT (SOD1G93A background),True,True,True,1.0,False,Atg7 cKO vs cWT (SOD1G93A positive),WELCH,-1.490322598380842,0.0013887613559721817,4.0,4.0,0.0013887613559721817,True
+gpt-6-sol,higher,14,GSE100918,PMA/ethanol vs Control,True,True,True,1.0,False,PMA + ethanol vs untreated control,WELCH,1.2629963883838884,1.1729390569343695e-06,4.0,5.0,1.1729390569343695e-06,True
+gpt-6-sol,higher,10,GSE101822,CD95 antibody vs Saline,True,True,True,1.0,False,CD95 activating antibody vs saline,WELCH,1.3735385139176004,6.725096339657427e-08,5.0,5.0,6.725096339657427e-08,True
+gpt-6-sol,higher,30,GSE104443,FOXC1 Transgenic vs Wildtype,True,True,True,1.0,False,FOXC1 overexpression vs wildtype,WELCH,0.7563576151806393,0.0006090361939044299,3.0,3.0,0.0006090361939044299,True
+gpt-6-sol,lower,23,GSE110593,STAT1 deficient vs STAT1 competent (both challenged),True,True,True,1.0,False,STAT1 deficiency vs STAT1 competence under LCMVwt challenge,WELCH,-1.63703915162055,0.0008198640341349604,4.0,5.0,0.0008198640341349604,True
+gpt-6-sol,higher,13,GSE117868,AD model with PU.1 KO vs Control (4.5 months),False,False,False,,,,,,,,,,
+gpt-6-sol,lower,16,GSE122080,Ouabain vs Saline in old mice,True,True,True,1.0,False,Ouabain vs Saline (24-month-old female liver),WELCH,-0.9704425404411579,8.592665783541378e-06,6.0,6.0,8.592665783541378e-06,True
+gpt-6-sol,higher,2,GSE123002,SRSF3 KO vs Control,True,True,True,1.0,False,SRSF3 knockout vs control (adult heart),WELCH,1.5546004344921989,2.1580363808577252e-06,3.0,3.0,2.1580363808577223e-06,True
+gpt-6-sol,higher,7,GSE123509,Tpp1-/- vs WT in cerebellum,True,True,True,1.0,False,Tpp1-/- vs WT (cerebellum),WELCH,1.3100852770180733,0.0007222015290972831,3.0,3.0,0.0007222015290972831,True
+gpt-6-sol,higher,11,GSE123779,"ShhCre_Pparg_KO vs WT (homeostasis, whole urothelium)",True,True,True,1.0,False,"ShhCre Pparg ablation vs WT, whole urothelium, homeostasis",WELCH,1.6834134190730783,4.256227910222077e-05,4.0,4.0,4.256227910222077e-05,True
+gpt-6-sol,higher,27,GSE125567,GFAP-IL6 vs WT,True,True,True,1.0,False,GFAP-IL6 vs wild-type,WELCH,0.8908049296883046,0.000177718809044814,3.0,3.0,0.000177718809044814,True
+gpt-6-sol,lower,26,GSE128770,Young SD vs SS at ZT9,True,True,True,1.0,False,Young sleep deprivation 9h vs time-matched sleep,WELCH,-0.2985823077702889,2.6141842793225965e-05,6.0,6.0,2.614184279322606e-05,True
+gpt-6-sol,lower,30,GSE134151,5xFAD Hippocampus PLX5622 vs Vehicle,False,False,False,,,,,,,,,,
+gpt-6-sol,higher,8,GSE134704,Gaa-/- vs Wild Type,True,True,True,1.0,False,Gaa-/- vs wild type (12-month cortex),WELCH,0.566039070862997,1.5351479902304437e-07,5.0,5.0,1.5351479902304437e-07,True
+gpt-6-sol,higher,24,GSE134780,HH vs WT (gastrocnemius muscle),True,True,True,1.0,False,"BubR1H/H vs WT (skeletal muscle, 8-10 months)",WELCH,1.223251641308117,6.563512776686782e-05,3.0,4.0,6.563512776686782e-05,True
+gpt-6-sol,lower,18,GSE136158,PLX3397 vs Vehicle in Wild-type,True,True,True,1.0,False,PLX3397 vs vehicle in wild-type,WELCH,-0.4516526718690654,0.00021897391725170443,3.0,3.0,0.00021897391725170443,True
+gpt-6-sol,higher,20,GSE137914,Tet2/Tet3-deficient_CD93-CD23-CD21 Io vs control_CD93-CD23-CD21 Io,True,True,True,1.0,False,"Tet2/Tet3 deficiency vs control, CD93-CD23-CD21 Io B cells",WELCH,1.1304437876068745,0.0001796161034745137,3.0,3.0,0.0001796161034745137,True
+gpt-6-sol,higher,18,GSE140974,LPS vs PBS in Input fraction,True,True,True,1.0,False,LPS vs PBS (Brain input fraction),WELCH,1.308983228663547,2.4089365499797047e-05,5.0,4.0,1.7920015051374323e-05,True
+gpt-6-sol,higher,29,GSE141729,IWC 7d + infection 24 hpi vs Control,False,False,False,,,,,,,,,,
+gpt-6-sol,lower,22,GSE141985,calcitriol vs vehicle,True,True,True,1.0,False,Calcitriol vs Vehicle,WELCH,-0.4038827328219119,0.0006945755833573433,3.0,3.0,0.0006945755833573433,True
+gpt-6-sol,higher,9,GSE145712,Hnrnpu knockout vs WT,True,True,True,1.0,False,Hnrnpu muscle-specific knockout vs WT,WELCH,0.6966162701796982,0.00023185928547289294,3.0,3.0,0.00023185928547289253,True
+gpt-6-sol,higher,17,GSE146141,TBK1 mut SOD_es vs TBK1 WT,False,False,False,,,,,,,,,,
+gpt-6-sol,higher,21,GSE146141,TBK1 WT SOD_es vs TBK1 WT,True,True,True,1.0,False,SOD1 ALS vs wild type (TBK1 WT),WELCH,2.181899661870245,7.752792417009712e-05,4.0,4.0,7.752792417009712e-05,True
+gpt-6-sol,higher,3,GSE146176,exposed to high-intensity light (LD) vs exposed to normal light (NL),True,True,True,1.0,False,High-intensity light vs normal light,WELCH,1.851692255668426,1.9988455603104608e-09,5.0,5.0,1.9988455603104686e-09,True
+gpt-6-sol,lower,29,GSE147330,anti-IFNAR1 vs isotype control antibody,True,True,True,1.0,False,anti-IFNAR1 antibody vs isotype control,WELCH,-0.5641165933571641,0.00045977918628493697,4.0,4.0,0.00045977918628493697,True
+gpt-6-sol,higher,5,GSE149802,Heat shock vs Control (WT),True,True,True,1.0,False,Heat shock vs no heat shock in wild type,WELCH,1.274639823005943,5.480477238684763e-08,4.0,5.0,5.480477238684763e-08,True
+gpt-6-sol,lower,13,GSE149866,Bbs2-/- with GCSi treatment vs Bbs2-/- (no treatment),True,True,True,1.0,False,Genz-667161 vs untreated Bbs2-/-,WELCH,-0.8410172530446561,3.04409087489618e-05,4.0,4.0,3.0440908748961857e-05,True
+gpt-6-sol,higher,12,GSE150656,AA_3wk vs DMSO (Klf6fl/fl),True,True,True,1.0,False,AA 3wk vs DMSO (Klf6 fl/fl),WELCH,2.234455428299171,1.672056969853563e-05,3.0,3.0,1.672056969853563e-05,True
+gpt-6-sol,lower,21,GSE151160,CD36 KO vs wild type,True,True,True,1.0,False,CD36 knockout vs wild type B16 tumor-infiltrating CD8 T cells,WELCH,-0.8739290790157372,0.0012055852824751684,4.0,4.0,0.0012055852824751684,True
+gpt-6-sol,higher,1,GSE155516,LPS 4 hours vs Control,True,True,True,1.0,False,LPS 4 hours vs PBS,WELCH,1.841738582818132,8.948017172717199e-06,3.0,3.0,8.948017172717199e-06,True
+gpt-6-sol,lower,14,GSE155711,ITE_MOG_L vs Vehicle in Astrocytes,False,False,False,,,,,,,,,,
+gpt-6-sol,higher,25,GSE157987,Conduritol B-epoxide vs Vehicle,True,True,True,1.0,False,CBE vs PBS at postnatal day 21,WELCH,1.630894902884736,0.00020063944995760743,3.0,3.0,0.00020063944995760743,True
+gpt-6-sol,higher,23,GSE159135,"Lung: Alb-Cre, Bmal fl/fl (BLKO) vs Alb-Cre (AL feeding)",True,True,True,1.0,False,Lung: liver Bmal1 knockout vs Alb-Cre control under ad libitum,WELCH,1.3082695911287823,1.6088048558587686e-23,24.0,24.0,2.693081429372294e-94,True
+gpt-6-sol,lower,15,GSE161982,CMFG+DSS vs DSS,True,True,True,1.0,False,CMFG+DSS vs DSS,WELCH,-0.43434595919529384,0.00019614022098980944,4.0,5.0,0.00019614022098980944,True
+gpt-6-sol,lower,1,GSE162613,miR-155KI vs WT,True,True,True,0.5,False,miR-155KI vs WT in NK1.1- iNKT cells,WELCH,-2.129244775611246,0.003346429837389264,3.0,3.0,0.003346429837389264,True
+gpt-6-sol,lower,6,GSE162613,miR-155KI vs WT (NK1.1+ iNKT cells),True,True,True,1.0,False,miR-155KI vs WT in NK1.1+ iNKT cells,WELCH,-2.4011486097016013,0.000738678922175167,3.0,3.0,0.000738678922175167,True
+gpt-6-sol,lower,2,GSE165606,Intestinal Epithelial RIPK3 Knockout vs Wild Type,True,True,True,1.0,False,Intestinal epithelial RIPK3 deletion vs WT GVHD,WELCH,-1.1254481637603,0.0014064886209070304,3.0,3.0,0.0014064886209070304,True
+gpt-6-sol,lower,4,GSE166092,Microglial Elimination vs Control (SVZ),True,True,True,1.0,False,SVZ PLX3397 elimination vs vehicle,WELCH,-0.668041636080068,5.767290383983259e-07,5.0,5.0,5.767290383983259e-07,True
+gpt-6-sol,lower,27,GSE167360,RUXO vs untreated,True,True,False,0.75,False,Ruxolitinib (JAK1/2i) vs vehicle/untreated,WELCH,-0.3685985193036771,0.05589875201755457,4.0,4.0,0.0019848868729319927,True
+gpt-6-sol,lower,25,GSE173510,shBrd4 vs shCD19,True,True,False,0.5,False,shBrd4a vs shCD19 control,WELCH,-0.2760490923362953,,2.0,2.0,0.18088800554774573,True
+gpt-6-sol,lower,19,GSE179416,PiZ (Z) vs PiZ x LIRKO (Z),True,True,True,1.0,False,PiZ x LIRKO (Z) vs PiZ (Z),WELCH,-0.6120748394048103,4.506010966957961e-05,4.0,5.0,4.506010966957961e-05,True
+gpt-6-sol,lower,3,GSE180384,"YF vs 3M-052 (Day D1, DCs)",False,False,False,,,,,,,,,,
+gpt-6-sol,higher,6,GSE185761,monocytes 28 days vs control,True,True,True,1.0,False,Monocytes day 28 implant vs control,WELCH,1.2946138332033286,0.0005724590620188051,3.0,3.0,0.0005724590620188051,True
+gpt-6-sol,higher,22,GSE186414,TauP301S Positive vs Negative in C1q WT,True,True,True,1.0,False,TauP301S-positive vs TauP301S-negative in C1q WT hippocampus,WELCH,2.4165747805492477,0.0001295949193290176,4.0,5.0,0.0001295949193290176,True
+gpt-6-sol,lower,17,GSE189001,FSTL3 vs Veh,True,True,True,1.0,False,FSTL3 vs Vehicle (batch 2),WELCH,-0.6187325089189327,4.143539940802522e-05,4.0,4.0,4.143539940802522e-05,True
+gpt-6-sol,lower,20,GSE189066,NASH vs Normal,True,True,True,1.0,False,NASH vs Normal,WELCH,-0.6102847752451052,0.0008795177521290639,3.0,3.0,0.0008795177521290639,True
+gpt-6-sol,lower,11,GSE189688,ST2-KO with Tumor vs Control,True,True,True,1.0,False,ST2-KO Treg vs WT Treg (AML),WELCH,-0.8795656776399395,0.0003902300240925382,3.0,3.0,0.0003902300240925382,True
+gpt-6-sol,higher,15,GSE191316,RKIP vs non-transgenic,True,True,True,1.0,False,Tg-RKIP vs nontransgenic FVB/N,WELCH,1.3856784096609298,0.0006500361302375642,3.0,3.0,0.0006500361302375642,True
+gpt-6-sol,lower,5,GSE195707,Overload vs Sham (Vehicle),True,True,True,1.0,False,Overload vs sham with vehicle (old mice),WELCH,-0.8248598796212784,7.665779134459441e-06,5.0,5.0,7.665779134459441e-06,True
+gpt-6-sol,lower,8,GSE196908,Lanifibranor 8w vs DIO-NASH Vehicle 8w,True,True,True,1.0,False,Lanifibranor 8w vs GAN vehicle 8w,WELCH,-1.0246496581542488,3.7526392383281974e-10,10.0,10.0,3.7526392383281974e-10,True
+gpt-6-sol,lower,10,GSE196908,Lanifibranor 12w vs DIO-NASH Vehicle 12w,True,True,True,1.0,False,Lanifibranor 12w vs GAN vehicle 12w,WELCH,-0.9727362447325979,1.6428800072256475e-10,13.0,10.0,1.6428800072256475e-10,True
+gpt-6-sol,higher,4,GSE198631,Bleomycin vs Saline (all),True,True,True,1.0,False,Bleomycin vs Saline (sex adjusted),WELCH,1.1807070943339253,2.4032259144482647e-13,8.0,8.0,1.1090875051875341e-11,True
+gpt-6-sol,lower,12,GSE201135,4°C vs 30°C - BATKO,True,True,True,1.0,False,4°C vs 30°C in BATKO,WELCH,-0.6871056694842604,0.00015877560796154056,4.0,5.0,0.0001587756079615407,True
+gpt-6-sol,higher,26,GSE208395,IL10 blocking antibody vs untreated (Balb/C),True,True,True,1.0,False,IL10 blocking antibody vs untreated Balb/C,WELCH,1.2576520994043212,7.138640705765424e-05,4.0,3.0,7.138640705765424e-05,True
+gpt-6-luna,higher,19,GSE78996,pEAE vs Wild Type,True,True,True,1.0,False,pEAE vs wild type (Hazard_Rodents_All_All_scaleddiff_EN_tAge),WELCH,3.1331595625094035,6.882924502023622e-05,3.0,3.0,,
+gpt-6-luna,lower,28,GSE79663,TCF4 knockout vs wildtype,True,True,True,1.0,False,TCF4 knockout vs wildtype (P0),WELCH,-0.881154628729812,0.0026165970719426307,3.0,3.0,0.002616597071942625,True
+gpt-6-luna,lower,9,GSE81424,Nkx3.1 knockout vs wildtype,True,True,True,1.0,False,Nkx3.1 knockout vs wild type (4-month prostate),WELCH,-1.321184005720236,2.56351222747016e-06,6.0,6.0,2.56351222747016e-06,True
+gpt-6-luna,lower,7,GSE89272,Prop1 Hom vs Prop1 Het at 22 months,True,True,True,1.0,False,"Ames dwarf (Prop1 Hom) vs Prop1 Het, 22 month hepatocytes",WELCH,-0.8139393472986606,7.057604467567684e-05,4.0,4.0,7.057604467567684e-05,True
+gpt-6-luna,higher,16,GSE100212,4weeks_bleomycin vs saline,True,True,True,1.0,False,4 weeks bleomycin vs saline control,WELCH,1.6865980009160948,3.641344684406546e-12,10.0,10.0,1.763449241806785e-67,True
+gpt-6-luna,higher,28,GSE100212,2weeks bleomycin vs saline,True,True,True,1.0,False,2 weeks bleomycin vs saline control,WELCH,1.0864232419881292,9.060172695515003e-12,10.0,10.0,1.6020497782974417e-49,True
+gpt-6-luna,lower,24,GSE100888,Atg7 cKO vs Atg7 cWT (SOD1G93A background),True,True,True,1.0,False,Atg7 cKO vs Atg7 cWT (SOD1G93A background),WELCH,-1.490322598380842,0.0013887613559721817,4.0,4.0,0.0013887613559721817,True
+gpt-6-luna,higher,14,GSE100918,PMA/ethanol vs Control,True,True,True,1.0,False,PMA_ethanol vs control,WELCH,1.2629963883838884,1.1729390569343695e-06,4.0,5.0,1.1729390569343695e-06,True
+gpt-6-luna,higher,10,GSE101822,CD95 antibody vs Saline,True,True,True,1.0,False,CD95 activating antibody vs saline,WELCH,1.3735385139176004,6.725096339657427e-08,5.0,5.0,6.725096339657427e-08,True
+gpt-6-luna,higher,30,GSE104443,FOXC1 Transgenic vs Wildtype,True,True,True,1.0,False,"MMTV-FOXC1 transgenic vs wildtype (lactation day 2, postnatal week 11)",WELCH,0.7563576151806393,0.0006090361939044299,3.0,3.0,0.0006090361939044299,True
+gpt-6-luna,lower,23,GSE110593,STAT1 deficient vs STAT1 competent (both challenged),True,True,True,1.0,False,STAT1-deficient vs STAT1-competent under LCMVwt challenge,WELCH,-1.63703915162055,0.0008198640341349604,4.0,5.0,0.0008198640341349604,True
+gpt-6-luna,higher,13,GSE117868,AD model with PU.1 KO vs Control (4.5 months),False,False,False,,,,,,,,,,
+gpt-6-luna,lower,16,GSE122080,Ouabain vs Saline in old mice,True,True,True,1.0,False,Ouabain vs Saline vehicle (24-month-old mice),WELCH,-0.9704425404411579,8.592665783541378e-06,6.0,6.0,8.592665783541378e-06,True
+gpt-6-luna,higher,2,GSE123002,SRSF3 KO vs Control,True,True,True,1.0,False,SRSF3 KO vs Control (Adult Heart) [Hazard Rodents],WELCH,1.5546004344921989,2.1580363808577252e-06,3.0,3.0,,
+gpt-6-luna,higher,7,GSE123509,Tpp1-/- vs WT in cerebellum,True,True,True,1.0,False,Tpp1-/- vs WT in cerebellum,WELCH,1.3100852770180733,0.0007222015290972831,3.0,3.0,0.0007222015290972831,True
+gpt-6-luna,higher,11,GSE123779,"ShhCre_Pparg_KO vs WT (homeostasis, whole urothelium)",True,True,True,1.0,False,"ShhCre;Pparg ablation vs WT, whole urothelium, homeostasis",WELCH,1.6834134190730783,4.256227910222077e-05,4.0,4.0,4.256227910222077e-05,True
+gpt-6-luna,higher,27,GSE125567,GFAP-IL6 vs WT,True,True,True,1.0,False,GFAP-IL6 vs WT (3 month post-natal; Frontal Cortex),WELCH,0.8908049296883046,0.000177718809044814,3.0,3.0,0.000177718809044814,True
+gpt-6-luna,lower,26,GSE128770,Young SD vs SS at ZT9,True,True,True,1.0,False,Young: sleep deprivation 9 h vs time-matched spontaneous sleep 9 h,WELCH,-0.2985823077702889,2.6141842793225965e-05,6.0,6.0,0.0003924208200028745,True
+gpt-6-luna,lower,30,GSE134151,5xFAD Hippocampus PLX5622 vs Vehicle,True,True,True,1.0,False,PLX5622 vs Vehicle | 5xFAD | Hippocampus,WELCH,-0.6543618890483839,0.0001647230479749211,4.0,4.0,0.00016472304797492094,True
+gpt-6-luna,higher,8,GSE134704,Gaa-/- vs Wild Type,True,True,True,1.0,False,"Gaa-/- vs wild type, 12 months, cortex",WELCH,0.566039070862997,1.5351479902304437e-07,5.0,5.0,1.535147990230441e-07,True
+gpt-6-luna,higher,24,GSE134780,HH vs WT (gastrocnemius muscle),True,True,True,1.0,False,"BubR1H/H vs WT, gastrocnemius muscle",WELCH,1.223251641308117,6.563512776686782e-05,3.0,4.0,6.563512776686782e-05,True
+gpt-6-luna,lower,18,GSE136158,PLX3397 vs Vehicle in Wild-type,True,True,True,1.0,False,PLX3397 vs Vehicle in Wild-type,WELCH,-0.4516526718690654,0.00021897391725170443,3.0,3.0,0.00021897391725170443,True
+gpt-6-luna,higher,20,GSE137914,Tet2/Tet3-deficient_CD93-CD23-CD21 Io vs control_CD93-CD23-CD21 Io,True,True,True,1.0,False,Tet2/Tet3-deficient vs control in CD93-CD23-CD21 Io B cells,WELCH,1.1304437876068745,0.0001796161034745137,3.0,3.0,0.00017961610347451393,True
+gpt-6-luna,higher,18,GSE140974,LPS vs PBS in Input fraction,True,True,True,1.0,False,LPS vs PBS (24 h; Input fraction),WELCH,1.308983228663547,2.4089365499797047e-05,5.0,4.0,1.2049794850387712e-06,True
+gpt-6-luna,higher,29,GSE141729,IWC 7d + infection 24 hpi vs Control,False,False,False,,,,,,,,,,
+gpt-6-luna,lower,22,GSE141985,calcitriol vs vehicle,True,True,True,1.0,False,Calcitriol vs vehicle,WELCH,-0.4038827328219119,0.0006945755833573433,3.0,3.0,0.0006945755833573427,True
+gpt-6-luna,higher,9,GSE145712,Hnrnpu knockout vs WT,True,True,True,1.0,False,Hnrnpu muscle-specific knockout vs WT at 3 months (gastrocnemius; Hazard Rodents clock),WELCH,0.6966162701796982,0.00023185928547289294,3.0,3.0,,
+gpt-6-luna,higher,17,GSE146141,TBK1 mut SOD_es vs TBK1 WT,False,False,False,,,,,,,,,,
+gpt-6-luna,higher,21,GSE146141,TBK1 WT SOD_es vs TBK1 WT,True,True,True,1.0,False,TBK1 WT SOD_es vs TBK1 WT,WELCH,2.181899661870245,7.752792417009712e-05,4.0,4.0,7.752792417009712e-05,True
+gpt-6-luna,higher,3,GSE146176,exposed to high-intensity light (LD) vs exposed to normal light (NL),True,True,True,1.0,False,High-intensity light vs normal light,WELCH,1.8516922556684257,9.110158160240893e-20,10.0,10.0,1.9988455603104686e-09,True
+gpt-6-luna,lower,29,GSE147330,anti-IFNAR1 vs isotype control antibody,True,True,True,1.0,False,Anti-IFNAR1 antibody vs isotype control antibody,WELCH,-0.5641165933571641,0.00045977918628493697,4.0,4.0,0.00045977918628493697,True
+gpt-6-luna,higher,5,GSE149802,Heat shock vs Control (WT),True,True,True,1.0,False,Heat shock vs no heat shock (wild type),WELCH,1.274639823005943,5.480477238684763e-08,4.0,5.0,5.480477238684763e-08,True
+gpt-6-luna,lower,13,GSE149866,Bbs2-/- with GCSi treatment vs Bbs2-/- (no treatment),True,True,True,1.0,False,GCSi-treated Bbs2-/- vs untreated Bbs2-/-,WELCH,-0.8410172530446561,3.04409087489618e-05,4.0,4.0,3.04409087489618e-05,True
+gpt-6-luna,higher,12,GSE150656,AA_3wk vs DMSO (Klf6fl/fl),True,True,True,1.0,False,AAI 3 wk vs DMSO in Klf6fl/fl,WELCH,2.234455428299171,3.251483599747865e-12,6.0,6.0,1.672056969853563e-05,True
+gpt-6-luna,lower,21,GSE151160,CD36 KO vs wild type,True,True,True,1.0,False,CD36 knockout vs wild type CD8 T cells,WELCH,-0.8739290790157372,0.0012055852824751684,4.0,4.0,0.0012055852824751684,True
+gpt-6-luna,higher,1,GSE155516,LPS 4 hours vs Control,True,True,True,1.0,False,LPS 4 h vs PBS,WELCH,1.841738582818132,8.948017172717199e-06,3.0,3.0,8.948017172717199e-06,True
+gpt-6-luna,lower,14,GSE155711,ITE_MOG_L vs Vehicle in Astrocytes,False,False,False,,,,,,,,,,
+gpt-6-luna,higher,25,GSE157987,Conduritol B-epoxide vs Vehicle,True,True,True,1.0,False,CBE vs PBS at P21,WELCH,1.630894902884736,0.00020063944995760743,3.0,3.0,0.00020063944995760743,True
+gpt-6-luna,higher,23,GSE159135,"Lung: Alb-Cre, Bmal fl/fl (BLKO) vs Alb-Cre (AL feeding)",False,False,False,,,,,,,,,,
+gpt-6-luna,lower,15,GSE161982,CMFG+DSS vs DSS,True,True,True,0.8,False,CMFG + DSS vs DSS,WELCH,-0.43434595919529384,0.00019614022098980944,4.0,5.0,0.00019614022098980927,True
+gpt-6-luna,lower,1,GSE162613,miR-155KI vs WT,True,True,True,0.5,False,miR-155KI vs WT in NK1.1+ iNKT cells (7 weeks),WELCH,-2.4011486097016013,0.000738678922175167,3.0,3.0,0.000738678922175167,True
+gpt-6-luna,lower,6,GSE162613,miR-155KI vs WT (NK1.1+ iNKT cells),True,True,True,1.0,False,miR-155KI vs WT in NK1.1+ iNKT cells (7 weeks),WELCH,-2.4011486097016013,0.000738678922175167,3.0,3.0,0.000738678922175167,True
+gpt-6-luna,lower,2,GSE165606,Intestinal Epithelial RIPK3 Knockout vs Wild Type,True,True,True,1.0,False,Villin-cre RIPK3fl/fl vs WT,WELCH,-1.1254481637603,0.0014064886209070304,3.0,3.0,0.0014064886209070304,True
+gpt-6-luna,lower,4,GSE166092,Microglial Elimination vs Control (SVZ),True,True,True,1.0,False,SVZ Elimination vs Control,WELCH,-0.668041636080068,5.767290383983259e-07,5.0,5.0,5.767290383983259e-07,True
+gpt-6-luna,lower,27,GSE167360,RUXO vs untreated,True,True,True,1.0,False,Ruxolitinib (RUXO) vs untreated control (post-treatment),WELCH,-0.5716326572726698,2.1241614928989435e-08,6.0,6.0,0.0005653082932388535,True
+gpt-6-luna,lower,25,GSE173510,shBrd4 vs shCD19,True,True,False,0.5,False,shBrd4.1 vs shCD19 control,WELCH,-0.2760490923362953,,2.0,2.0,0.11478544167935105,True
+gpt-6-luna,lower,19,GSE179416,PiZ (Z) vs PiZ x LIRKO (Z),True,True,True,1.0,False,PiZ x LIRKO (Z) vs PiZ (Z),WELCH,-0.6120748394048103,4.506010966957961e-05,4.0,5.0,4.506010966957961e-05,True
+gpt-6-luna,lower,3,GSE180384,"YF vs 3M-052 (Day D1, DCs)",False,False,False,,,,,,,,,,
+gpt-6-luna,higher,6,GSE185761,monocytes 28 days vs control,True,True,True,1.0,False,Monocytes: PEG hydrogel implant at 28 days vs untreated control,WELCH,1.2946138332033286,0.0005724590620188051,3.0,3.0,0.0005724590620188051,True
+gpt-6-luna,higher,22,GSE186414,TauP301S Positive vs Negative in C1q WT,True,True,True,1.0,False,TauP301S-positive vs non-transgenic in C1Q-wt mice,WELCH,2.4165747805492477,0.0001295949193290176,4.0,5.0,0.0001295949193290176,True
+gpt-6-luna,lower,17,GSE189001,FSTL3 vs Veh,True,True,True,1.0,False,FSTL3 vs Vehicle (batch 2),WELCH,-0.6187325089189327,4.143539940802522e-05,4.0,4.0,4.143539940802522e-05,True
+gpt-6-luna,lower,20,GSE189066,NASH vs Normal,True,True,True,1.0,False,NASH vs Normal,WELCH,-0.6102847752451052,5.605058939093432e-08,6.0,6.0,0.0008795177521290639,True
+gpt-6-luna,lower,11,GSE189688,ST2-KO with Tumor vs Control,True,True,True,1.0,False,ST2-KO Treg vs Tumor-loaded WT Treg,WELCH,-0.8795656776399395,0.0003902300240925382,3.0,3.0,0.0003902300240925382,True
+gpt-6-luna,higher,15,GSE191316,RKIP vs non-transgenic,True,True,True,1.0,False,Tg-RKIP vs non-transgenic FVB/N control (8 months),WELCH,1.3856784096609298,0.0006500361302375642,3.0,3.0,0.0006500361302375642,True
+gpt-6-luna,lower,5,GSE195707,Overload vs Sham (Vehicle),False,False,False,,,,,,,,,,
+gpt-6-luna,lower,8,GSE196908,Lanifibranor 8w vs DIO-NASH Vehicle 8w,True,True,True,1.0,False,Lanifibranor 8w vs DIO-NASH Vehicle 8w,WELCH,-1.0246496581542488,3.7526392383281974e-10,10.0,10.0,3.7526392383281974e-10,True
+gpt-6-luna,lower,10,GSE196908,Lanifibranor 12w vs DIO-NASH Vehicle 12w,True,True,True,1.0,False,Lanifibranor 12w vs DIO-NASH Vehicle 12w,WELCH,-0.9727362447325979,1.6428800072256475e-10,13.0,10.0,1.6428800072256475e-10,True
+gpt-6-luna,higher,4,GSE198631,Bleomycin vs Saline (all),False,False,False,,,,,,,,,,
+gpt-6-luna,lower,12,GSE201135,4°C vs 30°C - BATKO,True,True,True,1.0,False,Cold (4°C) vs 30°C in BATKO,WELCH,-0.6871056694842604,0.00015877560796154056,4.0,5.0,0.0001587756079615407,True
+gpt-6-luna,higher,26,GSE208395,IL10 blocking antibody vs untreated (Balb/C),True,True,True,1.0,False,IL-10 blocking antibody vs untreated Balb/C,WELCH,1.2576520994043212,7.138640705765424e-05,4.0,3.0,7.138640705765424e-05,True
+gpt-5.5,higher,19,GSE78996,pEAE vs Wild Type,True,True,True,1.0,False,pEAE vs wild type,WELCH,3.1331595625094035,6.882924502023622e-05,3.0,3.0,6.882924502023622e-05,True
+gpt-5.5,lower,28,GSE79663,TCF4 knockout vs wildtype,True,True,True,1.0,False,TCF4 knockout vs wildtype,WELCH,-0.881154628729812,0.0026165970719426307,3.0,3.0,0.0026165970719426307,True
+gpt-5.5,lower,9,GSE81424,Nkx3.1 knockout vs wildtype,True,True,True,1.0,False,Nkx3.1 knockout vs wild type,WELCH,-1.321184005720236,2.56351222747016e-06,6.0,6.0,2.56351222747016e-06,True
+gpt-5.5,lower,7,GSE89272,Prop1 Hom vs Prop1 Het at 22 months,True,True,True,1.0,False,"Ames dwarf Prop1 Hom vs Prop1 Het, 22 months",WELCH,-0.8139393472986606,7.057604467567684e-05,4.0,4.0,7.057604467567684e-05,True
+gpt-5.5,higher,16,GSE100212,4weeks_bleomycin vs saline,True,True,True,1.0,False,4 weeks bleomycin vs Saline,WELCH,1.6865980009160948,3.641344684406546e-12,10.0,10.0,3.641344684406546e-12,True
+gpt-5.5,higher,28,GSE100212,2weeks bleomycin vs saline,True,True,True,1.0,False,2 weeks bleomycin vs Saline,WELCH,1.0864232419881292,9.060172695515003e-12,10.0,10.0,9.060172695515003e-12,True
+gpt-5.5,lower,24,GSE100888,Atg7 cKO vs Atg7 cWT (SOD1G93A background),True,True,False,0.5,False,"Atg7 cKO vs Atg7 cWT, adjusted for SOD1G93A",WELCH,-0.5793976581116269,0.30566886878483873,8.0,8.0,0.065388374839713,True
+gpt-5.5,higher,14,GSE100918,PMA/ethanol vs Control,True,True,True,1.0,False,PMA-induced sterile inflammation vs Control,WELCH,1.2629963883838884,1.1729390569343695e-06,4.0,5.0,1.5208537492753863e-05,True
+gpt-5.5,higher,10,GSE101822,CD95 antibody vs Saline,True,True,True,1.0,False,CD95 activating antibody vs Saline,WELCH,1.3735385139176004,6.725096339657427e-08,5.0,5.0,6.725096339657427e-08,True
+gpt-5.5,higher,30,GSE104443,FOXC1 Transgenic vs Wildtype,True,True,True,1.0,False,MMTV-FOXC1 transgenic vs Wildtype,WELCH,0.7563576151806393,0.0006090361939044299,3.0,3.0,0.0006090361939044299,True
+gpt-5.5,lower,23,GSE110593,STAT1 deficient vs STAT1 competent (both challenged),True,True,True,1.0,False,STAT1 deficiency vs STAT1 competence (LCMVwt-challenged),WELCH,-1.63703915162055,0.0008198640341349604,4.0,5.0,0.0008198640341349604,True
+gpt-5.5,higher,13,GSE117868,AD model with PU.1 KO vs Control (4.5 months),False,False,False,,,,,,,,,,
+gpt-5.5,lower,16,GSE122080,Ouabain vs Saline in old mice,True,True,True,1.0,False,Ouabain vs Saline (24-month female liver),WELCH,-0.9704425404411579,8.592665783541378e-06,6.0,6.0,8.592665783541378e-06,True
+gpt-5.5,higher,2,GSE123002,SRSF3 KO vs Control,True,True,True,1.0,False,SRSF3 knockout vs alphaMHC-CreERT2 control,WELCH,1.5546004344921989,2.1580363808577252e-06,3.0,3.0,2.1580363808577252e-06,True
+gpt-5.5,higher,7,GSE123509,Tpp1-/- vs WT in cerebellum,True,True,True,0.5,False,Tpp1 knockout vs WT,WELCH,1.1122395117683024,7.926305302763905e-08,6.0,6.0,8.431252912414875e-08,True
+gpt-5.5,higher,11,GSE123779,"ShhCre_Pparg_KO vs WT (homeostasis, whole urothelium)",True,True,True,1.0,False,ShhCre Pparg ablation vs WT whole urothelium under homeostasis,WELCH,1.6834134190730783,4.256227910222077e-05,4.0,4.0,4.256227910222101e-05,True
+gpt-5.5,higher,27,GSE125567,GFAP-IL6 vs WT,True,True,True,1.0,False,GFAP-IL6 vs WT,WELCH,0.8908049296883046,0.000177718809044814,3.0,3.0,0.000177718809044814,True
+gpt-5.5,lower,26,GSE128770,Young SD vs SS at ZT9,True,True,True,1.0,False,Young SD ZT9 vs Young SS ZT9,WELCH,-0.2985823077702889,2.6141842793225965e-05,6.0,6.0,2.6141842793225965e-05,True
+gpt-5.5,lower,30,GSE134151,5xFAD Hippocampus PLX5622 vs Vehicle,False,False,False,,,,,,,,,,
+gpt-5.5,higher,8,GSE134704,Gaa-/- vs Wild Type,True,True,True,1.0,False,Gaa-/- vs wild type,WELCH,0.566039070862997,1.5351479902304437e-07,5.0,5.0,8.653615011428745e-09,True
+gpt-5.5,higher,24,GSE134780,HH vs WT (gastrocnemius muscle),True,True,True,1.0,False,BubR1H/H vs WT in skeletal muscle,WELCH,1.223251641308117,6.563512776686782e-05,3.0,4.0,1.0463395652520325e-05,True
+gpt-5.5,lower,18,GSE136158,PLX3397 vs Vehicle in Wild-type,True,True,True,1.0,False,PLX3397 vs Vehicle in Wild-type striatum,WELCH,-0.4516526718690654,0.00021897391725170443,3.0,3.0,0.00021897391725170443,True
+gpt-5.5,higher,20,GSE137914,Tet2/Tet3-deficient_CD93-CD23-CD21 Io vs control_CD93-CD23-CD21 Io,False,False,False,,,,,,,,,,
+gpt-5.5,higher,18,GSE140974,LPS vs PBS in Input fraction,True,True,True,0.5,False,LPS vs PBS,UNIT_MEANS,1.0474724359792678,1.807662722059002e-08,5.0,4.0,6.050770160609038e-179,True
+gpt-5.5,higher,29,GSE141729,IWC 7d + infection 24 hpi vs Control,True,True,True,1.0,False,IWC 7d plus A. baumannii infection 24 hpi vs Control,WELCH,1.3615069721171935,0.0016192568901752017,3.0,3.0,0.0016192568901752017,True
+gpt-5.5,lower,22,GSE141985,calcitriol vs vehicle,True,True,True,1.0,False,Calcitriol vs Vehicle,WELCH,-0.4038827328219119,0.0006945755833573433,3.0,3.0,0.0006945755833573433,True
+gpt-5.5,higher,9,GSE145712,Hnrnpu knockout vs WT,True,True,True,1.0,False,Hnrnpu muscle-specific knockout vs WT,WELCH,0.6966162701796982,0.00023185928547289294,3.0,3.0,0.00023185928547289294,True
+gpt-5.5,higher,17,GSE146141,TBK1 mut SOD_es vs TBK1 WT,False,False,False,,,,,,,,,,
+gpt-5.5,higher,21,GSE146141,TBK1 WT SOD_es vs TBK1 WT,True,True,True,1.0,False,SOD1 ALS model vs TBK1 WT,WELCH,2.181899661870245,7.752792417009712e-05,4.0,4.0,7.752792417009712e-05,True
+gpt-5.5,higher,3,GSE146176,exposed to high-intensity light (LD) vs exposed to normal light (NL),True,True,True,0.8,False,High-intensity light vs Normal light,WELCH,1.8191041099797731,1.2211934118161266e-08,4.0,5.0,1.9988455603104608e-09,True
+gpt-5.5,lower,29,GSE147330,anti-IFNAR1 vs isotype control antibody,True,True,True,1.0,False,anti-IFNAR1 vs isotype control antibody,WELCH,-0.5641165933571641,0.00045977918628493697,4.0,4.0,0.00045977918628493697,True
+gpt-5.5,higher,5,GSE149802,Heat shock vs Control (WT),True,True,True,1.0,False,Heat shock 72h vs no heat shock in wild type,WELCH,1.274639823005943,5.480477238684763e-08,4.0,5.0,5.4804772386847544e-08,True
+gpt-5.5,lower,13,GSE149866,Bbs2-/- with GCSi treatment vs Bbs2-/- (no treatment),True,True,True,1.0,False,Genz-667161 treated Bbs2-/- vs untreated Bbs2-/-,WELCH,-0.8410172530446561,3.04409087489618e-05,4.0,4.0,2.6824729950654845e-05,True
+gpt-5.5,higher,12,GSE150656,AA_3wk vs DMSO (Klf6fl/fl),True,True,True,1.0,False,AAI 3wk vs DMSO in Klf6fl/fl,WELCH,2.234455428299171,1.672056969853563e-05,3.0,3.0,1.672056969853566e-05,True
+gpt-5.5,lower,21,GSE151160,CD36 KO vs wild type,True,True,True,1.0,False,CD36 KO vs Wild type CD8 T cells,WELCH,-0.8739290790157372,0.0012055852824751684,4.0,4.0,0.0017170486761956146,True
+gpt-5.5,higher,1,GSE155516,LPS 4 hours vs Control,True,True,True,1.0,False,LPS 4 hours vs PBS,WELCH,1.841738582818132,8.948017172717199e-06,3.0,3.0,1.0487445417035425e-06,True
+gpt-5.5,lower,14,GSE155711,ITE_MOG_L vs Vehicle in Astrocytes,False,False,False,,,,,,,,,,
+gpt-5.5,higher,25,GSE157987,Conduritol B-epoxide vs Vehicle,True,True,True,1.0,False,CBE-induced acute Gaucher disease vs PBS control,WELCH,1.630894902884736,0.00020063944995760743,3.0,3.0,0.00020063944995760743,True
+gpt-5.5,higher,23,GSE159135,"Lung: Alb-Cre, Bmal fl/fl (BLKO) vs Alb-Cre (AL feeding)",True,True,True,1.0,False,BLKO vs Alb-Cre | Lung | AL,WELCH,1.3082695911287823,1.6088048558587686e-23,24.0,24.0,2.6930814293722173e-94,True
+gpt-5.5,lower,15,GSE161982,CMFG+DSS vs DSS,True,True,True,0.8,False,CMFG plus DSS vs DSS,WELCH,-0.43434595919529384,0.00019614022098980944,4.0,5.0,1.4730605770750908e-05,True
+gpt-5.5,lower,1,GSE162613,miR-155KI vs WT,True,True,True,0.5,False,miR-155KI vs WT in NK1.1+ iNKT cells,WELCH,-2.4011486097016013,0.000738678922175167,3.0,3.0,3.715340388446175e-05,True
+gpt-5.5,lower,6,GSE162613,miR-155KI vs WT (NK1.1+ iNKT cells),True,True,True,1.0,False,miR-155KI vs WT in NK1.1+ iNKT cells,WELCH,-2.4011486097016013,0.000738678922175167,3.0,3.0,3.715340388446175e-05,True
+gpt-5.5,lower,2,GSE165606,Intestinal Epithelial RIPK3 Knockout vs Wild Type,True,True,True,1.0,False,Villin-cre RIPK3fl/fl vs wild type,WELCH,-1.1254481637603,0.0014064886209070304,3.0,3.0,0.0014064886209070304,True
+gpt-5.5,lower,4,GSE166092,Microglial Elimination vs Control (SVZ),True,True,True,1.0,False,SVZ PLX elimination vs vehicle,WELCH,-0.668041636080068,5.767290383983259e-07,5.0,5.0,5.767290383983259e-07,True
+gpt-5.5,lower,27,GSE167360,RUXO vs untreated,True,True,False,0.75,False,Ruxolitinib (RUXO) vs Control,WELCH,-0.3685985193036771,0.05589875201755457,4.0,4.0,0.0735399033667659,True
+gpt-5.5,lower,25,GSE173510,shBrd4 vs shCD19,True,True,False,0.5,False,shBrd4a vs shCtrl,WELCH,-0.2998234715514663,,2.0,4.0,0.09233688501681585,True
+gpt-5.5,lower,19,GSE179416,PiZ (Z) vs PiZ x LIRKO (Z),True,True,True,1.0,False,PiZ x LIRKO (Z) vs PiZ (Z),WELCH,-0.6120748394048103,4.506010966957961e-05,4.0,5.0,4.506010966957961e-05,True
+gpt-5.5,lower,3,GSE180384,"YF vs 3M-052 (Day D1, DCs)",False,False,False,,,,,,,,,,
+gpt-5.5,higher,6,GSE185761,monocytes 28 days vs control,True,True,True,1.0,False,PEG hydrogel implant 28 days monocytes vs unimplanted monocytes control,WELCH,1.2946138332033286,0.0005724590620188051,3.0,3.0,0.0005724590620188051,True
+gpt-5.5,higher,22,GSE186414,TauP301S Positive vs Negative in C1q WT,True,True,True,0.5,False,TauP301S positive vs negative adjusted for C1Q status,WELCH,2.3512087318032435,8.983267767504746e-07,8.0,9.0,8.24881149628273e-10,True
+gpt-5.5,lower,17,GSE189001,FSTL3 vs Veh,True,True,True,1.0,False,FSTL3 vs Vehicle (batch 2),WELCH,-0.6187325089189327,4.143539940802522e-05,4.0,4.0,4.1435124959832106e-05,True
+gpt-5.5,lower,20,GSE189066,NASH vs Normal,True,True,True,1.0,False,NASH vs Normal,WELCH,-0.6102847752451052,0.0008795177521290639,3.0,3.0,0.0008795177521290639,True
+gpt-5.5,lower,11,GSE189688,ST2-KO with Tumor vs Control,True,True,True,1.0,False,ST2-KO Treg vs WT Treg tumor loaded,WELCH,-0.8795656776399395,0.0003902300240925382,3.0,3.0,0.0003902300240925382,True
+gpt-5.5,higher,15,GSE191316,RKIP vs non-transgenic,True,True,True,1.0,False,Tg-RKIP vs non-transgenic FVB,WELCH,1.3856784096609298,0.0006500361302375642,3.0,3.0,0.0006500361302375642,True
+gpt-5.5,lower,5,GSE195707,Overload vs Sham (Vehicle),True,True,True,1.0,False,Mechanical Overload vs Sham with Vehicle,WELCH,-0.8248598796212784,7.665779134459441e-06,5.0,5.0,8.671368783913585e-34,True
+gpt-5.5,lower,8,GSE196908,Lanifibranor 8w vs DIO-NASH Vehicle 8w,True,True,True,1.0,False,Lanifibranor 8w vs DIO-NASH Vehicle 8w,WELCH,-1.0246496581542488,3.7526392383281974e-10,10.0,10.0,3.7526392383281555e-10,True
+gpt-5.5,lower,10,GSE196908,Lanifibranor 12w vs DIO-NASH Vehicle 12w,True,True,True,1.0,False,Lanifibranor 12w vs DIO-NASH Vehicle 12w,WELCH,-0.9727362447325979,1.6428800072256475e-10,13.0,10.0,1.6428800072256477e-10,True
+gpt-5.5,higher,4,GSE198631,Bleomycin vs Saline (all),True,True,True,1.0,False,Bleomycin-induced pulmonary inflammation vs Saline,WELCH,1.1807070943339253,2.4032259144482647e-13,8.0,8.0,5.522615565759313e-13,True
+gpt-5.5,lower,12,GSE201135,4°C vs 30°C - BATKO,True,True,True,1.0,False,Cold exposure vs 30C in BATKO,WELCH,-0.6871056694842604,0.00015877560796154056,4.0,5.0,0.00015877560796154056,True
+gpt-5.5,higher,26,GSE208395,IL10 blocking antibody vs untreated (Balb/C),True,True,True,1.0,False,IL10 blocking antibody colitis vs untreated Balb/C,WELCH,1.2576520994043212,7.138640705765424e-05,4.0,3.0,7.138640705765424e-05,True

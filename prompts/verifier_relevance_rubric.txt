@@ -1,0 +1,11 @@
+# Source: audit_system/intervention_classification_2026_09_29.py::RUBRIC
+Relevance score (0-10) for using this comparison as evidence about an intervention that changes the pace
+of organismal aging. Judge only study design and biological context, never the outcome:
+  +3 in vivo organism (or +1 primary human/animal tissue or cells ex vivo); 0 for immortalized or tumor cell lines
+  +2 the case arm differs from a matched control only by the intervention (same tissue, age, sex, time point)
+  +2 the intervention acts on an established aging pathway (e.g. mTOR, insulin/IGF-1, sirtuins, AMPK, senescence,
+     inflammation, mitochondrial function, NAD+, proteostasis, epigenetic regulators)
+  +2 translatable intervention (approved or clinical-stage drug, diet, exercise, or a druggable gene target)
+  +1 aging-relevant tissue or model (e.g. aged animals, progeroid or long-lived models, tissues that decline with age)
+  Score 0-2 for comparisons that are not interventions (disease vs healthy, tissue vs tissue, developmental stages,
+  reprogramming or cell states).

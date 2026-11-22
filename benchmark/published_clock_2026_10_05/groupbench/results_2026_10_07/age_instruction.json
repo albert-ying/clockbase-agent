@@ -1,0 +1,77 @@
+{
+ "dnam": {
+  "agent": {
+   "released rows": 13022,
+   "agent declared age as a covariate": 3852,
+   "agent declared age and ran a model": 2110,
+   "agent declared age and ran a two-sample or paired test": 1742,
+   "agent model formula carries age": 1717,
+   "age recorded for both arms": 4216,
+   "age recorded, agent model carries age": 1498,
+   "age recorded, agent declared age without a model": 1603,
+   "age recorded, age neither declared nor modelled": 1115,
+   "age-imbalanced arms": 1233,
+   "age-imbalanced, agent model carries age": 560,
+   "age-imbalanced, agent declared age without a model": 470,
+   "age-imbalanced, age neither declared nor modelled": 203
+  },
+  "age_as_covariate_wherever_recorded": {
+   "age_imbalanced": {
+    "UNCHANGED": 839,
+    "SIGNIFICANCE_LOST": 231,
+    "SIGNIFICANCE_GAINED": 92,
+    "AGE_SEPARATES_ARMS": 66,
+    "DIRECTION_REVERSED": 5
+   },
+   "age_balanced": {
+    "UNCHANGED": 1419,
+    "SIGNIFICANCE_GAINED": 75,
+    "SIGNIFICANCE_LOST": 47,
+    "AGE_NOT_ESTIMABLE": 310,
+    "DIRECTION_REVERSED": 4
+   }
+  },
+  "rows_where_agent_model_carried_age": {
+   "rows": 1142,
+   "released call equals agent call": 922,
+   "age-adjusted call equals agent call": 1092
+  }
+ },
+ "hs_rna": {
+  "agent": {
+   "released rows": 24379,
+   "agent declared age as a covariate": 1466,
+   "agent declared age and ran a model": 754,
+   "agent declared age and ran a two-sample or paired test": 712,
+   "agent model formula carries age": 239,
+   "age recorded for both arms": 1610,
+   "age recorded, agent model carries age": 199,
+   "age recorded, agent declared age without a model": 916,
+   "age recorded, age neither declared nor modelled": 495,
+   "age-imbalanced arms": 453,
+   "age-imbalanced, agent model carries age": 87,
+   "age-imbalanced, agent declared age without a model": 273,
+   "age-imbalanced, age neither declared nor modelled": 93
+  },
+  "age_as_covariate_wherever_recorded": {
+   "age_imbalanced": {
+    "UNCHANGED": 363,
+    "AGE_SEPARATES_ARMS": 44,
+    "SIGNIFICANCE_GAINED": 16,
+    "SIGNIFICANCE_LOST": 30
+   },
+   "age_balanced": {
+    "UNCHANGED": 709,
+    "SIGNIFICANCE_GAINED": 17,
+    "AGE_NOT_ESTIMABLE": 252,
+    "SIGNIFICANCE_LOST": 9,
+    "AGE_SEPARATES_ARMS": 11
+   }
+  },
+  "rows_where_agent_model_carried_age": {
+   "rows": 179,
+   "released call equals agent call": 155,
+   "age-adjusted call equals agent call": 163
+  }
+ }
+}

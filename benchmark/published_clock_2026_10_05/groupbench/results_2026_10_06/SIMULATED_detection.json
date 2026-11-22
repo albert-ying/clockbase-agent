@@ -1,0 +1,32 @@
+{
+ "SIMULATED": true,
+ "seed": 20261006,
+ "table": {
+  "swap_arms": {
+   "detected": 106,
+   "detection_rate": 1.0
+  },
+  "merge_levels": {
+   "detected": 99,
+   "not_applicable": 7,
+   "detection_rate": 1.0
+  },
+  "add_nuisance": {
+   "detected": 94,
+   "not_applicable": 12,
+   "detection_rate": 1.0
+  },
+  "reverse_labels": {
+   "detected": 106,
+   "detection_rate": 1.0
+  },
+  "drop_half": {
+   "detected": 106,
+   "detection_rate": 1.0
+  },
+  "duplicate_subject": {
+   "detected": 106,
+   "detection_rate": 1.0
+  }
+ }
+}

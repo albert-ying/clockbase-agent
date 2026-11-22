@@ -1,0 +1,218 @@
+[
+ {
+  "batch": 0,
+  "brief": "design",
+  "items": [
+   {
+    "id": "MED-25678027-GSE25395-Horvathv1-0",
+    "category": "estimand_difference",
+    "agent_error": false,
+    "evidence": "Arms are correct. Agent case = the 29 GSMs with source 'PBL DS' and disease state 'Trisomy 21'; control = the 21 'PBL normal' GSMs. Both match the assigned published groups (Jaccard 1.0), and stored_direction +1 matches 'higher', so there is no group, inversion or degenerate-statistic error. The main difference is the estimand. The paper tests the age-acceleration residual (DNAm age regressed on chronological age in controls) with Kruskal-Wallis (P=0.0048). The agent's stored test is an unadjusted two-sample t-test on Horvathv1 (P=0.057, d=0.623). GEO characteristics for these GSMs hold only 'disease state' (no age; checked in the package and on GEO for GSM623577), so the agent could not form the residual. Across ages 22-64, unadjusted DNAm age keeps the chronological-age variance that the residual removes (Table 2: R^2=0.83, age slope 0.954). There is also a smaller subset difference. Table 1 gives N=56 with 35 DS. GSE25395 has 60 arrays, and GEO shows the 6 accessions between the DS PBL GSMs (GSM623593/594/596/598/600/602) are 'T-cells DS 789/790/791/792/798/799'. The paper's DS arm is therefore 29 PBL + 6 T-cell arrays, with the 4 normal T-cell arrays (GSM623573-576) left out, and donors 791/792/798 appear twice. A what-if that holds d=0.623 and moves from 29 vs 21 to 35 vs 21 raises the pooled t only from 2.17 to 2.26, against the paper's adjusted t=2.73 (3.746/1.373). The stored d gives a pooled-variance P=0.035, so the stored P=0.057 implies a Welch-type test and the call sits at the 0.05 boundary. Not an agent error: Kerkel et al. 2010 state the 29 DS and the controls span the same age range, the PBL-only arms keep a single cell type, and age was not available in GEO."
+   },
+   {
+    "id": "MED-25678027-GSE25395-Horvathv1-1",
+    "category": "estimand_difference",
+    "agent_error": false,
+    "evidence": "The agent comparison and arms are the same as in item -0: 29 PBL DS (Trisomy 21) vs 21 PBL normal, identical to the assigned groups, with direction +1 = 'higher'. The published quantity is the DS coefficient from a multivariate regression of DNAm age on chronological age plus DS (3.746 years, SE 1.373, Wald t=2.73, P=0.0086; covariate: chronological age). The agent's stored test is an unadjusted two-sample t-test (P=0.057). GEO characteristics for all 50 arm GSMs list only 'disease state', so the age covariate was not available to the agent. In Table 2 chronological age explains most of the DNAm age variance (slope 0.954, R^2=0.83, ages 22-64), so leaving it out is the likely main cause of the significance gap. There is also a smaller subset difference. The paper's N=56 with 35 DS includes 6 DS T-cell arrays (GSM623593, 623594, 623596, 623598, 623600, 623602; GEO source 'T-cells DS') that the agent's PBL-only arms leave out. Kerkel et al. 2010 analyzed T cells as a separate DS-vs-normal comparison, and T-cell donors 791/792/798 also appear in the PBL DS arm (GSM623595/597/601). A what-if at the agent's d shows the added samples raise the pooled t only from 2.17 to 2.26. Not an agent error: Kerkel et al. 2010 report the DS and control PBL donors span the same age range, and the package shows no age imbalance, so the unadjusted comparison is valid for the design, only less powered."
+   },
+   {
+    "id": "MED-29974462-GSE75008-Horvathv1-1",
+    "category": "sample_subset_difference",
+    "agent_error": false,
+    "evidence": "The published comparison is SQC tumor vs matched tumor-free lung in the 18 SQC patients (n_case=18; Marwitz et al. 2018 analyzed 33 patients, 15 AC + 18 SQC). The agent's arms are all 40 tumor vs all 40 normal arrays of GSE75008 ('Lung Cancer vs. Normal Lung Tissue'), the same as the assigned groups. They therefore pool the 18 SQC with the 15 AC and 7 pairs outside the paper's 33. GEO metadata carry no histology: tissue is 'lung cancer'/'normal lung tissue', source 'surgery N', titles '<ID> tumor/control', description 'lung cancer sample'. The SQC subset cannot be built from GEO, and the agent's arms are correct for the comparison it names. The paper reports that AC 'seemed to have a higher DNAm age than the tumor-free lungs' while SQC was younger, so pooling dilutes the SQC effect. The agent's direction is lower (-1), matching the paper. Its paired dz=-0.171 over 40 pairs gives t=-1.08, which reproduces the stored P=0.287 exactly. Caveat: the tumor and control lists align by patient ID (title prefix) only at positions 1-34. At positions 35-40 (GSM1940426-431 vs GSM1940466-471) the IDs are rotated, so if the agent paired by list order, 6 of 40 pairs were cross-patient. The package does not record the pairing key, and this would not explain the SQC-vs-pooled discordance."
+   }
+  ]
+ },
+ {
+  "batch": 0,
+  "brief": "statistics",
+  "items": [
+   {
+    "id": "MED-25678027-GSE25395-Horvathv1-0",
+    "category": "estimand_difference",
+    "agent_error": false,
+    "evidence": "The paper and the agent used different estimands. Paper: measure=acceleration_residual (DNAm age regressed on chronological age in controls), tested with Kruskal-Wallis, P=0.0048; Table 1 row 1 gives N=56 with N(DS)=35. Agent: 'Trisomy 21 vs Normal in PBL', a t-test on Horvathv1 values, 29 Trisomy 21 vs 21 normal PBL (Jaccard 1.0 with the assigned published groups), stored_direction +1, effect 0.623, P=0.0569. The direction is the same (higher); only significance differs. The GEO sample fields are title, source_name and disease state, with no chronological age, so the agent could only test raw DNAm age and could not form the residual. In the paper's own model for this data set (Table 2), chronological age has slope 0.954 (P<2e-16) and R2=0.83, so the age-removed residual has about sqrt(0.17)=0.41 times the SD of raw DNAm age. The paper removed that age variance; the agent's test kept it, which explains the weaker P. Secondary subset gap: the paper had 35 DS against the agent's 29. Six GSM IDs inside the DS block (GSM623593, GSM623594, GSM623596, GSM623598, GSM623600, GSM623602) are missing from both the agent arms and the assigned published groups. Recomputing the Table 2 Wald test (t=3.746/1.3725=2.73) gives P=0.0086 only at df=53, i.e. N=56, which matches the published value. The stored P (0.057) is above the Student-t P implied by d=0.623 (t=2.17, P=0.035), which fits a Welch test; the statistic is not degenerate. The package has no ages, so age imbalance between the arms cannot be shown. The raw comparison is underpowered but not invalid for the design, so agent_error is false."
+   },
+   {
+    "id": "MED-25678027-GSE25395-Horvathv1-1",
+    "category": "estimand_difference",
+    "agent_error": false,
+    "evidence": "The paper reported a covariate-adjusted estimate; the agent's test was unadjusted. Paper (Table 2, data set 1): multivariable linear regression of DNAm age on chronological age plus DS status. DS coefficient 3.746 years (SE 1.373), Wald P=0.0086; chronological-age coefficient 0.954 (SE 0.062, P<2e-16); R2=0.83. Agent: the same arms as the assigned published groups (29 Trisomy 21 vs 21 normal PBL, Jaccard 1.0 for case and control), an unadjusted t-test on Horvathv1, stored_direction +1, P=0.0569. So the paper estimated the age-adjusted DS difference, and the agent tested the raw difference in DNAm age. The GEO metadata has no age field (keys: GSM, title, source_name, disease state), so the agent could not include the covariate. Because age accounts for most of the DNAm-age variance (R2=0.83), the unadjusted test leaves that variance in its error term. That gives the same direction (higher) without significance. Minor subset gap: the paper's N is 56 (35 DS) against 50 here. Recomputing the Wald P from Table 2 at df=53 reproduces 0.0086. The package shows no evidence of age imbalance between the arms, so the unadjusted choice is less powerful but not invalid, and agent_error is false."
+   },
+   {
+    "id": "MED-29974462-GSE75008-Horvathv1-1",
+    "category": "sample_subset_difference",
+    "agent_error": false,
+    "evidence": "The paper used a smaller, histology-specific subset. Paper: SQC tumor (n_case=18) vs matched tumor-free lung tissue from the same SQC patients, described as 'markedly younger DNAm age' (direction lower, significant). The paper analyzed 33 patients (15 AC, 18 SQC) and reports SQC DNAm age significantly below AC tumor tissue (P<1.32e-5). Agent: 'Lung Cancer vs. Normal Lung Tissue', a paired t-test over all 40 tumor/normal pairs in GSE75008, stored_direction -1, dz=-0.171, P=0.287. Recomputing t=-0.1705*sqrt(40)=-1.079 at df=39 gives P=0.287, so the test used all 40 pairs. The GEO metadata gives only tissue='lung cancer' or 'normal lung tissue' and has no histology field, so neither the agent nor the benchmark's group assignment could isolate SQC. The assigned published case group lists all 40 tumors even though n_case=18, so the Jaccard of 1.0 does not mean the subsets match. The agent's pooled set adds the 15 AC tumors, which have higher DNAm age than SQC, and 7 pairs outside the paper's 33. That dilutes the SQC effect to a non-significant -0.17 SD with the same sign. The agent's arms match its named comparison, and it used a paired test, so agent_error is false. Caveat: the arm lists are sorted by GSM, and the last six positions do not share patient IDs (for example GSM1940426 '1439_08 tumor' sits opposite GSM1940466 '14893_08 control'). If the agent paired by list position, 6 of 40 pairs were mismatched. The title IDs would allow correct pairing for all 40. The package cannot show which pairing the agent used, and correct pairing would not remove the dilution from AC."
+   }
+  ]
+ },
+ {
+  "batch": 0,
+  "brief": "skeptic",
+  "items": [
+   {
+    "id": "MED-25678027-GSE25395-Horvathv1-0",
+    "category": "estimand_difference",
+    "agent_error": true,
+    "evidence": "The arms and direction are correct. The agent's case arm is the 29 'PBL DS' (Trisomy 21) samples and its control arm is the 21 'PBL normal' samples, which equal the assigned published groups (Jaccard 1.0). The stored direction (+1) matches 'higher'. The difference is the estimand. The paper tested the age-acceleration residual (Kruskal-Wallis P=0.0048). The agent ran an unadjusted t-test on raw Horvathv1 DNAm age (P=0.0569). The sample metadata in the package has no age field (only title, source_name and disease state), so the agent could not adjust for age. I derived what an unadjusted test would give from the same paper's Table 2 (b_age 0.95374, SE 0.06191; b_DS 3.74593, SE 1.37252; R2 0.83; N 56, 35 DS). This is a calculation from published values, not simulated data. It implies a chronological-age SD of about 10.8 y and a residual SD of about 4.9 y, against a raw pooled SD of about 11.4 y. It also implies the DS arm is about 2.7 y older (r(DS,age) about +0.12; +1.2 to +3.9 y across the R2 rounding interval; the sign is set by the agent's positive raw difference). On the paper's own samples, an unadjusted t-test would then give d about 0.55, with P about 0.051 at n=56 and about 0.060 at the agent's 29/21. That matches the agent's P of 0.057 (the range is 0.02 to 0.15 for R2 between 0.825 and 0.835). So the agent compared raw clock age between age-imbalanced arms in a cross-sectional cohort aged 22 to 64. About 2.6 y of the roughly 6.3 y raw gap is chronological age. The chronological-age variance left in the test is what cost the significance. That is invalid for this design, so it counts as an agent error. There is also a smaller subset difference. The paper used 56 samples with 35 DS. Accessions GSM623593, 594, 596, 598, 600 and 602 are in neither arm. In the reconstruction this only moves P from 0.051 to 0.060. Script: /Entropy/kying/tmp/claude-1029/-Entropy-Projects-multimodal-protein-clock-output/a66effa1-fff7-4093-b40a-8f58c87819cd/scratchpad/reconstruct_gse25395.py"
+   },
+   {
+    "id": "MED-25678027-GSE25395-Horvathv1-1",
+    "category": "estimand_difference",
+    "agent_error": true,
+    "evidence": "The agent comparison and arms are the same as in item -0: 29 PBL DS vs 21 PBL normal, Jaccard 1.0, direction +1, which matches 'higher'. The published estimand is the DS coefficient adjusted for chronological age: DNAm age regressed on age plus DS gives 3.75 y (SE 1.37), Wald P=0.0086. The agent ran an unadjusted t-test with no covariates (P=0.0569). There is no age field in the GEO metadata, so the agent could not adjust. The derived values come from that same regression and are not simulated. Age has a slope of 0.95 and explains 83% of DNAm-age variance (R2 0.83). The residual SD is about 4.9 y against a raw pooled SD of about 11.4 y. The DS arm is about 2.7 y older (+1.2 to +3.9 y across the R2 rounding interval). On the paper's own data, an unadjusted contrast would have d about 0.55 and P about 0.051 at n=56, or about 0.060 at 29/21. That reproduces the agent's 0.057. The agent therefore compared raw clock age between age-imbalanced arms across ages 22 to 64. Chronological age accounts for about 2.6 y of the roughly 6.3 y raw difference. The variance from age is what drops the result below significance. This is not a test problem, an arm problem or a clock problem, so it is an agent error. The six DS accessions the paper included and the agent did not (GSM623593, 594, 596, 598, 600 and 602) have only a minor effect, moving P from 0.051 to 0.060. Script: /Entropy/kying/tmp/claude-1029/-Entropy-Projects-multimodal-protein-clock-output/a66effa1-fff7-4093-b40a-8f58c87819cd/scratchpad/reconstruct_gse25395.py"
+   },
+   {
+    "id": "MED-29974462-GSE75008-Horvathv1-1",
+    "category": "sample_subset_difference",
+    "agent_error": false,
+    "evidence": "The published case group is SQC only (n_case 18). The quote describes 33 patients, '15 adenocarcinomas (AC) and 18 squamous cell carcinomas (SQC)', each compared with matched tumor-free lung. The GSE75008 package has 40 tumor and 40 control samples. Their metadata fields are title, source_name and tissue, and all 40 tumors read 'lung cancer', so histology is not recorded. SQC cannot be separated from the metadata. Because of this, the benchmark's own published_groups_assigned covers all 40 vs 40, and the Jaccard of 1.0 overstates the match. The agent's arms are correct for the comparison it names, 'Lung Cancer vs. Normal Lung Tissue'. Its paired t-test is internally consistent: d_z of -0.1705 times sqrt(40) gives t = -1.079 and P = 0.287. Its direction (-1) matches 'lower'. Pooling dilutes the SQC effect: the pooled arm includes 15 AC tumors, which the paper reports have higher DNAm age than SQC (P<1.32e-5), and 7 GEO patients outside the paper's 33. Reaching P<0.05 would need d_z of at least 0.32. The patients are matched within pairs, so raw clock age is valid for this design and the agent could not have selected SQC. There is one point the package cannot settle. Tumors GSM1940426 to 431 and controls GSM1940466 to 471 are listed in different patient orders. If the agent paired by list position, 6 of the 40 pairs would be mismatched. Re-pairing would not change the mean difference or the direction. It would also have to cut the SD of the differences by about 47% to reach significance, which is implausible from fixing 6 pairs. So the pairing order is not the cause. Script: /Entropy/kying/tmp/claude-1029/-Entropy-Projects-multimodal-protein-clock-output/a66effa1-fff7-4093-b40a-8f58c87819cd/scratchpad/check_items.py"
+   }
+  ]
+ },
+ {
+  "batch": 1,
+  "brief": "design",
+  "items": [
+   {
+    "id": "MED-32930491-GSE100249-PhenoAge-0",
+    "category": "clock_or_preprocessing_difference",
+    "agent_error": false,
+    "evidence": "The agent's arms are the published groups (Jaccard 1.0 for both arms) and match the GEO metadata. Case GSM2676259/61/63 are '143B rho0 - rep 1-3' (source 'chronically mtDNA depleted'); control GSM2676258/60/62 are '143B rho+ - rep 1-3' (source 'control'). Both analyses use 3 vs 3, and the direction agrees (both higher). The paper's linear regression on a two-level group is a pooled-variance t-test. At n=3 vs 3 its p=0.005 needs |t|=5.60 (df 4), which is a pooled Cohen's d of about 4.57. The agent's stored d=1.18 gives t=1.45, so the same pooled test on the ClockBase PhenoAge values gives p=0.222. Sample size and test therefore cannot explain p=0.005 vs non-significance. The clock values differ: the ClockBase effect is about 3.9-fold smaller than the paper's Levine DNAmAge effect. Side note: the stored p=0.2849541940 equals the two-sided t p-value at df=2 for t=d*sqrt(1.5) to 16 digits, so the label 'Independent t-test' (Student, df 4) does not match the computation (Welch with a zero-variance arm, or a conservative df). Under either df the result is non-significant, so this does not drive the discordance."
+   },
+   {
+    "id": "MED-32930491-GSE91069-PhenoAge-9",
+    "category": "power_or_test_difference",
+    "agent_error": false,
+    "evidence": "The agent's arms are the published groups (Jaccard 1.0) and match the GEO metadata. Case GSM2420518-20 are 'OIS_1-3' (H-rasV12-induced senescent BJ fibroblasts); control GSM2420490-95 are 'EP_1-6' (early-passage BJ). Both analyses use 3 vs 6. The direction agrees: the source quote reports a 'suggestive increase' for Levine in OIS vs EP at p=0.056, and the agent reports higher at p=0.0091. Only the 0.05 threshold separates the calls. The paper's Figure 5 in vitro comparisons used linear regression (pooled variance; stated for 5g-l), while the agent used a Welch t-test. Back-solving the stored pooled d=1.91 and Welch p=0.0091 gives SD(OIS)/SD(EP) of about 0.23-0.37 and Welch df of 5.9-6.8. An average-variance d cannot reach that p, since its minimum is 0.017. On the same values a pooled-variance test gives p=0.031. The published p=0.056 implies a pooled d of about 1.62 (df 7), close to the agent's 1.91. Most of the log-p gap (0.031 to 0.009, a factor of 3.4) comes from using Welch with a low-variance 3-sample arm. A smaller part (0.056 to 0.031, a factor of 1.8) comes from modest clock-value differences. Welch is a valid test for arms of 3 and 6, so this is not an agent error."
+   },
+   {
+    "id": "MED-31628391-GSE100850-Horvathv1-0",
+    "category": "estimand_difference",
+    "agent_error": true,
+    "evidence": "The agent's arms are the published groups (Jaccard 1.0) and match the GEO metadata. All 21 case GSMs have age_group 'Young' (titles 'Breast Cancer_Young'), and all 13 controls have age_group 'Old'. These counts match the paper's 21 BCVY and 13 BCO. The paper's 'higher' result is for age acceleration (age-acceleration difference = DNAmAge minus chronological age; Wilcoxon p=5.5e-4, Fig. 3C). Its raw DNAmAge means were BCVY 51.44 vs BCO 64.98 years, a difference of -13.5 years. The agent compared raw Horvathv1 clock age 'Young vs Old' and got lower (pooled d=-0.886, Welch p=0.019), the same sign as the paper's raw means. The agent's direction is therefore correct for what it measured (no inversion); the discordance is raw clock age vs age acceleration. The arms are defined by chronological age group (GEO age_group Young/Old), so raw clock age is confounded by age by design. That makes the agent's estimand invalid for this comparison."
+   }
+  ]
+ },
+ {
+  "batch": 1,
+  "brief": "statistics",
+  "items": [
+   {
+    "id": "MED-32930491-GSE100249-PhenoAge-0",
+    "category": "clock_or_preprocessing_difference",
+    "agent_error": false,
+    "evidence": "Arms match the published assignment exactly (rho0 GSM2676259/61/63 vs rho+ GSM2676258/60/62; Jaccard 1.0 for both arms, not swapped). The clock is the same (Levine DNAmAge = PhenoAge), and so is the estimand: raw clock age within one isogenic 143B line, which has no chronological-age confound. Both calls point up (agent direction +1). The paper regressed clock score on group with no covariates, which is a pooled-variance two-sample t-test. From the stored d = 1.181 (3 v 3), the pooled t is 1.447, so p = 0.222 on 4 df. The stored p = 0.28495 is the two-sided tail of that same t at exactly 2.000 df (solved df = 1.99999999999999). That is the Welch df when one arm has zero variance, or a min(n)-1 df rule. Test choice therefore moves p only from 0.22 to 0.28. To get the paper's p = 0.005 from the same regression needs t = 5.60 (d about 4.57), roughly 3.9 times the agent's effect. Neither sample size (identical) nor test can close that gap, so the PhenoAge values differ: ClockBase preprocessing vs the paper's Levine DNAmAge. If the stored p came from scipy's Welch test, the df = 2 signature means three identical PhenoAge values in one arm, which itself points to a preprocessing artifact."
+   },
+   {
+    "id": "MED-32930491-GSE91069-PhenoAge-9",
+    "category": "power_or_test_difference",
+    "agent_error": false,
+    "evidence": "Arms match exactly (OIS GSM2420518-20, n = 3, H-rasV12 senescent, vs EP GSM2420490-95, n = 6; Jaccard 1.0, not swapped). The clock and the raw-age estimand are the same, within one BJ line. The effect points the same way: the paper reports a 'suggestive increase' for OIS vs EP (p = 0.056, so the call is none), and the agent finds +1 with Welch p = 0.0091 (d = 1.910). The record lists no test, but the same Results section (the rho0 quote, PMID 32930491) uses linear regression for the in vitro comparisons, which pools variance. Recomputed from the stored d, a pooled two-group test gives t = 2.70, p = 0.031 on 7 df. The stored Welch p implies the OIS arm SD is about 0.23-0.37 times the EP arm SD (variance ratio 0.05-0.14), which Welch rewards and a pooled test does not. Test choice alone moves p 3.4-fold toward the paper. Under the pooled test, the paper's p = 0.056 needs d of about 1.62 vs the agent's 1.91. That small remaining gap fits clock-value noise, or a regression that pooled residual variance across other GSE91069 conditions (the record gives no n). Welch on unpaired 3 v 6 arms is valid, so this is not an agent error."
+   },
+   {
+    "id": "MED-31628391-GSE100850-Horvathv1-0",
+    "category": "estimand_difference",
+    "agent_error": true,
+    "evidence": "Arms match exactly (all 21 BCVY have GEO age_group 'Young' and all 13 BCO have 'Old'; Jaccard 1.0, not swapped), so this is not a group error or an inversion. The paper measured the Horvath age-acceleration difference (DNAmAge minus chronological age) with a Wilcoxon rank-sum test and found it higher in BCVY (p = 5.5e-4). The agent instead compared raw Horvathv1 DNAm age with a Welch t-test (d = -0.886, p = 0.0195) and found it lower in the young group. The paper's own raw means (BCVY 51.44 vs BCO 64.98 years, a difference of -13.5 years) reproduce the agent's 'lower'. The sign flip therefore comes from the estimand, not from the clock or the samples: raw DNAmAge tracks chronological age, and these arms are defined by age (the agent named the comparison 'Young vs Old'). The package metadata have no per-sample chronological age, only age_group, so the agent could not compute acceleration. Even so, a raw-clock-age call between age-defined arms is invalid for this design."
+   }
+  ]
+ },
+ {
+  "batch": 1,
+  "brief": "skeptic",
+  "items": [
+   {
+    "id": "MED-32930491-GSE100249-PhenoAge-0",
+    "category": "clock_or_preprocessing_difference",
+    "agent_error": false,
+    "evidence": "Arms equal the published groups (rho0 GSM2676259/61/63 vs rho+ GSM2676258/60/62; Jaccard 1.0 for both, not swapped), both use raw clock age, and the direction agrees (stored_direction +1, rho0 higher). Test choice does not explain the call. The paper's linear regression on a two-level group term is the pooled-variance t-test, and the agent's stored d = 1.181 at n = 3/3 gives t = 1.447, df = 4, p = 0.22 under that test. An exact Mann-Whitney test cannot go below p = 0.10 at 3 vs 3. On the same six samples, the paper's p = 0.005 needs t = 5.60 (d about 4.57), roughly 3.9 times the agent's standardized effect, so the PhenoAge values differ. The stored p (0.2849541940004738) equals the Welch p at df = 2 exactly (1 - t/sqrt(t^2 + 2) = 0.28495419400047406; difference 3e-16). With 3 vs 3 samples, df = 2 occurs only when one arm has zero variance, so in the clock values the agent used, three separate replicate arrays in one arm have identical PhenoAge. That is a degenerate clock input, a preprocessing artifact whose source the package cannot show. The agent should have flagged it, but its arms, direction and test were sound, and no test on these values reaches significance (Welch 0.285, pooled 0.22, Mann-Whitney floor 0.10)."
+   },
+   {
+    "id": "MED-32930491-GSE91069-PhenoAge-9",
+    "category": "power_or_test_difference",
+    "agent_error": false,
+    "evidence": "Arms equal the published groups (OIS_1-3 GSM2420518-20 vs EP_1-6 GSM2420490-95; Jaccard 1.0 for both, not swapped), and both use raw clock age. Direction agrees: the paper reports a 'suggestive increase' for Levine in OIS vs EP at p = 0.056, and the agent finds OIS higher (+1, d = 1.91). Only significance differs, and the published p sits just above 0.05. The agent's Welch p is 0.0091. The pooled-variance t-test on the same d (equivalent to a two-group linear regression, the method the same Results section names for its 143B comparison) gives t = 2.70, df = 7, p = 0.031. That Welch p can only arise if the OIS arm's SD is 0.23 to 0.37 times the EP arm's SD (reproduced: Welch t = 3.80, df = 5.95, p = 0.0091). Because the smaller arm has the smaller variance, the pooled test is conservative here and Welch is a valid choice. Under a two-group model the paper's p = 0.056 corresponds to t = 2.29 (d about 1.62), so ClockBase PhenoAge also shows a slightly larger effect. This record gives no test or n, so the test and value contributions cannot be separated further. Arms are 3 and 6 unpaired samples and the test is valid, so this is a near-threshold test and power difference, not an agent error."
+   },
+   {
+    "id": "MED-31628391-GSE100850-Horvathv1-0",
+    "category": "estimand_difference",
+    "agent_error": true,
+    "evidence": "Arms equal the published groups (21 BCVY vs 13 BCO; Jaccard 1.0 for both, not swapped). The GEO age_group field (Young/Old) shows the arms are defined by chronological age. The published endpoint is age-acceleration difference (measure = acceleration_difference, DNAmAge minus chronological age), with BCVY higher by Wilcoxon rank-sum (p = 5.5e-4). The agent ran 'Young vs Old' on raw Horvathv1 DNAmAge (Welch, d = -0.886, p = 0.0195, Young lower). The paper's own raw means agree with the agent: BCVY 51.44 vs BCO 64.98 years, 13.5 years lower in the young. So the agent's sign is right for raw age and is not an inversion. The sign flips only after subtracting chronological age, which differs between the arms by more than DNAmAge does. The test (Welch vs Wilcoxon) is not the driver, because the signs are opposite and the pooled t on the agent's d also gives p = 0.017. Comparing raw clock age between arms selected on chronological age is invalid for this design, because the arms are age-imbalanced by construction."
+   }
+  ]
+ },
+ {
+  "batch": 2,
+  "brief": "design",
+  "items": [
+   {
+    "id": "MED-36092807-GSE106648-Horvathv1-0",
+    "category": "clock_or_preprocessing_difference",
+    "agent_error": false,
+    "evidence": "The agent's arms match the published blood cohort exactly (Jaccard 1.0 for case and control): 140 samples with GEO 'disease status'='MS case' vs 139 'Healthy control', all peripheral blood. Direction agrees: agent stored_direction -1, and the paper's mean Horvath residual is -0.73 (MS) vs +0.72 (NNC). The design is balanced, so the agent's age-adjusted linear model ('MS vs Healthy Control (adjusted)') is a valid choice. From the GEO metadata: age 40.3 vs 42.0 y (t-test p=0.20), male 42/140 vs 35/139, ever-smokers 71/140 vs 67/139. With the same n, the signal is about half: the agent's p=0.058 implies t~1.90 (stored d=-0.23 reproduces p=0.056), while the paper's P=0.0002 (t-test on residuals) and Padj=0.0001 (MANCOVA with sex) imply t~3.8-3.95 (d~0.45-0.47). From the paper's numbers (residual difference -1.45 y, implied residual SD 3.2 y), even a raw clock-age comparison would give t~2.3-2.8 (p~0.006-0.023). No estimand or test choice applied to the paper's clock values reproduces p=0.058, so the Horvathv1 values feeding the test must differ from the authors' own preprocessing of the same arrays. Caveat: the package does not list the agent's covariates, but the recorded ones (age, sex, smoking) are balanced. The published extraction (Table 3, Blood row: 0.72, -0.73, P 0.0002, Padj 0.0001) is correct."
+   },
+   {
+    "id": "MED-40589934-GSE176394-DunedinPACE-12",
+    "category": "agent_statistical_error",
+    "agent_error": true,
+    "evidence": "Paper: linear mixed model on repeated samples from the same trans women, 6 mo vs baseline. Model 2 gives +0.059 (SE 0.016), p=0.002; Model 1 gives +0.046, p=0.002. Agent: stored_test 'Independent t-test' on 13 vs 13 samples that contain 12 same-donor pairs (M_to_F_Donor_2..13, baseline vs 6m), treated as independent, so the pairing is ignored. The stored d=0.623 reproduces the unpaired test exactly (t=1.59, df=24, p=0.125). Direction agrees (+1). At 13/13 an unpaired test needs d>=0.81 for p<0.05 (0.85 at 12/12), so significance is lost by dropping the within-donor pairing that the paper's model uses. Secondary agent error in the groups: both arms are fixed GSM strides of 3 (control GSM5363857+3k, case GSM5363858+3k) that start one sample off, because Donor 1 has no 6-month sample (GSM5363858 is the D1 baseline and GSM5363859 the D1 12m). As a result, GSM5363858 (M_to_F_Donor_1_baseline, 'Baseline, before feminizing GAHT') sits in the 6-month arm. GSM5363857 (F_to_M_Donor_13_12m, '12 months following masculinizing GAHT') sits in the baseline arm. The agent also mislabeled the comparison as 'transmen_6_months_vs_baseline' with condition 'testosterone', although 25 of 26 samples are trans women on feminizing GAHT. These 2 misassigned samples of 26 (Jaccard 0.92; the published arms are fully inside the agent's) dilute the contrast slightly. The larger loss comes from ignoring the pairing."
+   },
+   {
+    "id": "MED-40589934-GSE176394-DunedinPACE-13",
+    "category": "agent_statistical_error",
+    "agent_error": true,
+    "evidence": "Paper: linear mixed model on repeated samples from the same trans women, 12 mo vs baseline. Model 2 gives +0.057 (SE 0.015), p=0.002; Model 1 gives +0.032, p=0.02. The agent's case arm is exactly the published 12-month arm (13 M_to_F_Donor_*_12m, Jaccard 1.0). The agent's stored_test is 'Independent t-test', with 12 same-donor pairs (Donors 2-13, baseline vs 12m) treated as independent, so the pairing is ignored. The stored d=0.477 reproduces the unpaired test exactly (t=1.22, df=24, p=0.236). Direction agrees (+1). An unpaired test at 13/13 needs d>=0.81 for p<0.05, so the call is lost by dropping the within-donor pairing that the paper's model uses. Secondary agent error in the groups: the same off-by-one GSM stride (control GSM5363857+3k) puts GSM5363857 (F_to_M_Donor_13_12m, '12 months following masculinizing GAHT') in the baseline arm in place of GSM5363858 (M_to_F_Donor_1_baseline). Control Jaccard is 0.86, and the swap also breaks Donor 1's pair. The agent also mislabeled the comparison as 'transmen_12_months_vs_baseline' with condition 'testosterone', although 25 of 26 samples are trans women on feminizing GAHT. One wrong control out of 26 samples is minor next to the effect of ignoring the pairing."
+   }
+  ]
+ },
+ {
+  "batch": 2,
+  "brief": "statistics",
+  "items": [
+   {
+    "id": "MED-36092807-GSE106648-Horvathv1-0",
+    "category": "clock_or_preprocessing_difference",
+    "agent_error": false,
+    "evidence": "The agent's arms are the published groups exactly: Jaccard 1.0/1.0, 140 MS vs 139 healthy controls, all 279 GSE106648 samples. Direction agrees: agent stored_direction -1; the paper's blood residual means are NNC 0.72 vs MS -0.73. The estimand also matches. The paper's Horvath acceleration residuals come from a pooled age regression (the group means weight to -0.008), tested by two-sided t-test (P=0.0002) and by MANCOVA with sex (Padj=0.0001). The agent ran an adjusted linear model on the same clock (Horvathv1). Covariates in the GEO metadata are balanced: age 40.3 vs 42.0 y (t-test P=0.20), male 30.0% vs 25.2% (P=0.44), ever-smoker 50.7% vs 48.2% (P=0.76). With age this balanced, residualizing age before the model instead of inside it scales the group estimate by 1 - p(1-p)*dAge^2/Var(age) = 0.994, and adjusting for sex did not weaken the paper's own result. Sample size is identical, so the test and power do not explain the gap; the effect size does. The paper's P=0.0002 implies |t|=3.77 and |d|=0.45 (a 1.45 y difference, SD about 3.2 y). The agent's stored effect -0.230 reproduces its own P as a standardized difference (t=1.92, P=0.056 vs stored 0.058), about half the paper's |d|. Same groups, same clock, an equivalent estimand and a halved effect point to different Horvathv1 values: ClockBase's computation from the GEO matrix vs the paper's own normalization and implementation. Caveat: the package does not list the agent's covariates, but no adjustment built from the balanced GEO covariates could halve d."
+   },
+   {
+    "id": "MED-40589934-GSE176394-DunedinPACE-12",
+    "category": "agent_statistical_error",
+    "agent_error": true,
+    "evidence": "Same direction (agent +1, paper higher); only significance differs. The paper fit a within-person linear mixed model (Satterthwaite) to repeated visits of the same trans women. Model 2 (age, BMI, cell proportions): 6-month estimate 0.059, SE 0.016, t=3.69, P=0.002. Model 1, quoted as also detecting the increase over time, gives 0.046 with P=0.002, so covariates do not drive significance. The agent ran an independent t-test, which ignores pairing: 12 of its 13 donors (M_to_F Donors 2-13) put the baseline sample in control and the 6-month sample in case. Its stored d=0.623 reproduces the stored P exactly as an unpaired Student test (t=1.59, df=24, P=0.1253). If the agent's mean change is near the paper's 0.046-0.059, its pooled SD is 0.074-0.095 and its unpaired SE 0.029-0.037, about twice the paper's within-person SE of 0.016. An unpaired test on the exact published 12-vs-12 arms would need |d|>=0.85 to reach P<0.05. Pairing ignored is therefore the decisive error. A secondary group error is also present. The comparison is named 'transmen_6_months_vs_baseline' (condition testosterone), but 25 of 26 samples are M_to_F on feminizing GAHT. Both arms are every-third-GSM runs (step 3) starting one GSM early at GSM5363857, so the published arms sit fully inside them (published_inside_agent 1.0) plus one wrong sample each. The 6-month arm holds GSM5363858 (M_to_F_Donor_1_baseline; Donor 1 has no 6-month GSM, since 858 is baseline and 859 is 12 months), and the baseline arm holds GSM5363857 (F_to_M_Donor_13_12m, masculinizing)."
+   },
+   {
+    "id": "MED-40589934-GSE176394-DunedinPACE-13",
+    "category": "agent_statistical_error",
+    "agent_error": true,
+    "evidence": "Same direction (agent +1, paper higher); only significance differs. The paper used a within-person linear mixed model on repeated visits. Model 2 (age, BMI, cell proportions): 12-month estimate 0.057, SE 0.015, t=3.80, P=0.002. Model 1 gives 0.032 with P=0.02, so fewer covariates shrink the estimate but the repeated-measures test stays significant; the agent's lack of covariates is not what removes significance. The agent's case arm equals the published 13 twelve-month M_to_F samples exactly (Jaccard 1.0). It ran an independent t-test even though 12 of 13 donors (M_to_F Donors 2-13) have samples in both arms. Its stored d=0.477 reproduces the stored P as an unpaired Student test (t=1.22, df=24, P=0.236). If its mean change were 0.032-0.057, its unpaired SE would be 0.026-0.047 vs the paper's 0.015, and a 13-vs-13 unpaired test needs |d|>=0.81 for P<0.05. Pairing ignored is the decisive error. A secondary group error is also present. The comparison is named 'transmen_12_months_vs_baseline' (testosterone), but the arms are M_to_F on feminizing GAHT. The control arm is an every-third-GSM run starting at GSM5363857, so it holds GSM5363857 (F_to_M_Donor_13_12m, masculinizing) in place of GSM5363858 (M_to_F_Donor_1_baseline): Jaccard_control 0.857."
+   }
+  ]
+ },
+ {
+  "batch": 2,
+  "brief": "skeptic",
+  "items": [
+   {
+    "id": "MED-36092807-GSE106648-Horvathv1-0",
+    "category": "clock_or_preprocessing_difference",
+    "agent_error": false,
+    "evidence": "The agent's arms are the published arms exactly: 140 'MS case' vs 139 'Healthy control', Jaccard 1.0/1.0, and no other samples are in the series. The direction agrees (stored_direction -1, published 'lower'). Covariates are balanced (mean age 40.3 vs 42.0; male 30% vs 25%; ever-smoker 51% vs 48%), so the choice between residual and ANCOVA adjustment cannot move the result. I recomputed Horvath from the GEO GSE106648 series-matrix betas (minfi-processed, all 353 CpGs present) using biolearn Horvath1 coefficients, +0.696 and anti_trafo. Fitting DNAmAge ~ MS + age + sex + smoking reproduces the agent's stored p exactly (0.0582313515 vs 0.0582313515399) and its effect (-0.229 vs -0.2298 residual-SD units; coefficient -0.76 y). The agent's model is therefore a valid age-adjusted estimand run on correct ClockBase values. On the same values, the paper's own estimand (pooled age-acceleration residual, two-sample t) gives HC +0.34 vs MS -0.33, a difference of -0.67 y, p=0.099; with sex added, p=0.065. That is still not significant, and less significant than the agent's result. The paper reports HC +0.72 vs MS -0.73, a difference of -1.45 y, P=0.0002 (Padj 0.0001), about twice the group difference that GEO betas give. Only different input clock values can produce that, i.e. the paper's own preprocessing or normalization of Horvath inputs. The GEO-beta Horvath shows MAE 5.9 y and a median offset of +5.5 y, which is consistent with uncorrected technical calibration. The quote extraction (Blood row 0.72 / -0.73 / 0.0002 / 0.0001) is correct. A paper-side QC exclusion cannot be fully excluded because the paper does not report n, but nothing indicates one. Scripts and outputs are in /Entropy/kying/tmp/claude-1029/-Entropy-Projects-multimodal-protein-clock-output/a66effa1-fff7-4093-b40a-8f58c87819cd/scratchpad/geo/horvath_check.py and GSE106648_Horvath_recomputed.csv."
+   },
+   {
+    "id": "MED-40589934-GSE176394-DunedinPACE-12",
+    "category": "agent_statistical_error",
+    "agent_error": true,
+    "evidence": "The design is paired and longitudinal: the GEO 'individual' field shows M_to_F donors 2-13 each with a baseline and a 6m sample. The agent's stored_test is 'Independent t-test' on 13 vs 13. Its stored d=0.623 and p=0.1253 match a Student t with df 24 (t=1.588), so pairing was ignored. The agent's arms are also wrong for the comparison it names. It calls the comparison 'transmen_6_months_vs_baseline' with condition 'testosterone', but the arms are trans women on feminizing GAHT. They also hold off-by-one contaminants: GSM5363858 (M_to_F_Donor_1_baseline) sits in the 6-month arm and GSM5363857 (F_to_M_Donor_13_12m) in the baseline arm. These group errors are secondary. I recomputed DunedinPACE (biolearn gold-standard normalization on GEO series-matrix betas; 157/173 model probes present, the rest imputed from gold means). It reproduces the agent's result (agent arms unpaired: d=0.65, p=0.109 vs stored 0.62 and 0.125). With corrected arms and the unpaired test (12 vs 12), p=0.175, still no call. With the published arms paired by donor (12 pairs), the mean change is +0.047, 11 of 12 go up, paired t p=0.0012 and Wilcoxon p=0.0034. This matches the paper's Model 1 6-month estimate of 0.046 with p=0.002. The paired analysis is significant without covariates, so the paper's Model 2 adjustment is not the cause. Ignoring the pairing alone turns a significant 'higher' into 'none'. Scripts are in /Entropy/kying/tmp/claude-1029/-Entropy-Projects-multimodal-protein-clock-output/a66effa1-fff7-4093-b40a-8f58c87819cd/scratchpad/geo/pace_check.py and GSE176394_DunedinPACE_recomputed.csv."
+   },
+   {
+    "id": "MED-40589934-GSE176394-DunedinPACE-13",
+    "category": "agent_statistical_error",
+    "agent_error": true,
+    "evidence": "The design is paired: the GEO 'individual' field shows M_to_F donors 1-13 each with a baseline and a 12m sample. The agent's stored_test is 'Independent t-test' on 13 vs 13. Its stored d=0.477 and p=0.2362 equal a Student t with df 24 (t=1.215), so pairing was ignored. The arms carry secondary group errors. The comparison is named 'transmen_12_months_vs_baseline' with condition 'testosterone', but the arms are trans women on feminizing GAHT. The baseline arm swaps M_to_F_Donor_1_baseline (GSM5363858) for F_to_M_Donor_13_12m (GSM5363857), which leaves Donor 1's 12m sample without its baseline. I recomputed DunedinPACE (biolearn, GEO series-matrix betas). The agent arms unpaired give d=0.51, p=0.206, close to the stored values. With corrected arms and the unpaired test (13 vs 13), p=0.308, still no call. With the published arms paired by donor (13 pairs), the mean change is +0.034, 10 of 13 go up, paired t p=0.0196 and Wilcoxon p=0.021. This matches the paper's Model 1 12-month estimate of 0.032 with p=0.02. Even the agent's own 12 within-donor pairs, analysed paired, give p=0.038. Covariate adjustment (the paper's Model 2: age, BMI, cell proportions) is not needed for significance. The independent t-test on repeated measures is what turns the paper's significant 'higher' into 'none'. Scripts are in /Entropy/kying/tmp/claude-1029/-Entropy-Projects-multimodal-protein-clock-output/a66effa1-fff7-4093-b40a-8f58c87819cd/scratchpad/geo/pace_check.py and GSE176394_DunedinPACE_recomputed.csv."
+   }
+  ]
+ }
+]

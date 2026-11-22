@@ -1,0 +1,92 @@
+{
+ "final": "final-2026-10-10",
+ "comparisons": 60,
+ "series": 56,
+ "models": [
+  "gpt-6-astra",
+  "gpt-6-sol",
+  "gpt-6-luna",
+  "gpt-5.5"
+ ],
+ "recomputation_check": {
+  "rows": 60,
+  "equal": 60,
+  "unequal": []
+ },
+ "runs": {
+  "planned": 224,
+  "status_0": 224,
+  "timed_out": 0,
+  "excluded": 0,
+  "no_comparison": 0,
+  "web_searches": 0,
+  "input_tokens": 26282223,
+  "cached_input_tokens": 20867484,
+  "output_tokens": 1077252,
+  "median_seconds": 68.0
+ },
+ "by_model": {
+  "gpt-5.5": {
+   "higher": {
+    "found": 27,
+    "same_direction": 27,
+    "recurs": 27
+   },
+   "lower": {
+    "found": 27,
+    "same_direction": 27,
+    "recurs": 24
+   }
+  },
+  "gpt-6-astra": {
+   "higher": {
+    "found": 28,
+    "same_direction": 28,
+    "recurs": 28
+   },
+   "lower": {
+    "found": 29,
+    "same_direction": 29,
+    "recurs": 28
+   }
+  },
+  "gpt-6-luna": {
+   "higher": {
+    "found": 25,
+    "same_direction": 25,
+    "recurs": 25
+   },
+   "lower": {
+    "found": 27,
+    "same_direction": 27,
+    "recurs": 26
+   }
+  },
+  "gpt-6-sol": {
+   "higher": {
+    "found": 27,
+    "same_direction": 27,
+    "recurs": 27
+   },
+   "lower": {
+    "found": 27,
+    "same_direction": 27,
+    "recurs": 25
+   }
+  }
+ },
+ "across_models": {
+  "higher": {
+   "found_by_any": 28,
+   "recurs_in_any": 28,
+   "recurs_in_two_or_more": 28,
+   "recurs_in_all": 24
+  },
+  "lower": {
+   "found_by_any": 29,
+   "recurs_in_any": 28,
+   "recurs_in_two_or_more": 27,
+   "recurs_in_all": 23
+  }
+ }
+}

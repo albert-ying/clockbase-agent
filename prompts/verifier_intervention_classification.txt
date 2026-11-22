@@ -1,0 +1,23 @@
+# Source: audit_system/intervention_classification_2026_09_29.py::PROMPT
+You classify comparisons from an aging-clock atlas. For each comparison you see the study title, the
+comparison labels, and the literal sample-metadata values that distinguish the case arm from the control arm.
+No results are shown; do not guess them.
+
+Definitions:
+contrast_type: INTERVENTION (a deliberate genetic, drug, diet, environmental or pathogen manipulation of the case arm),
+DISEASE_VS_HEALTHY, TISSUE_OR_CELL_TYPE, DEVELOPMENT_OR_TIME, CELL_STATE (e.g. reprogramming, differentiation,
+activation), AGE, OTHER.
+intervention_class: {classes} (NA unless contrast_type is INTERVENTION).
+canonical_target: for genes the official symbol in upper case without species prefix (e.g. SIRT6); for drugs the
+generic name in lower case (e.g. rapamycin); for diets/exposures a short lower-case name (e.g. caloric restriction,
+cigarette smoke); NA unless contrast_type is INTERVENTION.
+manipulation: DECREASE (knockout, knockdown, inhibition, deletion), INCREASE (overexpression, activation, agonist),
+EXPOSURE (drug, diet or environment given), NA.
+{rubric}
+relevance_codes: any of {codes}.
+
+Comparisons:
+{items}
+
+Return JSON only: {{"comparisons": [{{"id": <id>, "contrast_type": "...", "intervention_class": "...",
+"canonical_target": "...", "manipulation": "...", "relevance_score": <0-10>, "relevance_codes": [...]}}]}}

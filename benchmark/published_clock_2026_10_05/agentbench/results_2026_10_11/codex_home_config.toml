@@ -1,0 +1,21 @@
+# Codex home of the ClockEffectBench agent reruns (2026-10-11): no user instructions, skills, plugins or web search;
+# the OpenAI API key comes from the environment of each run and is not stored here.
+model_provider = "openai_env"
+model_reasoning_effort = "medium"
+web_search = "disabled"
+
+[model_providers.openai_env]
+name = "OpenAI API (key from the environment)"
+base_url = "https://api.openai.com/v1"
+env_key = "OPENAI_API_KEY"
+wire_api = "responses"
+
+[features]
+multi_agent = false
+plugins = false
+apps = false
+memories = false
+skill_search = false
+browser_use = false
+computer_use = false
+goals = false

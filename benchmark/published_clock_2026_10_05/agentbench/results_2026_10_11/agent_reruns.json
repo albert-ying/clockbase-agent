@@ -1,0 +1,3094 @@
+{
+ "records": 158,
+ "series": 61,
+ "papers": 47,
+ "models": [
+  "gpt-6-astra",
+  "gpt-6-sol",
+  "gpt-6-luna",
+  "gpt-5.5"
+ ],
+ "runs": {
+  "planned": 244,
+  "completed": 243,
+  "with_results": 230,
+  "excluded_by_audit": 1,
+  "with_network_attempt_in_a_command": 0,
+  "input_tokens": 32199677,
+  "cached_input_tokens": 26970767,
+  "output_tokens": 1411936,
+  "median_seconds": 63.0
+ },
+ "coverage_status": {
+  "R:gpt-6-astra:raw": {
+   "REPORTED": 84,
+   "NO_MATCHING_COMPARISON": 57,
+   "NO_REPORTED_DIRECTION": 5,
+   "NO_RESULTS": 12
+  },
+  "R:gpt-6-astra:recomputed": {
+   "TESTED": 80,
+   "NO_MATCHING_COMPARISON": 57,
+   "EMPTY_ARM": 5,
+   "NO_RESULTS": 12,
+   "DESCRIPTIVE": 4
+  },
+  "R:gpt-6-sol:raw": {
+   "REPORTED": 86,
+   "NO_MATCHING_COMPARISON": 65,
+   "NO_RESULTS": 7
+  },
+  "R:gpt-6-sol:recomputed": {
+   "TESTED": 81,
+   "NO_MATCHING_COMPARISON": 65,
+   "NO_RESULTS": 7,
+   "DESCRIPTIVE": 5
+  },
+  "R:gpt-6-luna:raw": {
+   "REPORTED": 92,
+   "NO_MATCHING_COMPARISON": 56,
+   "NO_REPORTED_DIRECTION": 1,
+   "NO_RESULTS": 9
+  },
+  "R:gpt-6-luna:recomputed": {
+   "TESTED": 87,
+   "NO_MATCHING_COMPARISON": 56,
+   "DESCRIPTIVE": 6,
+   "NO_RESULTS": 9
+  },
+  "R:gpt-5.5:raw": {
+   "REPORTED": 100,
+   "NO_MATCHING_COMPARISON": 53,
+   "NO_RESULTS": 4,
+   "NO_REPORTED_DIRECTION": 1
+  },
+  "R:gpt-5.5:recomputed": {
+   "TESTED": 95,
+   "NO_MATCHING_COMPARISON": 53,
+   "DESCRIPTIVE": 6,
+   "NO_RESULTS": 4
+  }
+ },
+ "own_coverage": {
+  "S0": {
+   "records": 158,
+   "covered": 158,
+   "direction_agreement": 0.803921568627451,
+   "direction_n": 51,
+   "call_agreement": 0.3203125,
+   "call_balanced_accuracy": 0.3333333333333333,
+   "call_n": 128,
+   "call_classes": {
+    "higher": 41,
+    "lower": 10,
+    "none": 77
+   },
+   "significance_agreement": 0.3984375,
+   "significance_n": 128,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.6428113553113554,
+    0.9361702127659575
+   ],
+   "call_agreement_interval": [
+    0.2092970401691332,
+    0.4488229149927687
+   ],
+   "call_balanced_accuracy_interval": [
+    0.3333333333333333,
+    0.3333333333333333
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "S1": {
+   "records": 158,
+   "covered": 88,
+   "direction_agreement": 0.8666666666666667,
+   "direction_n": 30,
+   "call_agreement": 0.8243243243243243,
+   "call_balanced_accuracy": 0.712121212121212,
+   "call_n": 74,
+   "call_classes": {
+    "higher": 22,
+    "lower": 8,
+    "none": 44
+   },
+   "significance_agreement": 0.8378378378378378,
+   "significance_n": 74,
+   "significance_alpha_assumed": 57,
+   "direction_agreement_interval": [
+    0.6923076923076923,
+    0.9743589743589743
+   ],
+   "call_agreement_interval": [
+    0.746017316017316,
+    0.9027777777777778
+   ],
+   "call_balanced_accuracy_interval": [
+    0.5316203872853489,
+    0.8615785834535833
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9659090909090909,
+    "detection_auroc": 0.9159090909090909,
+    "same_direction_both_significant": [
+     19,
+     20
+    ],
+    "replicated": [
+     19,
+     30
+    ],
+    "sign_matches_significant": [
+     26,
+     30
+    ],
+    "significant_only_in_clockbase": [
+     2,
+     44
+    ],
+    "reference": {
+     "higher": 22,
+     "lower": 8,
+     "none": 44
+    },
+    "direction_auroc_interval": [
+     0.8671614583333334,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8160521739130435,
+     0.9729804096549379
+    ],
+    "clusters": 32
+   }
+  },
+  "S2c": {
+   "records": 158,
+   "covered": 93,
+   "direction_agreement": 0.9393939393939394,
+   "direction_n": 33,
+   "call_agreement": 0.8461538461538461,
+   "call_balanced_accuracy": 0.7444444444444445,
+   "call_n": 78,
+   "call_classes": {
+    "higher": 25,
+    "lower": 8,
+    "none": 45
+   },
+   "significance_agreement": 0.8589743589743589,
+   "significance_n": 78,
+   "significance_alpha_assumed": 59,
+   "direction_agreement_interval": [
+    0.8235294117647058,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.7719172932330827,
+    0.9166666666666666
+   ],
+   "call_balanced_accuracy_interval": [
+    0.5722927807486632,
+    0.8909786485444381
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.98,
+    "detection_auroc": 0.9333333333333333,
+    "same_direction_both_significant": [
+     24,
+     25
+    ],
+    "replicated": [
+     24,
+     33
+    ],
+    "sign_matches_significant": [
+     31,
+     33
+    ],
+    "significant_only_in_clockbase": [
+     3,
+     45
+    ],
+    "reference": {
+     "higher": 25,
+     "lower": 8,
+     "none": 45
+    },
+    "direction_auroc_interval": [
+     0.9,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8575711644306846,
+     0.9795719699673973
+    ],
+    "clusters": 32
+   }
+  },
+  "S3": {
+   "records": 158,
+   "covered": 99,
+   "direction_agreement": 0.9428571428571428,
+   "direction_n": 35,
+   "call_agreement": 0.7397260273972602,
+   "call_balanced_accuracy": 0.6694736842105264,
+   "call_n": 73,
+   "call_classes": {
+    "higher": 25,
+    "lower": 10,
+    "none": 38
+   },
+   "significance_agreement": 0.7534246575342466,
+   "significance_n": 73,
+   "significance_alpha_assumed": 54,
+   "direction_agreement_interval": [
+    0.875,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.6233659782840111,
+    0.8627814088598402
+   ],
+   "call_balanced_accuracy_interval": [
+    0.47467674925267267,
+    0.8464603758169935
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.952,
+    "detection_auroc": 0.7992481203007519,
+    "same_direction_both_significant": [
+     21,
+     22
+    ],
+    "replicated": [
+     21,
+     35
+    ],
+    "sign_matches_significant": [
+     33,
+     35
+    ],
+    "significant_only_in_clockbase": [
+     5,
+     38
+    ],
+    "reference": {
+     "higher": 25,
+     "lower": 10,
+     "none": 38
+    },
+    "direction_auroc_interval": [
+     0.8878457507404877,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.6632542664048932,
+     0.8994287109374999
+    ],
+    "clusters": 28
+   }
+  },
+  "S4:openai:gpt-4.1": {
+   "records": 158,
+   "covered": 143,
+   "direction_agreement": 0.7209302325581395,
+   "direction_n": 43,
+   "call_agreement": 0.6228070175438597,
+   "call_balanced_accuracy": 0.5489970123772941,
+   "call_n": 114,
+   "call_classes": {
+    "higher": 33,
+    "lower": 10,
+    "none": 71
+   },
+   "significance_agreement": 0.6491228070175439,
+   "significance_n": 114,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.5095588235294117,
+    0.8787878787878788
+   ],
+   "call_agreement_interval": [
+    0.5050292844410492,
+    0.7117760617760617
+   ],
+   "call_balanced_accuracy_interval": [
+    0.4287014024787998,
+    0.6624719318621758
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "S4:openai:gpt-5.5": {
+   "records": 158,
+   "covered": 143,
+   "direction_agreement": 0.6976744186046512,
+   "direction_n": 43,
+   "call_agreement": 0.6666666666666666,
+   "call_balanced_accuracy": 0.5454403186797553,
+   "call_n": 114,
+   "call_classes": {
+    "higher": 33,
+    "lower": 10,
+    "none": 71
+   },
+   "significance_agreement": 0.6929824561403509,
+   "significance_n": 114,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.4650737379466818,
+    0.8936170212765957
+   ],
+   "call_agreement_interval": [
+    0.54754243281471,
+    0.7706422018348624
+   ],
+   "call_balanced_accuracy_interval": [
+    0.399170991045991,
+    0.706522178290554
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "S4:openai:gpt-6-astra": {
+   "records": 158,
+   "covered": 143,
+   "direction_agreement": 0.6046511627906976,
+   "direction_n": 43,
+   "call_agreement": 0.7017543859649122,
+   "call_balanced_accuracy": 0.5534073125622422,
+   "call_n": 114,
+   "call_classes": {
+    "higher": 33,
+    "lower": 10,
+    "none": 71
+   },
+   "significance_agreement": 0.7368421052631579,
+   "significance_n": 114,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.3665909090909091,
+    0.7954661410018552
+   ],
+   "call_agreement_interval": [
+    0.5999590163934426,
+    0.7948818897637795
+   ],
+   "call_balanced_accuracy_interval": [
+    0.4084710858027421,
+    0.7202336628364026
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "S4:openai:gpt-6-luna": {
+   "records": 158,
+   "covered": 143,
+   "direction_agreement": 0.5348837209302325,
+   "direction_n": 43,
+   "call_agreement": 0.631578947368421,
+   "call_balanced_accuracy": 0.4888177550149381,
+   "call_n": 114,
+   "call_classes": {
+    "higher": 33,
+    "lower": 10,
+    "none": 71
+   },
+   "significance_agreement": 0.6666666666666666,
+   "significance_n": 114,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.2977784730913642,
+    0.7213342440801457
+   ],
+   "call_agreement_interval": [
+    0.5306078083407276,
+    0.7163246093014498
+   ],
+   "call_balanced_accuracy_interval": [
+    0.352085113960114,
+    0.6501623712221538
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "S4:openai:gpt-6-sol": {
+   "records": 158,
+   "covered": 143,
+   "direction_agreement": 0.6046511627906976,
+   "direction_n": 43,
+   "call_agreement": 0.6842105263157895,
+   "call_balanced_accuracy": 0.5494238156209987,
+   "call_n": 114,
+   "call_classes": {
+    "higher": 33,
+    "lower": 10,
+    "none": 71
+   },
+   "significance_agreement": 0.7192982456140351,
+   "significance_n": 114,
+   "significance_alpha_assumed": 0,
+   "direction_agreement_interval": [
+    0.3703502415458937,
+    0.7895042839657282
+   ],
+   "call_agreement_interval": [
+    0.5759939393939394,
+    0.7830267295597485
+   ],
+   "call_balanced_accuracy_interval": [
+    0.41006662216105155,
+    0.7129393725120469
+   ],
+   "units": 47,
+   "findings": null
+  },
+  "R:gpt-6-astra:raw": {
+   "records": 158,
+   "covered": 84,
+   "direction_agreement": 0.9259259259259259,
+   "direction_n": 27,
+   "call_agreement": 0.8285714285714286,
+   "call_balanced_accuracy": 0.7029346622369879,
+   "call_n": 70,
+   "call_classes": {
+    "higher": 20,
+    "lower": 7,
+    "none": 43
+   },
+   "significance_agreement": 0.8285714285714286,
+   "significance_n": 70,
+   "significance_alpha_assumed": 52,
+   "direction_agreement_interval": [
+    0.809478021978022,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.6980945878848063,
+    0.9348172987974098
+   ],
+   "call_balanced_accuracy_interval": [
+    0.5124652777777778,
+    0.8855085772284178
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9785714285714285,
+    "detection_auroc": 0.8888888888888888,
+    "same_direction_both_significant": [
+     18,
+     18
+    ],
+    "replicated": [
+     18,
+     27
+    ],
+    "sign_matches_significant": [
+     25,
+     27
+    ],
+    "significant_only_in_clockbase": [
+     3,
+     43
+    ],
+    "reference": {
+     "higher": 20,
+     "lower": 7,
+     "none": 43
+    },
+    "direction_auroc_interval": [
+     0.8768945868945869,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.791228851010101,
+     0.968639037433155
+    ],
+    "clusters": 29
+   }
+  },
+  "R:gpt-6-astra:recomputed": {
+   "records": 158,
+   "covered": 84,
+   "direction_agreement": 0.9259259259259259,
+   "direction_n": 27,
+   "call_agreement": 0.8,
+   "call_balanced_accuracy": 0.678516057585825,
+   "call_n": 70,
+   "call_classes": {
+    "higher": 20,
+    "lower": 7,
+    "none": 43
+   },
+   "significance_agreement": 0.8,
+   "significance_n": 70,
+   "significance_alpha_assumed": 52,
+   "direction_agreement_interval": [
+    0.809478021978022,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.6666666666666666,
+    0.9038527397260274
+   ],
+   "call_balanced_accuracy_interval": [
+    0.4850833333333333,
+    0.8668291798679088
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9714285714285714,
+    "detection_auroc": 0.8845822566752799,
+    "same_direction_both_significant": [
+     17,
+     17
+    ],
+    "replicated": [
+     17,
+     27
+    ],
+    "sign_matches_significant": [
+     25,
+     27
+    ],
+    "significant_only_in_clockbase": [
+     4,
+     43
+    ],
+    "reference": {
+     "higher": 20,
+     "lower": 7,
+     "none": 43
+    },
+    "direction_auroc_interval": [
+     0.8571428571428571,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.7939321789321789,
+     0.9518977551405395
+    ],
+    "clusters": 29
+   }
+  },
+  "R:gpt-6-sol:raw": {
+   "records": 158,
+   "covered": 86,
+   "direction_agreement": 0.9259259259259259,
+   "direction_n": 27,
+   "call_agreement": 0.9027777777777778,
+   "call_balanced_accuracy": 0.8576719576719577,
+   "call_n": 72,
+   "call_classes": {
+    "higher": 21,
+    "lower": 6,
+    "none": 45
+   },
+   "significance_agreement": 0.9027777777777778,
+   "significance_n": 72,
+   "significance_alpha_assumed": 55,
+   "direction_agreement_interval": [
+    0.7894736842105263,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.8115746180963572,
+    0.9753445305770887
+   ],
+   "call_balanced_accuracy_interval": [
+    0.6763071895424837,
+    0.9746958812260537
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9920634920634921,
+    "detection_auroc": 0.9366255144032922,
+    "same_direction_both_significant": [
+     21,
+     21
+    ],
+    "replicated": [
+     21,
+     27
+    ],
+    "sign_matches_significant": [
+     25,
+     27
+    ],
+    "significant_only_in_clockbase": [
+     1,
+     45
+    ],
+    "reference": {
+     "higher": 21,
+     "lower": 6,
+     "none": 45
+    },
+    "direction_auroc_interval": [
+     0.9583333333333334,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8345838734767954,
+     0.992601898923445
+    ],
+    "clusters": 31
+   }
+  },
+  "R:gpt-6-sol:recomputed": {
+   "records": 158,
+   "covered": 86,
+   "direction_agreement": 0.9259259259259259,
+   "direction_n": 27,
+   "call_agreement": 0.8571428571428571,
+   "call_balanced_accuracy": 0.8421926910299004,
+   "call_n": 70,
+   "call_classes": {
+    "higher": 21,
+    "lower": 6,
+    "none": 43
+   },
+   "significance_agreement": 0.8571428571428571,
+   "significance_n": 70,
+   "significance_alpha_assumed": 53,
+   "direction_agreement_interval": [
+    0.7894736842105263,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.7719172932330827,
+    0.9342159188955996
+   ],
+   "call_balanced_accuracy_interval": [
+    0.6629134697357204,
+    0.9479293306071322
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9920634920634921,
+    "detection_auroc": 0.9250645994832042,
+    "same_direction_both_significant": [
+     22,
+     22
+    ],
+    "replicated": [
+     22,
+     27
+    ],
+    "sign_matches_significant": [
+     25,
+     27
+    ],
+    "significant_only_in_clockbase": [
+     5,
+     43
+    ],
+    "reference": {
+     "higher": 21,
+     "lower": 6,
+     "none": 43
+    },
+    "direction_auroc_interval": [
+     0.9603557312252964,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8187984198998749,
+     0.9821945175919831
+    ],
+    "clusters": 30
+   }
+  },
+  "R:gpt-6-luna:raw": {
+   "records": 158,
+   "covered": 92,
+   "direction_agreement": 0.9,
+   "direction_n": 30,
+   "call_agreement": 0.7733333333333333,
+   "call_balanced_accuracy": 0.6423740510697032,
+   "call_n": 75,
+   "call_classes": {
+    "higher": 23,
+    "lower": 7,
+    "none": 45
+   },
+   "significance_agreement": 0.7733333333333333,
+   "significance_n": 75,
+   "significance_alpha_assumed": 57,
+   "direction_agreement_interval": [
+    0.7647058823529411,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.6296031746031746,
+    0.891355072463768
+   ],
+   "call_balanced_accuracy_interval": [
+    0.4595424533119633,
+    0.8224147854896675
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9813664596273292,
+    "detection_auroc": 0.8666666666666667,
+    "same_direction_both_significant": [
+     16,
+     16
+    ],
+    "replicated": [
+     16,
+     30
+    ],
+    "sign_matches_significant": [
+     27,
+     30
+    ],
+    "significant_only_in_clockbase": [
+     3,
+     45
+    ],
+    "reference": {
+     "higher": 23,
+     "lower": 7,
+     "none": 45
+    },
+    "direction_auroc_interval": [
+     0.8888888888888888,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.7906316572681704,
+     0.9387503775496548
+    ],
+    "clusters": 31
+   }
+  },
+  "R:gpt-6-luna:recomputed": {
+   "records": 158,
+   "covered": 93,
+   "direction_agreement": 0.9354838709677419,
+   "direction_n": 31,
+   "call_agreement": 0.821917808219178,
+   "call_balanced_accuracy": 0.706052289469883,
+   "call_n": 73,
+   "call_classes": {
+    "higher": 23,
+    "lower": 7,
+    "none": 43
+   },
+   "significance_agreement": 0.821917808219178,
+   "significance_n": 73,
+   "significance_alpha_assumed": 55,
+   "direction_agreement_interval": [
+    0.8234768907563025,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.7182468495181616,
+    0.9062604166666667
+   ],
+   "call_balanced_accuracy_interval": [
+    0.5403504565087817,
+    0.8776029856386999
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9813664596273292,
+    "detection_auroc": 0.9147286821705426,
+    "same_direction_both_significant": [
+     21,
+     21
+    ],
+    "replicated": [
+     21,
+     30
+    ],
+    "sign_matches_significant": [
+     28,
+     30
+    ],
+    "significant_only_in_clockbase": [
+     4,
+     43
+    ],
+    "reference": {
+     "higher": 23,
+     "lower": 7,
+     "none": 43
+    },
+    "direction_auroc_interval": [
+     0.8908491508491508,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8211753383418585,
+     0.9710848424916145
+    ],
+    "clusters": 30
+   }
+  },
+  "R:gpt-5.5:raw": {
+   "records": 158,
+   "covered": 100,
+   "direction_agreement": 0.9411764705882353,
+   "direction_n": 34,
+   "call_agreement": 0.7926829268292683,
+   "call_balanced_accuracy": 0.7113095238095238,
+   "call_n": 82,
+   "call_classes": {
+    "higher": 27,
+    "lower": 7,
+    "none": 48
+   },
+   "significance_agreement": 0.7926829268292683,
+   "significance_n": 82,
+   "significance_alpha_assumed": 64,
+   "direction_agreement_interval": [
+    0.84,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.6666666666666666,
+    0.8979785585120124
+   ],
+   "call_balanced_accuracy_interval": [
+    0.5112806308112051,
+    0.8774554091924752
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9841269841269841,
+    "detection_auroc": 0.8946078431372549,
+    "same_direction_both_significant": [
+     22,
+     22
+    ],
+    "replicated": [
+     22,
+     34
+    ],
+    "sign_matches_significant": [
+     32,
+     34
+    ],
+    "significant_only_in_clockbase": [
+     5,
+     48
+    ],
+    "reference": {
+     "higher": 27,
+     "lower": 7,
+     "none": 48
+    },
+    "direction_auroc_interval": [
+     0.9106071428571428,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8186567934657918,
+     0.9532496197422525
+    ],
+    "clusters": 32
+   }
+  },
+  "R:gpt-5.5:recomputed": {
+   "records": 158,
+   "covered": 101,
+   "direction_agreement": 0.9411764705882353,
+   "direction_n": 34,
+   "call_agreement": 0.8227848101265823,
+   "call_balanced_accuracy": 0.7091893613632744,
+   "call_n": 79,
+   "call_classes": {
+    "higher": 26,
+    "lower": 7,
+    "none": 46
+   },
+   "significance_agreement": 0.8227848101265823,
+   "significance_n": 79,
+   "significance_alpha_assumed": 61,
+   "direction_agreement_interval": [
+    0.84,
+    1.0
+   ],
+   "call_agreement_interval": [
+    0.7272727272727273,
+    0.9047779922779923
+   ],
+   "call_balanced_accuracy_interval": [
+    0.5465816942719117,
+    0.8800889850889849
+   ],
+   "units": 47,
+   "findings": {
+    "direction_auroc": 0.9835164835164835,
+    "detection_auroc": 0.9123847167325428,
+    "same_direction_both_significant": [
+     24,
+     24
+    ],
+    "replicated": [
+     24,
+     33
+    ],
+    "sign_matches_significant": [
+     31,
+     33
+    ],
+    "significant_only_in_clockbase": [
+     5,
+     46
+    ],
+    "reference": {
+     "higher": 26,
+     "lower": 7,
+     "none": 46
+    },
+    "direction_auroc_interval": [
+     0.9074074074074074,
+     1.0
+    ],
+    "detection_auroc_interval": [
+     0.8256361988810968,
+     0.9643895855102751
+    ],
+    "clusters": 31
+   }
+  }
+ },
+ "shared_agent_systems": {
+  "records": 68,
+  "papers": 28,
+  "metrics": {
+   "S0": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.7142857142857143,
+    "direction_n": 21,
+    "call_agreement": 0.2542372881355932,
+    "call_balanced_accuracy": 0.3333333333333333,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.3559322033898305,
+    "significance_n": 59,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.44427083333333334,
+     0.9130434782608695
+    ],
+    "call_agreement_interval": [
+     0.1320754716981132,
+     0.4255417651694247
+    ],
+    "call_balanced_accuracy_interval": [
+     0.3333333333333333,
+     0.3333333333333333
+    ],
+    "units": 28,
+    "findings": null
+   },
+   "S1": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.8571428571428571,
+    "direction_n": 21,
+    "call_agreement": 0.8305084745762712,
+    "call_balanced_accuracy": 0.7046783625730993,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.8305084745762712,
+    "significance_n": 59,
+    "significance_alpha_assumed": 46,
+    "direction_agreement_interval": [
+     0.6818181818181818,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7287750385208012,
+     0.9216063348416289
+    ],
+    "call_balanced_accuracy_interval": [
+     0.5045801735328277,
+     0.8969090413943356
+    ],
+    "units": 28,
+    "findings": {
+     "direction_auroc": 0.9777777777777777,
+     "detection_auroc": 0.9035087719298246,
+     "same_direction_both_significant": [
+      13,
+      13
+     ],
+     "replicated": [
+      13,
+      21
+     ],
+     "sign_matches_significant": [
+      18,
+      21
+     ],
+     "significant_only_in_clockbase": [
+      2,
+      38
+     ],
+     "reference": {
+      "higher": 15,
+      "lower": 6,
+      "none": 38
+     },
+     "direction_auroc_interval": [
+      0.875,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.7825923504413207,
+      0.9735549844420811
+     ],
+     "clusters": 27
+    }
+   },
+   "S2c": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.9523809523809523,
+    "direction_n": 21,
+    "call_agreement": 0.847457627118644,
+    "call_balanced_accuracy": 0.7269005847953216,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.847457627118644,
+    "significance_n": 59,
+    "significance_alpha_assumed": 46,
+    "direction_agreement_interval": [
+     0.8260230179028133,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7457627118644068,
+     0.9388061224489797
+    ],
+    "call_balanced_accuracy_interval": [
+     0.527106089969462,
+     0.9164087301587301
+    ],
+    "units": 28,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.9085213032581454,
+     "same_direction_both_significant": [
+      14,
+      14
+     ],
+     "replicated": [
+      14,
+      21
+     ],
+     "sign_matches_significant": [
+      20,
+      21
+     ],
+     "significant_only_in_clockbase": [
+      2,
+      38
+     ],
+     "reference": {
+      "higher": 15,
+      "lower": 6,
+      "none": 38
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.8084814821481427,
+      0.9784815023570403
+     ],
+     "clusters": 27
+    }
+   },
+   "S4:openai:gpt-4.1": {
+    "records": 68,
+    "covered": 64,
+    "direction_agreement": 0.6842105263157895,
+    "direction_n": 19,
+    "call_agreement": 0.5818181818181818,
+    "call_balanced_accuracy": 0.5527065527065528,
+    "call_n": 55,
+    "call_classes": {
+     "higher": 13,
+     "lower": 6,
+     "none": 36
+    },
+    "significance_agreement": 0.6,
+    "significance_n": 55,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.391304347826087,
+     0.9375919117647058
+    ],
+    "call_agreement_interval": [
+     0.3901816824290692,
+     0.7368421052631579
+    ],
+    "call_balanced_accuracy_interval": [
+     0.3996143419489008,
+     0.7357417076167075
+    ],
+    "units": 28,
+    "findings": null
+   },
+   "S4:openai:gpt-5.5": {
+    "records": 68,
+    "covered": 64,
+    "direction_agreement": 0.6842105263157895,
+    "direction_n": 19,
+    "call_agreement": 0.6727272727272727,
+    "call_balanced_accuracy": 0.5961538461538461,
+    "call_n": 55,
+    "call_classes": {
+     "higher": 13,
+     "lower": 6,
+     "none": 36
+    },
+    "significance_agreement": 0.6909090909090909,
+    "significance_n": 55,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.42105263157894735,
+     0.9334374999999999
+    ],
+    "call_agreement_interval": [
+     0.5106274424663482,
+     0.8064657611771363
+    ],
+    "call_balanced_accuracy_interval": [
+     0.40195640756302525,
+     0.8137436008886314
+    ],
+    "units": 28,
+    "findings": null
+   },
+   "S4:openai:gpt-6-astra": {
+    "records": 68,
+    "covered": 64,
+    "direction_agreement": 0.631578947368421,
+    "direction_n": 19,
+    "call_agreement": 0.7272727272727273,
+    "call_balanced_accuracy": 0.6075498575498576,
+    "call_n": 55,
+    "call_classes": {
+     "higher": 13,
+     "lower": 6,
+     "none": 36
+    },
+    "significance_agreement": 0.7454545454545455,
+    "significance_n": 55,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.36363636363636365,
+     0.8888888888888888
+    ],
+    "call_agreement_interval": [
+     0.5891877177700349,
+     0.8378378378378378
+    ],
+    "call_balanced_accuracy_interval": [
+     0.4167929292929292,
+     0.8247863247863249
+    ],
+    "units": 28,
+    "findings": null
+   },
+   "S4:openai:gpt-6-luna": {
+    "records": 68,
+    "covered": 64,
+    "direction_agreement": 0.5789473684210527,
+    "direction_n": 19,
+    "call_agreement": 0.6181818181818182,
+    "call_balanced_accuracy": 0.5192307692307693,
+    "call_n": 55,
+    "call_classes": {
+     "higher": 13,
+     "lower": 6,
+     "none": 36
+    },
+    "significance_agreement": 0.6363636363636364,
+    "significance_n": 55,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.3125,
+     0.8333333333333334
+    ],
+    "call_agreement_interval": [
+     0.4489253148067738,
+     0.7324178403755869
+    ],
+    "call_balanced_accuracy_interval": [
+     0.3438065752616836,
+     0.7148179200542005
+    ],
+    "units": 28,
+    "findings": null
+   },
+   "S4:openai:gpt-6-sol": {
+    "records": 68,
+    "covered": 64,
+    "direction_agreement": 0.6842105263157895,
+    "direction_n": 19,
+    "call_agreement": 0.7090909090909091,
+    "call_balanced_accuracy": 0.6146723646723646,
+    "call_n": 55,
+    "call_classes": {
+     "higher": 13,
+     "lower": 6,
+     "none": 36
+    },
+    "significance_agreement": 0.7272727272727273,
+    "significance_n": 55,
+    "significance_alpha_assumed": 0,
+    "direction_agreement_interval": [
+     0.39124396135265704,
+     0.9411764705882353
+    ],
+    "call_agreement_interval": [
+     0.5531774916013438,
+     0.8226043643263757
+    ],
+    "call_balanced_accuracy_interval": [
+     0.4236596214373142,
+     0.8310791418016482
+    ],
+    "units": 28,
+    "findings": null
+   },
+   "R:gpt-6-astra:raw": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.9523809523809523,
+    "direction_n": 21,
+    "call_agreement": 0.847457627118644,
+    "call_balanced_accuracy": 0.7403508771929825,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.847457627118644,
+    "significance_n": 59,
+    "significance_alpha_assumed": 46,
+    "direction_agreement_interval": [
+     0.8260230179028133,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7068711967545639,
+     0.9400074626865671
+    ],
+    "call_balanced_accuracy_interval": [
+     0.5279189527873739,
+     0.9213303376906318
+    ],
+    "units": 28,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.9072681704260651,
+     "same_direction_both_significant": [
+      15,
+      15
+     ],
+     "replicated": [
+      15,
+      21
+     ],
+     "sign_matches_significant": [
+      20,
+      21
+     ],
+     "significant_only_in_clockbase": [
+      3,
+      38
+     ],
+     "reference": {
+      "higher": 15,
+      "lower": 6,
+      "none": 38
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.7795665092545638,
+      0.9829218106995884
+     ],
+     "clusters": 27
+    }
+   },
+   "R:gpt-6-astra:recomputed": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.9523809523809523,
+    "direction_n": 21,
+    "call_agreement": 0.8305084745762712,
+    "call_balanced_accuracy": 0.7181286549707603,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.8305084745762712,
+    "significance_n": 59,
+    "significance_alpha_assumed": 46,
+    "direction_agreement_interval": [
+     0.8260230179028133,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.6981022378236068,
+     0.9183811362382791
+    ],
+    "call_balanced_accuracy_interval": [
+     0.5069570707070707,
+     0.9028046594982079
+    ],
+    "units": 28,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.8947368421052632,
+     "same_direction_both_significant": [
+      14,
+      14
+     ],
+     "replicated": [
+      14,
+      21
+     ],
+     "sign_matches_significant": [
+      20,
+      21
+     ],
+     "significant_only_in_clockbase": [
+      3,
+      38
+     ],
+     "reference": {
+      "higher": 15,
+      "lower": 6,
+      "none": 38
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.77496875,
+      0.967371632996633
+     ],
+     "clusters": 27
+    }
+   },
+   "R:gpt-6-sol:raw": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.9523809523809523,
+    "direction_n": 21,
+    "call_agreement": 0.9152542372881356,
+    "call_balanced_accuracy": 0.8690058479532164,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.9152542372881356,
+    "significance_n": 59,
+    "significance_alpha_assumed": 46,
+    "direction_agreement_interval": [
+     0.8260230179028133,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.8112505018065035,
+     0.9830508474576272
+    ],
+    "call_balanced_accuracy_interval": [
+     0.6865079365079365,
+     0.9841450216450217
+    ],
+    "units": 28,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.9323308270676691,
+     "same_direction_both_significant": [
+      17,
+      17
+     ],
+     "replicated": [
+      17,
+      21
+     ],
+     "sign_matches_significant": [
+      20,
+      21
+     ],
+     "significant_only_in_clockbase": [
+      1,
+      38
+     ],
+     "reference": {
+      "higher": 15,
+      "lower": 6,
+      "none": 38
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.8128563596491228,
+      1.0
+     ],
+     "clusters": 27
+    }
+   },
+   "R:gpt-6-sol:recomputed": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.9523809523809523,
+    "direction_n": 21,
+    "call_agreement": 0.864406779661017,
+    "call_balanced_accuracy": 0.8426900584795322,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.864406779661017,
+    "significance_n": 59,
+    "significance_alpha_assumed": 46,
+    "direction_agreement_interval": [
+     0.8260230179028133,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7567267267267268,
+     0.9454545454545454
+    ],
+    "call_balanced_accuracy_interval": [
+     0.668319500441926,
+     0.960812324929972
+    ],
+    "units": 28,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.9160401002506265,
+     "same_direction_both_significant": [
+      17,
+      17
+     ],
+     "replicated": [
+      17,
+      21
+     ],
+     "sign_matches_significant": [
+      20,
+      21
+     ],
+     "significant_only_in_clockbase": [
+      4,
+      38
+     ],
+     "reference": {
+      "higher": 15,
+      "lower": 6,
+      "none": 38
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.8026311489508084,
+      0.9869093672285162
+     ],
+     "clusters": 27
+    }
+   },
+   "R:gpt-6-luna:raw": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.9047619047619048,
+    "direction_n": 21,
+    "call_agreement": 0.8135593220338984,
+    "call_balanced_accuracy": 0.6959064327485379,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.8135593220338984,
+    "significance_n": 59,
+    "significance_alpha_assumed": 46,
+    "direction_agreement_interval": [
+     0.7390732265446224,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7020163285502227,
+     0.8987658227848101
+    ],
+    "call_balanced_accuracy_interval": [
+     0.496077264239029,
+     0.8761904761904762
+    ],
+    "units": 28,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.8646616541353384,
+     "same_direction_both_significant": [
+      13,
+      13
+     ],
+     "replicated": [
+      13,
+      21
+     ],
+     "sign_matches_significant": [
+      19,
+      21
+     ],
+     "significant_only_in_clockbase": [
+      3,
+      38
+     ],
+     "reference": {
+      "higher": 15,
+      "lower": 6,
+      "none": 38
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.7494637759583412,
+      0.948770348546889
+     ],
+     "clusters": 27
+    }
+   },
+   "R:gpt-6-luna:recomputed": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.9523809523809523,
+    "direction_n": 21,
+    "call_agreement": 0.8305084745762712,
+    "call_balanced_accuracy": 0.731578947368421,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.8305084745762712,
+    "significance_n": 59,
+    "significance_alpha_assumed": 46,
+    "direction_agreement_interval": [
+     0.8260230179028133,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7048626495347807,
+     0.9216063348416289
+    ],
+    "call_balanced_accuracy_interval": [
+     0.520409947762889,
+     0.9171789321789323
+    ],
+    "units": 28,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.899749373433584,
+     "same_direction_both_significant": [
+      15,
+      15
+     ],
+     "replicated": [
+      15,
+      21
+     ],
+     "sign_matches_significant": [
+      20,
+      21
+     ],
+     "significant_only_in_clockbase": [
+      4,
+      38
+     ],
+     "reference": {
+      "higher": 15,
+      "lower": 6,
+      "none": 38
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.7849438867584029,
+      0.9729872729872729
+     ],
+     "clusters": 27
+    }
+   },
+   "R:gpt-5.5:raw": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.9523809523809523,
+    "direction_n": 21,
+    "call_agreement": 0.8305084745762712,
+    "call_balanced_accuracy": 0.731578947368421,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.8305084745762712,
+    "significance_n": 59,
+    "significance_alpha_assumed": 46,
+    "direction_agreement_interval": [
+     0.8260230179028133,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7076470588235294,
+     0.9167091836734693
+    ],
+    "call_balanced_accuracy_interval": [
+     0.5236736222489531,
+     0.9158848133848133
+    ],
+    "units": 28,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.899749373433584,
+     "same_direction_both_significant": [
+      15,
+      15
+     ],
+     "replicated": [
+      15,
+      21
+     ],
+     "sign_matches_significant": [
+      20,
+      21
+     ],
+     "significant_only_in_clockbase": [
+      4,
+      38
+     ],
+     "reference": {
+      "higher": 15,
+      "lower": 6,
+      "none": 38
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.7760728625250942,
+      0.9753859247187247
+     ],
+     "clusters": 27
+    }
+   },
+   "R:gpt-5.5:recomputed": {
+    "records": 68,
+    "covered": 68,
+    "direction_agreement": 0.9523809523809523,
+    "direction_n": 21,
+    "call_agreement": 0.8305084745762712,
+    "call_balanced_accuracy": 0.731578947368421,
+    "call_n": 59,
+    "call_classes": {
+     "higher": 15,
+     "lower": 6,
+     "none": 38
+    },
+    "significance_agreement": 0.8305084745762712,
+    "significance_n": 59,
+    "significance_alpha_assumed": 46,
+    "direction_agreement_interval": [
+     0.8260230179028133,
+     1.0
+    ],
+    "call_agreement_interval": [
+     0.7048626495347807,
+     0.9216063348416289
+    ],
+    "call_balanced_accuracy_interval": [
+     0.520409947762889,
+     0.9171789321789323
+    ],
+    "units": 28,
+    "findings": {
+     "direction_auroc": 1.0,
+     "detection_auroc": 0.899749373433584,
+     "same_direction_both_significant": [
+      15,
+      15
+     ],
+     "replicated": [
+      15,
+      21
+     ],
+     "sign_matches_significant": [
+      20,
+      21
+     ],
+     "significant_only_in_clockbase": [
+      4,
+      38
+     ],
+     "reference": {
+      "higher": 15,
+      "lower": 6,
+      "none": 38
+     },
+     "direction_auroc_interval": [
+      1.0,
+      1.0
+     ],
+     "detection_auroc_interval": [
+      0.7882597604259095,
+      0.9712175324675324
+     ],
+     "clusters": 27
+    }
+   }
+  }
+ },
+ "model_with_and_without_data": {
+  "gpt-6-astra": {
+   "records": 84,
+   "papers": 32,
+   "metrics": {
+    "S0": {
+     "records": 84,
+     "covered": 84,
+     "direction_agreement": 0.7407407407407407,
+     "direction_n": 27,
+     "call_agreement": 0.2777777777777778,
+     "call_balanced_accuracy": 0.3333333333333333,
+     "call_n": 72,
+     "call_classes": {
+      "higher": 20,
+      "lower": 7,
+      "none": 45
+     },
+     "significance_agreement": 0.375,
+     "significance_n": 72,
+     "significance_alpha_assumed": 0,
+     "direction_agreement_interval": [
+      0.5624375,
+      0.9130434782608695
+     ],
+     "call_agreement_interval": [
+      0.16979680696661828,
+      0.4085842642059251
+     ],
+     "call_balanced_accuracy_interval": [
+      0.3333333333333333,
+      0.3333333333333333
+     ],
+     "units": 32,
+     "findings": null
+    },
+    "S4:openai:gpt-6-astra": {
+     "records": 84,
+     "covered": 78,
+     "direction_agreement": 0.6,
+     "direction_n": 25,
+     "call_agreement": 0.7164179104477612,
+     "call_balanced_accuracy": 0.5952380952380952,
+     "call_n": 67,
+     "call_classes": {
+      "higher": 18,
+      "lower": 7,
+      "none": 42
+     },
+     "significance_agreement": 0.746268656716418,
+     "significance_n": 67,
+     "significance_alpha_assumed": 0,
+     "direction_agreement_interval": [
+      0.34615384615384615,
+      0.8423026315789471
+     ],
+     "call_agreement_interval": [
+      0.5762261089073206,
+      0.8305204105991884
+     ],
+     "call_balanced_accuracy_interval": [
+      0.4068322699450151,
+      0.7976415343915343
+     ],
+     "units": 32,
+     "findings": null
+    },
+    "R:gpt-6-astra:raw": {
+     "records": 84,
+     "covered": 84,
+     "direction_agreement": 0.9259259259259259,
+     "direction_n": 27,
+     "call_agreement": 0.8285714285714286,
+     "call_balanced_accuracy": 0.7029346622369879,
+     "call_n": 70,
+     "call_classes": {
+      "higher": 20,
+      "lower": 7,
+      "none": 43
+     },
+     "significance_agreement": 0.8285714285714286,
+     "significance_n": 70,
+     "significance_alpha_assumed": 52,
+     "direction_agreement_interval": [
+      0.8181818181818182,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.6984126984126984,
+      0.9326213112729966
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5092106408916753,
+      0.8924275063560778
+     ],
+     "units": 32,
+     "findings": {
+      "direction_auroc": 0.9785714285714285,
+      "detection_auroc": 0.8888888888888888,
+      "same_direction_both_significant": [
+       18,
+       18
+      ],
+      "replicated": [
+       18,
+       27
+      ],
+      "sign_matches_significant": [
+       25,
+       27
+      ],
+      "significant_only_in_clockbase": [
+       3,
+       43
+      ],
+      "reference": {
+       "higher": 20,
+       "lower": 7,
+       "none": 43
+      },
+      "direction_auroc_interval": [
+       0.8768945868945869,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.791228851010101,
+       0.968639037433155
+      ],
+      "clusters": 29
+     }
+    },
+    "R:gpt-6-astra:recomputed": {
+     "records": 84,
+     "covered": 84,
+     "direction_agreement": 0.9259259259259259,
+     "direction_n": 27,
+     "call_agreement": 0.8,
+     "call_balanced_accuracy": 0.678516057585825,
+     "call_n": 70,
+     "call_classes": {
+      "higher": 20,
+      "lower": 7,
+      "none": 43
+     },
+     "significance_agreement": 0.8,
+     "significance_n": 70,
+     "significance_alpha_assumed": 52,
+     "direction_agreement_interval": [
+      0.8181818181818182,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.6666666666666666,
+      0.8990151515151515
+     ],
+     "call_balanced_accuracy_interval": [
+      0.48806977336389107,
+      0.8601457074057692
+     ],
+     "units": 32,
+     "findings": {
+      "direction_auroc": 0.9714285714285714,
+      "detection_auroc": 0.8845822566752799,
+      "same_direction_both_significant": [
+       17,
+       17
+      ],
+      "replicated": [
+       17,
+       27
+      ],
+      "sign_matches_significant": [
+       25,
+       27
+      ],
+      "significant_only_in_clockbase": [
+       4,
+       43
+      ],
+      "reference": {
+       "higher": 20,
+       "lower": 7,
+       "none": 43
+      },
+      "direction_auroc_interval": [
+       0.8571428571428571,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.7939321789321789,
+       0.9518977551405395
+      ],
+      "clusters": 29
+     }
+    },
+    "S1": {
+     "records": 84,
+     "covered": 77,
+     "direction_agreement": 0.875,
+     "direction_n": 24,
+     "call_agreement": 0.8307692307692308,
+     "call_balanced_accuracy": 0.6952244312359089,
+     "call_n": 65,
+     "call_classes": {
+      "higher": 17,
+      "lower": 7,
+      "none": 41
+     },
+     "significance_agreement": 0.8307692307692308,
+     "significance_n": 65,
+     "significance_alpha_assumed": 50,
+     "direction_agreement_interval": [
+      0.7271464646464647,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7428463203463204,
+      0.9137931034482759
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5092712933995828,
+      0.8583396464646466
+     ],
+     "units": 32,
+     "findings": {
+      "direction_auroc": 0.9831932773109243,
+      "detection_auroc": 0.9126016260162602,
+      "same_direction_both_significant": [
+       15,
+       15
+      ],
+      "replicated": [
+       15,
+       24
+      ],
+      "sign_matches_significant": [
+       21,
+       24
+      ],
+      "significant_only_in_clockbase": [
+       2,
+       41
+      ],
+      "reference": {
+       "higher": 17,
+       "lower": 7,
+       "none": 41
+      },
+      "direction_auroc_interval": [
+       0.9106428571428571,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8134481425540331,
+       0.9740740740740741
+      ],
+      "clusters": 28
+     }
+    },
+    "S2c": {
+     "records": 84,
+     "covered": 76,
+     "direction_agreement": 0.96,
+     "direction_n": 25,
+     "call_agreement": 0.8461538461538461,
+     "call_balanced_accuracy": 0.7187830687830687,
+     "call_n": 65,
+     "call_classes": {
+      "higher": 18,
+      "lower": 7,
+      "none": 40
+     },
+     "significance_agreement": 0.8461538461538461,
+     "significance_n": 65,
+     "significance_alpha_assumed": 50,
+     "direction_agreement_interval": [
+      0.8571428571428571,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7611859182349123,
+      0.9245632424877708
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5501379316346421,
+      0.8818649355877616
+     ],
+     "units": 32,
+     "findings": {
+      "direction_auroc": 1.0,
+      "detection_auroc": 0.916,
+      "same_direction_both_significant": [
+       17,
+       17
+      ],
+      "replicated": [
+       17,
+       25
+      ],
+      "sign_matches_significant": [
+       24,
+       25
+      ],
+      "significant_only_in_clockbase": [
+       2,
+       40
+      ],
+      "reference": {
+       "higher": 18,
+       "lower": 7,
+       "none": 40
+      },
+      "direction_auroc_interval": [
+       1.0,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8305167748917749,
+       0.9751992573345127
+      ],
+      "clusters": 27
+     }
+    }
+   }
+  },
+  "gpt-6-sol": {
+   "records": 86,
+   "papers": 34,
+   "metrics": {
+    "S0": {
+     "records": 86,
+     "covered": 86,
+     "direction_agreement": 0.7777777777777778,
+     "direction_n": 27,
+     "call_agreement": 0.28378378378378377,
+     "call_balanced_accuracy": 0.3333333333333333,
+     "call_n": 74,
+     "call_classes": {
+      "higher": 21,
+      "lower": 6,
+      "none": 47
+     },
+     "significance_agreement": 0.36486486486486486,
+     "significance_n": 74,
+     "significance_alpha_assumed": 0,
+     "direction_agreement_interval": [
+      0.5767857142857142,
+      0.95
+     ],
+     "call_agreement_interval": [
+      0.1551663428848956,
+      0.4167438271604938
+     ],
+     "call_balanced_accuracy_interval": [
+      0.3333333333333333,
+      0.3333333333333333
+     ],
+     "units": 34,
+     "findings": null
+    },
+    "S4:openai:gpt-6-sol": {
+     "records": 86,
+     "covered": 79,
+     "direction_agreement": 0.68,
+     "direction_n": 25,
+     "call_agreement": 0.7205882352941176,
+     "call_balanced_accuracy": 0.6309669522643819,
+     "call_n": 68,
+     "call_classes": {
+      "higher": 19,
+      "lower": 6,
+      "none": 43
+     },
+     "significance_agreement": 0.7352941176470589,
+     "significance_n": 68,
+     "significance_alpha_assumed": 0,
+     "direction_agreement_interval": [
+      0.3888888888888889,
+      0.9091577540106951
+     ],
+     "call_agreement_interval": [
+      0.5788179465056084,
+      0.8333333333333334
+     ],
+     "call_balanced_accuracy_interval": [
+      0.4295632664437013,
+      0.8547724149488855
+     ],
+     "units": 34,
+     "findings": null
+    },
+    "R:gpt-6-sol:raw": {
+     "records": 86,
+     "covered": 86,
+     "direction_agreement": 0.9259259259259259,
+     "direction_n": 27,
+     "call_agreement": 0.9027777777777778,
+     "call_balanced_accuracy": 0.8576719576719577,
+     "call_n": 72,
+     "call_classes": {
+      "higher": 21,
+      "lower": 6,
+      "none": 45
+     },
+     "significance_agreement": 0.9027777777777778,
+     "significance_n": 72,
+     "significance_alpha_assumed": 55,
+     "direction_agreement_interval": [
+      0.7931034482758621,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.8168736100815419,
+      0.9818181818181818
+     ],
+     "call_balanced_accuracy_interval": [
+      0.7040979437229437,
+      0.9762301587301587
+     ],
+     "units": 34,
+     "findings": {
+      "direction_auroc": 0.9920634920634921,
+      "detection_auroc": 0.9366255144032922,
+      "same_direction_both_significant": [
+       21,
+       21
+      ],
+      "replicated": [
+       21,
+       27
+      ],
+      "sign_matches_significant": [
+       25,
+       27
+      ],
+      "significant_only_in_clockbase": [
+       1,
+       45
+      ],
+      "reference": {
+       "higher": 21,
+       "lower": 6,
+       "none": 45
+      },
+      "direction_auroc_interval": [
+       0.9583333333333334,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8345838734767954,
+       0.992601898923445
+      ],
+      "clusters": 31
+     }
+    },
+    "R:gpt-6-sol:recomputed": {
+     "records": 86,
+     "covered": 86,
+     "direction_agreement": 0.9259259259259259,
+     "direction_n": 27,
+     "call_agreement": 0.8571428571428571,
+     "call_balanced_accuracy": 0.8421926910299004,
+     "call_n": 70,
+     "call_classes": {
+      "higher": 21,
+      "lower": 6,
+      "none": 43
+     },
+     "significance_agreement": 0.8571428571428571,
+     "significance_n": 70,
+     "significance_alpha_assumed": 53,
+     "direction_agreement_interval": [
+      0.7931034482758621,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7666176470588236,
+      0.9305675287356322
+     ],
+     "call_balanced_accuracy_interval": [
+      0.6880774213862448,
+      0.9458262751741013
+     ],
+     "units": 34,
+     "findings": {
+      "direction_auroc": 0.9920634920634921,
+      "detection_auroc": 0.9250645994832042,
+      "same_direction_both_significant": [
+       22,
+       22
+      ],
+      "replicated": [
+       22,
+       27
+      ],
+      "sign_matches_significant": [
+       25,
+       27
+      ],
+      "significant_only_in_clockbase": [
+       5,
+       43
+      ],
+      "reference": {
+       "higher": 21,
+       "lower": 6,
+       "none": 43
+      },
+      "direction_auroc_interval": [
+       0.9603557312252964,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8187984198998749,
+       0.9821945175919831
+      ],
+      "clusters": 30
+     }
+    },
+    "S1": {
+     "records": 86,
+     "covered": 78,
+     "direction_agreement": 0.875,
+     "direction_n": 24,
+     "call_agreement": 0.8484848484848485,
+     "call_balanced_accuracy": 0.724867724867725,
+     "call_n": 66,
+     "call_classes": {
+      "higher": 18,
+      "lower": 6,
+      "none": 42
+     },
+     "significance_agreement": 0.8484848484848485,
+     "significance_n": 66,
+     "significance_alpha_assumed": 52,
+     "direction_agreement_interval": [
+      0.6923076923076923,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7678467607973423,
+      0.9310919540229884
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5240138577425105,
+      0.9036849214004387
+     ],
+     "units": 34,
+     "findings": {
+      "direction_auroc": 0.9814814814814815,
+      "detection_auroc": 0.9087301587301587,
+      "same_direction_both_significant": [
+       16,
+       16
+      ],
+      "replicated": [
+       16,
+       24
+      ],
+      "sign_matches_significant": [
+       21,
+       24
+      ],
+      "significant_only_in_clockbase": [
+       2,
+       42
+      ],
+      "reference": {
+       "higher": 18,
+       "lower": 6,
+       "none": 42
+      },
+      "direction_auroc_interval": [
+       0.8909090909090909,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.7855263157894737,
+       0.9749735369264645
+      ],
+      "clusters": 29
+     }
+    },
+    "S2c": {
+     "records": 86,
+     "covered": 76,
+     "direction_agreement": 0.96,
+     "direction_n": 25,
+     "call_agreement": 0.8461538461538461,
+     "call_balanced_accuracy": 0.7381578947368421,
+     "call_n": 65,
+     "call_classes": {
+      "higher": 19,
+      "lower": 6,
+      "none": 40
+     },
+     "significance_agreement": 0.8461538461538461,
+     "significance_n": 65,
+     "significance_alpha_assumed": 51,
+     "direction_agreement_interval": [
+      0.8398333333333333,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7635671936758893,
+      0.9310344827586207
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5462502860480802,
+      0.9122825351731603
+     ],
+     "units": 34,
+     "findings": {
+      "direction_auroc": 1.0,
+      "detection_auroc": 0.918,
+      "same_direction_both_significant": [
+       18,
+       18
+      ],
+      "replicated": [
+       18,
+       25
+      ],
+      "sign_matches_significant": [
+       24,
+       25
+      ],
+      "significant_only_in_clockbase": [
+       3,
+       40
+      ],
+      "reference": {
+       "higher": 19,
+       "lower": 6,
+       "none": 40
+      },
+      "direction_auroc_interval": [
+       1.0,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8149044302471722,
+       0.9767791808149405
+      ],
+      "clusters": 28
+     }
+    }
+   }
+  },
+  "gpt-6-luna": {
+   "records": 92,
+   "papers": 36,
+   "metrics": {
+    "S0": {
+     "records": 92,
+     "covered": 92,
+     "direction_agreement": 0.7666666666666667,
+     "direction_n": 30,
+     "call_agreement": 0.2987012987012987,
+     "call_balanced_accuracy": 0.3333333333333333,
+     "call_n": 77,
+     "call_classes": {
+      "higher": 23,
+      "lower": 7,
+      "none": 47
+     },
+     "significance_agreement": 0.38961038961038963,
+     "significance_n": 77,
+     "significance_alpha_assumed": 0,
+     "direction_agreement_interval": [
+      0.5482190860215054,
+      0.9230769230769231
+     ],
+     "call_agreement_interval": [
+      0.17100708502024292,
+      0.4615740740740741
+     ],
+     "call_balanced_accuracy_interval": [
+      0.3333333333333333,
+      0.3333333333333333
+     ],
+     "units": 36,
+     "findings": null
+    },
+    "S4:openai:gpt-6-luna": {
+     "records": 92,
+     "covered": 84,
+     "direction_agreement": 0.5769230769230769,
+     "direction_n": 26,
+     "call_agreement": 0.6428571428571429,
+     "call_balanced_accuracy": 0.5407837776258829,
+     "call_n": 70,
+     "call_classes": {
+      "higher": 19,
+      "lower": 7,
+      "none": 44
+     },
+     "significance_agreement": 0.6857142857142857,
+     "significance_n": 70,
+     "significance_alpha_assumed": 0,
+     "direction_agreement_interval": [
+      0.3333333333333333,
+      0.7667307692307692
+     ],
+     "call_agreement_interval": [
+      0.5161290322580645,
+      0.7375556506849315
+     ],
+     "call_balanced_accuracy_interval": [
+      0.37920913872948764,
+      0.7043324372759856
+     ],
+     "units": 36,
+     "findings": null
+    },
+    "R:gpt-6-luna:raw": {
+     "records": 92,
+     "covered": 92,
+     "direction_agreement": 0.9,
+     "direction_n": 30,
+     "call_agreement": 0.7733333333333333,
+     "call_balanced_accuracy": 0.6423740510697032,
+     "call_n": 75,
+     "call_classes": {
+      "higher": 23,
+      "lower": 7,
+      "none": 45
+     },
+     "significance_agreement": 0.7733333333333333,
+     "significance_n": 75,
+     "significance_alpha_assumed": 57,
+     "direction_agreement_interval": [
+      0.7619047619047619,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.6301243023845763,
+      0.8888888888888888
+     ],
+     "call_balanced_accuracy_interval": [
+      0.46281797314464906,
+      0.8194900793650792
+     ],
+     "units": 36,
+     "findings": {
+      "direction_auroc": 0.9813664596273292,
+      "detection_auroc": 0.8666666666666667,
+      "same_direction_both_significant": [
+       16,
+       16
+      ],
+      "replicated": [
+       16,
+       30
+      ],
+      "sign_matches_significant": [
+       27,
+       30
+      ],
+      "significant_only_in_clockbase": [
+       3,
+       45
+      ],
+      "reference": {
+       "higher": 23,
+       "lower": 7,
+       "none": 45
+      },
+      "direction_auroc_interval": [
+       0.8888888888888888,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.7906316572681704,
+       0.9387503775496548
+      ],
+      "clusters": 31
+     }
+    },
+    "R:gpt-6-luna:recomputed": {
+     "records": 92,
+     "covered": 92,
+     "direction_agreement": 0.9333333333333333,
+     "direction_n": 30,
+     "call_agreement": 0.821917808219178,
+     "call_balanced_accuracy": 0.706052289469883,
+     "call_n": 73,
+     "call_classes": {
+      "higher": 23,
+      "lower": 7,
+      "none": 43
+     },
+     "significance_agreement": 0.821917808219178,
+     "significance_n": 73,
+     "significance_alpha_assumed": 55,
+     "direction_agreement_interval": [
+      0.8125,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7058823529411765,
+      0.9054265202702703
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5333961566888397,
+      0.8656259018759019
+     ],
+     "units": 36,
+     "findings": {
+      "direction_auroc": 0.9813664596273292,
+      "detection_auroc": 0.9147286821705426,
+      "same_direction_both_significant": [
+       21,
+       21
+      ],
+      "replicated": [
+       21,
+       30
+      ],
+      "sign_matches_significant": [
+       28,
+       30
+      ],
+      "significant_only_in_clockbase": [
+       4,
+       43
+      ],
+      "reference": {
+       "higher": 23,
+       "lower": 7,
+       "none": 43
+      },
+      "direction_auroc_interval": [
+       0.8908491508491508,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8211753383418585,
+       0.9710848424916145
+      ],
+      "clusters": 30
+     }
+    },
+    "S1": {
+     "records": 92,
+     "covered": 80,
+     "direction_agreement": 0.875,
+     "direction_n": 24,
+     "call_agreement": 0.8333333333333334,
+     "call_balanced_accuracy": 0.695611577964519,
+     "call_n": 66,
+     "call_classes": {
+      "higher": 17,
+      "lower": 7,
+      "none": 42
+     },
+     "significance_agreement": 0.8333333333333334,
+     "significance_n": 66,
+     "significance_alpha_assumed": 50,
+     "direction_agreement_interval": [
+      0.7,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.75,
+      0.9107534461152882
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5193711300309598,
+      0.8633007494297815
+     ],
+     "units": 36,
+     "findings": {
+      "direction_auroc": 0.9831932773109243,
+      "detection_auroc": 0.9087301587301587,
+      "same_direction_both_significant": [
+       15,
+       15
+      ],
+      "replicated": [
+       15,
+       24
+      ],
+      "sign_matches_significant": [
+       21,
+       24
+      ],
+      "significant_only_in_clockbase": [
+       2,
+       42
+      ],
+      "reference": {
+       "higher": 17,
+       "lower": 7,
+       "none": 42
+      },
+      "direction_auroc_interval": [
+       0.9061011904761905,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8118374580276085,
+       0.9707321893377037
+      ],
+      "clusters": 29
+     }
+    },
+    "S2c": {
+     "records": 92,
+     "covered": 82,
+     "direction_agreement": 0.9642857142857143,
+     "direction_n": 28,
+     "call_agreement": 0.8382352941176471,
+     "call_balanced_accuracy": 0.721031746031746,
+     "call_n": 68,
+     "call_classes": {
+      "higher": 21,
+      "lower": 7,
+      "none": 40
+     },
+     "significance_agreement": 0.8382352941176471,
+     "significance_n": 68,
+     "significance_alpha_assumed": 52,
+     "direction_agreement_interval": [
+      0.8571428571428571,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7586206896551724,
+      0.9122807017543859
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5564628213432514,
+      0.878697976362135
+     ],
+     "units": 36,
+     "findings": {
+      "direction_auroc": 1.0,
+      "detection_auroc": 0.9196428571428571,
+      "same_direction_both_significant": [
+       20,
+       20
+      ],
+      "replicated": [
+       20,
+       28
+      ],
+      "sign_matches_significant": [
+       27,
+       28
+      ],
+      "significant_only_in_clockbase": [
+       3,
+       40
+      ],
+      "reference": {
+       "higher": 21,
+       "lower": 7,
+       "none": 40
+      },
+      "direction_auroc_interval": [
+       1.0,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8345430221951962,
+       0.9727045035419473
+      ],
+      "clusters": 28
+     }
+    }
+   }
+  },
+  "gpt-5.5": {
+   "records": 100,
+   "papers": 38,
+   "metrics": {
+    "S0": {
+     "records": 100,
+     "covered": 100,
+     "direction_agreement": 0.7941176470588235,
+     "direction_n": 34,
+     "call_agreement": 0.32142857142857145,
+     "call_balanced_accuracy": 0.3333333333333333,
+     "call_n": 84,
+     "call_classes": {
+      "higher": 27,
+      "lower": 7,
+      "none": 50
+     },
+     "significance_agreement": 0.40476190476190477,
+     "significance_n": 84,
+     "significance_alpha_assumed": 0,
+     "direction_agreement_interval": [
+      0.59984375,
+      0.9302325581395349
+     ],
+     "call_agreement_interval": [
+      0.18602497846683894,
+      0.48421463815789473
+     ],
+     "call_balanced_accuracy_interval": [
+      0.3333333333333333,
+      0.3333333333333333
+     ],
+     "units": 38,
+     "findings": null
+    },
+    "S4:openai:gpt-5.5": {
+     "records": 100,
+     "covered": 89,
+     "direction_agreement": 0.7142857142857143,
+     "direction_n": 28,
+     "call_agreement": 0.6756756756756757,
+     "call_balanced_accuracy": 0.5955831608005521,
+     "call_n": 74,
+     "call_classes": {
+      "higher": 21,
+      "lower": 7,
+      "none": 46
+     },
+     "significance_agreement": 0.7027027027027027,
+     "significance_n": 74,
+     "significance_alpha_assumed": 0,
+     "direction_agreement_interval": [
+      0.48272669220945086,
+      0.9117966751918158
+     ],
+     "call_agreement_interval": [
+      0.53125,
+      0.7889035087719298
+     ],
+     "call_balanced_accuracy_interval": [
+      0.4261948529411765,
+      0.7764411747378342
+     ],
+     "units": 38,
+     "findings": null
+    },
+    "R:gpt-5.5:raw": {
+     "records": 100,
+     "covered": 100,
+     "direction_agreement": 0.9411764705882353,
+     "direction_n": 34,
+     "call_agreement": 0.7926829268292683,
+     "call_balanced_accuracy": 0.7113095238095238,
+     "call_n": 82,
+     "call_classes": {
+      "higher": 27,
+      "lower": 7,
+      "none": 48
+     },
+     "significance_agreement": 0.7926829268292683,
+     "significance_n": 82,
+     "significance_alpha_assumed": 64,
+     "direction_agreement_interval": [
+      0.8387096774193549,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.6701241134751773,
+      0.8928914835164835
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5172824392388871,
+      0.8624710840408514
+     ],
+     "units": 38,
+     "findings": {
+      "direction_auroc": 0.9841269841269841,
+      "detection_auroc": 0.8946078431372549,
+      "same_direction_both_significant": [
+       22,
+       22
+      ],
+      "replicated": [
+       22,
+       34
+      ],
+      "sign_matches_significant": [
+       32,
+       34
+      ],
+      "significant_only_in_clockbase": [
+       5,
+       48
+      ],
+      "reference": {
+       "higher": 27,
+       "lower": 7,
+       "none": 48
+      },
+      "direction_auroc_interval": [
+       0.9106071428571428,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8186567934657918,
+       0.9532496197422525
+      ],
+      "clusters": 32
+     }
+    },
+    "R:gpt-5.5:recomputed": {
+     "records": 100,
+     "covered": 100,
+     "direction_agreement": 0.9411764705882353,
+     "direction_n": 34,
+     "call_agreement": 0.8227848101265823,
+     "call_balanced_accuracy": 0.7091893613632744,
+     "call_n": 79,
+     "call_classes": {
+      "higher": 26,
+      "lower": 7,
+      "none": 46
+     },
+     "significance_agreement": 0.8227848101265823,
+     "significance_n": 79,
+     "significance_alpha_assumed": 61,
+     "direction_agreement_interval": [
+      0.8387096774193549,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7204193548387097,
+      0.9021805408271474
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5369659219930948,
+      0.8630321047183176
+     ],
+     "units": 38,
+     "findings": {
+      "direction_auroc": 0.9835164835164835,
+      "detection_auroc": 0.9123847167325428,
+      "same_direction_both_significant": [
+       24,
+       24
+      ],
+      "replicated": [
+       24,
+       33
+      ],
+      "sign_matches_significant": [
+       31,
+       33
+      ],
+      "significant_only_in_clockbase": [
+       5,
+       46
+      ],
+      "reference": {
+       "higher": 26,
+       "lower": 7,
+       "none": 46
+      },
+      "direction_auroc_interval": [
+       0.9074074074074074,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8256361988810968,
+       0.9643895855102751
+      ],
+      "clusters": 31
+     }
+    },
+    "S1": {
+     "records": 100,
+     "covered": 81,
+     "direction_agreement": 0.88,
+     "direction_n": 25,
+     "call_agreement": 0.8208955223880597,
+     "call_balanced_accuracy": 0.6825396825396824,
+     "call_n": 67,
+     "call_classes": {
+      "higher": 18,
+      "lower": 7,
+      "none": 42
+     },
+     "significance_agreement": 0.8208955223880597,
+     "significance_n": 67,
+     "significance_alpha_assumed": 51,
+     "direction_agreement_interval": [
+      0.7142857142857143,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7333098591549295,
+      0.90741452991453
+     ],
+     "call_balanced_accuracy_interval": [
+      0.49685846560846564,
+      0.8484848484848485
+     ],
+     "units": 38,
+     "findings": {
+      "direction_auroc": 0.9841269841269841,
+      "detection_auroc": 0.9038095238095238,
+      "same_direction_both_significant": [
+       15,
+       15
+      ],
+      "replicated": [
+       15,
+       25
+      ],
+      "sign_matches_significant": [
+       22,
+       25
+      ],
+      "significant_only_in_clockbase": [
+       2,
+       42
+      ],
+      "reference": {
+       "higher": 18,
+       "lower": 7,
+       "none": 42
+      },
+      "direction_auroc_interval": [
+       0.9090909090909091,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8060575532632797,
+       0.9681836219336218
+      ],
+      "clusters": 29
+     }
+    },
+    "S2c": {
+     "records": 100,
+     "covered": 83,
+     "direction_agreement": 0.9642857142857143,
+     "direction_n": 28,
+     "call_agreement": 0.8405797101449275,
+     "call_balanced_accuracy": 0.721641502129307,
+     "call_n": 69,
+     "call_classes": {
+      "higher": 21,
+      "lower": 7,
+      "none": 41
+     },
+     "significance_agreement": 0.8405797101449275,
+     "significance_n": 69,
+     "significance_alpha_assumed": 53,
+     "direction_agreement_interval": [
+      0.8619458128078817,
+      1.0
+     ],
+     "call_agreement_interval": [
+      0.7571428571428571,
+      0.9122861842105262
+     ],
+     "call_balanced_accuracy_interval": [
+      0.5521826124767301,
+      0.8703828828828828
+     ],
+     "units": 38,
+     "findings": {
+      "direction_auroc": 1.0,
+      "detection_auroc": 0.9198606271777003,
+      "same_direction_both_significant": [
+       20,
+       20
+      ],
+      "replicated": [
+       20,
+       28
+      ],
+      "sign_matches_significant": [
+       27,
+       28
+      ],
+      "significant_only_in_clockbase": [
+       3,
+       41
+      ],
+      "reference": {
+       "higher": 21,
+       "lower": 7,
+       "none": 41
+      },
+      "direction_auroc_interval": [
+       1.0,
+       1.0
+      ],
+      "detection_auroc_interval": [
+       0.8344398976982097,
+       0.973306673001795
+      ],
+      "clusters": 28
+     }
+    }
+   }
+  }
+ }
+}

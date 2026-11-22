@@ -1,0 +1,122 @@
+{
+ "mm_rna": {
+  "released": {
+   "rows": 27081,
+   "units": 27038,
+   "series": 9663
+  },
+  "subjects_recorded": {
+   "rows": 635,
+   "units": 635,
+   "series": 141
+  },
+  "age_recorded": {
+   "rows": 7678,
+   "units": 7671,
+   "series": 2799
+  },
+  "flagged": {
+   "rows": 301,
+   "units": 301,
+   "series": 103
+  },
+  "findings": {
+   "REPEATED_SUBJECT": {
+    "rows": 183,
+    "units": 183,
+    "series": 63,
+    "only_this_finding": 137,
+    "change": {
+     "UNCHANGED": 127,
+     "SIGNIFICANCE_LOST": 16,
+     "ONE_SUBJECT_ARM": 24,
+     "SIGNIFICANCE_GAINED": 8,
+     "TOO_FEW_PAIRS": 8
+    },
+    "released_significant": 73,
+    "released_fdr_significant": 52
+   },
+   "PAIRED_AS_INDEPENDENT": {
+    "rows": 164,
+    "units": 164,
+    "series": 63,
+    "only_this_finding": 118,
+    "change": {
+     "UNCHANGED": 136,
+     "SIGNIFICANCE_LOST": 9,
+     "SIGNIFICANCE_GAINED": 11,
+     "TOO_FEW_PAIRS": 8
+    },
+    "released_significant": 64,
+    "released_fdr_significant": 44,
+    "agent_test_was_paired": 4
+   },
+   "AGE_IMBALANCE": {
+    "rows": 0,
+    "units": 0,
+    "series": 0,
+    "only_this_finding": 0,
+    "change": {},
+    "released_significant": 0,
+    "released_fdr_significant": 0,
+    "agent_model_had_age": 0,
+    "criterion": {}
+   }
+  },
+  "age_exempt": {
+   "age_or_time_declared": {
+    "rows": 0,
+    "units": 0,
+    "series": 0
+   },
+   "declared_by": {},
+   "pace_clock": {
+    "rows": 0,
+    "units": 0,
+    "series": 0
+   }
+  },
+  "agent_design": {
+   "agent_test_paired": {
+    "rows": 14,
+    "units": 14,
+    "series": 13,
+    "flagged_paired": 4,
+    "subjects_recorded": 4
+   },
+   "agent_model_with_age": {
+    "rows": 38,
+    "units": 38,
+    "series": 12,
+    "flagged_age": 0,
+    "age_recorded": 12
+   }
+  },
+  "change_any_finding": {
+   "UNCHANGED": 233,
+   "SIGNIFICANCE_LOST": 18,
+   "ONE_SUBJECT_ARM": 24,
+   "SIGNIFICANCE_GAINED": 18,
+   "TOO_FEW_PAIRS": 8
+  },
+  "released_significant": {
+   "rows": 8612,
+   "flagged": {
+    "UNCHANGED": 84,
+    "SIGNIFICANCE_LOST": 18,
+    "ONE_SUBJECT_ARM": 7,
+    "TOO_FEW_PAIRS": 3
+   }
+  },
+  "released_fdr_significant": {
+   "rows": 4939,
+   "flagged": {
+    "UNCHANGED": 63,
+    "SIGNIFICANCE_LOST": 7,
+    "TOO_FEW_PAIRS": 2,
+    "ONE_SUBJECT_ARM": 5
+   }
+  },
+  "released_not_reproduced": 0
+ }
+}

@@ -1,0 +1,31 @@
+[project]
+name = "clockbase"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "aiohttp>=3.12.13",
+    "aiohttp-socks>=0.10.1",
+    "beautifulsoup4>=4.13.4",
+    "fastapi[standard]>=0.115.14",
+    "httpx>=0.28.1",
+    "linkify-it-py>=2.0.3",
+    "lxml>=5.4.0",
+    "markdown-it-py>=3.0.0",
+    "mdit-py-plugins>=0.5.0",
+    "neo4j>=5.28.1",
+    "openai>=1.88.0",
+    "pandas>=2.3.0",
+    "playwright>=1.52.0",
+    "pydantic>=2.11.7",
+    "pydantic-settings>=2.9.1",
+    "requests>=2.32.4",
+    "scidownl>=1.0.2",
+    "uvicorn>=0.35.0",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]

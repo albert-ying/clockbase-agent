@@ -1,0 +1,53 @@
+{
+ "final": "final-2026-10-10",
+ "comparisons": 60,
+ "series": 56,
+ "models": [
+  "claude-opus-5-5"
+ ],
+ "recomputation_check": {
+  "rows": 60,
+  "equal": 60,
+  "unequal": []
+ },
+ "runs": {
+  "planned": 56,
+  "status_0": 56,
+  "timed_out": 0,
+  "excluded": 0,
+  "no_comparison": 0,
+  "web_searches": 0,
+  "input_tokens": 3182902,
+  "cached_input_tokens": 2566671,
+  "output_tokens": 130889,
+  "median_seconds": 30.5
+ },
+ "by_model": {
+  "claude-opus-5-5": {
+   "higher": {
+    "found": 26,
+    "same_direction": 26,
+    "recurs": 26
+   },
+   "lower": {
+    "found": 26,
+    "same_direction": 26,
+    "recurs": 25
+   }
+  }
+ },
+ "across_models": {
+  "higher": {
+   "found_by_any": 26,
+   "recurs_in_any": 26,
+   "recurs_in_two_or_more": 0,
+   "recurs_in_all": 26
+  },
+  "lower": {
+   "found_by_any": 26,
+   "recurs_in_any": 25,
+   "recurs_in_two_or_more": 0,
+   "recurs_in_all": 25
+  }
+ }
+}

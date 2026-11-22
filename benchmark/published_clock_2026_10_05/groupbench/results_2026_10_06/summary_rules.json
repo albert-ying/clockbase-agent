@@ -1,0 +1,39 @@
+{
+ "E1": {
+  "A1": {
+   "CORRECT": 87,
+   "ERROR": 11
+  },
+  "A2": {
+   "ERROR": 25,
+   "CORRECT": 19,
+   "AMBIGUOUS_LABEL": 3
+  }
+ },
+ "E1_error_types": {
+  "A1": {
+   "REPORTED_RESULT_INVERSION": 5,
+   "SMALL_ARM_INFERENCE": 8
+  },
+  "A2": {
+   "REPORTED_RESULT_INVERSION": 7,
+   "IMPURE_ARM": 1,
+   "REPEATED_SUBJECT": 6,
+   "LABEL_MISMATCH": 3,
+   "PAIRED_AS_INDEPENDENT": 10,
+   "CONFOUNDED_AGE": 1
+  }
+ },
+ "E2_rows": {
+  "A1": {
+   "CORRECT": 87,
+   "ERROR": 2
+  },
+  "A2": {
+   "CORRECT": 91,
+   "ERROR": 93,
+   "AMBIGUOUS_LABEL": 15
+  }
+ },
+ "census_units": 142
+}
