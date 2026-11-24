@@ -30,7 +30,8 @@ tests, and the scripts that rebuild the verified atlas and its ranking.
 
 ## Install
 
-Use Linux x86-64 and Python 3.12; the sandboxed release check also needs curl and bubblewrap.
+Use Linux x86-64 and Python 3.12; the sandboxed release check also needs curl and bubblewrap. The release check has
+also been run on macOS 27 (Apple M5) with Python 3.12. No non-standard hardware is needed.
 Install `uv` for the commands below. For new-study preprocessing, R and the full pipeline dependencies, see
 [PIPELINE Install](PIPELINE_2026_09_10.md#install). The exact versions of the environment that produced the verifier runs are pinned in
 `requirements-verifier.txt`:
@@ -41,7 +42,8 @@ uv pip install --python .venv/bin/python -r requirements-verifier.txt \
     --extra-index-url https://download.pytorch.org/whl/cpu --index-strategy unsafe-best-match
 ```
 
-Activate the verifier environment before the `python` commands below:
+The verifier environment has 87 packages (about 0.8 GB); a fresh install takes about one minute on a fast connection.
+Activate it before the `python` commands below:
 
 ```bash
 source .venv/bin/activate
@@ -81,7 +83,7 @@ clockbase_data/
 
 The bundle holds what the rebuild below reads: from each saved stage, the files the rebuild reads and the stage's
 completion file; the model-call ledgers; the inputs of the final chain, of the self-test and of the figure builders
-(the builders themselves are in the code release); and the reference final run `final-2026-10-10`. The intermediate
+(the builders themselves are in the code release); and the reference final run `final-2026-11-13`. The intermediate
 pass-1, pass-2 and pass-3 chains, the rest of each stage's files and the self-test's simulated outputs are not included. The raw inputs of the upstream stages are not all
 included (the extracted DNA methylation matrices alone take 227 GB), so those stages run only where the GEO-derived
 inputs are available; the historical GEO scripts in `src/historical_geo_pipeline/` are provenance copies whose
@@ -93,9 +95,9 @@ the `public-export/` folder of the reference final run.
 
 ## Verify the atlas
 
-`REFERENCE` is the reference final run shipped in the bundle (`final-2026-10-10`, recorded as `reference_final`
+`REFERENCE` is the reference final run shipped in the bundle (`final-2026-11-13`, recorded as `reference_final`
 in `BUNDLE.json` and listed under `clockbase_data/verifier/`). The other `final-*` directories there are partial
-copies and cannot serve as `REFERENCE`: `final-2026-10-04` holds only the `public-export/` read by a unit test. `NAME` is any new directory name under that root, for example `final-rebuild`.
+copies and cannot serve as `REFERENCE`. `NAME` is any new directory name under that root, for example `final-rebuild`.
 `SANDBOX` is a new writable directory for self-test copies and simulated outputs. With the saved stages in the
 bundle, the final chain takes about 14 minutes and the planted-defect self-test, at the setting behind the reported
 simulation (`--per-modality 160`, seed 20261002, 480 rows), 3 to 4 minutes.
@@ -143,7 +145,9 @@ and the reference run name:
 bash scripts/release_check_2026_10_04.sh RELEASE BUNDLE WORK REFERENCE
 ```
 
-Its report is `WORK/release_check.json`; numerical results live in the run outputs.
+Its report is `WORK/release_check.json`; numerical results live in the run outputs. On macOS,
+`scripts/release_check_macos_2026_11_12.sh` takes the same four arguments, uses the built-in sandbox in place of
+bubblewrap and needs `uv`; the whole check takes about 15 minutes on a laptop.
 
 ## Companion repositories
 
